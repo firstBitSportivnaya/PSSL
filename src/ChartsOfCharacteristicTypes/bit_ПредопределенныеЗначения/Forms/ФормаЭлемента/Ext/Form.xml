@@ -40,12 +40,12 @@
 				<Event name="OnChange">ЗначениеПриИзменении</Event>
 			</Events>
 		</InputField>
-		<CheckBoxField name="ЭтоСервернаяПроцедура" id="16">
-			<DataPath>Объект.ЭтоСервернаяПроцедура</DataPath>
+		<CheckBoxField name="СервернаяПроцедура" id="16">
+			<DataPath>Объект.СервернаяПроцедура</DataPath>
 			<EditMode>EnterOnInput</EditMode>
 			<CheckBoxType>Auto</CheckBoxType>
-			<ContextMenu name="ЭтоСервернаяПроцедураКонтекстноеМеню" id="17"/>
-			<ExtendedTooltip name="ЭтоСервернаяПроцедураРасширеннаяПодсказка" id="18"/>
+			<ContextMenu name="СервернаяПроцедураКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="СервернаяПроцедураРасширеннаяПодсказка" id="18"/>
 		</CheckBoxField>
 		<InputField name="ВыполняемаяПроцедура" id="19">
 			<DataPath>Объект.ВыполняемаяПроцедура</DataPath>
@@ -57,52 +57,52 @@
 			<ContextMenu name="ВыполняемаяПроцедураКонтекстноеМеню" id="20"/>
 			<ExtendedTooltip name="ВыполняемаяПроцедураРасширеннаяПодсказка" id="21"/>
 		</InputField>
-		<Table name="СписокЗначенийЭлементов" id="22">
+		<Table name="ЗначенияЭлементов" id="22">
 			<Representation>List</Representation>
 			<AutoInsertNewRow>true</AutoInsertNewRow>
 			<EnableStartDrag>true</EnableStartDrag>
 			<EnableDrag>true</EnableDrag>
-			<DataPath>Объект.СписокЗначенийЭлементов</DataPath>
+			<DataPath>Объект.ЗначенияЭлементов</DataPath>
 			<RowFilter xsi:nil="true"/>
-			<ContextMenu name="СписокЗначенийЭлементовКонтекстноеМеню" id="23"/>
-			<AutoCommandBar name="СписокЗначенийЭлементовКоманднаяПанель" id="24"/>
-			<ExtendedTooltip name="СписокЗначенийЭлементовРасширеннаяПодсказка" id="25"/>
-			<SearchStringAddition name="СписокЗначенийЭлементовСтрокаПоиска" id="26">
+			<ContextMenu name="ЗначенияЭлементовКонтекстноеМеню" id="23"/>
+			<AutoCommandBar name="ЗначенияЭлементовКоманднаяПанель" id="24"/>
+			<ExtendedTooltip name="ЗначенияЭлементовРасширеннаяПодсказка" id="25"/>
+			<SearchStringAddition name="ЗначенияЭлементовСтрокаПоиска" id="26">
 				<AdditionSource>
-					<Item>СписокЗначенийЭлементов</Item>
+					<Item>ЗначенияЭлементов</Item>
 					<Type>SearchStringRepresentation</Type>
 				</AdditionSource>
-				<ContextMenu name="СписокЗначенийЭлементовСтрокаПоискаКонтекстноеМеню" id="27"/>
-				<ExtendedTooltip name="СписокЗначенийЭлементовСтрокаПоискаРасширеннаяПодсказка" id="28"/>
+				<ContextMenu name="ЗначенияЭлементовСтрокаПоискаКонтекстноеМеню" id="27"/>
+				<ExtendedTooltip name="ЗначенияЭлементовСтрокаПоискаРасширеннаяПодсказка" id="28"/>
 			</SearchStringAddition>
-			<ViewStatusAddition name="СписокЗначенийЭлементовСостояниеПросмотра" id="29">
+			<ViewStatusAddition name="ЗначенияЭлементовСостояниеПросмотра" id="29">
 				<AdditionSource>
-					<Item>СписокЗначенийЭлементов</Item>
+					<Item>ЗначенияЭлементов</Item>
 					<Type>ViewStatusRepresentation</Type>
 				</AdditionSource>
-				<ContextMenu name="СписокЗначенийЭлементовСостояниеПросмотраКонтекстноеМеню" id="30"/>
-				<ExtendedTooltip name="СписокЗначенийЭлементовСостояниеПросмотраРасширеннаяПодсказка" id="31"/>
+				<ContextMenu name="ЗначенияЭлементовСостояниеПросмотраКонтекстноеМеню" id="30"/>
+				<ExtendedTooltip name="ЗначенияЭлементовСостояниеПросмотраРасширеннаяПодсказка" id="31"/>
 			</ViewStatusAddition>
-			<SearchControlAddition name="СписокЗначенийЭлементовУправлениеПоиском" id="32">
+			<SearchControlAddition name="ЗначенияЭлементовУправлениеПоиском" id="32">
 				<AdditionSource>
-					<Item>СписокЗначенийЭлементов</Item>
+					<Item>ЗначенияЭлементов</Item>
 					<Type>SearchControl</Type>
 				</AdditionSource>
-				<ContextMenu name="СписокЗначенийЭлементовУправлениеПоискомКонтекстноеМеню" id="33"/>
-				<ExtendedTooltip name="СписокЗначенийЭлементовУправлениеПоискомРасширеннаяПодсказка" id="34"/>
+				<ContextMenu name="ЗначенияЭлементовУправлениеПоискомКонтекстноеМеню" id="33"/>
+				<ExtendedTooltip name="ЗначенияЭлементовУправлениеПоискомРасширеннаяПодсказка" id="34"/>
 			</SearchControlAddition>
 			<ChildItems>
-				<LabelField name="СписокЗначенийЭлементовНомерСтроки" id="35">
-					<DataPath>Объект.СписокЗначенийЭлементов.LineNumber</DataPath>
+				<LabelField name="ЗначенияЭлементовНомерСтроки" id="35">
+					<DataPath>Объект.ЗначенияЭлементов.LineNumber</DataPath>
 					<EditMode>EnterOnInput</EditMode>
-					<ContextMenu name="СписокЗначенийЭлементовНомерСтрокиКонтекстноеМеню" id="36"/>
-					<ExtendedTooltip name="СписокЗначенийЭлементовНомерСтрокиРасширеннаяПодсказка" id="37"/>
+					<ContextMenu name="ЗначенияЭлементовНомерСтрокиКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="ЗначенияЭлементовНомерСтрокиРасширеннаяПодсказка" id="37"/>
 				</LabelField>
-				<InputField name="СписокЗначенийЭлементовЗначение" id="38">
-					<DataPath>Объект.СписокЗначенийЭлементов.Значение</DataPath>
+				<InputField name="ЗначенияЭлементовЗначение" id="38">
+					<DataPath>Объект.ЗначенияЭлементов.Значение</DataPath>
 					<EditMode>EnterOnInput</EditMode>
-					<ContextMenu name="СписокЗначенийЭлементовЗначениеКонтекстноеМеню" id="39"/>
-					<ExtendedTooltip name="СписокЗначенийЭлементовЗначениеРасширеннаяПодсказка" id="40"/>
+					<ContextMenu name="ЗначенияЭлементовЗначениеКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="ЗначенияЭлементовЗначениеРасширеннаяПодсказка" id="40"/>
 				</InputField>
 			</ChildItems>
 		</Table>

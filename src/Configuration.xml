@@ -1,39 +1,44 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
-	<Configuration uuid="50e2c8df-166a-4024-a65f-81a64df9eca2">
+	<Configuration uuid="68a7cc13-add7-462a-a553-7c6f1b87af8c">
 		<InternalInfo>
 			<xr:ContainedObject>
 				<xr:ClassId>9cd510cd-abfc-11d4-9434-004095e12fc7</xr:ClassId>
-				<xr:ObjectId>4e1e8728-a343-44f3-89a5-f42dbca67364</xr:ObjectId>
+				<xr:ObjectId>7820bd29-223a-4ef6-bf9e-fcfe87ab87d9</xr:ObjectId>
 			</xr:ContainedObject>
 			<xr:ContainedObject>
 				<xr:ClassId>9fcd25a0-4822-11d4-9414-008048da11f9</xr:ClassId>
-				<xr:ObjectId>b7fec62b-7f8f-45c3-b3e0-4e35a6bf7858</xr:ObjectId>
+				<xr:ObjectId>17bac1be-f079-4b1d-ad1e-0825fd27a22f</xr:ObjectId>
 			</xr:ContainedObject>
 			<xr:ContainedObject>
 				<xr:ClassId>e3687481-0a87-462c-a166-9f34594f9bba</xr:ClassId>
-				<xr:ObjectId>51db8761-f16c-48b1-a5f8-ce2e8f122f3e</xr:ObjectId>
+				<xr:ObjectId>6b15c50b-6995-4a05-b9ab-a5b86bdd5ca6</xr:ObjectId>
 			</xr:ContainedObject>
 			<xr:ContainedObject>
 				<xr:ClassId>9de14907-ec23-4a07-96f0-85521cb6b53b</xr:ClassId>
-				<xr:ObjectId>80c1087e-4313-4d07-bfdc-0c93d3682bd0</xr:ObjectId>
+				<xr:ObjectId>665e0c3f-3bdf-4c66-99f5-bf7e395d0ac3</xr:ObjectId>
 			</xr:ContainedObject>
 			<xr:ContainedObject>
 				<xr:ClassId>51f2d5d8-ea4d-4064-8892-82951750031e</xr:ClassId>
-				<xr:ObjectId>539b9d17-6c00-4fc7-8716-a2ccbc6fb466</xr:ObjectId>
+				<xr:ObjectId>ad5aeb7a-1181-4a35-a92d-cbc5f44a6dd9</xr:ObjectId>
 			</xr:ContainedObject>
 			<xr:ContainedObject>
 				<xr:ClassId>e68182ea-4237-4383-967f-90c1e3370bc7</xr:ClassId>
-				<xr:ObjectId>16bbb695-ae08-4191-8e89-20e6c01a5072</xr:ObjectId>
+				<xr:ObjectId>3348023a-c162-4887-8220-7154db39ee7d</xr:ObjectId>
 			</xr:ContainedObject>
 			<xr:ContainedObject>
 				<xr:ClassId>fb282519-d103-4dd3-bc12-cb271d631dfc</xr:ClassId>
-				<xr:ObjectId>49245ee9-b5d3-4c6a-8327-bdd7cdcaa660</xr:ObjectId>
+				<xr:ObjectId>2e3afe21-2411-4940-aa66-9dce9ded8942</xr:ObjectId>
 			</xr:ContainedObject>
 		</InternalInfo>
 		<Properties>
-			<Name>Конфигурация</Name>
-			<Synonym/>
+			<Name>КаркаснаяКонфигурация</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Каркасная конфигурация</v8:content>
+				</v8:item>
+			</Synonym>
 			<Comment/>
 			<NamePrefix/>
 			<ConfigurationExtensionCompatibilityMode>Version8_3_18</ConfigurationExtensionCompatibilityMode>
@@ -42,9 +47,7 @@
 				<v8:Value xsi:type="app:ApplicationUsePurpose">PlatformApplication</v8:Value>
 			</UsePurposes>
 			<ScriptVariant>Russian</ScriptVariant>
-			<DefaultRoles>
-				<xr:Item xsi:type="xr:MDObjectRef">Role.ПолныеПрава</xr:Item>
-			</DefaultRoles>
+			<DefaultRoles/>
 			<Vendor/>
 			<Version/>
 			<UpdateCatalogAddress/>
@@ -203,17 +206,15 @@
 		</Properties>
 		<ChildObjects>
 			<Language>Русский</Language>
-			<Role>ПолныеПрава</Role>
-			<CommonModule>bit_ГлобальныйСервер</CommonModule>
 			<CommonModule>bit_ДокументыОбработкаЗаполнения</CommonModule>
 			<CommonModule>bit_ДокументыОбработкаПроведения</CommonModule>
 			<CommonModule>bit_ДокументыПередЗаписью</CommonModule>
 			<CommonModule>bit_ДокументыПриЗаписи</CommonModule>
 			<CommonModule>bit_ДокументыПриКопировании</CommonModule>
-			<CommonModule>bit_МодификацияФормСервер</CommonModule>
+			<CommonModule>bit_МодификацияКонфигурацииПереопределяемый</CommonModule>
 			<CommonModule>bit_ОбщегоНазначенияКлиент</CommonModule>
 			<CommonModule>bit_ОбщегоНазначенияПовтИсп</CommonModule>
-			<CommonModule>bit_ОбщегоНазначенияСервер</CommonModule>
+			<CommonModule>bit_ОбщегоНазначения</CommonModule>
 			<CommonModule>bit_ПривилегированныйСервер</CommonModule>
 			<CommonModule>bit_СправочникиОбработкаЗаполнения</CommonModule>
 			<CommonModule>bit_СправочникиПередЗаписью</CommonModule>

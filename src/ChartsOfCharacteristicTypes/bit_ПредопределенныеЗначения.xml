@@ -371,11 +371,11 @@
 			</Attribute>
 			<Attribute uuid="c0234671-5294-4e1c-8b1c-c3c5a74d5833">
 				<Properties>
-					<Name>ЭтоСервернаяПроцедура</Name>
+					<Name>СервернаяПроцедура</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Это серверная процедура</v8:content>
+							<v8:content>Серверная процедура</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -455,21 +455,21 @@
 			</Attribute>
 			<TabularSection uuid="7f81190a-a7bf-4657-8841-107f0199ee86">
 				<InternalInfo>
-					<xr:GeneratedType name="ChartOfCharacteristicTypesTabularSection.bit_ПредопределенныеЗначения.СписокЗначенийЭлементов" category="TabularSection">
+					<xr:GeneratedType name="ChartOfCharacteristicTypesTabularSection.bit_ПредопределенныеЗначения.ЗначенияЭлементов" category="TabularSection">
 						<xr:TypeId>863b2ccd-57a9-4c08-8135-79e10099637e</xr:TypeId>
 						<xr:ValueId>2910b852-5a02-43d7-90e9-e390e677b339</xr:ValueId>
 					</xr:GeneratedType>
-					<xr:GeneratedType name="ChartOfCharacteristicTypesTabularSectionRow.bit_ПредопределенныеЗначения.СписокЗначенийЭлементов" category="TabularSectionRow">
+					<xr:GeneratedType name="ChartOfCharacteristicTypesTabularSectionRow.bit_ПредопределенныеЗначения.ЗначенияЭлементов" category="TabularSectionRow">
 						<xr:TypeId>a17605e4-f120-425f-8a4c-0bfe97977b44</xr:TypeId>
 						<xr:ValueId>70afc5b0-a9bb-4e39-a16e-8d41941e4873</xr:ValueId>
 					</xr:GeneratedType>
 				</InternalInfo>
 				<Properties>
-					<Name>СписокЗначенийЭлементов</Name>
+					<Name>ЗначенияЭлементов</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Список значений элементов</v8:content>
+							<v8:content>Значения элементов</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
