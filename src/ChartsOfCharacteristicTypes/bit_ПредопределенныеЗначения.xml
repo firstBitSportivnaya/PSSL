@@ -42,7 +42,7 @@
 			<Type>
 				<v8:Type>xs:string</v8:Type>
 				<v8:StringQualifiers>
-					<v8:Length>10</v8:Length>
+					<v8:Length>256</v8:Length>
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
 			</Type>
@@ -306,8 +306,8 @@
 			<FullTextSearchOnInputByString>DontUse</FullTextSearchOnInputByString>
 			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 			<DefaultObjectForm>ChartOfCharacteristicTypes.bit_ПредопределенныеЗначения.Form.ФормаЭлемента</DefaultObjectForm>
-			<DefaultFolderForm/>
-			<DefaultListForm/>
+			<DefaultFolderForm>ChartOfCharacteristicTypes.bit_ПредопределенныеЗначения.Form.ФормаГруппы</DefaultFolderForm>
+			<DefaultListForm>ChartOfCharacteristicTypes.bit_ПредопределенныеЗначения.Form.ФормаСписка</DefaultListForm>
 			<DefaultChoiceForm/>
 			<DefaultFolderChoiceForm/>
 			<AuxiliaryObjectForm/>
@@ -369,13 +369,13 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="c0234671-5294-4e1c-8b1c-c3c5a74d5833">
+			<Attribute uuid="41f224de-2412-468a-b724-7f6e5e753ed9">
 				<Properties>
-					<Name>СервернаяПроцедура</Name>
+					<Name>СписокЗначений</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Серверная процедура</v8:content>
+							<v8:content>Список значений</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -409,13 +409,13 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="74bed8f8-3806-4a3b-9c9e-8ef0285a33a1">
+			<Attribute uuid="9a74048b-22d2-46e9-a9a8-35f343a9488f">
 				<Properties>
-					<Name>ВыполняемаяПроцедура</Name>
+					<Name>Комментарий</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Выполняемая процедура</v8:content>
+							<v8:content>Комментарий</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -437,7 +437,7 @@
 					<MinValue xsi:nil="true"/>
 					<MaxValue xsi:nil="true"/>
 					<FillFromFillingValue>false</FillFromFillingValue>
-					<FillValue xsi:type="xs:string"/>
+					<FillValue xsi:nil="true"/>
 					<FillChecking>DontCheck</FillChecking>
 					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
 					<ChoiceParameterLinks/>
@@ -545,6 +545,8 @@
 					</Attribute>
 				</ChildObjects>
 			</TabularSection>
+			<Form>ФормаГруппы</Form>
+			<Form>ФормаСписка</Form>
 			<Form>ФормаЭлемента</Form>
 		</ChildObjects>
 	</ChartOfCharacteristicTypes>
