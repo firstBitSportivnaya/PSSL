@@ -356,12 +356,21 @@
 					<FillValue xsi:nil="true"/>
 					<FillChecking>DontCheck</FillChecking>
 					<ChoiceFoldersAndItems>FoldersAndItems</ChoiceFoldersAndItems>
-					<ChoiceParameterLinks/>
+					<ChoiceParameterLinks>
+						<xr:Link>
+							<xr:Name>ТипЗначения</xr:Name>
+							<xr:DataPath xsi:type="xs:string">ChartOfCharacteristicTypes.bit_ПредопределенныеЗначения.StandardAttribute.ValueType</xr:DataPath>
+							<xr:ValueChange>Clear</xr:ValueChange>
+						</xr:Link>
+					</ChoiceParameterLinks>
 					<ChoiceParameters/>
 					<QuickChoice>Auto</QuickChoice>
 					<CreateOnInput>Auto</CreateOnInput>
 					<ChoiceForm/>
-					<LinkByType/>
+					<LinkByType>
+						<xr:DataPath>ChartOfCharacteristicTypes.bit_ПредопределенныеЗначения.StandardAttribute.ValueType</xr:DataPath>
+						<xr:LinkItem>0</xr:LinkItem>
+					</LinkByType>
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 					<Indexing>DontIndex</Indexing>
 					<Use>ForItem</Use>
@@ -571,12 +580,21 @@
 							<MaxValue xsi:nil="true"/>
 							<FillChecking>DontCheck</FillChecking>
 							<ChoiceFoldersAndItems>FoldersAndItems</ChoiceFoldersAndItems>
-							<ChoiceParameterLinks/>
+							<ChoiceParameterLinks>
+								<xr:Link>
+									<xr:Name>ТипЗначения</xr:Name>
+									<xr:DataPath xsi:type="xs:string">ChartOfCharacteristicTypes.bit_ПредопределенныеЗначения.StandardAttribute.ValueType</xr:DataPath>
+									<xr:ValueChange>Clear</xr:ValueChange>
+								</xr:Link>
+							</ChoiceParameterLinks>
 							<ChoiceParameters/>
 							<QuickChoice>Auto</QuickChoice>
 							<CreateOnInput>Auto</CreateOnInput>
 							<ChoiceForm/>
-							<LinkByType/>
+							<LinkByType>
+								<xr:DataPath>ChartOfCharacteristicTypes.bit_ПредопределенныеЗначения.StandardAttribute.ValueType</xr:DataPath>
+								<xr:LinkItem>0</xr:LinkItem>
+							</LinkByType>
 							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 							<Indexing>DontIndex</Indexing>
 							<FullTextSearch>Use</FullTextSearch>
