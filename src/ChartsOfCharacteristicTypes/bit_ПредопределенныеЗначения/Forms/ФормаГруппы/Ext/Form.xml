@@ -45,6 +45,15 @@
 			<ContextMenu name="РодительКонтекстноеМеню" id="8"/>
 			<ExtendedTooltip name="РодительРасширеннаяПодсказка" id="9"/>
 		</InputField>
+		<InputField name="Комментарий" id="12">
+			<DataPath>Объект.Комментарий</DataPath>
+			<OpenButton>true</OpenButton>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="13"/>
+			<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="14"/>
+			<Events>
+				<Event name="Opening">КомментарийОткрытие</Event>
+			</Events>
+		</InputField>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">

@@ -11,6 +11,7 @@
 	<Events>
 		<Event name="OnOpen">ПриОткрытии</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
 	</Events>
 	<ChildItems>
 		<UsualGroup name="ГруппаНаименованиеКод" id="44">
@@ -29,8 +30,12 @@
 				<InputField name="Наименование" id="4">
 					<DataPath>Объект.Description</DataPath>
 					<EditMode>EnterOnInput</EditMode>
+					<OpenButton>true</OpenButton>
 					<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
 					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+					<Events>
+						<Event name="Opening">НаименованиеОткрытие</Event>
+					</Events>
 				</InputField>
 				<InputField name="Код" id="1">
 					<DataPath>Объект.Code</DataPath>
@@ -67,10 +72,20 @@
 			<ChildItems>
 				<InputField name="ТипЗначения" id="10">
 					<DataPath>Объект.ValueType</DataPath>
+					<ReadOnly>true</ReadOnly>
 					<EditMode>EnterOnInput</EditMode>
 					<ContextMenu name="ТипЗначенияКонтекстноеМеню" id="11"/>
 					<ExtendedTooltip name="ТипЗначенияРасширеннаяПодсказка" id="12"/>
 				</InputField>
+				<CheckBoxField name="Пароль" id="55">
+					<DataPath>Объект.Пароль</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ПарольКонтекстноеМеню" id="56"/>
+					<ExtendedTooltip name="ПарольРасширеннаяПодсказка" id="57"/>
+					<Events>
+						<Event name="OnChange">ПарольПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
 				<CheckBoxField name="СписокЗначений" id="41">
 					<DataPath>Объект.СписокЗначений</DataPath>
 					<CheckBoxType>Auto</CheckBoxType>
@@ -100,10 +115,26 @@
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаЗначениеРасширеннаяПодсказка" id="54"/>
 			<ChildItems>
+				<LabelDecoration name="НадписьНаличиеПароля" id="58">
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пустой пароль</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="НадписьНаличиеПароляКонтекстноеМеню" id="59"/>
+					<ExtendedTooltip name="НадписьНаличиеПароляРасширеннаяПодсказка" id="60"/>
+				</LabelDecoration>
 				<InputField name="Значение" id="13">
 					<DataPath>Объект.Значение</DataPath>
 					<EditMode>EnterOnInput</EditMode>
+					<ChoiceButton>true</ChoiceButton>
 					<OpenButton>true</OpenButton>
+					<TypeLink>
+						<xr:DataPath>Объект.ValueType</xr:DataPath>
+						<xr:LinkItem>0</xr:LinkItem>
+					</TypeLink>
 					<ContextMenu name="ЗначениеКонтекстноеМеню" id="14"/>
 					<ExtendedTooltip name="ЗначениеРасширеннаяПодсказка" id="15"/>
 					<Events>
@@ -186,6 +217,7 @@
 			<ChildItems>
 				<InputField name="Комментарий" id="50">
 					<DataPath>Объект.Комментарий</DataPath>
+					<AutoMaxWidth>false</AutoMaxWidth>
 					<OpenButton>true</OpenButton>
 					<ContextMenu name="КомментарийКонтекстноеМеню" id="51"/>
 					<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="52"/>
