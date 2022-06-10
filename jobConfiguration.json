@@ -24,6 +24,9 @@
     "srcDir": "src",
     "v8version": "8.3.19.1522",
     "edtVersion": "2021.3.4:x86_64",
+    "resultsTransform": {
+        "removeSupport": false
+    },
     "sonarqube": {
         "waitForQualityGate": true
     },
