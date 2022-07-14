@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+	<Subsystem uuid="45514b9c-d060-4142-b144-57278941314e">
+		<Properties>
+			<Name>__ПодпискиНаСобытия</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подписки на события</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>false</IncludeInCommandInterface>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.__ДокументыОбработкаЗаполнения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.__ДокументыОбработкаПроведения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.__ДокументыПередЗаписью</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.__ДокументыПриЗаписи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.__ДокументыПриКопировании</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.__СправочникиОбработкаЗаполнения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.__СправочникиПередЗаписью</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.__СправочникиПриЗаписи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.__СправочникиПриКопировании</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.__ДокументыОбработкаЗаполнения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.__ДокументыОбработкаПроведения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.__ДокументыПередЗаписью</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.__ДокументыПриЗаписи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.__ДокументыПриКопировании</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.__СправочникиОбработкаЗаполнения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.__СправочникиПередЗаписью</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.__СправочникиПриЗаписи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.__СправочникиПриКопировании</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>
