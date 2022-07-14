@@ -1,0 +1,36 @@
+{
+    "$schema": "https://raw.githubusercontent.com/firstBitMarksistskaya/jenkins-lib/feature-telegram/resources/schema.json",
+    "stages": {
+        "initSteps": true,
+        "edtValidate": true,
+        "syntaxCheck": true,
+        "smoke": true,
+        "sonarqube": true
+    },
+    "timeout": {
+        "smoke": 300,
+        "bdd": 180,
+        "createInfoBase": 120,
+        "designerToEdtFormatTransformation": 120,
+        "edtToDesignerFormatTransformation": 120,
+        "edtValidate": 300,
+        "initInfoBase": 120,
+        "resultTransformation": 60,
+        "sonarqube": 150,
+        "syntaxCheck": 300,
+        "zipInfoBase": 120
+    },
+    "sourceFormat": "designer",
+    "srcDir": "src",
+    "v8version": "8.3.19.1522",
+    "edtVersion": "2021.3.4:x86_64",
+    "resultsTransform": {
+        "removeSupport": false
+    },
+    "sonarqube": {
+        "waitForQualityGate": true
+    },
+    "initInfobase": {
+        "initMethod": "fromSource"
+    }
+}

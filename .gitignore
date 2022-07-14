@@ -1,1 +1,7 @@
+*.cf
 src/ConfigDumpInfo.xml
+src/CommonTemplates/**/*.bin
+src/dumplist.txt
+.vscode
+/.metadata/
+/.scannerwork/
