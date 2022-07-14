@@ -236,7 +236,7 @@
 			<CommonModule>__ОбщегоНазначенияКлиент</CommonModule>
 			<CommonModule>__ОбщегоНазначенияПовтИсп</CommonModule>
 			<CommonModule>__ОбщегоНазначенияСервер</CommonModule>
-			<CommonModule>__ПривилегированныйСервер</CommonModule>
+			<CommonModule>__ОбщегоНазначенияПолныеПрава</CommonModule>
 			<CommonModule>__СправочникиОбработкаЗаполнения</CommonModule>
 			<CommonModule>__СправочникиПередЗаписью</CommonModule>
 			<CommonModule>__СправочникиПриЗаписи</CommonModule>
