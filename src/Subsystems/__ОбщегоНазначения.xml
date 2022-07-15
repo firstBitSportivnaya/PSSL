@@ -20,6 +20,15 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.__ОбщегоНазначенияПовтИсп</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.__ОбщегоНазначенияСервер</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.__ОбщегоНазначенияПолныеПрава</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.__ТипСоответствияОбъектовИБ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ПолныеПрава</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.АдминистраторСистемы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.__ЧтениеПланаВидовХарактеристикПредопределенныеЗначения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.__РедактированиеПланаВидовХарактеристикПредопределенныеЗначения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.__ЧтениеРегистраСведенийСоответствияОбъектовИБ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.__РедактированиеРегистраСведенийСоответствияОбъектовИБ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.__СоответствияОбъектовИБ</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

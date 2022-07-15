@@ -227,6 +227,8 @@
 			<Role>ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок</Role>
 			<Role>__ЧтениеПланаВидовХарактеристикПредопределенныеЗначения</Role>
 			<Role>__РедактированиеПланаВидовХарактеристикПредопределенныеЗначения</Role>
+			<Role>__ЧтениеРегистраСведенийСоответствияОбъектовИБ</Role>
+			<Role>__РедактированиеРегистраСведенийСоответствияОбъектовИБ</Role>
 			<CommonModule>__ДокументыОбработкаЗаполнения</CommonModule>
 			<CommonModule>__ДокументыОбработкаПроведения</CommonModule>
 			<CommonModule>__ДокументыПередЗаписью</CommonModule>
@@ -250,6 +252,8 @@
 			<EventSubscription>__СправочникиПередЗаписью</EventSubscription>
 			<EventSubscription>__СправочникиПриЗаписи</EventSubscription>
 			<EventSubscription>__СправочникиПриКопировании</EventSubscription>
+			<Enum>__ТипСоответствияОбъектовИБ</Enum>
+			<InformationRegister>__СоответствияОбъектовИБ</InformationRegister>
 			<ChartOfCharacteristicTypes>__ПредопределенныеЗначения</ChartOfCharacteristicTypes>
 		</ChildObjects>
 	</Configuration>
