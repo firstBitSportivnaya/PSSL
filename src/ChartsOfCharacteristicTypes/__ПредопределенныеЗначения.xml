@@ -40,17 +40,28 @@
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<CharacteristicExtValues/>
 			<Type>
+				<v8:Type>xs:boolean</v8:Type>
 				<v8:Type>xs:string</v8:Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>15</v8:Digits>
+					<v8:FractionDigits>3</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
 				<v8:StringQualifiers>
 					<v8:Length>256</v8:Length>
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
 			</Type>
 			<Hierarchical>true</Hierarchical>
 			<FoldersOnTop>true</FoldersOnTop>
 			<CodeLength>9</CodeLength>
 			<CodeAllowedLength>Variable</CodeAllowedLength>
-			<DescriptionLength>100</DescriptionLength>
+			<DescriptionLength>150</DescriptionLength>
 			<CodeSeries>WholeCharacteristicKind</CodeSeries>
 			<CheckUnique>true</CheckUnique>
 			<Autonumbering>true</Autonumbering>

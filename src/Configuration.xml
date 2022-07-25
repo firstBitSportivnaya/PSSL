@@ -230,6 +230,7 @@
 			<Role>__РедактированиеПланаВидовХарактеристикПредопределенныеЗначения</Role>
 			<Role>__ЧтениеРегистраСведенийСоответствияОбъектовИБ</Role>
 			<Role>__РедактированиеРегистраСведенийСоответствияОбъектовИБ</Role>
+			<Role>__РедактированиеНастроекИнтеграции</Role>
 			<CommonModule>__ДокументыОбработкаЗаполнения</CommonModule>
 			<CommonModule>__ДокументыОбработкаПроведения</CommonModule>
 			<CommonModule>__ДокументыПередЗаписью</CommonModule>
@@ -245,6 +246,7 @@
 			<CommonModule>__СправочникиПриЗаписи</CommonModule>
 			<CommonModule>__СправочникиПриКопировании</CommonModule>
 			<CommonModule>__ИнтеграцииСервер</CommonModule>
+			<CommonModule>__МетодыРегламентныхЗаданийСервер</CommonModule>
 			<EventSubscription>__ДокументыОбработкаЗаполнения</EventSubscription>
 			<EventSubscription>__ДокументыОбработкаПроведения</EventSubscription>
 			<EventSubscription>__ДокументыПередЗаписью</EventSubscription>
@@ -254,6 +256,7 @@
 			<EventSubscription>__СправочникиПередЗаписью</EventSubscription>
 			<EventSubscription>__СправочникиПриЗаписи</EventSubscription>
 			<EventSubscription>__СправочникиПриКопировании</EventSubscription>
+			<ScheduledJob>__ОчисткаИсторииИнтеграции</ScheduledJob>
 			<Catalog>__ИнтегрируемыеСистемы</Catalog>
 			<Catalog>__ИсторияИнтеграции</Catalog>
 			<Catalog>__МетодыИнтеграции</Catalog>

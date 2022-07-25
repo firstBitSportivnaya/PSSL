@@ -22,6 +22,9 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.__НастройкиИнтеграции</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.__ИсторияИнтеграции</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.__МетодыИнтеграции</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.__ИнтеграцииСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.__РедактированиеНастроекИнтеграции</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.__ОчисткаИсторииИнтеграции</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
