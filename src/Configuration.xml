@@ -222,6 +222,7 @@
 			<Subsystem>__ПодпискиНаСобытия</Subsystem>
 			<Subsystem>__МодификацияФорм</Subsystem>
 			<Subsystem>__ОбщегоНазначения</Subsystem>
+			<Subsystem>__УправлениеИнтеграциями</Subsystem>
 			<Role>ПолныеПрава</Role>
 			<Role>АдминистраторСистемы</Role>
 			<Role>ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок</Role>
@@ -229,6 +230,7 @@
 			<Role>__РедактированиеПланаВидовХарактеристикПредопределенныеЗначения</Role>
 			<Role>__ЧтениеРегистраСведенийСоответствияОбъектовИБ</Role>
 			<Role>__РедактированиеРегистраСведенийСоответствияОбъектовИБ</Role>
+			<Role>__РедактированиеНастроекИнтеграции</Role>
 			<CommonModule>__ДокументыОбработкаЗаполнения</CommonModule>
 			<CommonModule>__ДокументыОбработкаПроведения</CommonModule>
 			<CommonModule>__ДокументыПередЗаписью</CommonModule>
@@ -243,6 +245,8 @@
 			<CommonModule>__СправочникиПередЗаписью</CommonModule>
 			<CommonModule>__СправочникиПриЗаписи</CommonModule>
 			<CommonModule>__СправочникиПриКопировании</CommonModule>
+			<CommonModule>__ИнтеграцииСервер</CommonModule>
+			<CommonModule>__МетодыРегламентныхЗаданийСервер</CommonModule>
 			<EventSubscription>__ДокументыОбработкаЗаполнения</EventSubscription>
 			<EventSubscription>__ДокументыОбработкаПроведения</EventSubscription>
 			<EventSubscription>__ДокументыПередЗаписью</EventSubscription>
@@ -252,7 +256,15 @@
 			<EventSubscription>__СправочникиПередЗаписью</EventSubscription>
 			<EventSubscription>__СправочникиПриЗаписи</EventSubscription>
 			<EventSubscription>__СправочникиПриКопировании</EventSubscription>
+			<ScheduledJob>__ОчисткаИсторииИнтеграции</ScheduledJob>
+			<Catalog>__ИнтегрируемыеСистемы</Catalog>
+			<Catalog>__ИсторияИнтеграции</Catalog>
+			<Catalog>__МетодыИнтеграции</Catalog>
+			<Catalog>__НастройкиИнтеграции</Catalog>
 			<Enum>__ТипСоответствияОбъектовИБ</Enum>
+			<Enum>__СтатусыИнтеграции</Enum>
+			<Enum>__СозданОбновлен</Enum>
+			<Enum>__ФорматыЗапросовИнтеграции</Enum>
 			<InformationRegister>__СоответствияОбъектовИБ</InformationRegister>
 			<ChartOfCharacteristicTypes>__ПредопределенныеЗначения</ChartOfCharacteristicTypes>
 		</ChildObjects>
