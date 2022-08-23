@@ -223,6 +223,7 @@
 			<Subsystem>__МодификацияФорм</Subsystem>
 			<Subsystem>__ОбщегоНазначения</Subsystem>
 			<Subsystem>__УправлениеИнтеграциями</Subsystem>
+			<CommonPicture>ПодсистемаУправлениеИнтеграциями</CommonPicture>
 			<Role>ПолныеПрава</Role>
 			<Role>АдминистраторСистемы</Role>
 			<Role>ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок</Role>
@@ -236,17 +237,20 @@
 			<CommonModule>__ДокументыПередЗаписью</CommonModule>
 			<CommonModule>__ДокументыПриЗаписи</CommonModule>
 			<CommonModule>__ДокументыПриКопировании</CommonModule>
+			<CommonModule>__ИнтеграцииСервер</CommonModule>
+			<CommonModule>__МетодыРегламентныхЗаданийСервер</CommonModule>
+			<CommonModule>__МодификацияКонфигурацииКлиентПереопределяемый</CommonModule>
+			<CommonModule>__МодификацияКонфигурацииКлиентСерверПереопределяемый</CommonModule>
 			<CommonModule>__МодификацияКонфигурацииПереопределяемый</CommonModule>
 			<CommonModule>__ОбщегоНазначенияКлиент</CommonModule>
 			<CommonModule>__ОбщегоНазначенияПовтИсп</CommonModule>
-			<CommonModule>__ОбщегоНазначенияСервер</CommonModule>
 			<CommonModule>__ОбщегоНазначенияПолныеПрава</CommonModule>
+			<CommonModule>__ОбщегоНазначенияСервер</CommonModule>
+			<CommonModule>__РаботаСФормами</CommonModule>
 			<CommonModule>__СправочникиОбработкаЗаполнения</CommonModule>
 			<CommonModule>__СправочникиПередЗаписью</CommonModule>
 			<CommonModule>__СправочникиПриЗаписи</CommonModule>
 			<CommonModule>__СправочникиПриКопировании</CommonModule>
-			<CommonModule>__ИнтеграцииСервер</CommonModule>
-			<CommonModule>__МетодыРегламентныхЗаданийСервер</CommonModule>
 			<EventSubscription>__ДокументыОбработкаЗаполнения</EventSubscription>
 			<EventSubscription>__ДокументыОбработкаПроведения</EventSubscription>
 			<EventSubscription>__ДокументыПередЗаписью</EventSubscription>

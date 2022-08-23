@@ -13,7 +13,10 @@
 			<IncludeHelpInContents>true</IncludeHelpInContents>
 			<IncludeInCommandInterface>true</IncludeInCommandInterface>
 			<Explanation/>
-			<Picture/>
+			<Picture>
+				<xr:Ref>CommonPicture.ПодсистемаУправлениеИнтеграциями</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
 			<Content>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.__ИнтегрируемыеСистемы</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.__СтатусыИнтеграции</xr:Item>
@@ -25,6 +28,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.__ИнтеграцииСервер</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Role.__РедактированиеНастроекИнтеграции</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.__ОчисткаИсторииИнтеграции</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ПодсистемаУправлениеИнтеграциями</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
