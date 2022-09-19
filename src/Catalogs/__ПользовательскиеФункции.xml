@@ -533,40 +533,27 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="e0f26e64-3fed-4eb0-b5bd-e97667d28fc5">
+			<Attribute uuid="396a05ae-111d-4bd7-9eba-6c2daf5ece99">
 				<Properties>
-					<Name>Релиз</Name>
+					<Name>КаталогИсходногоКодаКонфигурации</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Версия</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>Version</v8:content>
+							<v8:content>Каталог исходного кода конфигурации</v8:content>
 						</v8:item>
 					</Synonym>
-					<Comment>Версия</Comment>
+					<Comment/>
 					<Type>
 						<v8:Type>xs:string</v8:Type>
 						<v8:StringQualifiers>
-							<v8:Length>20</v8:Length>
+							<v8:Length>0</v8:Length>
 							<v8:AllowedLength>Variable</v8:AllowedLength>
 						</v8:StringQualifiers>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
 					<EditFormat/>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Версия функции</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>Function version</v8:content>
-						</v8:item>
-					</ToolTip>
+					<ToolTip/>
 					<MarkNegatives>false</MarkNegatives>
 					<Mask/>
 					<MultiLine>false</MultiLine>
@@ -997,6 +984,7 @@
 			<Form>ФормаГруппы</Form>
 			<Form>УсловныйОператор</Form>
 			<Template>НастройкиПоУмолчанию</Template>
+			<Template>src</Template>
 		</ChildObjects>
 	</Catalog>
 </MetaDataObject>
