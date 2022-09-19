@@ -224,6 +224,8 @@
 			<Subsystem>__ОбщегоНазначения</Subsystem>
 			<Subsystem>__УправлениеИнтеграциями</Subsystem>
 			<CommonPicture>ПодсистемаУправлениеИнтеграциями</CommonPicture>
+			<CommonPicture>__Реквизит</CommonPicture>
+			<CommonPicture>__Реквизиты</CommonPicture>
 			<Role>ПолныеПрава</Role>
 			<Role>АдминистраторСистемы</Role>
 			<Role>ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок</Role>
@@ -232,6 +234,7 @@
 			<Role>__ЧтениеРегистраСведенийСоответствияОбъектовИБ</Role>
 			<Role>__РедактированиеРегистраСведенийСоответствияОбъектовИБ</Role>
 			<Role>__РедактированиеНастроекИнтеграции</Role>
+			<Role>__РедактированиеПользовательскихФункций</Role>
 			<CommonModule>__ДокументыОбработкаЗаполнения</CommonModule>
 			<CommonModule>__ДокументыОбработкаПроведения</CommonModule>
 			<CommonModule>__ДокументыПередЗаписью</CommonModule>
@@ -242,16 +245,21 @@
 			<CommonModule>__МодификацияКонфигурацииКлиентПереопределяемый</CommonModule>
 			<CommonModule>__МодификацияКонфигурацииКлиентСерверПереопределяемый</CommonModule>
 			<CommonModule>__МодификацияКонфигурацииПереопределяемый</CommonModule>
+			<CommonModule>__МодификацияКонфигурацииПереопределяемыйДокумент</CommonModule>
 			<CommonModule>__ОбщегоНазначенияКлиент</CommonModule>
+			<CommonModule>__ОбщегоНазначенияКлиентСервер</CommonModule>
 			<CommonModule>__ОбщегоНазначенияПовтИсп</CommonModule>
 			<CommonModule>__ОбщегоНазначенияПолныеПрава</CommonModule>
 			<CommonModule>__ОбщегоНазначенияСервер</CommonModule>
+			<CommonModule>__РаботаСДиалогамиКлиент</CommonModule>
+			<CommonModule>__РаботаСДиалогамиСервер</CommonModule>
+			<CommonModule>__РаботаСКоллекциямиКлиентСервер</CommonModule>
 			<CommonModule>__РаботаСФормами</CommonModule>
 			<CommonModule>__СправочникиОбработкаЗаполнения</CommonModule>
 			<CommonModule>__СправочникиПередЗаписью</CommonModule>
 			<CommonModule>__СправочникиПриЗаписи</CommonModule>
 			<CommonModule>__СправочникиПриКопировании</CommonModule>
-			<CommonModule>__МодификацияКонфигурацииПереопределяемыйДокумент</CommonModule>
+			<CommonModule>__СтроковыеФункцииКлиентСервер</CommonModule>
 			<EventSubscription>__ДокументыОбработкаЗаполнения</EventSubscription>
 			<EventSubscription>__ДокументыОбработкаПроведения</EventSubscription>
 			<EventSubscription>__ДокументыПередЗаписью</EventSubscription>
@@ -262,15 +270,18 @@
 			<EventSubscription>__СправочникиПриЗаписи</EventSubscription>
 			<EventSubscription>__СправочникиПриКопировании</EventSubscription>
 			<ScheduledJob>__ОчисткаИсторииИнтеграции</ScheduledJob>
+			<CommonForm>__ФормаВыбораПоля</CommonForm>
 			<Catalog>__ИнтегрируемыеСистемы</Catalog>
 			<Catalog>__ИсторияИнтеграции</Catalog>
 			<Catalog>__МетодыИнтеграции</Catalog>
 			<Catalog>__НастройкиИнтеграции</Catalog>
+			<Catalog>__ПользовательскиеФункции</Catalog>
 			<Document>_ДемоКаркас</Document>
 			<Enum>__ТипСоответствияОбъектовИБ</Enum>
 			<Enum>__СтатусыИнтеграции</Enum>
 			<Enum>__СозданОбновлен</Enum>
 			<Enum>__ФорматыЗапросовИнтеграции</Enum>
+			<Enum>__КонтекстыВыполненияПользовательскихФункций</Enum>
 			<InformationRegister>__СоответствияОбъектовИБ</InformationRegister>
 			<ChartOfCharacteristicTypes>__ПредопределенныеЗначения</ChartOfCharacteristicTypes>
 		</ChildObjects>
