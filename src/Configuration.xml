@@ -235,6 +235,7 @@
 			<Role>__РедактированиеРегистраСведенийСоответствияОбъектовИБ</Role>
 			<Role>__РедактированиеНастроекИнтеграции</Role>
 			<Role>__РедактированиеПользовательскихФункций</Role>
+			<CommonTemplate>BSLEditor</CommonTemplate>
 			<CommonModule>__ДокументыОбработкаЗаполнения</CommonModule>
 			<CommonModule>__ДокументыОбработкаПроведения</CommonModule>
 			<CommonModule>__ДокументыПередЗаписью</CommonModule>

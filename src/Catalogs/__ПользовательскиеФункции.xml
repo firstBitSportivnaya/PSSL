@@ -984,7 +984,6 @@
 			<Form>ФормаГруппы</Form>
 			<Form>УсловныйОператор</Form>
 			<Template>НастройкиПоУмолчанию</Template>
-			<Template>src</Template>
 		</ChildObjects>
 	</Catalog>
 </MetaDataObject>
