@@ -1,4 +1,3 @@
-*.cf
 src/ConfigDumpInfo.xml
 src/dumplist.txt
 .vscode
