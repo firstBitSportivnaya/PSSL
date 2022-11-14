@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.14">
 	<Configuration uuid="68a7cc13-add7-462a-a553-7c6f1b87af8c">
 		<InternalInfo>
 			<xr:ContainedObject>
@@ -41,7 +41,7 @@
 			</Synonym>
 			<Comment/>
 			<NamePrefix/>
-			<ConfigurationExtensionCompatibilityMode>Version8_3_19</ConfigurationExtensionCompatibilityMode>
+			<ConfigurationExtensionCompatibilityMode>Version8_3_21</ConfigurationExtensionCompatibilityMode>
 			<DefaultRunMode>ManagedApplication</DefaultRunMode>
 			<UsePurposes>
 				<v8:Value xsi:type="app:ApplicationUsePurpose">PlatformApplication</v8:Value>
@@ -52,8 +52,8 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.АдминистраторСистемы</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок</xr:Item>
 			</DefaultRoles>
-			<Vendor>ДКП2</Vendor>
-			<Version>0.0.1.1</Version>
+			<Vendor>Отдел разработки ДКП2</Vendor>
+			<Version>1.0.0.0</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>false</UseManagedFormInOrdinaryApplication>
@@ -214,7 +214,7 @@
 			<ModalityUseMode>DontUse</ModalityUseMode>
 			<SynchronousPlatformExtensionAndAddInCallUseMode>DontUse</SynchronousPlatformExtensionAndAddInCallUseMode>
 			<InterfaceCompatibilityMode>Taxi</InterfaceCompatibilityMode>
-			<CompatibilityMode>Version8_3_18</CompatibilityMode>
+			<CompatibilityMode>Version8_3_14</CompatibilityMode>
 			<DefaultConstantsForm/>
 		</Properties>
 		<ChildObjects>
@@ -222,25 +222,45 @@
 			<Subsystem>__ПодпискиНаСобытия</Subsystem>
 			<Subsystem>__МодификацияФорм</Subsystem>
 			<Subsystem>__ОбщегоНазначения</Subsystem>
+			<Subsystem>__УправлениеИнтеграциями</Subsystem>
+			<CommonPicture>ПодсистемаУправлениеИнтеграциями</CommonPicture>
+			<CommonPicture>__Реквизит</CommonPicture>
+			<CommonPicture>__Реквизиты</CommonPicture>
 			<Role>ПолныеПрава</Role>
 			<Role>АдминистраторСистемы</Role>
 			<Role>ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок</Role>
 			<Role>__ЧтениеПланаВидовХарактеристикПредопределенныеЗначения</Role>
 			<Role>__РедактированиеПланаВидовХарактеристикПредопределенныеЗначения</Role>
+			<Role>__ЧтениеРегистраСведенийСоответствияОбъектовИБ</Role>
+			<Role>__РедактированиеРегистраСведенийСоответствияОбъектовИБ</Role>
+			<Role>__РедактированиеНастроекИнтеграции</Role>
+			<Role>__РедактированиеПользовательскихФункций</Role>
+			<CommonTemplate>BSLEditor</CommonTemplate>
 			<CommonModule>__ДокументыОбработкаЗаполнения</CommonModule>
 			<CommonModule>__ДокументыОбработкаПроведения</CommonModule>
 			<CommonModule>__ДокументыПередЗаписью</CommonModule>
 			<CommonModule>__ДокументыПриЗаписи</CommonModule>
 			<CommonModule>__ДокументыПриКопировании</CommonModule>
+			<CommonModule>__ИнтеграцииСервер</CommonModule>
+			<CommonModule>__МетодыРегламентныхЗаданийСервер</CommonModule>
+			<CommonModule>__МодификацияКонфигурацииКлиентПереопределяемый</CommonModule>
+			<CommonModule>__МодификацияКонфигурацииКлиентСерверПереопределяемый</CommonModule>
 			<CommonModule>__МодификацияКонфигурацииПереопределяемый</CommonModule>
+			<CommonModule>__МодификацияКонфигурацииПереопределяемыйДокумент</CommonModule>
 			<CommonModule>__ОбщегоНазначенияКлиент</CommonModule>
+			<CommonModule>__ОбщегоНазначенияКлиентСервер</CommonModule>
 			<CommonModule>__ОбщегоНазначенияПовтИсп</CommonModule>
-			<CommonModule>__ОбщегоНазначенияСервер</CommonModule>
 			<CommonModule>__ОбщегоНазначенияПолныеПрава</CommonModule>
+			<CommonModule>__ОбщегоНазначенияСервер</CommonModule>
+			<CommonModule>__РаботаСДиалогамиКлиент</CommonModule>
+			<CommonModule>__РаботаСДиалогамиСервер</CommonModule>
+			<CommonModule>__РаботаСКоллекциямиКлиентСервер</CommonModule>
+			<CommonModule>__РаботаСФормами</CommonModule>
 			<CommonModule>__СправочникиОбработкаЗаполнения</CommonModule>
 			<CommonModule>__СправочникиПередЗаписью</CommonModule>
 			<CommonModule>__СправочникиПриЗаписи</CommonModule>
 			<CommonModule>__СправочникиПриКопировании</CommonModule>
+			<CommonModule>__СтроковыеФункцииКлиентСервер</CommonModule>
 			<EventSubscription>__ДокументыОбработкаЗаполнения</EventSubscription>
 			<EventSubscription>__ДокументыОбработкаПроведения</EventSubscription>
 			<EventSubscription>__ДокументыПередЗаписью</EventSubscription>
@@ -250,6 +270,20 @@
 			<EventSubscription>__СправочникиПередЗаписью</EventSubscription>
 			<EventSubscription>__СправочникиПриЗаписи</EventSubscription>
 			<EventSubscription>__СправочникиПриКопировании</EventSubscription>
+			<ScheduledJob>__ОчисткаИсторииИнтеграции</ScheduledJob>
+			<CommonForm>__ФормаВыбораПоля</CommonForm>
+			<Catalog>__ИнтегрируемыеСистемы</Catalog>
+			<Catalog>__ИсторияИнтеграции</Catalog>
+			<Catalog>__МетодыИнтеграции</Catalog>
+			<Catalog>__НастройкиИнтеграции</Catalog>
+			<Catalog>__ПользовательскиеФункции</Catalog>
+			<Document>_ДемоКаркас</Document>
+			<Enum>__ТипСоответствияОбъектовИБ</Enum>
+			<Enum>__СтатусыИнтеграции</Enum>
+			<Enum>__СозданОбновлен</Enum>
+			<Enum>__ФорматыЗапросовИнтеграции</Enum>
+			<Enum>__КонтекстыВыполненияПользовательскихФункций</Enum>
+			<InformationRegister>__СоответствияОбъектовИБ</InformationRegister>
 			<ChartOfCharacteristicTypes>__ПредопределенныеЗначения</ChartOfCharacteristicTypes>
 		</ChildObjects>
 	</Configuration>
