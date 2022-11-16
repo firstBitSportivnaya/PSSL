@@ -34,6 +34,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.__СправочникиПередЗаписью</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.__СправочникиПриЗаписи</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.__СправочникиПриКопировании</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.__ОбщегоНазначенияПовтИсп</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

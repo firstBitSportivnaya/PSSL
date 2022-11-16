@@ -53,7 +53,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок</xr:Item>
 			</DefaultRoles>
 			<Vendor>Отдел разработки ДКП2</Vendor>
-			<Version>1.0.0.0</Version>
+			<Version>1.0.0.1</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>false</UseManagedFormInOrdinaryApplication>
@@ -219,23 +219,26 @@
 		</Properties>
 		<ChildObjects>
 			<Language>Русский</Language>
-			<Subsystem>__ПодпискиНаСобытия</Subsystem>
 			<Subsystem>__МодификацияФорм</Subsystem>
 			<Subsystem>__ОбщегоНазначения</Subsystem>
+			<Subsystem>__ПодпискиНаСобытия</Subsystem>
+			<Subsystem>__ПользовательскиеФункции</Subsystem>
+			<Subsystem>__ПредопределенныеЗначения</Subsystem>
+			<Subsystem>__СоответствиеОбъектовИБ</Subsystem>
 			<Subsystem>__УправлениеИнтеграциями</Subsystem>
-			<CommonPicture>ПодсистемаУправлениеИнтеграциями</CommonPicture>
+			<CommonPicture>__ПодсистемаУправлениеИнтеграциями</CommonPicture>
 			<CommonPicture>__Реквизит</CommonPicture>
 			<CommonPicture>__Реквизиты</CommonPicture>
-			<Role>ПолныеПрава</Role>
+			<Role>__РедактированиеНастроекИнтеграции</Role>
+			<Role>__РедактированиеПланаВидовХарактеристикПредопределенныеЗначения</Role>
+			<Role>__РедактированиеПользовательскихФункций</Role>
+			<Role>__РедактированиеРегистраСведенийСоответствияОбъектовИБ</Role>
+			<Role>__ЧтениеПланаВидовХарактеристикПредопределенныеЗначения</Role>
+			<Role>__ЧтениеРегистраСведенийСоответствияОбъектовИБ</Role>
 			<Role>АдминистраторСистемы</Role>
 			<Role>ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок</Role>
-			<Role>__ЧтениеПланаВидовХарактеристикПредопределенныеЗначения</Role>
-			<Role>__РедактированиеПланаВидовХарактеристикПредопределенныеЗначения</Role>
-			<Role>__ЧтениеРегистраСведенийСоответствияОбъектовИБ</Role>
-			<Role>__РедактированиеРегистраСведенийСоответствияОбъектовИБ</Role>
-			<Role>__РедактированиеНастроекИнтеграции</Role>
-			<Role>__РедактированиеПользовательскихФункций</Role>
-			<CommonTemplate>BSLEditor</CommonTemplate>
+			<Role>ПолныеПрава</Role>
+			<CommonTemplate>__BSLEditor</CommonTemplate>
 			<CommonModule>__ДокументыОбработкаЗаполнения</CommonModule>
 			<CommonModule>__ДокументыОбработкаПроведения</CommonModule>
 			<CommonModule>__ДокументыПередЗаписью</CommonModule>
@@ -278,11 +281,11 @@
 			<Catalog>__НастройкиИнтеграции</Catalog>
 			<Catalog>__ПользовательскиеФункции</Catalog>
 			<Document>_ДемоКаркас</Document>
-			<Enum>__ТипСоответствияОбъектовИБ</Enum>
-			<Enum>__СтатусыИнтеграции</Enum>
-			<Enum>__СозданОбновлен</Enum>
-			<Enum>__ФорматыЗапросовИнтеграции</Enum>
 			<Enum>__КонтекстыВыполненияПользовательскихФункций</Enum>
+			<Enum>__СозданОбновлен</Enum>
+			<Enum>__СтатусыИнтеграции</Enum>
+			<Enum>__ТипСоответствияОбъектовИБ</Enum>
+			<Enum>__ФорматыЗапросовИнтеграции</Enum>
 			<InformationRegister>__СоответствияОбъектовИБ</InformationRegister>
 			<ChartOfCharacteristicTypes>__ПредопределенныеЗначения</ChartOfCharacteristicTypes>
 		</ChildObjects>
