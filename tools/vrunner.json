@@ -6,7 +6,7 @@
         "--db-pwd": "",
         "--workspace": ".",
         "--ordinaryapp": "0",
-        "--v8version": "8.3.19.1522"
+        "--v8version": "8.3.21.1644"
     },
     "vanessa": {
         "--vanessasettings": "./tools/VBParams.json",
