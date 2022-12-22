@@ -5,7 +5,8 @@
         "edtValidate": true,
         "syntaxCheck": true,
         "smoke": true,
-        "sonarqube": true
+        "sonarqube": true,
+        "telegram": true
     },
     "timeout": {
         "smoke": 300,
@@ -32,5 +33,10 @@
     },
     "initInfobase": {
         "initMethod": "fromSource"
+    },
+    "notifications": {
+        "telegram": {
+            "onAlways":true 
+        }
     }
 }
