@@ -229,6 +229,7 @@
 			<CommonPicture>__ПодсистемаУправлениеИнтеграциями</CommonPicture>
 			<CommonPicture>__Реквизит</CommonPicture>
 			<CommonPicture>__Реквизиты</CommonPicture>
+			<Role>__РедактированиеДокументаДемоКаркас</Role>
 			<Role>__РедактированиеНастроекИнтеграции</Role>
 			<Role>__РедактированиеПланаВидовХарактеристикПредопределенныеЗначения</Role>
 			<Role>__РедактированиеПользовательскихФункций</Role>
@@ -239,6 +240,7 @@
 			<Role>ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок</Role>
 			<Role>ПолныеПрава</Role>
 			<CommonTemplate>__BSLEditor</CommonTemplate>
+			<CommonModule>__ВспомогательныйМодульНеПереносить</CommonModule>
 			<CommonModule>__ДокументыОбработкаЗаполнения</CommonModule>
 			<CommonModule>__ДокументыОбработкаПроведения</CommonModule>
 			<CommonModule>__ДокументыПередЗаписью</CommonModule>
