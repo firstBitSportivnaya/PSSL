@@ -201,23 +201,7 @@
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>xs:boolean</v8:Type>
-						<v8:Type>xs:string</v8:Type>
-						<v8:Type>xs:dateTime</v8:Type>
-						<v8:Type>xs:decimal</v8:Type>
-						<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
-						<v8:NumberQualifiers>
-							<v8:Digits>15</v8:Digits>
-							<v8:FractionDigits>10</v8:FractionDigits>
-							<v8:AllowedSign>Any</v8:AllowedSign>
-						</v8:NumberQualifiers>
-						<v8:StringQualifiers>
-							<v8:Length>50</v8:Length>
-							<v8:AllowedLength>Variable</v8:AllowedLength>
-						</v8:StringQualifiers>
-						<v8:DateQualifiers>
-							<v8:DateFractions>Date</v8:DateFractions>
-						</v8:DateQualifiers>
+						<v8:TypeSet>cfg:DefinedType.ТипыОбъектовСоответствийИБ</v8:TypeSet>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
@@ -298,7 +282,7 @@
 					</Synonym>
 					<Comment>Объект из сопряженной системы</Comment>
 					<Type>
-						<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
+						<v8:TypeSet>cfg:DefinedType.ТипыОбъектовСоответствийИБ</v8:TypeSet>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
@@ -340,7 +324,7 @@
 					</Synonym>
 					<Comment>Объект из базы УХ</Comment>
 					<Type>
-						<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
+						<v8:TypeSet>cfg:DefinedType.ТипыОбъектовСоответствийИБ</v8:TypeSet>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>

@@ -276,6 +276,7 @@
 			<EventSubscription>__СправочникиПриЗаписи</EventSubscription>
 			<EventSubscription>__СправочникиПриКопировании</EventSubscription>
 			<ScheduledJob>__ОчисткаИсторииИнтеграции</ScheduledJob>
+			<DefinedType>ТипыОбъектовСоответствийИБ</DefinedType>
 			<CommonForm>__ФормаВыбораПоля</CommonForm>
 			<Catalog>__ИнтегрируемыеСистемы</Catalog>
 			<Catalog>__ИсторияИнтеграции</Catalog>
