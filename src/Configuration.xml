@@ -243,6 +243,7 @@
 			<CommonTemplate>__JSONEditor</CommonTemplate>
 			<CommonTemplate>__XMLEditor</CommonTemplate>
 			<CommonModule>__ВспомогательныйМодульНеПереносить</CommonModule>
+			<CommonModule>__ВспомогательныйМодульНеПереноситьКлиент</CommonModule>
 			<CommonModule>__ДокументыОбработкаЗаполнения</CommonModule>
 			<CommonModule>__ДокументыОбработкаПроведения</CommonModule>
 			<CommonModule>__ДокументыПередЗаписью</CommonModule>
