@@ -240,6 +240,8 @@
 			<Role>ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок</Role>
 			<Role>ПолныеПрава</Role>
 			<CommonTemplate>__BSLEditor</CommonTemplate>
+			<CommonTemplate>__JSONEditor</CommonTemplate>
+			<CommonTemplate>__XMLEditor</CommonTemplate>
 			<CommonModule>__ВспомогательныйМодульНеПереносить</CommonModule>
 			<CommonModule>__ДокументыОбработкаЗаполнения</CommonModule>
 			<CommonModule>__ДокументыОбработкаПроведения</CommonModule>
@@ -247,6 +249,7 @@
 			<CommonModule>__ДокументыПриЗаписи</CommonModule>
 			<CommonModule>__ДокументыПриКопировании</CommonModule>
 			<CommonModule>__ИнтеграцииСервер</CommonModule>
+			<CommonModule>__КоннекторHTTP</CommonModule>
 			<CommonModule>__МетодыРегламентныхЗаданийСервер</CommonModule>
 			<CommonModule>__МодификацияКонфигурацииКлиентПереопределяемый</CommonModule>
 			<CommonModule>__МодификацияКонфигурацииКлиентСерверПереопределяемый</CommonModule>

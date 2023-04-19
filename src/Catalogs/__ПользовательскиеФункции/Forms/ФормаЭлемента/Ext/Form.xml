@@ -1103,7 +1103,7 @@
 	<CommandInterface>
 		<CommandBar>
 			<Item>
-				<Command>0:b5477fc9-9786-454e-a627-0f3a7c40e4e2</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>
