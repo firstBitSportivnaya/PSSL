@@ -554,6 +554,7 @@
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
 			<Action>КопироватьВБуферОбмена</Action>
+			<Representation>TextPicture</Representation>
 		</Command>
 	</Commands>
 </Form>
