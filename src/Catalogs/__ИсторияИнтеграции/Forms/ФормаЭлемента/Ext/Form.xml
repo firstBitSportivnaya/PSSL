@@ -7,6 +7,7 @@
 	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
@@ -149,6 +150,91 @@
 					<ContextMenu name="ДлительностьОбменаКонтекстноеМеню" id="125"/>
 					<ExtendedTooltip name="ДлительностьОбменаРасширеннаяПодсказка" id="126"/>
 				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаФорматированиеТекстаЗапроса" id="138">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа форматирование текста запроса</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа форматирование текста запроса</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаФорматированиеТекстаЗапросаРасширеннаяПодсказка" id="139"/>
+			<ChildItems>
+				<CheckBoxField name="ВидОтображенияЗапроса" id="135">
+					<DataPath>ВидОтображенияЗапроса</DataPath>
+					<CheckBoxType>Tumbler</CheckBoxType>
+					<EditFormat>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>БЛ=Код; БИ=Дерево</v8:content>
+						</v8:item>
+					</EditFormat>
+					<ContextMenu name="ВидОтображенияЗапросаКонтекстноеМеню" id="136"/>
+					<ExtendedTooltip name="ВидОтображенияЗапросаРасширеннаяПодсказка" id="137"/>
+					<Events>
+						<Event name="OnChange">ВидОтображенияЗапросаПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<CommandBar name="ГруппаФорматированиеТекстаЗапросаКомандыПанель" id="148">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа форматирование текста запроса команды панель</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа форматирование текста запроса команды панель</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаФорматированиеТекстаЗапросаКомандыПанельРасширеннаяПодсказка" id="149"/>
+					<ChildItems>
+						<ButtonGroup name="ГруппаФорматированиеТекстаЗапросаКомандыПанельКнопок" id="150">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа форматирование текста запроса команды панель кнопок</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа форматирование текста запроса команды панель кнопок</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>Compact</Representation>
+							<ExtendedTooltip name="ГруппаФорматированиеТекстаЗапросаКомандыПанельКнопокРасширеннаяПодсказка" id="151"/>
+							<ChildItems>
+								<Button name="РазвернутьВсе" id="152">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.РазвернутьВсе</CommandName>
+									<ExtendedTooltip name="РазвернутьВсеРасширеннаяПодсказка" id="153"/>
+								</Button>
+								<Button name="СвернутьВсе" id="154">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.СвернутьВсе</CommandName>
+									<ExtendedTooltip name="СвернутьВсеРасширеннаяПодсказка" id="155"/>
+								</Button>
+							</ChildItems>
+						</ButtonGroup>
+						<Button name="КопироватьВБуферОбмена" id="156">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Command.КопироватьВБуферОбмена</CommandName>
+							<ExtendedTooltip name="КопироватьВБуферОбменаРасширеннаяПодсказка" id="157"/>
+						</Button>
+					</ChildItems>
+				</CommandBar>
 			</ChildItems>
 		</UsualGroup>
 		<Pages name="ГруппаСтраницы" id="60">
@@ -409,5 +495,66 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
+		<Attribute name="ВидОтображенияЗапроса" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид отображения запроса</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
 	</Attributes>
+	<Commands>
+		<Command name="РазвернутьВсе" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Развернуть все</v8:content>
+				</v8:item>
+			</Title>
+			<Picture>
+				<xr:Ref>StdPicture.ExpandAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>РазвернутьВсе</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="СвернутьВсе" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Свернуть все</v8:content>
+				</v8:item>
+			</Title>
+			<Picture>
+				<xr:Ref>StdPicture.CollapseAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СвернутьВсе</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="КопироватьВБуферОбмена" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Копировать в буфер обмена</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Копировать в буфер обмена</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.CloneListItem</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КопироватьВБуферОбмена</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+	</Commands>
 </Form>

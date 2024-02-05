@@ -23,8 +23,6 @@
     },
     "sourceFormat": "designer",
     "srcDir": "src",
-    "v8version": "8.3.21.1644",
-    "edtVersion": "2022.2.1:x86_64",
     "resultsTransform": {
         "removeSupport": false
     },
