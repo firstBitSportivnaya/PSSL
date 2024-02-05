@@ -23,7 +23,6 @@
     },
     "sourceFormat": "designer",
     "srcDir": "src",
-    "v8version": "8.3.21.1644",
     "resultsTransform": {
         "removeSupport": false
     },
