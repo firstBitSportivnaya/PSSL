@@ -2,7 +2,6 @@
     "$schema": "https://raw.githubusercontent.com/firstBitMarksistskaya/jenkins-lib/feature-telegram/resources/schema.json",
     "stages": {
         "initSteps": true,
-        "edtValidate": true,
         "syntaxCheck": true,
         "smoke": true,
         "sonarqube": true,
