@@ -20,7 +20,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.__МодификацияКонфигурацииКлиентСерверПереопределяемый</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.__МодификацияКонфигурацииКлиентПереопределяемый</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.__РаботаСФормами</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Document._ДемоКаркас</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document._ДемоРаботаСФормами</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.__МодификацияКонфигурацииПереопределяемыйДокумент</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Role.__РедактированиеДокументаДемоКаркас</xr:Item>
 			</Content>

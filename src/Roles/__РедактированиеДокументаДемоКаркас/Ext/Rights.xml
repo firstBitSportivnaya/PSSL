@@ -4,7 +4,7 @@
 	<setForAttributesByDefault>true</setForAttributesByDefault>
 	<independentRightsOfChildObjects>false</independentRightsOfChildObjects>
 	<object>
-		<name>Document._ДемоКаркас</name>
+		<name>Document._ДемоРаботаСФормами</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>
