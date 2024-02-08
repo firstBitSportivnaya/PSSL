@@ -5,8 +5,7 @@
         "--db-user": "",
         "--db-pwd": "",
         "--workspace": ".",
-        "--ordinaryapp": "0",
-        "--v8version": "8.3.21.1644"
+        "--ordinaryapp": "0"
     },
     "vanessa": {
         "--vanessasettings": "./tools/VBParams.json",
