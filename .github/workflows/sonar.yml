@@ -2,6 +2,7 @@ name: QA
 
 on:
   push:
+  pull_request:
   workflow_dispatch:
 
 jobs:
@@ -29,4 +30,16 @@ jobs:
       run: sonar-scanner
         -Dsonar.host.url=https://sonar.openbsl.ru
         -Dsonar.branch.name=${{ env.BRANCH_NAME }}
+    # Анализ проекта в SonarQube (пулл-реквест)
+    - name: Анализ в SonarQube (pull-request)
+      if: github.event_name == 'pull_request'
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+      run: sonar-scanner
+        -Dsonar.host.url=https://sonar.openbsl.ru
+        -Dsonar.pullrequest.key=${{ github.event.pull_request.number }}
+        -Dsonar.pullrequest.branch=${{ github.event.pull_request.head.ref }}
+        -Dsonar.pullrequest.base=${{ github.event.pull_request.base.ref }}
+        -Dsonar.scm.revision=${{ github.event.pull_request.head.sha }}
    
