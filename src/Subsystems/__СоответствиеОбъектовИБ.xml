@@ -8,6 +8,10 @@
 					<v8:lang>ru</v8:lang>
 					<v8:content>Соответствие объектов ИБ</v8:content>
 				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Compliance of IB objects</v8:content>
+				</v8:item>
 			</Synonym>
 			<Comment/>
 			<IncludeHelpInContents>true</IncludeHelpInContents>
@@ -21,7 +25,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.__СоответствияОбъектовИБ</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Role.__РедактированиеРегистраСведенийСоответствияОбъектовИБ</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Role.__ЧтениеРегистраСведенийСоответствияОбъектовИБ</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Enum.__ТипСоответствияОбъектовИБ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">b2bf887d-1ed3-4907-a6a1-0719ede9b109</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DefinedType.ТипыОбъектовСоответствийИБ</xr:Item>
 			</Content>
 		</Properties>

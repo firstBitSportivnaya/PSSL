@@ -20,6 +20,12 @@
 		</UsualGroup>
 		<InputField name="ТипСоответствия" id="25">
 			<DataPath>ТипСоответствия</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Type of match</v8:content>
+				</v8:item>
+			</Title>
 			<DropListButton>true</DropListButton>
 			<ContextMenu name="ТипСоответствияКонтекстноеМеню" id="26"/>
 			<ExtendedTooltip name="ТипСоответствияРасширеннаяПодсказка" id="27"/>
@@ -153,7 +159,7 @@
 				</v8:item>
 			</Title>
 			<Type>
-				<v8:Type>cfg:EnumRef.__ТипСоответствияОбъектовИБ</v8:Type>
+				<v8:TypeId>a298e578-de2f-413e-90ac-502d77419b9b</v8:TypeId>
 			</Type>
 		</Attribute>
 	</Attributes>

@@ -30,6 +30,10 @@
 					<v8:lang>ru</v8:lang>
 					<v8:content>Демо работа с формами</v8:content>
 				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Demo work with forms</v8:content>
+				</v8:item>
 			</Synonym>
 			<Comment>Документ носит ознакомительный характер по работе с подсистемой "__РаботаСФормами", не переносить.</Comment>
 			<UseStandardCommands>true</UseStandardCommands>

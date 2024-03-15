@@ -22,6 +22,10 @@
 					<v8:lang>ru</v8:lang>
 					<v8:content>Статусы интеграции</v8:content>
 				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Integration statuses</v8:content>
+				</v8:item>
 			</Synonym>
 			<Comment/>
 			<UseStandardCommands>false</UseStandardCommands>
@@ -100,6 +104,10 @@
 							<v8:lang>ru</v8:lang>
 							<v8:content>Выгружено</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Uploaded</v8:content>
+						</v8:item>
 					</Synonym>
 					<Comment/>
 				</Properties>
@@ -111,6 +119,10 @@
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Загружено</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Uploaded</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -124,6 +136,10 @@
 							<v8:lang>ru</v8:lang>
 							<v8:content>Ошибка выгрузки</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Upload error</v8:content>
+						</v8:item>
 					</Synonym>
 					<Comment/>
 				</Properties>
@@ -135,6 +151,10 @@
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Ошибка загрузки</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Download error</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>

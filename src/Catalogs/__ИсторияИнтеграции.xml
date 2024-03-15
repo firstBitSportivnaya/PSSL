@@ -30,6 +30,10 @@
 					<v8:lang>ru</v8:lang>
 					<v8:content>История интеграции</v8:content>
 				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Integration history</v8:content>
+				</v8:item>
 			</Synonym>
 			<Comment/>
 			<Hierarchical>false</Hierarchical>
@@ -355,6 +359,10 @@
 							<v8:lang>ru</v8:lang>
 							<v8:content>Дата интеграции</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Date of integration</v8:content>
+						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
@@ -397,6 +405,10 @@
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Дата интеграции (м/с)</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Date of integration (m/s)</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -443,6 +455,10 @@
 							<v8:lang>ru</v8:lang>
 							<v8:content>Интегрируемая система</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>An integrated system</v8:content>
+						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
@@ -482,6 +498,10 @@
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Статус</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Status</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -523,6 +543,10 @@
 							<v8:lang>ru</v8:lang>
 							<v8:content>Формат запроса интеграции</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Integration request format</v8:content>
+						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
@@ -562,6 +586,10 @@
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Запрос исходящий</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>The request is outgoing</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -607,6 +635,10 @@
 							<v8:lang>ru</v8:lang>
 							<v8:content>Запрос входящий</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Incoming request</v8:content>
+						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
@@ -650,6 +682,10 @@
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Описание ошибки</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Error description</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -695,6 +731,10 @@
 							<v8:lang>ru</v8:lang>
 							<v8:content>Протокол обмена</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Exchange protocol</v8:content>
+						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
@@ -739,6 +779,10 @@
 							<v8:lang>ru</v8:lang>
 							<v8:content>Метод интеграции</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Integration method</v8:content>
+						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
@@ -778,6 +822,10 @@
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Ошибка</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Mistake</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -819,6 +867,10 @@
 							<v8:lang>ru</v8:lang>
 							<v8:content>Пользователь</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>User</v8:content>
+						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
@@ -858,6 +910,10 @@
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Длительность обмена (сек)</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Duration of the exchange (sec)</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -903,6 +959,10 @@
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Длительность вызова (сек)</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Duration of the call (sec)</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -959,6 +1019,10 @@
 							<v8:lang>ru</v8:lang>
 							<v8:content>Объекты интеграции</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Integration objects</v8:content>
+						</v8:item>
 					</Synonym>
 					<Comment/>
 					<ToolTip/>
@@ -1002,6 +1066,10 @@
 									<v8:lang>ru</v8:lang>
 									<v8:content>Объект интеграции</v8:content>
 								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Integration object</v8:content>
+								</v8:item>
 							</Synonym>
 							<Comment/>
 							<Type>
@@ -1038,6 +1106,10 @@
 								<v8:item>
 									<v8:lang>ru</v8:lang>
 									<v8:content>Создан/обновлен</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Created/updated</v8:content>
 								</v8:item>
 							</Synonym>
 							<Comment/>

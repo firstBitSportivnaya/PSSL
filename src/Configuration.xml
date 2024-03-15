@@ -38,6 +38,10 @@
 					<v8:lang>ru</v8:lang>
 					<v8:content>Каркасная конфигурация</v8:content>
 				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Frame configuration</v8:content>
+				</v8:item>
 			</Synonym>
 			<Comment/>
 			<NamePrefix/>
@@ -233,6 +237,7 @@
 		</Properties>
 		<ChildObjects>
 			<Language>Русский</Language>
+			<Language>English</Language>
 			<Subsystem>__МодификацияФорм</Subsystem>
 			<Subsystem>__ОбщегоНазначения</Subsystem>
 			<Subsystem>__ПодпискиНаСобытия</Subsystem>
@@ -256,8 +261,15 @@
 			<CommonTemplate>__BSLEditor</CommonTemplate>
 			<CommonTemplate>__JSONEditor</CommonTemplate>
 			<CommonTemplate>__XMLEditor</CommonTemplate>
+			<CommonModule>__БазоваяФункциональностьБИТ</CommonModule>
+			<CommonModule>__БазоваяФункциональностьБИТВызовСервера</CommonModule>
+			<CommonModule>__БазоваяФункциональностьБИТКлиент</CommonModule>
+			<CommonModule>__БазоваяФункциональностьБИТКлиентСервер</CommonModule>
+			<CommonModule>__БазоваяФункциональностьБИТПовтИсп</CommonModule>
 			<CommonModule>__ВспомогательныйМодульНеПереносить</CommonModule>
 			<CommonModule>__ВспомогательныйМодульНеПереноситьКлиент</CommonModule>
+			<CommonModule>__ВспомогательныйМодульНеПереноситьПереопределяемый</CommonModule>
+			<CommonModule>__ВспомогательныйМодульНеПереноситьПовтИсп</CommonModule>
 			<CommonModule>__ДокументыОбработкаЗаполнения</CommonModule>
 			<CommonModule>__ДокументыОбработкаПроведения</CommonModule>
 			<CommonModule>__ДокументыПередЗаписью</CommonModule>
@@ -275,6 +287,8 @@
 			<CommonModule>__ОбщегоНазначенияПовтИсп</CommonModule>
 			<CommonModule>__ОбщегоНазначенияПолныеПрава</CommonModule>
 			<CommonModule>__ОбщегоНазначенияСервер</CommonModule>
+			<CommonModule>__ПредопределенныеЗначения</CommonModule>
+			<CommonModule>__ПредопределенныеЗначенияПереопределяемый</CommonModule>
 			<CommonModule>__РаботаСДиалогамиКлиент</CommonModule>
 			<CommonModule>__РаботаСДиалогамиСервер</CommonModule>
 			<CommonModule>__РаботаСКоллекциямиКлиентСервер</CommonModule>
@@ -301,13 +315,14 @@
 			<Catalog>__МетодыИнтеграции</Catalog>
 			<Catalog>__НастройкиИнтеграции</Catalog>
 			<Catalog>__ПользовательскиеФункции</Catalog>
+			<Catalog>__ТипСоответствияОбъектовИБ</Catalog>
 			<Document>ДемоРаботаСФормами</Document>
 			<Enum>__КонтекстыВыполненияПользовательскихФункций</Enum>
 			<Enum>__СозданОбновлен</Enum>
 			<Enum>__СтатусыИнтеграции</Enum>
-			<Enum>__ТипСоответствияОбъектовИБ</Enum>
 			<Enum>__ФорматыЗапросовИнтеграции</Enum>
 			<InformationRegister>__СоответствияОбъектовИБ</InformationRegister>
+			<InformationRegister>__БезопасноеХранилищеДанных</InformationRegister>
 			<ChartOfCharacteristicTypes>__ПредопределенныеЗначения</ChartOfCharacteristicTypes>
 		</ChildObjects>
 	</Configuration>
