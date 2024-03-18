@@ -231,6 +231,16 @@
 						<Button name="КопироватьВБуферОбмена" id="156">
 							<Type>CommandBarButton</Type>
 							<CommandName>Form.Command.КопироватьВБуферОбмена</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Копировать в буфер обмена</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Copy to Clipboard</v8:content>
+								</v8:item>
+							</Title>
 							<ExtendedTooltip name="КопироватьВБуферОбменаРасширеннаяПодсказка" id="157"/>
 						</Button>
 					</ChildItems>
@@ -261,6 +271,10 @@
 							<v8:lang>ru</v8:lang>
 							<v8:content>Запрос исходящий</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>The request is outgoing</v8:content>
+						</v8:item>
 					</Title>
 					<ToolTip>
 						<v8:item>
@@ -285,6 +299,10 @@
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Запрос входящий</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Incoming request</v8:content>
 						</v8:item>
 					</Title>
 					<ToolTip>
@@ -311,6 +329,10 @@
 							<v8:lang>ru</v8:lang>
 							<v8:content>Текст ошибки</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Error text</v8:content>
+						</v8:item>
 					</Title>
 					<ToolTip>
 						<v8:item>
@@ -335,6 +357,10 @@
 							<v8:lang>ru</v8:lang>
 							<v8:content>Протокол обмена</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Exchange protocol</v8:content>
+						</v8:item>
 					</Title>
 					<ToolTip>
 						<v8:item>
@@ -357,6 +383,10 @@
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Объекты обмена</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Objects of exchange</v8:content>
 						</v8:item>
 					</Title>
 					<ToolTip>

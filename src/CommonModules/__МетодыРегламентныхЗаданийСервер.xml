@@ -8,6 +8,10 @@
 					<v8:lang>ru</v8:lang>
 					<v8:content>Методы регламентных заданий (сервер)</v8:content>
 				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Methods of routine tasks (server)</v8:content>
+				</v8:item>
 			</Synonym>
 			<Comment/>
 			<Global>false</Global>

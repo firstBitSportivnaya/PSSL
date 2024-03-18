@@ -20,6 +20,12 @@
 		</UsualGroup>
 		<InputField name="ТипСоответствия" id="25">
 			<DataPath>ТипСоответствия</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Type of match</v8:content>
+				</v8:item>
+			</Title>
 			<DropListButton>true</DropListButton>
 			<ContextMenu name="ТипСоответствияКонтекстноеМеню" id="26"/>
 			<ExtendedTooltip name="ТипСоответствияРасширеннаяПодсказка" id="27"/>
