@@ -1,29 +1,30 @@
-name: QA
+name: Контроль качества
 
 on:
   push:
   pull_request:
   workflow_dispatch:
+  workflow_call:
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
+    - name: Актуализация
+      uses: actions/checkout@v4
       with:
-        # Disabling shallow clone is recommended for improving relevancy of reporting
         fetch-depth: 0
         
-    - name: Compute branch name
+    - name: Вычисление имени ветки
       uses: nelonoel/branch-name@v1.0.1
 
-    - name: Setup sonarqube
+    - name: Настройка sonar-scanner
       uses: warchant/setup-sonar-scanner@v8
 
       # Анализ проекта в SonarQube (ветка)
     - name: Анализ в SonarQube (branch)
-      if: github.event_name == 'push'
+      if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
