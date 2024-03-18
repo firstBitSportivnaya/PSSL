@@ -30,6 +30,10 @@
 					<v8:lang>ru</v8:lang>
 					<v8:content>Настройки интеграции</v8:content>
 				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Integration Settings</v8:content>
+				</v8:item>
 			</Synonym>
 			<Comment/>
 			<Hierarchical>false</Hierarchical>
@@ -341,6 +345,10 @@
 							<v8:lang>ru</v8:lang>
 							<v8:content>Порт</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Port</v8:content>
+						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
@@ -385,6 +393,10 @@
 							<v8:lang>ru</v8:lang>
 							<v8:content>Сервер</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>The server</v8:content>
+						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
@@ -428,6 +440,10 @@
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Интегрируемая система</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>An integrated system</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>

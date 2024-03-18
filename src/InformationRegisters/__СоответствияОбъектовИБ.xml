@@ -38,6 +38,10 @@
 					<v8:lang>ru</v8:lang>
 					<v8:content>Соответствия объектов ИБ</v8:content>
 				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Compliance of IB objects</v8:content>
+				</v8:item>
 			</Synonym>
 			<Comment/>
 			<UseStandardCommands>true</UseStandardCommands>
@@ -196,7 +200,11 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Объект3</v8:content>
+							<v8:content>Объект 3</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Object 3</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -237,10 +245,14 @@
 							<v8:lang>ru</v8:lang>
 							<v8:content>Тип соответствия</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Type of match</v8:content>
+						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>cfg:EnumRef.__ТипСоответствияОбъектовИБ</v8:Type>
+						<v8:Type>cfg:CatalogRef.__ТипСоответствияОбъектовИБ</v8:Type>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
@@ -278,6 +290,10 @@
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Объект 1</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Object 1</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment>Объект из сопряженной системы</Comment>
@@ -320,6 +336,10 @@
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Объект 2</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Object 2</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment>Объект из базы УХ</Comment>

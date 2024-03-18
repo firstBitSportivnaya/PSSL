@@ -8,7 +8,15 @@
 		<ExcludedCommand>MoveItem</ExcludedCommand>
 		<ExcludedCommand>SetDeletionMark</ExcludedCommand>
 	</CommandSet>
-	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаЗаполнитьПредопределенные" id="31">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ЗаполнитьПредопределенные</CommandName>
+				<ExtendedTooltip name="ФормаЗаполнитьПредопределенныеРасширеннаяПодсказка" id="32"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
 	<ChildItems>
 		<UsualGroup name="СписокКомпоновщикНастроекПользовательскиеНастройки" id="1">
 			<Title>
@@ -104,6 +112,11 @@
 					<ContextMenu name="КомментарийКонтекстноеМеню" id="23"/>
 					<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="24"/>
 				</InputField>
+				<LabelField name="ИдентификаторНастройки" id="33">
+					<DataPath>Список.ИдентификаторНастройки</DataPath>
+					<ContextMenu name="ИдентификаторНастройкиКонтекстноеМеню" id="34"/>
+					<ExtendedTooltip name="ИдентификаторНастройкиРасширеннаяПодсказка" id="35"/>
+				</LabelField>
 			</ChildItems>
 		</Table>
 	</ChildItems>
@@ -140,7 +153,8 @@
 		Значение КАК Значение
 	) КАК ЗначенияЭлементов,
 	ПредопределенныеЗначения.Предопределенный КАК Предопределенный,
-	ПредопределенныеЗначения.ИмяПредопределенныхДанных КАК ИмяПредопределенныхДанных
+	ПредопределенныеЗначения.ИмяПредопределенныхДанных КАК ИмяПредопределенныхДанных,
+	ПредопределенныеЗначения.ИдентификаторНастройки КАК ИдентификаторНастройки
 ИЗ
 	ПланВидовХарактеристик.__ПредопределенныеЗначения КАК ПредопределенныеЗначения</QueryText>
 				<MainTable>ChartOfCharacteristicTypes.__ПредопределенныеЗначения</MainTable>
@@ -163,4 +177,25 @@
 			</Settings>
 		</Attribute>
 	</Attributes>
+	<Commands>
+		<Command name="ЗаполнитьПредопределенные" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить предопределенные</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Fill in the predefined</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить предопределенные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьПредопределенные</Action>
+		</Command>
+	</Commands>
 </Form>

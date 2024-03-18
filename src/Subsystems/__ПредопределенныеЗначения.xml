@@ -8,6 +8,10 @@
 					<v8:lang>ru</v8:lang>
 					<v8:content>Предопределенные значения</v8:content>
 				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Predefined values</v8:content>
+				</v8:item>
 			</Synonym>
 			<Comment/>
 			<IncludeHelpInContents>true</IncludeHelpInContents>
@@ -21,6 +25,9 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.__ОбщегоНазначенияСервер</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Role.__ЧтениеПланаВидовХарактеристикПредопределенныеЗначения</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Role.__РедактированиеПланаВидовХарактеристикПредопределенныеЗначения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.__ПредопределенныеЗначения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.__ПредопределенныеЗначенияПереопределяемый</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.__ТипСоответствияОбъектовИБПереопределяемый</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

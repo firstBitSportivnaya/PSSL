@@ -8,6 +8,10 @@
 					<v8:lang>ru</v8:lang>
 					<v8:content>Модификация конфигурации переопределяемый документ</v8:content>
 				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Configuration modification redefined document</v8:content>
+				</v8:item>
 			</Synonym>
 			<Comment/>
 			<Global>false</Global>
