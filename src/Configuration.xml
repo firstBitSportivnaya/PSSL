@@ -298,6 +298,7 @@
 			<CommonModule>__СправочникиПриЗаписи</CommonModule>
 			<CommonModule>__СправочникиПриКопировании</CommonModule>
 			<CommonModule>__СтроковыеФункцииКлиентСервер</CommonModule>
+			<CommonModule>__ТипСоответствияОбъектовИБПереопределяемый</CommonModule>
 			<EventSubscription>__ДокументыОбработкаЗаполнения</EventSubscription>
 			<EventSubscription>__ДокументыОбработкаПроведения</EventSubscription>
 			<EventSubscription>__ДокументыПередЗаписью</EventSubscription>

@@ -25,8 +25,9 @@
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.__СоответствияОбъектовИБ</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Role.__РедактированиеРегистраСведенийСоответствияОбъектовИБ</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Role.__ЧтениеРегистраСведенийСоответствияОбъектовИБ</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">b2bf887d-1ed3-4907-a6a1-0719ede9b109</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DefinedType.ТипыОбъектовСоответствийИБ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.__ТипСоответствияОбъектовИБПереопределяемый</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.__ТипСоответствияОбъектовИБ</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

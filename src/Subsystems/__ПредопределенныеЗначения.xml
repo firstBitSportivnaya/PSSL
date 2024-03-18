@@ -25,6 +25,9 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.__ОбщегоНазначенияСервер</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Role.__ЧтениеПланаВидовХарактеристикПредопределенныеЗначения</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Role.__РедактированиеПланаВидовХарактеристикПредопределенныеЗначения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.__ПредопределенныеЗначения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.__ПредопределенныеЗначенияПереопределяемый</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.__ТипСоответствияОбъектовИБПереопределяемый</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
