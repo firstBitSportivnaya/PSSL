@@ -258,6 +258,8 @@
 			<CommonTemplate>__XMLEditor</CommonTemplate>
 			<CommonModule>__ВспомогательныйМодульНеПереносить</CommonModule>
 			<CommonModule>__ВспомогательныйМодульНеПереноситьКлиент</CommonModule>
+			<CommonModule>__ВспомогательныйМодульНеПереноситьПереопределяемый</CommonModule>
+			<CommonModule>__ВспомогательныйМодульНеПереноситьПотвИсп</CommonModule>
 			<CommonModule>__ДокументыОбработкаЗаполнения</CommonModule>
 			<CommonModule>__ДокументыОбработкаПроведения</CommonModule>
 			<CommonModule>__ДокументыПередЗаписью</CommonModule>
