@@ -82,7 +82,7 @@
 		</right>
 	</object>
 	<object>
-		<name>Configuration.КаркаснаяКонфигурация</name>
+		<name>Configuration.ПроектнаяБиблиотекаПодсистем</name>
 		<right>
 			<name>MainWindowModeNormal</name>
 			<value>true</value>
