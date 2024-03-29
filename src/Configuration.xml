@@ -32,15 +32,15 @@
 			</xr:ContainedObject>
 		</InternalInfo>
 		<Properties>
-			<Name>КаркаснаяКонфигурация</Name>
+			<Name>ПроектнаяБиблиотекаПодсистем</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Каркасная конфигурация</v8:content>
+					<v8:content>Проектная библиотека подсистем</v8:content>
 				</v8:item>
 				<v8:item>
 					<v8:lang>en</v8:lang>
-					<v8:content>Frame configuration</v8:content>
+					<v8:content>Project SubSystems Library</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
@@ -261,14 +261,8 @@
 			<CommonTemplate>__BSLEditor</CommonTemplate>
 			<CommonTemplate>__JSONEditor</CommonTemplate>
 			<CommonTemplate>__XMLEditor</CommonTemplate>
-			<CommonModule>__БазоваяФункциональностьБИТ</CommonModule>
-			<CommonModule>__БазоваяФункциональностьБИТВызовСервера</CommonModule>
-			<CommonModule>__БазоваяФункциональностьБИТКлиент</CommonModule>
-			<CommonModule>__БазоваяФункциональностьБИТПовтИсп</CommonModule>
 			<CommonModule>__ВспомогательныйМодульНеПереносить</CommonModule>
 			<CommonModule>__ВспомогательныйМодульНеПереноситьКлиент</CommonModule>
-			<CommonModule>__ВспомогательныйМодульНеПереноситьПереопределяемый</CommonModule>
-			<CommonModule>__ВспомогательныйМодульНеПереноситьПовтИсп</CommonModule>
 			<CommonModule>__ДокументыОбработкаЗаполнения</CommonModule>
 			<CommonModule>__ДокументыОбработкаПроведения</CommonModule>
 			<CommonModule>__ДокументыПередЗаписью</CommonModule>
