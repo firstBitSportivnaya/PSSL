@@ -159,7 +159,7 @@
 				</v8:item>
 			</Title>
 			<Type>
-				<v8:TypeId>a298e578-de2f-413e-90ac-502d77419b9b</v8:TypeId>
+				<v8:Type>cfg:CatalogRef.__ТипСоответствияОбъектовИБ</v8:Type>
 			</Type>
 		</Attribute>
 	</Attributes>
