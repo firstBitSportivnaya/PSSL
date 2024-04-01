@@ -32,11 +32,15 @@
 			</xr:ContainedObject>
 		</InternalInfo>
 		<Properties>
-			<Name>КаркаснаяКонфигурация</Name>
+			<Name>ПроектнаяБиблиотекаПодсистем</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Каркасная конфигурация</v8:content>
+					<v8:content>Проектная библиотека подсистем</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Project SubSystems Library</v8:content>
 				</v8:item>
 				<v8:item>
 					<v8:lang>en</v8:lang>
