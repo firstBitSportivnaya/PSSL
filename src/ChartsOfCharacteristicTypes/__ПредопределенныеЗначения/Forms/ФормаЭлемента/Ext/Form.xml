@@ -230,6 +230,13 @@
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
+		<InputField name="ИдентификаторНастройки" id="61">
+			<DataPath>Объект.ИдентификаторНастройки</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ИдентификаторНастройкиКонтекстноеМеню" id="62"/>
+			<ExtendedTooltip name="ИдентификаторНастройкиРасширеннаяПодсказка" id="63"/>
+		</InputField>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">

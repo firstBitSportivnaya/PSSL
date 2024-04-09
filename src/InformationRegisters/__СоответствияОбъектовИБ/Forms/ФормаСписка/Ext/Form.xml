@@ -159,7 +159,7 @@
 				</v8:item>
 			</Title>
 			<Type>
-				<v8:Type>cfg:EnumRef.__ТипСоответствияОбъектовИБ</v8:Type>
+				<v8:Type>cfg:CatalogRef.__ТипСоответствияОбъектовИБ</v8:Type>
 			</Type>
 		</Attribute>
 	</Attributes>

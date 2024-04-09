@@ -42,6 +42,10 @@
 					<v8:lang>en</v8:lang>
 					<v8:content>Project SubSystems Library</v8:content>
 				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Frame configuration</v8:content>
+				</v8:item>
 			</Synonym>
 			<Comment/>
 			<NamePrefix/>
@@ -253,8 +257,10 @@
 			<Role>__РедактированиеПланаВидовХарактеристикПредопределенныеЗначения</Role>
 			<Role>__РедактированиеПользовательскихФункций</Role>
 			<Role>__РедактированиеРегистраСведенийСоответствияОбъектовИБ</Role>
+			<Role>__РедактированиеТиповСоответствияОбъектовИБ</Role>
 			<Role>__ЧтениеПланаВидовХарактеристикПредопределенныеЗначения</Role>
 			<Role>__ЧтениеРегистраСведенийСоответствияОбъектовИБ</Role>
+			<Role>__ЧтениеТиповСоответствияОбъектовИБ</Role>
 			<Role>АдминистраторСистемы</Role>
 			<Role>ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок</Role>
 			<Role>ПолныеПрава</Role>
@@ -280,6 +286,8 @@
 			<CommonModule>__ОбщегоНазначенияПовтИсп</CommonModule>
 			<CommonModule>__ОбщегоНазначенияПолныеПрава</CommonModule>
 			<CommonModule>__ОбщегоНазначенияСервер</CommonModule>
+			<CommonModule>__ПредопределенныеЗначения</CommonModule>
+			<CommonModule>__ПредопределенныеЗначенияПереопределяемый</CommonModule>
 			<CommonModule>__РаботаСДиалогамиКлиент</CommonModule>
 			<CommonModule>__РаботаСДиалогамиСервер</CommonModule>
 			<CommonModule>__РаботаСКоллекциямиКлиентСервер</CommonModule>
@@ -289,6 +297,8 @@
 			<CommonModule>__СправочникиПриЗаписи</CommonModule>
 			<CommonModule>__СправочникиПриКопировании</CommonModule>
 			<CommonModule>__СтроковыеФункцииКлиентСервер</CommonModule>
+			<CommonModule>__ТипСоответствияОбъектовИБПереопределяемый</CommonModule>
+			<CommonModule>__ВспомогательныйМодульНеПереноситьКлиентСервер</CommonModule>
 			<EventSubscription>__ДокументыОбработкаЗаполнения</EventSubscription>
 			<EventSubscription>__ДокументыОбработкаПроведения</EventSubscription>
 			<EventSubscription>__ДокументыПередЗаписью</EventSubscription>
@@ -306,11 +316,11 @@
 			<Catalog>__МетодыИнтеграции</Catalog>
 			<Catalog>__НастройкиИнтеграции</Catalog>
 			<Catalog>__ПользовательскиеФункции</Catalog>
+			<Catalog>__ТипСоответствияОбъектовИБ</Catalog>
 			<Document>ДемоРаботаСФормами</Document>
 			<Enum>__КонтекстыВыполненияПользовательскихФункций</Enum>
 			<Enum>__СозданОбновлен</Enum>
 			<Enum>__СтатусыИнтеграции</Enum>
-			<Enum>__ТипСоответствияОбъектовИБ</Enum>
 			<Enum>__ФорматыЗапросовИнтеграции</Enum>
 			<InformationRegister>__СоответствияОбъектовИБ</InformationRegister>
 			<ChartOfCharacteristicTypes>__ПредопределенныеЗначения</ChartOfCharacteristicTypes>
