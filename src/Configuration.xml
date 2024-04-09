@@ -232,11 +232,11 @@
 			<ConfigurationInformationAddress/>
 			<DataLockControlMode>Managed</DataLockControlMode>
 			<ObjectAutonumerationMode>NotAutoFree</ObjectAutonumerationMode>
-			<ModalityUseMode>DontUse</ModalityUseMode>
+			<ModalityUseMode>UseWithWarnings</ModalityUseMode>
 			<SynchronousPlatformExtensionAndAddInCallUseMode>DontUse</SynchronousPlatformExtensionAndAddInCallUseMode>
-			<InterfaceCompatibilityMode>Taxi</InterfaceCompatibilityMode>
+			<InterfaceCompatibilityMode>TaxiEnableVersion8_2</InterfaceCompatibilityMode>
 			<DatabaseTablespacesUseMode>DontUse</DatabaseTablespacesUseMode>
-			<CompatibilityMode>Version8_3_14</CompatibilityMode>
+			<CompatibilityMode>Version8_3_18</CompatibilityMode>
 			<DefaultConstantsForm/>
 		</Properties>
 		<ChildObjects>
@@ -249,6 +249,7 @@
 			<Subsystem>__ПредопределенныеЗначения</Subsystem>
 			<Subsystem>__СоответствиеОбъектовИБ</Subsystem>
 			<Subsystem>__УправлениеИнтеграциями</Subsystem>
+			<Subsystem>__ЗагрузкаИзТабличногоДокумента</Subsystem>
 			<CommonPicture>__ПодсистемаУправлениеИнтеграциями</CommonPicture>
 			<CommonPicture>__Реквизит</CommonPicture>
 			<CommonPicture>__Реквизиты</CommonPicture>
@@ -269,11 +270,14 @@
 			<CommonTemplate>__XMLEditor</CommonTemplate>
 			<CommonModule>__ВспомогательныйМодульНеПереносить</CommonModule>
 			<CommonModule>__ВспомогательныйМодульНеПереноситьКлиент</CommonModule>
+			<CommonModule>__ВспомогательныйМодульНеПереноситьКлиентСервер</CommonModule>
 			<CommonModule>__ДокументыОбработкаЗаполнения</CommonModule>
 			<CommonModule>__ДокументыОбработкаПроведения</CommonModule>
 			<CommonModule>__ДокументыПередЗаписью</CommonModule>
 			<CommonModule>__ДокументыПриЗаписи</CommonModule>
 			<CommonModule>__ДокументыПриКопировании</CommonModule>
+			<CommonModule>__ЗагрузкаФайлаЧерезТабличныйДокументВызовСервера</CommonModule>
+			<CommonModule>__ЗагрузкаФайлаЧерезТабличныйДокументКлиент</CommonModule>
 			<CommonModule>__ИнтеграцииСервер</CommonModule>
 			<CommonModule>__КоннекторHTTP</CommonModule>
 			<CommonModule>__МетодыРегламентныхЗаданийСервер</CommonModule>
@@ -298,7 +302,6 @@
 			<CommonModule>__СправочникиПриКопировании</CommonModule>
 			<CommonModule>__СтроковыеФункцииКлиентСервер</CommonModule>
 			<CommonModule>__ТипСоответствияОбъектовИБПереопределяемый</CommonModule>
-			<CommonModule>__ВспомогательныйМодульНеПереноситьКлиентСервер</CommonModule>
 			<EventSubscription>__ДокументыОбработкаЗаполнения</EventSubscription>
 			<EventSubscription>__ДокументыОбработкаПроведения</EventSubscription>
 			<EventSubscription>__ДокументыПередЗаписью</EventSubscription>
