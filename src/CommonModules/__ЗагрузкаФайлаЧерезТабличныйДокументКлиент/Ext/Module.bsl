@@ -1,24 +1,24 @@
-﻿//MIT License
+﻿// MIT License
 
-//Copyright (c) 2024 Anton Tsitavets
+// Copyright (c) 2024 Anton Tsitavets
 
-//Permission is hereby granted, free of charge, to any person obtaining a copy
-//of this software and associated documentation files (the "Software"), to deal
-//in the Software without restriction, including without limitation the rights
-//to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-//copies of the Software, and to permit persons to whom the Software is
-//furnished to do so, subject to the following conditions:
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
 
-//The above copyright notice and this permission notice shall be included in all
-//copies or substantial portions of the Software.
+// The above copyright notice and this permission notice shall be included in all
+// copies or substantial portions of the Software.
 
-//THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-//IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-//FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-//AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-//LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-//OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-//SOFTWARE.
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+// SOFTWARE.
 
 #Область ПрограммныйИнтерфейс
 
@@ -32,43 +32,33 @@
 // Возвращаемое значение:
 //  - Строка - Адрес файла во временном хранилище
 //
-Функция ЗагрузитьИзXLS(СоответствиеКолонок, НазваниеЛиста = "", НомерПервойСтроки = 1) Экспорт
+Асинх Функция ЗагрузитьИзXLS(СоответствиеКолонок, НазваниеЛиста = "", НомерПервойСтроки = 1) Экспорт
 	
-	ИД = __ЗагрузкаФайлаЧерезТабличныйДокументВызовСервера.ПоместитьЗаглушку(СоответствиеКолонок);
+	// ++ Обход ошибки отстутствия модуля БСП, не переносить
+	ОбщегоНазначенияКлиент = Неопределено;
+	// -- Обход ошибки отстутствия модуля БСП, не переносить
 	
-	ДиалогВыбораФайла							= Новый ДиалогВыбораФайла(РежимДиалогаВыбораФайла.Открытие);
-	ДиалогВыбораФайла.Фильтр					= "Документ Excel (*.xls, *.xlsx)|*.xls;*.xlsx|";
-	ДиалогВыбораФайла.Заголовок					= "Выберите файл";
-	ДиалогВыбораФайла.ПредварительныйПросмотр	= Ложь;
-	ДиалогВыбораФайла.МножественныйВыбор		= Ложь;
-	ДиалогВыбораФайла.ИндексФильтра				= 0;
+	АдресПомещения = __ЗагрузкаФайлаЧерезТабличныйДокументВызовСервера.ПоместитьЗаглушку(СоответствиеКолонок);
 	
-	Параметры = Новый Структура("Макет, АдресХр, НазваниеЛиста, НомерПервойСтроки", СоответствиеКолонок, ИД, НазваниеЛиста, НомерПервойСтроки);
-
-	Если ДиалогВыбораФайла.Выбрать() Тогда
-		ПоместитьВоВременноеХранилище(Новый ДвоичныеДанные(ДиалогВыбораФайла.ПолноеИмяФайла), ИД);
-		ЗагрузитьФайлЗавершение(ИД, ДиалогВыбораФайла.ПолноеИмяФайла, Параметры);
+	Параметры = Новый Структура("Макет, АдресПомещения, НазваниеЛиста, НомерПервойСтроки", СоответствиеКолонок, АдресПомещения, НазваниеЛиста, НомерПервойСтроки);
+	
+	ПараметрыДиалога = Новый ПараметрыДиалогаПомещенияФайлов;
+	ПараметрыДиалога.Фильтр = "Документ Excel (*.xls, *.xlsx)|*.xls;*.xlsx|";
+	ПараметрыДиалога.МножественныйВыбор = Ложь;
+	ПараметрыДиалога.ИндексФильтра = 0;
+	ПараметрыДиалога.Заголовок = "Выберите файл для загрузки";
+	
+	ОписаниеФайла = Ждать ПоместитьФайлНаСерверАсинх( , , , ПараметрыДиалога);
+	
+	Если ТипЗнч(ОписаниеФайла) = Тип("ОписаниеПомещенногоФайла") И Не ОписаниеФайла.ПомещениеФайлаОтменено Тогда
+		__ЗагрузкаФайлаЧерезТабличныйДокументВызовСервера.ФормированиеТаблицы(ОписаниеФайла.Адрес, ОписаниеФайла.СсылкаНаФайл.Расширение, Параметры);
+	Иначе
+		ОбщегоНазначенияКлиент.СообщитьПользователю(НСтр("ru = 'Помещение файла отменено'"));
+		АдресПомещения = Неопределено;
 	КонецЕсли;
 	
-	Возврат ИД;
+	Возврат АдресПомещения;
 	
 КонецФункции
-
-// Процедура - Загрузить файл завершение
-//
-// Параметры:
-//  Адрес					 - Строка - Адрес файла во временном хранилище
-//  ВыбранноеИмяФайла		 - Строка - Начальное полное имя файла
-//  ДополнительныеПараметры	 - Структура - Параметры необходимые для корректной загрузки файла
-//
-Процедура ЗагрузитьФайлЗавершение(Адрес, ВыбранноеИмяФайла, ДополнительныеПараметры) Экспорт
-	
-	ИмяФайла = Прав(ВыбранноеИмяФайла, СтрДлина(ВыбранноеИмяФайла) - СтрНайти(ВыбранноеИмяФайла, "\", НаправлениеПоиска.СКонца));
-	
-	Если Не Адрес = "" Тогда
-		__ЗагрузкаФайлаЧерезТабличныйДокументВызовСервера.ФормированиеТаблицы(Адрес, ИмяФайла, ДополнительныеПараметры);
-	КонецЕсли;
-	
-КонецПроцедуры
 
 #КонецОбласти
