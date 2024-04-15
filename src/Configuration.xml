@@ -311,6 +311,8 @@
 			<CommonModule>__Пользователи</CommonModule>
 			<CommonModule>__ПользователиСлужебный</CommonModule>
 			<CommonModule>__ПользователиКлиентСервер</CommonModule>
+			<CommonModule>__ПолучениеФайловИзИнтернета</CommonModule>
+			<CommonModule>__ПолучениеФайловИзИнтернетаСлужебный</CommonModule>
 			<EventSubscription>__ДокументыОбработкаЗаполнения</EventSubscription>
 			<EventSubscription>__ДокументыОбработкаПроведения</EventSubscription>
 			<EventSubscription>__ДокументыПередЗаписью</EventSubscription>
