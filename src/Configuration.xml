@@ -250,7 +250,6 @@
 			<Subsystem>__СоответствиеОбъектовИБ</Subsystem>
 			<Subsystem>__УправлениеИнтеграциями</Subsystem>
 			<Subsystem>__ЗагрузкаИзТабличногоДокумента</Subsystem>
-			<Subsystem>__БазоваяФункциональность</Subsystem>
 			<CommonPicture>__ПодсистемаУправлениеИнтеграциями</CommonPicture>
 			<CommonPicture>__Реквизит</CommonPicture>
 			<CommonPicture>__Реквизиты</CommonPicture>
@@ -336,7 +335,6 @@
 			<Enum>__СтатусыИнтеграции</Enum>
 			<Enum>__ФорматыЗапросовИнтеграции</Enum>
 			<InformationRegister>__СоответствияОбъектовИБ</InformationRegister>
-			<InformationRegister>__БезопасноеХранилищеДанных</InformationRegister>
 			<ChartOfCharacteristicTypes>__ПредопределенныеЗначения</ChartOfCharacteristicTypes>
 		</ChildObjects>
 	</Configuration>
