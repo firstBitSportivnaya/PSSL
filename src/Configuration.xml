@@ -250,6 +250,7 @@
 			<Subsystem>__СоответствиеОбъектовИБ</Subsystem>
 			<Subsystem>__УправлениеИнтеграциями</Subsystem>
 			<Subsystem>__ЗагрузкаИзТабличногоДокумента</Subsystem>
+			<Subsystem>__БазоваяФункциональность</Subsystem>
 			<CommonPicture>__ПодсистемаУправлениеИнтеграциями</CommonPicture>
 			<CommonPicture>__Реквизит</CommonPicture>
 			<CommonPicture>__Реквизиты</CommonPicture>
@@ -268,9 +269,6 @@
 			<CommonTemplate>__BSLEditor</CommonTemplate>
 			<CommonTemplate>__JSONEditor</CommonTemplate>
 			<CommonTemplate>__XMLEditor</CommonTemplate>
-			<CommonModule>__ВспомогательныйМодульНеПереносить</CommonModule>
-			<CommonModule>__ВспомогательныйМодульНеПереноситьКлиент</CommonModule>
-			<CommonModule>__ВспомогательныйМодульНеПереноситьКлиентСервер</CommonModule>
 			<CommonModule>__ДокументыОбработкаЗаполнения</CommonModule>
 			<CommonModule>__ДокументыОбработкаПроведения</CommonModule>
 			<CommonModule>__ДокументыПередЗаписью</CommonModule>
@@ -302,6 +300,18 @@
 			<CommonModule>__СправочникиПриКопировании</CommonModule>
 			<CommonModule>__СтроковыеФункцииКлиентСервер</CommonModule>
 			<CommonModule>__ТипСоответствияОбъектовИБПереопределяемый</CommonModule>
+			<CommonModule>__ОбщегоНазначенияСлужебный</CommonModule>
+			<CommonModule>__СтроковыеФункцииСлужебныйКлиентСервер</CommonModule>
+			<CommonModule>__ОбщегоНазначенияСлужебныйКлиентСервер</CommonModule>
+			<CommonModule>__ОбщегоНазначенияВызовСервера</CommonModule>
+			<CommonModule>__ОбщегоНазначенияСлужебныйКлиент</CommonModule>
+			<CommonModule>__РегламентныеЗаданияСлужебныйСервер</CommonModule>
+			<CommonModule>__РегламентныеЗаданияСервер</CommonModule>
+			<CommonModule>__ЖурналРегистрации</CommonModule>
+			<CommonModule>__ЖурналРегистрацииСлужебный</CommonModule>
+			<CommonModule>__Пользователи</CommonModule>
+			<CommonModule>__ПользователиСлужебный</CommonModule>
+			<CommonModule>__ПользователиКлиентСервер</CommonModule>
 			<EventSubscription>__ДокументыОбработкаЗаполнения</EventSubscription>
 			<EventSubscription>__ДокументыОбработкаПроведения</EventSubscription>
 			<EventSubscription>__ДокументыПередЗаписью</EventSubscription>
@@ -326,6 +336,7 @@
 			<Enum>__СтатусыИнтеграции</Enum>
 			<Enum>__ФорматыЗапросовИнтеграции</Enum>
 			<InformationRegister>__СоответствияОбъектовИБ</InformationRegister>
+			<InformationRegister>__БезопасноеХранилищеДанных</InformationRegister>
 			<ChartOfCharacteristicTypes>__ПредопределенныеЗначения</ChartOfCharacteristicTypes>
 		</ChildObjects>
 	</Configuration>
