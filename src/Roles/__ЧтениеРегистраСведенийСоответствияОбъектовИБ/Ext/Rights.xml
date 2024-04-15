@@ -6,10 +6,6 @@
 	<object>
 		<name>InformationRegister.__СоответствияОбъектовИБ.Dimension.Объект2</name>
 		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
@@ -42,11 +38,18 @@
 		</right>
 	</object>
 	<object>
-		<name>InformationRegister.__СоответствияОбъектовИБ.StandardAttribute.Active</name>
+		<name>InformationRegister.__СоответствияОбъектовИБ</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
 		<right>
 			<name>View</name>
-			<value>false</value>
+			<value>true</value>
 		</right>
+	</object>
+	<object>
+		<name>InformationRegister.__СоответствияОбъектовИБ.StandardAttribute.Active</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -55,20 +58,12 @@
 	<object>
 		<name>InformationRegister.__СоответствияОбъектовИБ.StandardAttribute.LineNumber</name>
 		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
 	</object>
 	<object>
 		<name>InformationRegister.__СоответствияОбъектовИБ.StandardAttribute.Recorder</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -77,20 +72,12 @@
 	<object>
 		<name>InformationRegister.__СоответствияОбъектовИБ.StandardAttribute.Period</name>
 		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
 	</object>
 	<object>
 		<name>InformationRegister.__СоответствияОбъектовИБ.Resource.Объект3</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -99,20 +86,12 @@
 	<object>
 		<name>InformationRegister.__СоответствияОбъектовИБ.Dimension.ТипСоответствия</name>
 		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
 	</object>
 	<object>
 		<name>InformationRegister.__СоответствияОбъектовИБ.Dimension.Объект1</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
