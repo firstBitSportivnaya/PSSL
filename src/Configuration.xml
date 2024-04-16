@@ -264,14 +264,13 @@
 			<CommonTemplate>__BSLEditor</CommonTemplate>
 			<CommonTemplate>__JSONEditor</CommonTemplate>
 			<CommonTemplate>__XMLEditor</CommonTemplate>
-			<CommonModule>__ВспомогательныйМодульНеПереносить</CommonModule>
-			<CommonModule>__ВспомогательныйМодульНеПереноситьКлиент</CommonModule>
-			<CommonModule>__ВспомогательныйМодульНеПереноситьКлиентСервер</CommonModule>
 			<CommonModule>__ДокументыОбработкаЗаполнения</CommonModule>
 			<CommonModule>__ДокументыОбработкаПроведения</CommonModule>
 			<CommonModule>__ДокументыПередЗаписью</CommonModule>
 			<CommonModule>__ДокументыПриЗаписи</CommonModule>
 			<CommonModule>__ДокументыПриКопировании</CommonModule>
+			<CommonModule>__ЖурналРегистрации</CommonModule>
+			<CommonModule>__ЖурналРегистрацииСлужебный</CommonModule>
 			<CommonModule>__ЗагрузкаФайлаЧерезТабличныйДокументВызовСервера</CommonModule>
 			<CommonModule>__ЗагрузкаФайлаЧерезТабличныйДокументКлиент</CommonModule>
 			<CommonModule>__ИнтеграцииСервер</CommonModule>
@@ -281,22 +280,34 @@
 			<CommonModule>__МодификацияКонфигурацииКлиентСерверПереопределяемый</CommonModule>
 			<CommonModule>__МодификацияКонфигурацииПереопределяемый</CommonModule>
 			<CommonModule>__МодификацияКонфигурацииПереопределяемыйДокумент</CommonModule>
+			<CommonModule>__ОбщегоНазначенияВызовСервера</CommonModule>
 			<CommonModule>__ОбщегоНазначенияКлиент</CommonModule>
 			<CommonModule>__ОбщегоНазначенияКлиентСервер</CommonModule>
 			<CommonModule>__ОбщегоНазначенияПовтИсп</CommonModule>
 			<CommonModule>__ОбщегоНазначенияПолныеПрава</CommonModule>
 			<CommonModule>__ОбщегоНазначенияСервер</CommonModule>
+			<CommonModule>__ОбщегоНазначенияСлужебный</CommonModule>
+			<CommonModule>__ОбщегоНазначенияСлужебныйКлиент</CommonModule>
+			<CommonModule>__ОбщегоНазначенияСлужебныйКлиентСервер</CommonModule>
+			<CommonModule>__ПолучениеФайловИзИнтернета</CommonModule>
+			<CommonModule>__ПолучениеФайловИзИнтернетаСлужебный</CommonModule>
+			<CommonModule>__Пользователи</CommonModule>
+			<CommonModule>__ПользователиКлиентСервер</CommonModule>
+			<CommonModule>__ПользователиСлужебный</CommonModule>
 			<CommonModule>__ПредопределенныеЗначения</CommonModule>
 			<CommonModule>__ПредопределенныеЗначенияПереопределяемый</CommonModule>
 			<CommonModule>__РаботаСДиалогамиКлиент</CommonModule>
 			<CommonModule>__РаботаСДиалогамиСервер</CommonModule>
 			<CommonModule>__РаботаСКоллекциямиКлиентСервер</CommonModule>
 			<CommonModule>__РаботаСФормами</CommonModule>
+			<CommonModule>__РегламентныеЗаданияСервер</CommonModule>
+			<CommonModule>__РегламентныеЗаданияСлужебныйСервер</CommonModule>
 			<CommonModule>__СправочникиОбработкаЗаполнения</CommonModule>
 			<CommonModule>__СправочникиПередЗаписью</CommonModule>
 			<CommonModule>__СправочникиПриЗаписи</CommonModule>
 			<CommonModule>__СправочникиПриКопировании</CommonModule>
 			<CommonModule>__СтроковыеФункцииКлиентСервер</CommonModule>
+			<CommonModule>__СтроковыеФункцииСлужебныйКлиентСервер</CommonModule>
 			<CommonModule>__ТипСоответствияОбъектовИБПереопределяемый</CommonModule>
 			<EventSubscription>__ДокументыОбработкаЗаполнения</EventSubscription>
 			<EventSubscription>__ДокументыОбработкаПроведения</EventSubscription>
