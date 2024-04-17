@@ -1,6 +1,7 @@
-﻿// Библиотека проектных подсистем для упрощения разработки архитектуры на 1С: Предприятие 8, включая доработку типовых конфигураций.
+﻿// Библиотека проектных подсистем для упрощения разработки архитектуры на 1С: Предприятие 8,
+// включая доработку типовых конфигураций.
 //
-// Copyright 2017-2024 First BIT company
+// Copyright First BIT company
 //
 //   Licensed under the Apache License, Version 2.0 (the "License");
 //   you may not use this file except in compliance with the License.
@@ -14,12 +15,8 @@
 //   See the License for the specific language governing permissions and
 //   limitations under the License.
 //
-//
 // URL:    https://github.com/firstBitSportivnaya/PSSL/
-// e-mail: ivssmirnov@1bit.com
-// Версия: 1.0.0.1
 //
-// Требования: платформа 1С версии 8.3.17 и выше
 
 ////////////////////////////////////////////////////////////////////////////////
 // Документы событие "При копировании" (вызов сервера): обработка событий при копировании
