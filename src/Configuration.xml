@@ -281,6 +281,7 @@
 			<CommonModule>__МодификацияКонфигурацииПереопределяемый</CommonModule>
 			<CommonModule>__МодификацияКонфигурацииПереопределяемыйДокумент</CommonModule>
 			<CommonModule>__МодификацияКонфигурацииПереопределяемыйПланВидовХарактеристик</CommonModule>
+			<CommonModule>__ОбновлениеИнформационнойБазыПБП</CommonModule>
 			<CommonModule>__ОбщегоНазначенияВызовСервера</CommonModule>
 			<CommonModule>__ОбщегоНазначенияКлиент</CommonModule>
 			<CommonModule>__ОбщегоНазначенияКлиентСервер</CommonModule>
