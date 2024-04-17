@@ -6,6 +6,8 @@
 [![GitHub issues](https://img.shields.io/github/issues-raw/firstBitSportivnaya/PSSL?style=badge)](https://github.com/firstBitSportivnaya/PSSL/issues)
 [![License](https://img.shields.io/github/license/firstBitSportivnaya/PSSL?style=badge)](https://github.com/firstBitSportivnaya/PSSL/blob/develop/LICENSE)
 
+![image](https://repository-images.githubusercontent.com/751858948/3aa4889e-501a-4fb1-b44f-5c0b6563665e)
+
 ## Cписок подсистем
 
 В библиотеке собраны подсистемы, реализующие методы для удобного расширения функциональности типовых конфигураций, максимально соответствуя регламенту разработки и облегчая будущую доработку и обновление этих конфигураций.
