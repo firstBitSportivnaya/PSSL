@@ -18,6 +18,7 @@
                 "initMethod": "fromSource",
                 "path": "src/cfe/YAXUnit"
             }
+        ]
     },
     "notifications": {
         "telegram": {
