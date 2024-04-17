@@ -280,6 +280,7 @@
 			<CommonModule>__МодификацияКонфигурацииКлиентСерверПереопределяемый</CommonModule>
 			<CommonModule>__МодификацияКонфигурацииПереопределяемый</CommonModule>
 			<CommonModule>__МодификацияКонфигурацииПереопределяемыйДокумент</CommonModule>
+			<CommonModule>__МодификацияКонфигурацииПереопределяемыйПланВидовХарактеристик</CommonModule>
 			<CommonModule>__ОбщегоНазначенияВызовСервера</CommonModule>
 			<CommonModule>__ОбщегоНазначенияКлиент</CommonModule>
 			<CommonModule>__ОбщегоНазначенияКлиентСервер</CommonModule>
@@ -308,6 +309,7 @@
 			<CommonModule>__СправочникиПриКопировании</CommonModule>
 			<CommonModule>__СтроковыеФункцииКлиентСервер</CommonModule>
 			<CommonModule>__СтроковыеФункцииСлужебныйКлиентСервер</CommonModule>
+			<CommonModule>__СхемыЗапросов</CommonModule>
 			<CommonModule>__ТипСоответствияОбъектовИБПереопределяемый</CommonModule>
 			<EventSubscription>__ДокументыОбработкаЗаполнения</EventSubscription>
 			<EventSubscription>__ДокументыОбработкаПроведения</EventSubscription>
