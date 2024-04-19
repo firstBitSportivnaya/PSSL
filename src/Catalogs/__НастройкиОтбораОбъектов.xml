@@ -456,7 +456,7 @@
 				</Properties>
 			</Attribute>
 			<Form>ФормаЭлемента</Form>
-			<Form>ФормаВыбораОбъектаМетаданныхУправляемая</Form>
+			<Form>ФормаВыбораОбъектаМетаданных</Form>
 		</ChildObjects>
 	</Catalog>
 </MetaDataObject>
