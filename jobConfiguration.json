@@ -1,5 +1,5 @@
 {
-    "$schema": "https://raw.githubusercontent.com/firstBitMarksistskaya/jenkins-lib/feature-telegram/resources/schema.json",
+    "$schema": "https://raw.githubusercontent.com/firstBitMarksistskaya/jenkins-lib/develop/resources/schema.json",
     "stages": {
         "initSteps": true,
         "syntaxCheck": true,
@@ -19,6 +19,14 @@
                 "path": "src/cfe/YAXUnit"
             }
         ]
+    },
+    "smoke": {
+        "publishToAllureReport": true,
+        "publishToJUnitReport": false
+    },
+    "yaxunit": {
+        "publishToAllureReport": true,
+        "publishToJUnitReport": false
     },
     "notifications": {
         "telegram": {
