@@ -32,6 +32,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.__СтроковыеФункцииКлиентСервер</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.__ОбщегоНазначенияКлиентСервер</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.__ФормаВыбораПоля</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ff5b8427-8720-4983-8f89-9b95aa004c98</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
