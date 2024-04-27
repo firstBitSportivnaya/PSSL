@@ -120,14 +120,6 @@
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаОписаниеФункцииРасширеннаяПодсказка" id="45"/>
 			<ChildItems>
-				<InputField name="Описание" id="30">
-					<DataPath>Items.Список.CurrentData.Описание</DataPath>
-					<ReadOnly>true</ReadOnly>
-					<TitleLocation>None</TitleLocation>
-					<MultiLine>true</MultiLine>
-					<ContextMenu name="ОписаниеКонтекстноеМеню" id="31"/>
-					<ExtendedTooltip name="ОписаниеРасширеннаяПодсказка" id="46"/>
-				</InputField>
 				<UsualGroup name="ГруппаШапкаФункции" id="13">
 					<Title>
 						<v8:item>
@@ -306,6 +298,7 @@
 			</Type>
 			<MainAttribute>true</MainAttribute>
 			<UseAlways>
+				<Field>Список.IsFolder</Field>
 				<Field>Список.Ref</Field>
 			</UseAlways>
 			<Settings xsi:type="DynamicList">
