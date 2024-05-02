@@ -3,7 +3,15 @@
 	<CommandSet>
 		<ExcludedCommand>Delete</ExcludedCommand>
 	</CommandSet>
-	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаЗаполнитьПредопределенные" id="25">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ЗаполнитьПредопределенные</CommandName>
+				<ExtendedTooltip name="ФормаЗаполнитьПредопределенныеРасширеннаяПодсказка" id="26"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
 	<ChildItems>
 		<UsualGroup name="СписокКомпоновщикНастроекПользовательскиеНастройки" id="1">
 			<Title>
@@ -134,4 +142,21 @@
 			</Settings>
 		</Attribute>
 	</Attributes>
+	<Commands>
+		<Command name="ЗаполнитьПредопределенные" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить предопределенные</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить предопределенные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьПредопределенные</Action>
+		</Command>
+	</Commands>
 </Form>

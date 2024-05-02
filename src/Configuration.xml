@@ -275,6 +275,7 @@
 			<CommonModule>__ЖурналРегистрацииСлужебный</CommonModule>
 			<CommonModule>__ЗагрузкаФайлаЧерезТабличныйДокументВызовСервера</CommonModule>
 			<CommonModule>__ЗагрузкаФайлаЧерезТабличныйДокументКлиент</CommonModule>
+			<CommonModule>__ИнтеграцииПереопределяемый</CommonModule>
 			<CommonModule>__ИнтеграцииСервер</CommonModule>
 			<CommonModule>__КоннекторHTTP</CommonModule>
 			<CommonModule>__МетодыРегламентныхЗаданийСервер</CommonModule>
@@ -338,6 +339,7 @@
 			<Enum>__СозданОбновлен</Enum>
 			<Enum>__СтатусыИнтеграции</Enum>
 			<Enum>__ФорматыЗапросовИнтеграции</Enum>
+			<Enum>__ТипыJSON</Enum>
 			<InformationRegister>__СоответствияОбъектовИБ</InformationRegister>
 			<ChartOfCharacteristicTypes>__ПредопределенныеЗначения</ChartOfCharacteristicTypes>
 		</ChildObjects>

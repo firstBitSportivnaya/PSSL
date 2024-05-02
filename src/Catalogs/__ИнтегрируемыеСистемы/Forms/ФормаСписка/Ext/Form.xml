@@ -3,7 +3,15 @@
 	<CommandSet>
 		<ExcludedCommand>Delete</ExcludedCommand>
 	</CommandSet>
-	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаЗаполнитьПредопределенные" id="22">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ЗаполнитьПредопределенные</CommandName>
+				<ExtendedTooltip name="ФормаЗаполнитьПредопределенныеРасширеннаяПодсказка" id="23"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
 	<ChildItems>
 		<UsualGroup name="СписокКомпоновщикНастроекПользовательскиеНастройки" id="1">
 			<Title>
@@ -86,6 +94,11 @@
 					<ContextMenu name="КодКонтекстноеМеню" id="20"/>
 					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="21"/>
 				</LabelField>
+				<LabelField name="ИдентификаторНастройки" id="24">
+					<DataPath>Список.ИдентификаторНастройки</DataPath>
+					<ContextMenu name="ИдентификаторНастройкиКонтекстноеМеню" id="25"/>
+					<ExtendedTooltip name="ИдентификаторНастройкиРасширеннаяПодсказка" id="26"/>
+				</LabelField>
 			</ChildItems>
 		</Table>
 	</ChildItems>
@@ -118,4 +131,21 @@
 			</Settings>
 		</Attribute>
 	</Attributes>
+	<Commands>
+		<Command name="ЗаполнитьПредопределенные" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить предопределенные</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить предопределенные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьПредопределенные</Action>
+		</Command>
+	</Commands>
 </Form>
