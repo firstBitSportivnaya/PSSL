@@ -159,7 +159,8 @@
 			<CommonModule>ЮТФильтрацияСлужебный</CommonModule>
 			<CommonModule>ЮТЧитательСлужебный</CommonModule>
 			<CommonModule>ЮТЧитательСлужебныйВызовСервера</CommonModule>
-			<CommonModule>_ОбщегоНазаначенияСервер</CommonModule>
+			<CommonModule>ОМ_ОбщегоНазаначенияСервер</CommonModule>
+			<CommonModule>ОМ_КоннекторHTTP</CommonModule>
 			<DataProcessor>ЮТHTTPServiceRequest</DataProcessor>
 			<DataProcessor>ЮТHTTPСервисЗапрос</DataProcessor>
 			<DataProcessor>ЮТRecordSet</DataProcessor>
