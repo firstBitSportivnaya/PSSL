@@ -45,6 +45,69 @@
 			<ContextMenu name="НастройкаИнтеграцииКонтекстноеМеню" id="13"/>
 			<ExtendedTooltip name="НастройкаИнтеграцииРасширеннаяПодсказка" id="14"/>
 		</InputField>
+		<Table name="ПараметрыREST" id="15">
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.ПараметрыREST</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ПараметрыRESTКонтекстноеМеню" id="16"/>
+			<AutoCommandBar name="ПараметрыRESTКоманднаяПанель" id="17"/>
+			<ExtendedTooltip name="ПараметрыRESTРасширеннаяПодсказка" id="18"/>
+			<SearchStringAddition name="ПараметрыRESTСтрокаПоиска" id="19">
+				<AdditionSource>
+					<Item>ПараметрыREST</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ПараметрыRESTСтрокаПоискаКонтекстноеМеню" id="20"/>
+				<ExtendedTooltip name="ПараметрыRESTСтрокаПоискаРасширеннаяПодсказка" id="21"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ПараметрыRESTСостояниеПросмотра" id="22">
+				<AdditionSource>
+					<Item>ПараметрыREST</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ПараметрыRESTСостояниеПросмотраКонтекстноеМеню" id="23"/>
+				<ExtendedTooltip name="ПараметрыRESTСостояниеПросмотраРасширеннаяПодсказка" id="24"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ПараметрыRESTУправлениеПоиском" id="25">
+				<AdditionSource>
+					<Item>ПараметрыREST</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ПараметрыRESTУправлениеПоискомКонтекстноеМеню" id="26"/>
+				<ExtendedTooltip name="ПараметрыRESTУправлениеПоискомРасширеннаяПодсказка" id="27"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ПараметрыRESTНомерСтроки" id="28">
+					<DataPath>Объект.ПараметрыREST.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПараметрыRESTНомерСтрокиКонтекстноеМеню" id="29"/>
+					<ExtendedTooltip name="ПараметрыRESTНомерСтрокиРасширеннаяПодсказка" id="30"/>
+				</LabelField>
+				<InputField name="ПараметрыRESTИмя" id="31">
+					<DataPath>Объект.ПараметрыREST.Имя</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ПараметрыRESTИмяКонтекстноеМеню" id="32"/>
+					<ExtendedTooltip name="ПараметрыRESTИмяРасширеннаяПодсказка" id="33"/>
+				</InputField>
+				<InputField name="ПараметрыRESTТип" id="34">
+					<DataPath>Объект.ПараметрыREST.Тип</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ПараметрыRESTТипКонтекстноеМеню" id="35"/>
+					<ExtendedTooltip name="ПараметрыRESTТипРасширеннаяПодсказка" id="36"/>
+				</InputField>
+				<InputField name="ПараметрыRESTЗначениеПоУмолчанию" id="37">
+					<DataPath>Объект.ПараметрыREST.ЗначениеПоУмолчанию</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ПараметрыRESTЗначениеПоУмолчаниюКонтекстноеМеню" id="38"/>
+					<ExtendedTooltip name="ПараметрыRESTЗначениеПоУмолчаниюРасширеннаяПодсказка" id="39"/>
+				</InputField>
+			</ChildItems>
+		</Table>
 		<TextDocumentField name="Метод" id="7">
 			<DataPath>Объект.Метод</DataPath>
 			<EditMode>EnterOnInput</EditMode>

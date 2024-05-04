@@ -255,9 +255,11 @@
 			<Role>__РедактированиеПользовательскихФункций</Role>
 			<Role>__РедактированиеРегистраСведенийСоответствияОбъектовИБ</Role>
 			<Role>__РедактированиеТиповСоответствияОбъектовИБ</Role>
+			<Role>__РедактированиеНастроекОтбораОбъектов</Role>
 			<Role>__ЧтениеПланаВидовХарактеристикПредопределенныеЗначения</Role>
 			<Role>__ЧтениеРегистраСведенийСоответствияОбъектовИБ</Role>
 			<Role>__ЧтениеТиповСоответствияОбъектовИБ</Role>
+			<Role>__ЧтениеНастроекОтборовОбъектов</Role>
 			<Role>АдминистраторСистемы</Role>
 			<Role>ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок</Role>
 			<Role>ПолныеПрава</Role>
@@ -273,6 +275,7 @@
 			<CommonModule>__ЖурналРегистрацииСлужебный</CommonModule>
 			<CommonModule>__ЗагрузкаФайлаЧерезТабличныйДокументВызовСервера</CommonModule>
 			<CommonModule>__ЗагрузкаФайлаЧерезТабличныйДокументКлиент</CommonModule>
+			<CommonModule>__ИнтеграцииПереопределяемый</CommonModule>
 			<CommonModule>__ИнтеграцииСервер</CommonModule>
 			<CommonModule>__КоннекторHTTP</CommonModule>
 			<CommonModule>__МетодыРегламентныхЗаданийСервер</CommonModule>
@@ -308,6 +311,8 @@
 			<CommonModule>__СправочникиПередЗаписью</CommonModule>
 			<CommonModule>__СправочникиПриЗаписи</CommonModule>
 			<CommonModule>__СправочникиПриКопировании</CommonModule>
+			<CommonModule>__СтандартныеПодсистемыПовтИсп</CommonModule>
+			<CommonModule>__СтандартныеПодсистемыСлужебныйПовтИсп</CommonModule>
 			<CommonModule>__СтроковыеФункцииКлиентСервер</CommonModule>
 			<CommonModule>__СтроковыеФункцииСлужебныйКлиентСервер</CommonModule>
 			<CommonModule>__СхемыЗапросов</CommonModule>
@@ -330,11 +335,13 @@
 			<Catalog>__НастройкиИнтеграции</Catalog>
 			<Catalog>__ПользовательскиеФункции</Catalog>
 			<Catalog>__ТипСоответствияОбъектовИБ</Catalog>
+			<Catalog>__НастройкиОтбораОбъектов</Catalog>
 			<Document>ДемоРаботаСФормами</Document>
 			<Enum>__КонтекстыВыполненияПользовательскихФункций</Enum>
 			<Enum>__СозданОбновлен</Enum>
 			<Enum>__СтатусыИнтеграции</Enum>
 			<Enum>__ФорматыЗапросовИнтеграции</Enum>
+			<Enum>__ТипыJSON</Enum>
 			<InformationRegister>__СоответствияОбъектовИБ</InformationRegister>
 			<ChartOfCharacteristicTypes>__ПредопределенныеЗначения</ChartOfCharacteristicTypes>
 		</ChildObjects>
