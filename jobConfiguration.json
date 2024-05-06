@@ -22,12 +22,12 @@
         ]
     },
     "smoke": {
-        "publishToAllureReport": true,
-        "publishToJUnitReport": false
+        "publishToAllureReport": false,
+        "publishToJUnitReport": true
     },
     "yaxunit": {
-        "publishToAllureReport": true,
-        "publishToJUnitReport": false
+        "publishToAllureReport": false,
+        "publishToJUnitReport": true
     },
     "notifications": {
         "telegram": {
