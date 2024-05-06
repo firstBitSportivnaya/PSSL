@@ -4,9 +4,9 @@
 	"ВыполнитьСценарии": true,
     "ЗавершитьРаботуСистемы": true,
     "ЗакрытьTestClientПослеЗапускаСценариев": true,
-	"КаталогФич": "$workspaceRoot/feature/core",
+	"КаталогФич": "$workspaceRoot/features",
 	"КаталогиБиблиотек": [
-		"$workspaceRoot/feature/lib"
+		"$workspaceRoot/features"
 	],
 	"СписокТеговИсключение": [
         "IgnoreOnCIMainBuild",
@@ -56,7 +56,7 @@
 		"ПрикладыватьКОтчетуAllureДанныеОСостоянииВсехФорм": true,
 		"ПрикладыватьКОтчетуAllureДанныеОСетевыхСоединениях": false,
 		"ПрикладыватьКОтчетуAllureДанныеОПроцессахОС": false,
-		"КаталогОтносительноКоторогоНадоСтроитьИерархию": "$workspaceRoot/features/core",
+		"КаталогОтносительноКоторогоНадоСтроитьИерархию": "$workspaceRoot/features",
 		"ДанныеАллюрМеток": []
 	},
 	"ДелатьОтчетВФорматеjUnit": false,

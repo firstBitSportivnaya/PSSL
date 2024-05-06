@@ -1,35 +1,33 @@
 {
-    "$schema": "https://raw.githubusercontent.com/firstBitMarksistskaya/jenkins-lib/feature-telegram/resources/schema.json",
+    "$schema": "https://raw.githubusercontent.com/firstBitMarksistskaya/jenkins-lib/develop/resources/schema.json",
     "stages": {
         "initSteps": true,
         "syntaxCheck": true,
         "smoke": true,
-        "sonarqube": true,
-        "telegram": true
-    },
-    "timeout": {
-        "smoke": 300,
-        "bdd": 180,
-        "createInfoBase": 120,
-        "designerToEdtFormatTransformation": 120,
-        "edtToDesignerFormatTransformation": 120,
-        "edtValidate": 300,
-        "initInfoBase": 120,
-        "resultTransformation": 60,
-        "sonarqube": 150,
-        "syntaxCheck": 300,
-        "zipInfoBase": 120
+        "yaxunit": true,
+        "telegram": true,
+        "bdd": true
     },
     "sourceFormat": "designer",
-    "srcDir": "src",
-    "resultsTransform": {
-        "removeSupport": false
-    },
-    "sonarqube": {
-        "waitForQualityGate": true
-    },
+    "srcDir": "src/cf",
     "initInfobase": {
-        "initMethod": "fromSource"
+        "initMethod": "fromSource",
+        "extensions": [
+            {
+                "name": "YAXUnit",
+                "initMethod": "fromSource",
+                "path": "src/cfe/YAXUnit",
+                "stages": ["yaxunit"]
+            }
+        ]
+    },
+    "smoke": {
+        "publishToAllureReport": false,
+        "publishToJUnitReport": true
+    },
+    "yaxunit": {
+        "publishToAllureReport": false,
+        "publishToJUnitReport": true
     },
     "notifications": {
         "telegram": {
