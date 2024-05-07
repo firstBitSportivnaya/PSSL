@@ -311,7 +311,9 @@
 			<CommonModule>__СправочникиПередЗаписью</CommonModule>
 			<CommonModule>__СправочникиПриЗаписи</CommonModule>
 			<CommonModule>__СправочникиПриКопировании</CommonModule>
+			<CommonModule>__СтандартныеПодсистемыКлиент</CommonModule>
 			<CommonModule>__СтандартныеПодсистемыПовтИсп</CommonModule>
+			<CommonModule>__СтандартныеПодсистемыСлужебныйКлиент</CommonModule>
 			<CommonModule>__СтандартныеПодсистемыСлужебныйПовтИсп</CommonModule>
 			<CommonModule>__СтроковыеФункцииКлиентСервер</CommonModule>
 			<CommonModule>__СтроковыеФункцииСлужебныйКлиентСервер</CommonModule>

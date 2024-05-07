@@ -16,6 +16,17 @@
 				<CommandName>Form.Command.СохранитьРезультат</CommandName>
 				<ExtendedTooltip name="ФормаСохранитьРезультатРасширеннаяПодсказка" id="21"/>
 			</Button>
+			<Button name="ФормаЗакрыть" id="38">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.Close</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Отмена</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ФормаЗакрытьРасширеннаяПодсказка" id="39"/>
+			</Button>
 		</ChildItems>
 	</AutoCommandBar>
 	<Events>
