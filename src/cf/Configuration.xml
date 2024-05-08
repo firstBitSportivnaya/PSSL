@@ -319,6 +319,7 @@
 			<CommonModule>__СтроковыеФункцииСлужебныйКлиентСервер</CommonModule>
 			<CommonModule>__СхемыЗапросов</CommonModule>
 			<CommonModule>__ТипСоответствияОбъектовИБПереопределяемый</CommonModule>
+			<CommonModule>__МодификацияКонфигурацииПовтИсп</CommonModule>
 			<EventSubscription>__ДокументыОбработкаЗаполнения</EventSubscription>
 			<EventSubscription>__ДокументыОбработкаПроведения</EventSubscription>
 			<EventSubscription>__ДокументыПередЗаписью</EventSubscription>
