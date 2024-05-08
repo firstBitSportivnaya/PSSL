@@ -280,10 +280,12 @@
 			<CommonModule>__КоннекторHTTP</CommonModule>
 			<CommonModule>__МетодыРегламентныхЗаданийСервер</CommonModule>
 			<CommonModule>__МодификацияКонфигурацииКлиентПереопределяемый</CommonModule>
+			<CommonModule>__МодификацияКонфигурацииКлиентПовтИсп</CommonModule>
 			<CommonModule>__МодификацияКонфигурацииКлиентСерверПереопределяемый</CommonModule>
 			<CommonModule>__МодификацияКонфигурацииПереопределяемый</CommonModule>
 			<CommonModule>__МодификацияКонфигурацииПереопределяемыйДокумент</CommonModule>
 			<CommonModule>__МодификацияКонфигурацииПереопределяемыйПланВидовХарактеристик</CommonModule>
+			<CommonModule>__МодификацияКонфигурацииПовтИсп</CommonModule>
 			<CommonModule>__ОбновлениеИнформационнойБазыПБП</CommonModule>
 			<CommonModule>__ОбщегоНазначенияВызовСервера</CommonModule>
 			<CommonModule>__ОбщегоНазначенияКлиент</CommonModule>
