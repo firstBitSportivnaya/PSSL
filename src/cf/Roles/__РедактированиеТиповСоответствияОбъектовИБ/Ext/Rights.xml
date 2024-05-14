@@ -4,7 +4,7 @@
 	<setForAttributesByDefault>true</setForAttributesByDefault>
 	<independentRightsOfChildObjects>false</independentRightsOfChildObjects>
 	<object>
-		<name>Catalog.__ТипСоответствияОбъектовИБ</name>
+		<name>Catalog.пбп_ТипСоответствияОбъектовИБ</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>

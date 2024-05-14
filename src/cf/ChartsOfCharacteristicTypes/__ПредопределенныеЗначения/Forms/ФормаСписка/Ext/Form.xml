@@ -156,8 +156,8 @@
 		Значение КАК Значение
 	) КАК ЗначенияЭлементов
 ИЗ
-	ПланВидовХарактеристик.__ПредопределенныеЗначения КАК ПредопределенныеЗначения</QueryText>
-				<MainTable>ChartOfCharacteristicTypes.__ПредопределенныеЗначения</MainTable>
+	ПланВидовХарактеристик.пбп_ПредопределенныеЗначения КАК ПредопределенныеЗначения</QueryText>
+				<MainTable>ChartOfCharacteristicTypes.пбп_ПредопределенныеЗначения</MainTable>
 				<ListSettings>
 					<dcsset:filter>
 						<dcsset:viewMode>Normal</dcsset:viewMode>

@@ -44,7 +44,7 @@
 	<Attributes>
 		<Attribute name="Объект" id="1">
 			<Type>
-				<v8:Type>cfg:CatalogObject.__ИнтегрируемыеСистемы</v8:Type>
+				<v8:Type>cfg:CatalogObject.пбп_ИнтегрируемыеСистемы</v8:Type>
 			</Type>
 			<MainAttribute>true</MainAttribute>
 			<SavedData>true</SavedData>

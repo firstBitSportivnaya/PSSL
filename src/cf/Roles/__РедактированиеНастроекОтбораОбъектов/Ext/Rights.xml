@@ -31,7 +31,7 @@
 		</right>
 	</object>
 	<object>
-		<name>Catalog.__НастройкиОтбораОбъектов</name>
+		<name>Catalog.пбп_НастройкиОтбораОбъектов</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>

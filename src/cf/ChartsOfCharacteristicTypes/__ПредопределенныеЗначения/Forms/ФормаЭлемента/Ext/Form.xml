@@ -241,7 +241,7 @@
 	<Attributes>
 		<Attribute name="Объект" id="1">
 			<Type>
-				<v8:Type>cfg:ChartOfCharacteristicTypesObject.__ПредопределенныеЗначения</v8:Type>
+				<v8:Type>cfg:ChartOfCharacteristicTypesObject.пбп_ПредопределенныеЗначения</v8:Type>
 			</Type>
 			<MainAttribute>true</MainAttribute>
 			<SavedData>true</SavedData>

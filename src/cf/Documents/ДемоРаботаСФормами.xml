@@ -35,7 +35,7 @@
 					<v8:content>Demo work with forms</v8:content>
 				</v8:item>
 			</Synonym>
-			<Comment>Документ носит ознакомительный характер по работе с подсистемой "__РаботаСФормами", не переносить.</Comment>
+			<Comment>Документ носит ознакомительный характер по работе с подсистемой "пбп_РаботаСФормами", не переносить.</Comment>
 			<UseStandardCommands>true</UseStandardCommands>
 			<Numerator/>
 			<NumberType>String</NumberType>

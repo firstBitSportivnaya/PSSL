@@ -4,7 +4,7 @@
 	<setForAttributesByDefault>true</setForAttributesByDefault>
 	<independentRightsOfChildObjects>false</independentRightsOfChildObjects>
 	<object>
-		<name>ChartOfCharacteristicTypes.__ПредопределенныеЗначения</name>
+		<name>ChartOfCharacteristicTypes.пбп_ПредопределенныеЗначения</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>

@@ -2,29 +2,29 @@
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
 	<Catalog uuid="bd327c0f-090a-4315-8a8f-0354ed971c9b">
 		<InternalInfo>
-			<xr:GeneratedType name="CatalogObject.__ИсторияИнтеграции" category="Object">
+			<xr:GeneratedType name="CatalogObject.пбп_ИсторияИнтеграции" category="Object">
 				<xr:TypeId>52d0220e-6aa0-4129-abc5-9303d1f261a9</xr:TypeId>
 				<xr:ValueId>fe923372-3c68-4c2b-8788-79272a63ec28</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="CatalogRef.__ИсторияИнтеграции" category="Ref">
+			<xr:GeneratedType name="CatalogRef.пбп_ИсторияИнтеграции" category="Ref">
 				<xr:TypeId>88f89e96-88a3-41ef-aca7-a996f02882fa</xr:TypeId>
 				<xr:ValueId>9bbe1e69-4a4c-48cf-827c-880f3832ad3e</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="CatalogSelection.__ИсторияИнтеграции" category="Selection">
+			<xr:GeneratedType name="CatalogSelection.пбп_ИсторияИнтеграции" category="Selection">
 				<xr:TypeId>f5e99bc6-e0d8-4535-92f3-beff45d6020c</xr:TypeId>
 				<xr:ValueId>99c122a8-7f32-4351-a23c-637e62b9ff15</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="CatalogList.__ИсторияИнтеграции" category="List">
+			<xr:GeneratedType name="CatalogList.пбп_ИсторияИнтеграции" category="List">
 				<xr:TypeId>e0768510-5d57-4c4d-ba9b-33e3b906295a</xr:TypeId>
 				<xr:ValueId>94d36a77-a599-44aa-ba0d-63a6059937ed</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="CatalogManager.__ИсторияИнтеграции" category="Manager">
+			<xr:GeneratedType name="CatalogManager.пбп_ИсторияИнтеграции" category="Manager">
 				<xr:TypeId>744f61d1-7e3e-4114-90fc-2eb8009e2afb</xr:TypeId>
 				<xr:ValueId>a7a9e0c0-d78d-4ed1-b8dc-f8ccd35b0be3</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>__ИсторияИнтеграции</Name>
+			<Name>пбп_ИсторияИнтеграции</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -299,14 +299,14 @@
 			<QuickChoice>false</QuickChoice>
 			<ChoiceMode>BothWays</ChoiceMode>
 			<InputByString>
-				<xr:Field>Catalog.__ИсторияИнтеграции.StandardAttribute.Code</xr:Field>
+				<xr:Field>Catalog.пбп_ИсторияИнтеграции.StandardAttribute.Code</xr:Field>
 			</InputByString>
 			<SearchStringModeOnInputByString>Begin</SearchStringModeOnInputByString>
 			<FullTextSearchOnInputByString>DontUse</FullTextSearchOnInputByString>
 			<ChoiceDataGetModeOnInputByString>Directly</ChoiceDataGetModeOnInputByString>
-			<DefaultObjectForm>Catalog.__ИсторияИнтеграции.Form.ФормаЭлемента</DefaultObjectForm>
+			<DefaultObjectForm>Catalog.пбп_ИсторияИнтеграции.Form.ФормаЭлемента</DefaultObjectForm>
 			<DefaultFolderForm/>
-			<DefaultListForm>Catalog.__ИсторияИнтеграции.Form.ФормаСписка</DefaultListForm>
+			<DefaultListForm>Catalog.пбп_ИсторияИнтеграции.Form.ФормаСписка</DefaultListForm>
 			<DefaultChoiceForm/>
 			<DefaultFolderChoiceForm/>
 			<AuxiliaryObjectForm/>
@@ -462,7 +462,7 @@
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>cfg:CatalogRef.__ИнтегрируемыеСистемы</v8:Type>
+						<v8:Type>cfg:CatalogRef.пбп_ИнтегрируемыеСистемы</v8:Type>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
@@ -506,7 +506,7 @@
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>cfg:EnumRef.__СтатусыИнтеграции</v8:Type>
+						<v8:Type>cfg:EnumRef.пбп_СтатусыИнтеграции</v8:Type>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
@@ -550,7 +550,7 @@
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>cfg:EnumRef.__ФорматыЗапросовИнтеграции</v8:Type>
+						<v8:Type>cfg:EnumRef.пбп_ФорматыЗапросовИнтеграции</v8:Type>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
@@ -786,7 +786,7 @@
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>cfg:CatalogRef.__МетодыИнтеграции</v8:Type>
+						<v8:Type>cfg:CatalogRef.пбп_МетодыИнтеграции</v8:Type>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
@@ -1003,11 +1003,11 @@
 			</Attribute>
 			<TabularSection uuid="ed8ab14b-48ad-444e-8949-68731cf6a0e8">
 				<InternalInfo>
-					<xr:GeneratedType name="CatalogTabularSection.__ИсторияИнтеграции.ОбъектыИнтеграции" category="TabularSection">
+					<xr:GeneratedType name="CatalogTabularSection.пбп_ИсторияИнтеграции.ОбъектыИнтеграции" category="TabularSection">
 						<xr:TypeId>87d72b37-a640-4045-8e4b-a88596ec65bd</xr:TypeId>
 						<xr:ValueId>07d4d37a-0968-4cfc-b9fc-ff3c8b5c6885</xr:ValueId>
 					</xr:GeneratedType>
-					<xr:GeneratedType name="CatalogTabularSectionRow.__ИсторияИнтеграции.ОбъектыИнтеграции" category="TabularSectionRow">
+					<xr:GeneratedType name="CatalogTabularSectionRow.пбп_ИсторияИнтеграции.ОбъектыИнтеграции" category="TabularSectionRow">
 						<xr:TypeId>78f069ef-55f3-45e6-9965-f52fb1dc5689</xr:TypeId>
 						<xr:ValueId>0d51b968-5270-4dc4-bb8a-a986dc6d6b23</xr:ValueId>
 					</xr:GeneratedType>
@@ -1114,7 +1114,7 @@
 							</Synonym>
 							<Comment/>
 							<Type>
-								<v8:Type>cfg:EnumRef.__СозданОбновлен</v8:Type>
+								<v8:Type>cfg:EnumRef.пбп_СозданОбновлен</v8:Type>
 							</Type>
 							<PasswordMode>false</PasswordMode>
 							<Format/>

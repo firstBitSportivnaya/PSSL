@@ -121,7 +121,7 @@
 			<Settings xsi:type="DynamicList">
 				<ManualQuery>false</ManualQuery>
 				<DynamicDataRead>true</DynamicDataRead>
-				<MainTable>InformationRegister.__СоответствияОбъектовИБ</MainTable>
+				<MainTable>InformationRegister.пбп_СоответствияОбъектовИБ</MainTable>
 				<ListSettings>
 					<dcsset:filter>
 						<dcsset:viewMode>Normal</dcsset:viewMode>
@@ -159,7 +159,7 @@
 				</v8:item>
 			</Title>
 			<Type>
-				<v8:Type>cfg:CatalogRef.__ТипСоответствияОбъектовИБ</v8:Type>
+				<v8:Type>cfg:CatalogRef.пбп_ТипСоответствияОбъектовИБ</v8:Type>
 			</Type>
 		</Attribute>
 	</Attributes>

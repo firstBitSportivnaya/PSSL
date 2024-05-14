@@ -4,7 +4,7 @@
 	<setForAttributesByDefault>true</setForAttributesByDefault>
 	<independentRightsOfChildObjects>false</independentRightsOfChildObjects>
 	<object>
-		<name>Catalog.__ИнтегрируемыеСистемы</name>
+		<name>Catalog.пбп_ИнтегрируемыеСистемы</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>
@@ -43,7 +43,7 @@
 		</right>
 	</object>
 	<object>
-		<name>Catalog.__МетодыИнтеграции</name>
+		<name>Catalog.пбп_МетодыИнтеграции</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>
@@ -82,7 +82,7 @@
 		</right>
 	</object>
 	<object>
-		<name>Catalog.__ИсторияИнтеграции</name>
+		<name>Catalog.пбп_ИсторияИнтеграции</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>
@@ -121,7 +121,7 @@
 		</right>
 	</object>
 	<object>
-		<name>Catalog.__ПользовательскиеФункции</name>
+		<name>Catalog.пбп_ПользовательскиеФункции</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>

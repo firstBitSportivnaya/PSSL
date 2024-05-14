@@ -2,33 +2,33 @@
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
 	<ChartOfCharacteristicTypes uuid="f2e4fd62-f288-43d2-8ec7-10d3126c9ab5">
 		<InternalInfo>
-			<xr:GeneratedType name="ChartOfCharacteristicTypesObject.__ПредопределенныеЗначения" category="Object">
+			<xr:GeneratedType name="ChartOfCharacteristicTypesObject.пбп_ПредопределенныеЗначения" category="Object">
 				<xr:TypeId>d524301b-6120-46d3-bd04-9f6c067ff390</xr:TypeId>
 				<xr:ValueId>35e25d16-2d34-4a7a-abd8-3f72759aea49</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="ChartOfCharacteristicTypesRef.__ПредопределенныеЗначения" category="Ref">
+			<xr:GeneratedType name="ChartOfCharacteristicTypesRef.пбп_ПредопределенныеЗначения" category="Ref">
 				<xr:TypeId>4c411dc1-0b4e-4923-96fb-4dd9ca9817be</xr:TypeId>
 				<xr:ValueId>93307727-55f4-42b9-821c-b49ad3fec5f5</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="ChartOfCharacteristicTypesSelection.__ПредопределенныеЗначения" category="Selection">
+			<xr:GeneratedType name="ChartOfCharacteristicTypesSelection.пбп_ПредопределенныеЗначения" category="Selection">
 				<xr:TypeId>36c207f7-c30b-4c93-9e28-7cfa965fdf78</xr:TypeId>
 				<xr:ValueId>aa34b743-5fc7-4fb9-b8a4-f594b472382f</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="ChartOfCharacteristicTypesList.__ПредопределенныеЗначения" category="List">
+			<xr:GeneratedType name="ChartOfCharacteristicTypesList.пбп_ПредопределенныеЗначения" category="List">
 				<xr:TypeId>5a255bae-d853-4124-b0e4-32015ef6229c</xr:TypeId>
 				<xr:ValueId>2096ee43-83d1-4e1f-88d7-d67aae05d9e5</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="Characteristic.__ПредопределенныеЗначения" category="Characteristic">
+			<xr:GeneratedType name="Characteristic.пбп_ПредопределенныеЗначения" category="Characteristic">
 				<xr:TypeId>e0c7818b-9e07-4bc3-8b5e-be21ff483717</xr:TypeId>
 				<xr:ValueId>2ec8d079-0231-4c7f-aea5-ebff92f1af8d</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="ChartOfCharacteristicTypesManager.__ПредопределенныеЗначения" category="Manager">
+			<xr:GeneratedType name="ChartOfCharacteristicTypesManager.пбп_ПредопределенныеЗначения" category="Manager">
 				<xr:TypeId>3cfb734e-9774-4100-a9e9-983a44f2802b</xr:TypeId>
 				<xr:ValueId>4d1b1000-df53-4852-ac85-4b28f726136b</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>__ПредопределенныеЗначения</Name>
+			<Name>пбп_ПредопределенныеЗначения</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -312,17 +312,17 @@
 			<QuickChoice>false</QuickChoice>
 			<ChoiceMode>BothWays</ChoiceMode>
 			<InputByString>
-				<xr:Field>ChartOfCharacteristicTypes.__ПредопределенныеЗначения.StandardAttribute.Description</xr:Field>
-				<xr:Field>ChartOfCharacteristicTypes.__ПредопределенныеЗначения.StandardAttribute.Code</xr:Field>
+				<xr:Field>ChartOfCharacteristicTypes.пбп_ПредопределенныеЗначения.StandardAttribute.Description</xr:Field>
+				<xr:Field>ChartOfCharacteristicTypes.пбп_ПредопределенныеЗначения.StandardAttribute.Code</xr:Field>
 			</InputByString>
 			<CreateOnInput>DontUse</CreateOnInput>
 			<SearchStringModeOnInputByString>Begin</SearchStringModeOnInputByString>
 			<ChoiceDataGetModeOnInputByString>Directly</ChoiceDataGetModeOnInputByString>
 			<FullTextSearchOnInputByString>DontUse</FullTextSearchOnInputByString>
 			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-			<DefaultObjectForm>ChartOfCharacteristicTypes.__ПредопределенныеЗначения.Form.ФормаЭлемента</DefaultObjectForm>
-			<DefaultFolderForm>ChartOfCharacteristicTypes.__ПредопределенныеЗначения.Form.ФормаГруппы</DefaultFolderForm>
-			<DefaultListForm>ChartOfCharacteristicTypes.__ПредопределенныеЗначения.Form.ФормаСписка</DefaultListForm>
+			<DefaultObjectForm>ChartOfCharacteristicTypes.пбп_ПредопределенныеЗначения.Form.ФормаЭлемента</DefaultObjectForm>
+			<DefaultFolderForm>ChartOfCharacteristicTypes.пбп_ПредопределенныеЗначения.Form.ФормаГруппы</DefaultFolderForm>
+			<DefaultListForm>ChartOfCharacteristicTypes.пбп_ПредопределенныеЗначения.Form.ФормаСписка</DefaultListForm>
 			<DefaultChoiceForm/>
 			<DefaultFolderChoiceForm/>
 			<AuxiliaryObjectForm/>
@@ -359,7 +359,7 @@
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:TypeSet>cfg:Characteristic.__ПредопределенныеЗначения</v8:TypeSet>
+						<v8:TypeSet>cfg:Characteristic.пбп_ПредопределенныеЗначения</v8:TypeSet>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
@@ -378,7 +378,7 @@
 					<ChoiceParameterLinks>
 						<xr:Link>
 							<xr:Name>ТипЗначения</xr:Name>
-							<xr:DataPath xsi:type="xs:string">ChartOfCharacteristicTypes.__ПредопределенныеЗначения.StandardAttribute.ValueType</xr:DataPath>
+							<xr:DataPath xsi:type="xs:string">ChartOfCharacteristicTypes.пбп_ПредопределенныеЗначения.StandardAttribute.ValueType</xr:DataPath>
 							<xr:ValueChange>Clear</xr:ValueChange>
 						</xr:Link>
 					</ChoiceParameterLinks>
@@ -387,7 +387,7 @@
 					<CreateOnInput>Auto</CreateOnInput>
 					<ChoiceForm/>
 					<LinkByType>
-						<xr:DataPath>ChartOfCharacteristicTypes.__ПредопределенныеЗначения.StandardAttribute.ValueType</xr:DataPath>
+						<xr:DataPath>ChartOfCharacteristicTypes.пбп_ПредопределенныеЗначения.StandardAttribute.ValueType</xr:DataPath>
 						<xr:LinkItem>0</xr:LinkItem>
 					</LinkByType>
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
@@ -583,11 +583,11 @@
 			</Attribute>
 			<TabularSection uuid="7f81190a-a7bf-4657-8841-107f0199ee86">
 				<InternalInfo>
-					<xr:GeneratedType name="ChartOfCharacteristicTypesTabularSection.__ПредопределенныеЗначения.ЗначенияЭлементов" category="TabularSection">
+					<xr:GeneratedType name="ChartOfCharacteristicTypesTabularSection.пбп_ПредопределенныеЗначения.ЗначенияЭлементов" category="TabularSection">
 						<xr:TypeId>863b2ccd-57a9-4c08-8135-79e10099637e</xr:TypeId>
 						<xr:ValueId>2910b852-5a02-43d7-90e9-e390e677b339</xr:ValueId>
 					</xr:GeneratedType>
-					<xr:GeneratedType name="ChartOfCharacteristicTypesTabularSectionRow.__ПредопределенныеЗначения.ЗначенияЭлементов" category="TabularSectionRow">
+					<xr:GeneratedType name="ChartOfCharacteristicTypesTabularSectionRow.пбп_ПредопределенныеЗначения.ЗначенияЭлементов" category="TabularSectionRow">
 						<xr:TypeId>a17605e4-f120-425f-8a4c-0bfe97977b44</xr:TypeId>
 						<xr:ValueId>70afc5b0-a9bb-4e39-a16e-8d41941e4873</xr:ValueId>
 					</xr:GeneratedType>
@@ -653,7 +653,7 @@
 							</Synonym>
 							<Comment/>
 							<Type>
-								<v8:TypeSet>cfg:Characteristic.__ПредопределенныеЗначения</v8:TypeSet>
+								<v8:TypeSet>cfg:Characteristic.пбп_ПредопределенныеЗначения</v8:TypeSet>
 							</Type>
 							<PasswordMode>false</PasswordMode>
 							<Format/>
@@ -670,7 +670,7 @@
 							<ChoiceParameterLinks>
 								<xr:Link>
 									<xr:Name>ТипЗначения</xr:Name>
-									<xr:DataPath xsi:type="xs:string">ChartOfCharacteristicTypes.__ПредопределенныеЗначения.StandardAttribute.ValueType</xr:DataPath>
+									<xr:DataPath xsi:type="xs:string">ChartOfCharacteristicTypes.пбп_ПредопределенныеЗначения.StandardAttribute.ValueType</xr:DataPath>
 									<xr:ValueChange>Clear</xr:ValueChange>
 								</xr:Link>
 							</ChoiceParameterLinks>
@@ -679,7 +679,7 @@
 							<CreateOnInput>Auto</CreateOnInput>
 							<ChoiceForm/>
 							<LinkByType>
-								<xr:DataPath>ChartOfCharacteristicTypes.__ПредопределенныеЗначения.StandardAttribute.ValueType</xr:DataPath>
+								<xr:DataPath>ChartOfCharacteristicTypes.пбп_ПредопределенныеЗначения.StandardAttribute.ValueType</xr:DataPath>
 								<xr:LinkItem>0</xr:LinkItem>
 							</LinkByType>
 							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>

@@ -4,7 +4,7 @@
 	<setForAttributesByDefault>true</setForAttributesByDefault>
 	<independentRightsOfChildObjects>false</independentRightsOfChildObjects>
 	<object>
-		<name>Catalog.__ТипСоответствияОбъектовИБ.Attribute.ИдентификаторНастройки</name>
+		<name>Catalog.пбп_ТипСоответствияОбъектовИБ.Attribute.ИдентификаторНастройки</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -38,7 +38,7 @@
 		</right>
 	</object>
 	<object>
-		<name>Catalog.__ТипСоответствияОбъектовИБ</name>
+		<name>Catalog.пбп_ТипСоответствияОбъектовИБ</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>
@@ -53,63 +53,63 @@
 		</right>
 	</object>
 	<object>
-		<name>Catalog.__ТипСоответствияОбъектовИБ.StandardAttribute.PredefinedDataName</name>
+		<name>Catalog.пбп_ТипСоответствияОбъектовИБ.StandardAttribute.PredefinedDataName</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
 	</object>
 	<object>
-		<name>Catalog.__ТипСоответствияОбъектовИБ.StandardAttribute.Predefined</name>
+		<name>Catalog.пбп_ТипСоответствияОбъектовИБ.StandardAttribute.Predefined</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
 	</object>
 	<object>
-		<name>Catalog.__ТипСоответствияОбъектовИБ.StandardAttribute.Ref</name>
+		<name>Catalog.пбп_ТипСоответствияОбъектовИБ.StandardAttribute.Ref</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
 	</object>
 	<object>
-		<name>Catalog.__ТипСоответствияОбъектовИБ.StandardAttribute.DeletionMark</name>
+		<name>Catalog.пбп_ТипСоответствияОбъектовИБ.StandardAttribute.DeletionMark</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
 	</object>
 	<object>
-		<name>Catalog.__ТипСоответствияОбъектовИБ.StandardAttribute.IsFolder</name>
+		<name>Catalog.пбп_ТипСоответствияОбъектовИБ.StandardAttribute.IsFolder</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
 	</object>
 	<object>
-		<name>Catalog.__ТипСоответствияОбъектовИБ.StandardAttribute.Owner</name>
+		<name>Catalog.пбп_ТипСоответствияОбъектовИБ.StandardAttribute.Owner</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
 	</object>
 	<object>
-		<name>Catalog.__ТипСоответствияОбъектовИБ.StandardAttribute.Parent</name>
+		<name>Catalog.пбп_ТипСоответствияОбъектовИБ.StandardAttribute.Parent</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
 	</object>
 	<object>
-		<name>Catalog.__ТипСоответствияОбъектовИБ.StandardAttribute.Description</name>
+		<name>Catalog.пбп_ТипСоответствияОбъектовИБ.StandardAttribute.Description</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
 	</object>
 	<object>
-		<name>Catalog.__ТипСоответствияОбъектовИБ.StandardAttribute.Code</name>
+		<name>Catalog.пбп_ТипСоответствияОбъектовИБ.StandardAttribute.Code</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
