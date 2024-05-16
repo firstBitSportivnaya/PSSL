@@ -56,8 +56,8 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.АдминистраторСистемы</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок</xr:Item>
 			</DefaultRoles>
-			<Vendor>Отдел разработки ДКП2</Vendor>
-			<Version>1.0.0.1</Version>
+			<Vendor>Первый БИТ</Vendor>
+			<Version>1.0.0.2</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>false</UseManagedFormInOrdinaryApplication>

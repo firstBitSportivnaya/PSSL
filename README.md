@@ -6,7 +6,7 @@
 [![GitHub issues](https://img.shields.io/github/issues-raw/firstBitSportivnaya/PSSL?style=badge)](https://github.com/firstBitSportivnaya/PSSL/issues)
 [![License](https://img.shields.io/github/license/firstBitSportivnaya/PSSL?style=badge)](https://github.com/firstBitSportivnaya/PSSL/blob/develop/LICENSE)
 
-![image](https://repository-images.githubusercontent.com/751858948/3aa4889e-501a-4fb1-b44f-5c0b6563665e)
+![image](https://repository-images.githubusercontent.com/751858948/a45ea547-c23c-4ce1-b30e-609d9ac8d558)
 
 ## Cписок подсистем
 
