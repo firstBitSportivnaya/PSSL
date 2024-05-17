@@ -209,7 +209,7 @@
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:TypeSet>cfg:DefinedType.ТипыОбъектовСоответствийИБ</v8:TypeSet>
+						<v8:TypeSet>cfg:DefinedType.пбп_ТипыОбъектовСоответствийИБ</v8:TypeSet>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
@@ -298,7 +298,7 @@
 					</Synonym>
 					<Comment>Объект из сопряженной системы</Comment>
 					<Type>
-						<v8:TypeSet>cfg:DefinedType.ТипыОбъектовСоответствийИБ</v8:TypeSet>
+						<v8:TypeSet>cfg:DefinedType.пбп_ТипыОбъектовСоответствийИБ</v8:TypeSet>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
@@ -344,7 +344,7 @@
 					</Synonym>
 					<Comment>Объект из базы УХ</Comment>
 					<Type>
-						<v8:TypeSet>cfg:DefinedType.ТипыОбъектовСоответствийИБ</v8:TypeSet>
+						<v8:TypeSet>cfg:DefinedType.пбп_ТипыОбъектовСоответствийИБ</v8:TypeSet>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>

@@ -331,7 +331,7 @@
 			<EventSubscription>пбп_СправочникиПриЗаписи</EventSubscription>
 			<EventSubscription>пбп_СправочникиПриКопировании</EventSubscription>
 			<ScheduledJob>пбп_ОчисткаИсторииИнтеграции</ScheduledJob>
-			<DefinedType>ТипыОбъектовСоответствийИБ</DefinedType>
+			<DefinedType>пбп_ТипыОбъектовСоответствийИБ</DefinedType>
 			<CommonForm>пбп_ФормаВыбораПоля</CommonForm>
 			<Catalog>пбп_ИнтегрируемыеСистемы</Catalog>
 			<Catalog>пбп_ИсторияИнтеграции</Catalog>

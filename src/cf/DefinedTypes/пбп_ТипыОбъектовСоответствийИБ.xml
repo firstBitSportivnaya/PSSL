@@ -2,13 +2,13 @@
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
 	<DefinedType uuid="aa9d9dd8-daba-4c07-84b7-fb342a8672ee">
 		<InternalInfo>
-			<xr:GeneratedType name="DefinedType.ТипыОбъектовСоответствийИБ" category="DefinedType">
+			<xr:GeneratedType name="DefinedType.пбп_ТипыОбъектовСоответствийИБ" category="DefinedType">
 				<xr:TypeId>2384fff2-fc64-4952-bd52-c33e0dddcddd</xr:TypeId>
 				<xr:ValueId>f6c966d5-01c4-42f4-9feb-2095f3375560</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>ТипыОбъектовСоответствийИБ</Name>
+			<Name>пбп_ТипыОбъектовСоответствийИБ</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
