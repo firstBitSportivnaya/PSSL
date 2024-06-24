@@ -16,6 +16,11 @@ jobs:
       with:
         fetch-depth: 0
         
+    - name: Извлечение версии конфигурации
+      shell: bash
+      run: echo "version=`cat ./src/cf/Configuration.xml | grep -Po '(?<=<Version>)(.*)(?=</Version>)' | gawk -F'.' '{print $1"." $2"." $3}'`"  >> $GITHUB_OUTPUT
+      id: extract_version
+        
     - name: Вычисление имени ветки
       uses: nelonoel/branch-name@v1.0.1
 
@@ -31,6 +36,7 @@ jobs:
       run: sonar-scanner
         -Dsonar.host.url=https://sonar.openbsl.ru
         -Dsonar.branch.name=${{ env.BRANCH_NAME }}
+        -Dsonar.projectVersion=${{ steps.extract_version.outputs.version }}
     # Анализ проекта в SonarQube (пулл-реквест)
     - name: Анализ в SonarQube (pull-request)
       if: github.event_name == 'pull_request'
@@ -43,4 +49,3 @@ jobs:
         -Dsonar.pullrequest.branch=${{ github.event.pull_request.head.ref }}
         -Dsonar.pullrequest.base=${{ github.event.pull_request.base.ref }}
         -Dsonar.scm.revision=${{ github.event.pull_request.head.sha }}
-   
