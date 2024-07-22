@@ -18,7 +18,7 @@
 				<v8:TypeSet>cfg:DocumentObject</v8:TypeSet>
 			</Source>
 			<Event>BeforeWrite</Event>
-			<Handler>CommonModule.пбп_ДокументыПередЗаписью.ДокументыПередЗаписью</Handler>
+			<Handler>CommonModule.пбп_ДокументыОбработчики.ПередЗаписью</Handler>
 		</Properties>
 	</EventSubscription>
 </MetaDataObject>
