@@ -57,7 +57,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок</xr:Item>
 			</DefaultRoles>
 			<Vendor>Первый БИТ</Vendor>
-			<Version>1.0.0.2</Version>
+			<Version>1.0.1.1</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>false</UseManagedFormInOrdinaryApplication>
@@ -266,7 +266,7 @@
 			<CommonTemplate>пбп_BSLEditor</CommonTemplate>
 			<CommonTemplate>пбп_JSONEditor</CommonTemplate>
 			<CommonTemplate>пбп_XMLEditor</CommonTemplate>
-			<CommonModule>пбп_ДокументыОбработчики</CommonModule>
+			<CommonModule>пбп_ДокументыОбработкаСобытий</CommonModule>
 			<CommonModule>пбп_ЖурналРегистрации</CommonModule>
 			<CommonModule>пбп_ЖурналРегистрацииСлужебный</CommonModule>
 			<CommonModule>пбп_ЗагрузкаФайлаЧерезТабличныйДокументВызовСервера</CommonModule>
@@ -305,7 +305,7 @@
 			<CommonModule>пбп_РаботаСФормами</CommonModule>
 			<CommonModule>пбп_РегламентныеЗаданияСервер</CommonModule>
 			<CommonModule>пбп_РегламентныеЗаданияСлужебныйСервер</CommonModule>
-			<CommonModule>пбп_СправочникиОбработчики</CommonModule>
+			<CommonModule>пбп_СправочникиОбработкаСобытий</CommonModule>
 			<CommonModule>пбп_СтандартныеПодсистемыКлиент</CommonModule>
 			<CommonModule>пбп_СтандартныеПодсистемыПовтИсп</CommonModule>
 			<CommonModule>пбп_СтандартныеПодсистемыСлужебныйКлиент</CommonModule>

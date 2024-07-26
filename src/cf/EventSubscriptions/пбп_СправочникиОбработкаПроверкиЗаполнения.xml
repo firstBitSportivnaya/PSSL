@@ -14,7 +14,7 @@
 				<v8:TypeSet>cfg:CatalogObject</v8:TypeSet>
 			</Source>
 			<Event>FillCheckProcessing</Event>
-			<Handler>CommonModule.пбп_СправочникиОбработчики.ОбработкаПроверкиЗаполнения</Handler>
+			<Handler>CommonModule.пбп_СправочникиОбработкаСобытий.ОбработкаПроверкиЗаполнения</Handler>
 		</Properties>
 	</EventSubscription>
 </MetaDataObject>

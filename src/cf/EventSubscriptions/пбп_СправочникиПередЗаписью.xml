@@ -18,7 +18,7 @@
 				<v8:TypeSet>cfg:CatalogObject</v8:TypeSet>
 			</Source>
 			<Event>BeforeWrite</Event>
-			<Handler>CommonModule.пбп_СправочникиОбработчики.ПередЗаписью</Handler>
+			<Handler>CommonModule.пбп_СправочникиОбработкаСобытий.ПередЗаписью</Handler>
 		</Properties>
 	</EventSubscription>
 </MetaDataObject>

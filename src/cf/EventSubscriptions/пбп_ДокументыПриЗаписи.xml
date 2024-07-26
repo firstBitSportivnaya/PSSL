@@ -18,7 +18,7 @@
 				<v8:TypeSet>cfg:DocumentObject</v8:TypeSet>
 			</Source>
 			<Event>OnWrite</Event>
-			<Handler>CommonModule.пбп_ДокументыОбработчики.ПриЗаписи</Handler>
+			<Handler>CommonModule.пбп_ДокументыОбработкаСобытий.ПриЗаписи</Handler>
 		</Properties>
 	</EventSubscription>
 </MetaDataObject>
