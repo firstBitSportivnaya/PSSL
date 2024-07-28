@@ -18,7 +18,7 @@
 				<v8:TypeSet>cfg:DocumentObject</v8:TypeSet>
 			</Source>
 			<Event>OnCopy</Event>
-			<Handler>CommonModule.пбп_ДокументыПриКопировании.ДокументыПриКопировании</Handler>
+			<Handler>CommonModule.пбп_ДокументыОбработкаСобытий.ПриКопировании</Handler>
 		</Properties>
 	</EventSubscription>
 </MetaDataObject>

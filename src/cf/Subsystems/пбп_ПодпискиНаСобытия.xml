@@ -22,23 +22,18 @@
 			<Content>
 				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.пбп_ДокументыОбработкаЗаполнения</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.пбп_ДокументыОбработкаПроведения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.пбп_ДокументыОбработкаПроверкиЗаполнения</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.пбп_ДокументыПередЗаписью</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.пбп_ДокументыПриЗаписи</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.пбп_ДокументыПриКопировании</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.пбп_СправочникиОбработкаЗаполнения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.пбп_СправочникиОбработкаПроверкиЗаполнения</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.пбп_СправочникиПередЗаписью</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.пбп_СправочникиПриЗаписи</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.пбп_СправочникиПриКопировании</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ДокументыОбработкаЗаполнения</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ДокументыОбработкаПроведения</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ДокументыПередЗаписью</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ДокументыПриЗаписи</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ДокументыПриКопировании</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_СправочникиОбработкаЗаполнения</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_СправочникиПередЗаписью</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_СправочникиПриЗаписи</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_СправочникиПриКопировании</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ОбщегоНазначенияПовтИсп</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ДокументыОбработкаСобытий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_СправочникиОбработкаСобытий</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

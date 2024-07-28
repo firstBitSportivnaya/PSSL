@@ -18,7 +18,7 @@
 				<v8:TypeSet>cfg:DocumentObject</v8:TypeSet>
 			</Source>
 			<Event>Filling</Event>
-			<Handler>CommonModule.пбп_ДокументыОбработкаЗаполнения.ДокументыОбработкаЗаполнения</Handler>
+			<Handler>CommonModule.пбп_ДокументыОбработкаСобытий.ОбработкаЗаполнения</Handler>
 		</Properties>
 	</EventSubscription>
 </MetaDataObject>
