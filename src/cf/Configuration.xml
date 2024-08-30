@@ -271,7 +271,6 @@
 			<CommonModule>пбп_ЖурналРегистрацииСлужебный</CommonModule>
 			<CommonModule>пбп_ЗагрузкаФайлаЧерезТабличныйДокументВызовСервера</CommonModule>
 			<CommonModule>пбп_ЗагрузкаФайлаЧерезТабличныйДокументКлиент</CommonModule>
-			<CommonModule>пбп_ИнтеграцииПереопределяемый</CommonModule>
 			<CommonModule>пбп_ИнтеграцииСервер</CommonModule>
 			<CommonModule>пбп_КоннекторHTTP</CommonModule>
 			<CommonModule>пбп_МетодыРегламентныхЗаданийСервер</CommonModule>
@@ -313,7 +312,6 @@
 			<CommonModule>пбп_СтроковыеФункцииКлиентСервер</CommonModule>
 			<CommonModule>пбп_СтроковыеФункцииСлужебныйКлиентСервер</CommonModule>
 			<CommonModule>пбп_СхемыЗапросов</CommonModule>
-			<CommonModule>пбп_ТипСоответствияОбъектовИБПереопределяемый</CommonModule>
 			<EventSubscription>пбп_ДокументыОбработкаЗаполнения</EventSubscription>
 			<EventSubscription>пбп_ДокументыОбработкаПроведения</EventSubscription>
 			<EventSubscription>пбп_ДокументыОбработкаПроверкиЗаполнения</EventSubscription>
