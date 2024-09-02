@@ -26,7 +26,6 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.пбп_РедактированиеРегистраСведенийСоответствияОбъектовИБ</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Role.пбп_ЧтениеРегистраСведенийСоответствияОбъектовИБ</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DefinedType.пбп_ТипыОбъектовСоответствийИБ</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">f49cf4ad-0522-4614-b522-500afecfbe5a</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.пбп_ТипСоответствияОбъектовИБ</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ПредопределенныеЗначения</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Role.пбп_ЧтениеТиповСоответствияОбъектовИБ</xr:Item>
