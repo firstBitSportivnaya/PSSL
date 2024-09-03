@@ -38,7 +38,6 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.пбп_XMLEditor</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_КоннекторHTTP</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.пбп_ТипыJSON</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ИнтеграцииПереопределяемый</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

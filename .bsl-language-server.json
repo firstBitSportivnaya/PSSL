@@ -5,7 +5,10 @@
     "skipSupport": "withSupport",
     "ordinaryAppSupport": false,
     "parameters": {
-      "OrdinaryAppSupport": false
+      "OrdinaryAppSupport": false,
+      "Typo": {
+        "userWordsToIgnore": "пбп"
+      }
     }
   }
 }
