@@ -238,30 +238,33 @@
 		<ChildObjects>
 			<Language>Русский</Language>
 			<Language>English</Language>
+			<Subsystem>пбп_ЗагрузкаИзТабличногоДокумента</Subsystem>
+			<Subsystem>пбп_КомандныйИнтерфейсУправлениеНастройками</Subsystem>
 			<Subsystem>пбп_МодификацияФорм</Subsystem>
+			<Subsystem>пбп_НастройкиОтбораОбъектов</Subsystem>
 			<Subsystem>пбп_ОбщегоНазначения</Subsystem>
 			<Subsystem>пбп_ПодпискиНаСобытия</Subsystem>
 			<Subsystem>пбп_ПользовательскиеФункции</Subsystem>
 			<Subsystem>пбп_ПредопределенныеЗначения</Subsystem>
 			<Subsystem>пбп_СоответствиеОбъектовИБ</Subsystem>
 			<Subsystem>пбп_УправлениеИнтеграциями</Subsystem>
-			<Subsystem>пбп_ЗагрузкаИзТабличногоДокумента</Subsystem>
 			<CommonPicture>пбп_ПодсистемаУправлениеИнтеграциями</CommonPicture>
+			<CommonPicture>пбп_ПодсистемаУправлениеНастройками</CommonPicture>
 			<CommonPicture>пбп_Реквизит</CommonPicture>
 			<CommonPicture>пбп_Реквизиты</CommonPicture>
+			<Role>АдминистраторСистемы</Role>
+			<Role>ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок</Role>
 			<Role>пбп_РедактированиеДокументаДемоКаркас</Role>
 			<Role>пбп_РедактированиеНастроекИнтеграции</Role>
+			<Role>пбп_РедактированиеНастроекОтбораОбъектов</Role>
 			<Role>пбп_РедактированиеПланаВидовХарактеристикПредопределенныеЗначения</Role>
 			<Role>пбп_РедактированиеПользовательскихФункций</Role>
 			<Role>пбп_РедактированиеРегистраСведенийСоответствияОбъектовИБ</Role>
 			<Role>пбп_РедактированиеТиповСоответствияОбъектовИБ</Role>
-			<Role>пбп_РедактированиеНастроекОтбораОбъектов</Role>
+			<Role>пбп_ЧтениеНастроекОтборовОбъектов</Role>
 			<Role>пбп_ЧтениеПланаВидовХарактеристикПредопределенныеЗначения</Role>
 			<Role>пбп_ЧтениеРегистраСведенийСоответствияОбъектовИБ</Role>
 			<Role>пбп_ЧтениеТиповСоответствияОбъектовИБ</Role>
-			<Role>пбп_ЧтениеНастроекОтборовОбъектов</Role>
-			<Role>АдминистраторСистемы</Role>
-			<Role>ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок</Role>
 			<Role>ПолныеПрава</Role>
 			<CommonTemplate>пбп_BSLEditor</CommonTemplate>
 			<CommonTemplate>пбп_JSONEditor</CommonTemplate>
@@ -330,15 +333,15 @@
 			<Catalog>пбп_ИсторияИнтеграции</Catalog>
 			<Catalog>пбп_МетодыИнтеграции</Catalog>
 			<Catalog>пбп_НастройкиИнтеграции</Catalog>
+			<Catalog>пбп_НастройкиОтбораОбъектов</Catalog>
 			<Catalog>пбп_ПользовательскиеФункции</Catalog>
 			<Catalog>пбп_ТипСоответствияОбъектовИБ</Catalog>
-			<Catalog>пбп_НастройкиОтбораОбъектов</Catalog>
 			<Document>ДемоРаботаСФормами</Document>
 			<Enum>пбп_КонтекстыВыполненияПользовательскихФункций</Enum>
 			<Enum>пбп_СозданОбновлен</Enum>
 			<Enum>пбп_СтатусыИнтеграции</Enum>
-			<Enum>пбп_ФорматыЗапросовИнтеграции</Enum>
 			<Enum>пбп_ТипыJSON</Enum>
+			<Enum>пбп_ФорматыЗапросовИнтеграции</Enum>
 			<InformationRegister>пбп_СоответствияОбъектовИБ</InformationRegister>
 			<ChartOfCharacteristicTypes>пбп_ПредопределенныеЗначения</ChartOfCharacteristicTypes>
 		</ChildObjects>
