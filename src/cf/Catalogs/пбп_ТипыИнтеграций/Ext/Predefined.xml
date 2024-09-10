@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.18">
+	<Item id="6929062d-fb13-495b-9b83-9eb93bc15ec5">
+		<Name>БрокерыСообщений</Name>
+		<Code>000000004</Code>
+		<Description>Брокеры сообщений</Description>
+		<IsFolder>false</IsFolder>
+		<ChildItems>
+			<Item id="b358f7e6-ef0b-4643-8afd-c2b6cf5943f0">
+				<Name>Kafka</Name>
+				<Code>000000014</Code>
+				<Description>Kafka</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="27e368ff-532e-493c-bcdf-59ee408c604b">
+				<Name>RabbitMq</Name>
+				<Code>000000013</Code>
+				<Description>Rabbit MQ</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="2ce81f0d-7064-4696-ae29-73af01df3517">
+		<Name>ВызовВнешнейПроцедуры</Name>
+		<Code>000000003</Code>
+		<Description>Вызов внешней процедуры</Description>
+		<IsFolder>false</IsFolder>
+		<ChildItems>
+			<Item id="852857d7-c72a-4acc-87df-e1be7ba372df">
+				<Name>COM</Name>
+				<Code>000000010</Code>
+				<Description>COM-объект</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="d53a59ab-c076-4d46-92cc-3940b142088e">
+				<Name>RESTAPI</Name>
+				<Code>000000009</Code>
+				<Description>REST API</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="434face5-d225-43f0-9bbd-a2dd251ab2a0">
+				<Name>SOAP</Name>
+				<Code>000000008</Code>
+				<Description>SOAP</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="3129b458-9840-4653-a536-30c754b8749f">
+				<Name>ВнешняяКомпонента</Name>
+				<Code>000000011</Code>
+				<Description>Внешняя компонента</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="a0d0cce0-5c10-40c0-99ee-c1b40b6e5bf5">
+				<Name>КоманднаяСтрока</Name>
+				<Code>000000012</Code>
+				<Description>Командная строка</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="9aa22d6f-f875-4cc6-99c8-876f6eed7506">
+		<Name>ПрямоеПодключениеКБД</Name>
+		<Code>000000002</Code>
+		<Description>Прямое подключение к БД</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="e0d0f8e8-e6d9-41a1-bfec-222edc017766">
+		<Name>ФайловыеОбмены</Name>
+		<Code>000000001</Code>
+		<Description>Файловые обмены</Description>
+		<IsFolder>false</IsFolder>
+		<ChildItems>
+			<Item id="ff85c31d-5e60-438c-b85f-4547dc2f11fe">
+				<Name>FTPРесурсы</Name>
+				<Code>000000006</Code>
+				<Description>FTP-ресурсы</Description>
+				<IsFolder>false</IsFolder>
+				<ChildItems>
+					<Item id="756deb1e-b368-4180-83b5-756aaf94e9a1">
+						<Name>FTPS</Name>
+						<Code>000000018</Code>
+						<Description>FTPS</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="a615b6b3-5ae9-40e3-a385-cec4f52bac08">
+						<Name>SFTP</Name>
+						<Code>000000017</Code>
+						<Description>SFTP</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+				</ChildItems>
+			</Item>
+			<Item id="c9c2a246-0d72-4fe9-b706-b79bbc712e7c">
+				<Name>Каталог</Name>
+				<Code>000000005</Code>
+				<Description>Каталог</Description>
+				<IsFolder>false</IsFolder>
+				<ChildItems>
+					<Item id="873d7d5e-fb18-4848-a071-25e7006c60a4">
+						<Name>Сетевой</Name>
+						<Code>000000016</Code>
+						<Description>Сетевой</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="7323ac1c-1b05-4a56-a6a3-73c64c1d3282">
+						<Name>Локальный</Name>
+						<Code>000000015</Code>
+						<Description>Файловый</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+				</ChildItems>
+			</Item>
+			<Item id="90341f9e-c437-461e-8a44-978bf2e108d3">
+				<Name>ПочтовыйКлиент</Name>
+				<Code>000000007</Code>
+				<Description>Почтовый клиент</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+</PredefinedData>
