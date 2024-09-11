@@ -86,7 +86,7 @@
 							<ContextMenu name="ИсточникКомпонентыТиповаяКонтекстноеМеню" id="9"/>
 							<ExtendedTooltip name="ИсточникКомпонентыТиповаяРасширеннаяПодсказка" id="10"/>
 							<Events>
-								<Event name="OnChange">ИсточникКомпонентыТиповаяПриИзменении</Event>
+								<Event name="OnChange">ИсточникКомпонентыПриИзменении</Event>
 							</Events>
 						</RadioButtonField>
 					</ChildItems>
