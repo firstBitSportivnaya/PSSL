@@ -85,6 +85,9 @@
 							</ChoiceList>
 							<ContextMenu name="ИсточникКомпонентыТиповаяКонтекстноеМеню" id="9"/>
 							<ExtendedTooltip name="ИсточникКомпонентыТиповаяРасширеннаяПодсказка" id="10"/>
+							<Events>
+								<Event name="OnChange">ИсточникКомпонентыТиповаяПриИзменении</Event>
+							</Events>
 						</RadioButtonField>
 					</ChildItems>
 				</UsualGroup>
@@ -137,7 +140,7 @@
 							<ContextMenu name="ИсточникКомпонентыИзФайлаКонтекстноеМеню" id="26"/>
 							<ExtendedTooltip name="ИсточникКомпонентыИзФайлаРасширеннаяПодсказка" id="27"/>
 							<Events>
-								<Event name="OnChange">ИсточникПравилПриИзменении</Event>
+								<Event name="OnChange">ИсточникКомпонентыПриИзменении</Event>
 							</Events>
 						</RadioButtonField>
 						<UsualGroup name="ИсточникФайл" id="28">

@@ -266,6 +266,7 @@
 			<Role>пбп_ЧтениеРегистраСведенийСоответствияОбъектовИБ</Role>
 			<Role>пбп_ЧтениеТиповСоответствияОбъектовИБ</Role>
 			<Role>ПолныеПрава</Role>
+			<Role>пбп_ЧтениеКонстантыИспользоватьПользовательскиеФункции</Role>
 			<CommonTemplate>пбп_BSLEditor</CommonTemplate>
 			<CommonTemplate>пбп_JSONEditor</CommonTemplate>
 			<CommonTemplate>пбп_XMLEditor</CommonTemplate>
