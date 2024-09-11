@@ -85,9 +85,6 @@
 							</ChoiceList>
 							<ContextMenu name="ИсточникКомпонентыТиповаяКонтекстноеМеню" id="9"/>
 							<ExtendedTooltip name="ИсточникКомпонентыТиповаяРасширеннаяПодсказка" id="10"/>
-							<Events>
-								<Event name="OnChange">ИсточникПравилПриИзменении</Event>
-							</Events>
 						</RadioButtonField>
 					</ChildItems>
 				</UsualGroup>
