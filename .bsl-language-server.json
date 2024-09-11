@@ -8,7 +8,7 @@
       "OrdinaryAppSupport": false,
       "Typo": {
         "userWordsToIgnore": "пбп"
-      }
+      },
       "LatinAndCyrillicSymbolInWord": {
         "excludeWords": "ЧтениеXML, ЧтениеJSON, ЗаписьXML, ЗаписьJSON, ComОбъект, ФабрикаXDTO, ОбъектXDTO, СоединениеFTP, HTTPСоединение, HTTPЗапрос, HTTPСервисОтвет, SMSСообщение, WSПрокси, ИмяCOMОбъекта, ЭтоWindowsКлиент",
         "allowTrailingPartsInAnotherLanguage": true
