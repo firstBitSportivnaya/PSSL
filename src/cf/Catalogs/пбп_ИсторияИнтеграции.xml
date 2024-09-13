@@ -537,11 +537,11 @@
 			</Attribute>
 			<Attribute uuid="713449e4-cc91-4c4c-af12-595211d6afa5">
 				<Properties>
-					<Name>ФорматЗапросаИнтеграции</Name>
+					<Name>ФорматИнтеграции</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Формат запроса интеграции</v8:content>
+							<v8:content>Формат интеграции</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -550,7 +550,7 @@
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>cfg:EnumRef.пбп_ФорматыЗапросовИнтеграции</v8:Type>
+						<v8:Type>cfg:EnumRef.пбп_ФорматыИнтеграций</v8:Type>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
@@ -581,11 +581,11 @@
 			</Attribute>
 			<Attribute uuid="fb0fbd14-6837-471c-a1f0-78d90c5f5cf8">
 				<Properties>
-					<Name>ЗапросИсходящий</Name>
+					<Name>ИсходящееСообщение</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Запрос исходящий</v8:content>
+							<v8:content>Исходящее сообщение</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -629,11 +629,11 @@
 			</Attribute>
 			<Attribute uuid="73d82ef9-59db-41d5-9d39-f538b5bae323">
 				<Properties>
-					<Name>ЗапросВходящий</Name>
+					<Name>ВходящееСообщение</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Запрос входящий</v8:content>
+							<v8:content>Входящее сообщение</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -773,11 +773,11 @@
 			</Attribute>
 			<Attribute uuid="88061294-111c-4a90-b18d-aeafcd50b0c1">
 				<Properties>
-					<Name>МетодИнтеграции</Name>
+					<Name>ИнтеграционныйПоток</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Метод интеграции</v8:content>
+							<v8:content>Интеграционный поток</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -786,7 +786,7 @@
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>cfg:CatalogRef.пбп_МетодыИнтеграции</v8:Type>
+						<v8:Type>cfg:CatalogRef.пбп_ИнтеграционныеПотоки</v8:Type>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
@@ -874,7 +874,7 @@
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:TypeSet>cfg:CatalogRef</v8:TypeSet>
+						<v8:TypeSet>cfg:DefinedType.пбп_Пользователи</v8:TypeSet>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>

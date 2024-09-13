@@ -26,10 +26,10 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.пбп_ИнтегрируемыеСистемы</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.пбп_СтатусыИнтеграции</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.пбп_СозданОбновлен</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Enum.пбп_ФорматыЗапросовИнтеграции</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.пбп_ФорматыИнтеграций</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.пбп_НастройкиИнтеграции</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.пбп_ИсторияИнтеграции</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Catalog.пбп_МетодыИнтеграции</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.пбп_ИнтеграционныеПотоки</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ИнтеграцииСервер</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Role.пбп_РедактированиеНастроекИнтеграции</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.пбп_ОчисткаИсторииИнтеграции</xr:Item>
@@ -38,6 +38,14 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.пбп_XMLEditor</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_КоннекторHTTP</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.пбп_ТипыJSON</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.пбп_ТипыИнтеграций</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.пбп_МетодыЗапросаREST</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.пбп_SimpleKafkaAdapter</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.пбп_PinkRabbitMQ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.пбп_ВыполнениеПользовательскихФункцийФайловыхОбменов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DefinedType.пбп_Пользователи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DefinedType.пбп_УчетныеЗаписиЭлектроннойПочты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.пбп_ТипыАвторизации</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
