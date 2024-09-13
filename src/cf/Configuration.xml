@@ -57,7 +57,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок</xr:Item>
 			</DefaultRoles>
 			<Vendor>Первый БИТ</Vendor>
-			<Version>1.0.2.3</Version>
+			<Version>1.0.2.4</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>false</UseManagedFormInOrdinaryApplication>
@@ -355,7 +355,6 @@
 			<Enum>пбп_ФорматыИнтеграций</Enum>
 			<InformationRegister>пбп_СоответствияОбъектовИБ</InformationRegister>
 			<ChartOfCharacteristicTypes>пбп_ПредопределенныеЗначения</ChartOfCharacteristicTypes>
-			<ExternalDataSource>ВнешнийИсточникДанных1</ExternalDataSource>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>
