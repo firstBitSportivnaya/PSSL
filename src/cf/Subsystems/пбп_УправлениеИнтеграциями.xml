@@ -43,6 +43,9 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.пбп_SimpleKafkaAdapter</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.пбп_PinkRabbitMQ</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.пбп_ВыполнениеПользовательскихФункцийФайловыхОбменов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DefinedType.пбп_Пользователи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DefinedType.пбп_УчетныеЗаписиЭлектроннойПочты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.пбп_ТипыАвторизации</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

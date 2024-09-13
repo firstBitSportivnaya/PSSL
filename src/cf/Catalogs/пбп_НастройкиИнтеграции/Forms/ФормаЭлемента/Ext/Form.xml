@@ -60,6 +60,12 @@
 			<ContextMenu name="ИнтегрируемаяСистемаКонтекстноеМеню" id="50"/>
 			<ExtendedTooltip name="ИнтегрируемаяСистемаРасширеннаяПодсказка" id="51"/>
 		</InputField>
+		<InputField name="ИмяОбъекта" id="64">
+			<DataPath>Объект.ИмяОбъекта</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ИмяОбъектаКонтекстноеМеню" id="65"/>
+			<ExtendedTooltip name="ИмяОбъектаРасширеннаяПодсказка" id="66"/>
+		</InputField>
 		<UsualGroup name="ГруппаОсновныеНастройки" id="32">
 			<Title>
 				<v8:item>
@@ -73,27 +79,63 @@
 					<v8:content>Группа основные настройки</v8:content>
 				</v8:item>
 			</ToolTip>
-			<Group>AlwaysHorizontal</Group>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Vertical</Group>
 			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаОсновныеНастройкиРасширеннаяПодсказка" id="33"/>
 			<ChildItems>
-				<InputField name="СтрокаПодключения" id="43">
+				<UsualGroup name="ГруппаСтрокаПорт" id="72">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа строка порт</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа строка порт</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаСтрокаПортРасширеннаяПодсказка" id="73"/>
+					<ChildItems>
+						<InputField name="СтрокаПодключения" id="43">
+							<DataPath>Объект.СтрокаПодключения</DataPath>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ContextMenu name="СтрокаПодключенияКонтекстноеМеню" id="44"/>
+							<ExtendedTooltip name="СтрокаПодключенияРасширеннаяПодсказка" id="45"/>
+							<Events>
+								<Event name="StartChoice">СтрокаПодключенияНачалоВыбора</Event>
+							</Events>
+						</InputField>
+						<InputField name="Порт" id="37">
+							<DataPath>Объект.Порт</DataPath>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ContextMenu name="ПортКонтекстноеМеню" id="38"/>
+							<ExtendedTooltip name="ПортРасширеннаяПодсказка" id="39"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<InputField name="СтрокаПодключенияМногострочная" id="69">
 					<DataPath>Объект.СтрокаПодключения</DataPath>
-					<HorizontalStretch>true</HorizontalStretch>
-					<ContextMenu name="СтрокаПодключенияКонтекстноеМеню" id="44"/>
-					<ExtendedTooltip name="СтрокаПодключенияРасширеннаяПодсказка" id="45"/>
-					<Events>
-						<Event name="StartChoice">СтрокаПодключенияНачалоВыбора</Event>
-					</Events>
-				</InputField>
-				<InputField name="Порт" id="37">
-					<DataPath>Объект.Порт</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Строка соединения (без данных аутентификации)</v8:content>
+						</v8:item>
+					</Title>
 					<AutoMaxWidth>false</AutoMaxWidth>
-					<HorizontalStretch>false</HorizontalStretch>
-					<ContextMenu name="ПортКонтекстноеМеню" id="38"/>
-					<ExtendedTooltip name="ПортРасширеннаяПодсказка" id="39"/>
+					<HorizontalStretch>true</HorizontalStretch>
+					<MultiLine>true</MultiLine>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="СтрокаПодключенияМногострочнаяКонтекстноеМеню" id="70"/>
+					<ExtendedTooltip name="СтрокаПодключенияМногострочнаяРасширеннаяПодсказка" id="71"/>
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
@@ -109,12 +151,6 @@
 			<ContextMenu name="ТипАвторизацииКонтекстноеМеню" id="62"/>
 			<ExtendedTooltip name="ТипАвторизацииРасширеннаяПодсказка" id="63"/>
 		</InputField>
-		<InputField name="ИмяCOMОбъекта" id="64">
-			<DataPath>Объект.ИмяCOMОбъекта</DataPath>
-			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-			<ContextMenu name="ИмяCOMОбъектаКонтекстноеМеню" id="65"/>
-			<ExtendedTooltip name="ИмяCOMОбъектаРасширеннаяПодсказка" id="66"/>
-		</InputField>
 		<CheckBoxField name="ИспользоватьПользовательскиеФункции" id="55">
 			<DataPath>Объект.ИспользоватьПользовательскиеФункции</DataPath>
 			<TitleLocation>Right</TitleLocation>
@@ -126,6 +162,11 @@
 			<Type>Hyperlink</Type>
 			<CommandName>Form.Command.ПодключитьВнешнююКомпонентуИзФайла</CommandName>
 			<ExtendedTooltip name="ПодключитьВнешнююКомпонентуРасширеннаяПодсказка" id="68"/>
+		</Button>
+		<Button name="УстановитьСоединениеСБазойДанных" id="74">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.УстановитьСоединениеСБазойДанных</CommandName>
+			<ExtendedTooltip name="УстановитьСоединениеСБазойДанныхРасширеннаяПодсказка" id="75"/>
 		</Button>
 		<Table name="СписокНастроек" id="9">
 			<Representation>List</Representation>
@@ -180,6 +221,9 @@
 				<ContextMenu name="СписокНастроекУправлениеПоискомКонтекстноеМеню" id="20"/>
 				<ExtendedTooltip name="СписокНастроекУправлениеПоискомРасширеннаяПодсказка" id="21"/>
 			</SearchControlAddition>
+			<Events>
+				<Event name="OnChange">СписокНастроекПриИзменении</Event>
+			</Events>
 			<ChildItems>
 				<InputField name="СписокНастроекИмяНастройки" id="22">
 					<DataPath>СписокНастроек.ИмяНастройки</DataPath>
@@ -338,6 +382,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ПодключитьВнешнююКомпонентуИзФайла</Action>
+		</Command>
+		<Command name="УстановитьСоединениеСБазойДанных" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить соединение с базой данных</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить соединение с базой данных</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УстановитьСоединениеСБазойДанных</Action>
 		</Command>
 	</Commands>
 </Form>

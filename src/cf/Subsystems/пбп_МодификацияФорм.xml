@@ -27,6 +27,8 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ДемоРаботаСФормами</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_МодификацияКонфигурацииПереопределяемыйДокумент</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Role.пбп_РедактированиеДокументаДемоКаркас</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_МодификацияКонфигурацииКлиентПовтИсп</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_МодификацияКонфигурацииПовтИсп</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

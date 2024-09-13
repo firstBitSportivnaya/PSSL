@@ -57,7 +57,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок</xr:Item>
 			</DefaultRoles>
 			<Vendor>Первый БИТ</Vendor>
-			<Version>1.0.1.3</Version>
+			<Version>1.0.2.3</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>false</UseManagedFormInOrdinaryApplication>
@@ -261,17 +261,17 @@
 			<Role>пбп_РедактированиеПользовательскихФункций</Role>
 			<Role>пбп_РедактированиеРегистраСведенийСоответствияОбъектовИБ</Role>
 			<Role>пбп_РедактированиеТиповСоответствияОбъектовИБ</Role>
+			<Role>пбп_ЧтениеКонстантыИспользоватьПользовательскиеФункции</Role>
 			<Role>пбп_ЧтениеНастроекОтборовОбъектов</Role>
 			<Role>пбп_ЧтениеПланаВидовХарактеристикПредопределенныеЗначения</Role>
 			<Role>пбп_ЧтениеРегистраСведенийСоответствияОбъектовИБ</Role>
 			<Role>пбп_ЧтениеТиповСоответствияОбъектовИБ</Role>
 			<Role>ПолныеПрава</Role>
-			<Role>пбп_ЧтениеКонстантыИспользоватьПользовательскиеФункции</Role>
 			<CommonTemplate>пбп_BSLEditor</CommonTemplate>
 			<CommonTemplate>пбп_JSONEditor</CommonTemplate>
-			<CommonTemplate>пбп_XMLEditor</CommonTemplate>
-			<CommonTemplate>пбп_SimpleKafkaAdapter</CommonTemplate>
 			<CommonTemplate>пбп_PinkRabbitMQ</CommonTemplate>
+			<CommonTemplate>пбп_SimpleKafkaAdapter</CommonTemplate>
+			<CommonTemplate>пбп_XMLEditor</CommonTemplate>
 			<CommonModule>пбп_ДокументыОбработкаСобытий</CommonModule>
 			<CommonModule>пбп_ЖурналРегистрации</CommonModule>
 			<CommonModule>пбп_ЖурналРегистрацииСлужебный</CommonModule>
@@ -329,17 +329,17 @@
 			<EventSubscription>пбп_СправочникиПередЗаписью</EventSubscription>
 			<EventSubscription>пбп_СправочникиПриЗаписи</EventSubscription>
 			<EventSubscription>пбп_СправочникиПриКопировании</EventSubscription>
-			<ScheduledJob>пбп_ОчисткаИсторииИнтеграции</ScheduledJob>
 			<ScheduledJob>пбп_ВыполнениеПользовательскихФункцийФайловыхОбменов</ScheduledJob>
+			<ScheduledJob>пбп_ОчисткаИсторииИнтеграции</ScheduledJob>
 			<FunctionalOption>пбп_ИспользоватьПользовательскиеФункции</FunctionalOption>
-			<DefinedType>пбп_ТипыОбъектовСоответствийИБ</DefinedType>
 			<DefinedType>пбп_Пользователи</DefinedType>
+			<DefinedType>пбп_ТипыОбъектовСоответствийИБ</DefinedType>
 			<DefinedType>пбп_УчетныеЗаписиЭлектроннойПочты</DefinedType>
 			<Constant>пбп_ИспользоватьПользовательскиеФункции</Constant>
 			<CommonForm>пбп_ФормаВыбораПоля</CommonForm>
+			<Catalog>пбп_ИнтеграционныеПотоки</Catalog>
 			<Catalog>пбп_ИнтегрируемыеСистемы</Catalog>
 			<Catalog>пбп_ИсторияИнтеграции</Catalog>
-			<Catalog>пбп_ИнтеграционныеПотоки</Catalog>
 			<Catalog>пбп_НастройкиИнтеграции</Catalog>
 			<Catalog>пбп_НастройкиОтбораОбъектов</Catalog>
 			<Catalog>пбп_ПользовательскиеФункции</Catalog>
@@ -347,14 +347,15 @@
 			<Catalog>пбп_ТипыИнтеграций</Catalog>
 			<Document>ДемоРаботаСФормами</Document>
 			<Enum>пбп_КонтекстыВыполненияПользовательскихФункций</Enum>
+			<Enum>пбп_МетодыЗапросаREST</Enum>
 			<Enum>пбп_СозданОбновлен</Enum>
 			<Enum>пбп_СтатусыИнтеграции</Enum>
 			<Enum>пбп_ТипыJSON</Enum>
-			<Enum>пбп_ФорматыИнтеграций</Enum>
 			<Enum>пбп_ТипыАвторизации</Enum>
-			<Enum>пбп_МетодыЗапросаREST</Enum>
+			<Enum>пбп_ФорматыИнтеграций</Enum>
 			<InformationRegister>пбп_СоответствияОбъектовИБ</InformationRegister>
 			<ChartOfCharacteristicTypes>пбп_ПредопределенныеЗначения</ChartOfCharacteristicTypes>
+			<ExternalDataSource>ВнешнийИсточникДанных1</ExternalDataSource>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>

@@ -97,12 +97,6 @@
 				<Event name="OnChange">ПользовательскаяФункцияПриИзменении</Event>
 			</Events>
 		</InputField>
-		<InputField name="МетодЗапроса" id="43">
-			<DataPath>Объект.МетодЗапроса</DataPath>
-			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-			<ContextMenu name="МетодЗапросаКонтекстноеМеню" id="44"/>
-			<ExtendedTooltip name="МетодЗапросаРасширеннаяПодсказка" id="45"/>
-		</InputField>
 		<Table name="ПараметрыВхода" id="15">
 			<TitleLocation>Top</TitleLocation>
 			<AutoInsertNewRow>true</AutoInsertNewRow>

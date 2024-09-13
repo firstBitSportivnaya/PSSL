@@ -33,6 +33,29 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_РаботаСДиалогамиСервер</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_РаботаСКоллекциямиКлиентСервер</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_СтроковыеФункцииКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ЖурналРегистрации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ЖурналРегистрацииСлужебный</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_МодификацияКонфигурацииКлиентПовтИсп</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ОбновлениеИнформационнойБазыПБП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ОбщегоНазначенияВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ОбщегоНазначенияСлужебный</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ОбщегоНазначенияСлужебныйКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ОбщегоНазначенияСлужебныйКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ПолучениеФайловИзИнтернета</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ПолучениеФайловИзИнтернетаСлужебный</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_Пользователи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ПользователиКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ПользователиСлужебный</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_РегламентныеЗаданияСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_РегламентныеЗаданияСлужебныйСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_СтандартныеПодсистемыКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_СтандартныеПодсистемыПовтИсп</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_СтандартныеПодсистемыСлужебныйКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_СтандартныеПодсистемыСлужебныйПовтИсп</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_СтроковыеФункцииСлужебныйКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_СхемыЗапросов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DefinedType.пбп_Пользователи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DefinedType.пбп_УчетныеЗаписиЭлектроннойПочты</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

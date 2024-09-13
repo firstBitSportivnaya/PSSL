@@ -20,8 +20,7 @@
 			</Picture>
 			<Content>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ДемоРаботаСФормами</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Constant.пбп_ИспользоватьПользовательскиеФункции</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.пбп_ИспользоватьПользовательскиеФункции</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.пбп_ПодсистемаУправлениеНастройками</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects>

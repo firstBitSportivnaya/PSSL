@@ -17,6 +17,8 @@
 			<Picture/>
 			<Content>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.пбп_НастройкиОтбораОбъектов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.пбп_РедактированиеНастроекОтбораОбъектов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.пбп_ЧтениеНастроекОтборовОбъектов</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

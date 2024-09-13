@@ -687,11 +687,11 @@
 			</Attribute>
 			<Attribute uuid="d4b9d8a2-ac94-47d7-8a15-8a91de15d12b">
 				<Properties>
-					<Name>ИмяCOMОбъекта</Name>
+					<Name>ИмяОбъекта</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Имя COM-объекта</v8:content>
+							<v8:content>Имя объекта</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
