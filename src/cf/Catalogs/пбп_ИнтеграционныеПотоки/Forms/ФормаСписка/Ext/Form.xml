@@ -94,10 +94,10 @@
 					<ContextMenu name="НаименованиеКонтекстноеМеню" id="17"/>
 					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="18"/>
 				</LabelField>
-				<InputField name="Метод" id="22">
-					<DataPath>~Список.Метод</DataPath>
-					<ContextMenu name="МетодКонтекстноеМеню" id="23"/>
-					<ExtendedTooltip name="МетодРасширеннаяПодсказка" id="24"/>
+				<InputField name="ТочкаВхода" id="22">
+					<DataPath>Список.ТочкаВхода</DataPath>
+					<ContextMenu name="ТочкаВходаКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="ТочкаВходаРасширеннаяПодсказка" id="24"/>
 				</InputField>
 			</ChildItems>
 		</Table>
