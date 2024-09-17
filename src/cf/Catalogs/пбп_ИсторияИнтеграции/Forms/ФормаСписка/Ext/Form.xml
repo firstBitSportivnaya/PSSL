@@ -113,10 +113,10 @@
 					<ContextMenu name="СтатусКонтекстноеМеню" id="52"/>
 					<ExtendedTooltip name="СтатусРасширеннаяПодсказка" id="53"/>
 				</InputField>
-				<LabelField name="МетодИнтеграции" id="63">
-					<DataPath>~Список.МетодИнтеграции</DataPath>
-					<ContextMenu name="МетодИнтеграцииКонтекстноеМеню" id="64"/>
-					<ExtendedTooltip name="МетодИнтеграцииРасширеннаяПодсказка" id="65"/>
+				<LabelField name="ИнтеграционныйПоток" id="63">
+					<DataPath>Список.ИнтеграционныйПоток</DataPath>
+					<ContextMenu name="ИнтеграционныйПотокКонтекстноеМеню" id="64"/>
+					<ExtendedTooltip name="ИнтеграционныйПотокРасширеннаяПодсказка" id="65"/>
 				</LabelField>
 				<LabelField name="Пользователь" id="66">
 					<DataPath>Список.Пользователь</DataPath>
