@@ -3,4 +3,4 @@ dumplist.txt
 .vscode
 /.metadata/
 /.scannerwork/
-
+build/
