@@ -3,6 +3,8 @@
 ```mermaid
 title ER-Diagram integrations subsystem
 
+erDiagram
+
 entity "Справочник: Интегрируемые системы" as eSysInt {
     *УникальныйИдентификатор : uuid <<generated>>
     --
