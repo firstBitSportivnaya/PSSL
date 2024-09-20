@@ -1,0 +1,20 @@
+name: generate plantuml
+on: push
+jobs:
+  generate_plantuml:
+    runs-on: ubuntu-latest
+    name: plantuml
+    steps:
+    - name: checkout
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 1
+    - name: plantuml
+      id: plantuml
+      uses: kolchurinvv/generate-plantuml-action@master
+      with:
+        message: "Render PlantUML files"
+        server: http://www.plantuml.com/plantuml
+        path: out
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
