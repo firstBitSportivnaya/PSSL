@@ -11,10 +11,10 @@ jobs:
         fetch-depth: 1
     - name: plantuml
       id: plantuml
-      uses: grassedge/generate-plantuml-action@v1.5
+      uses: kolchurinvv/generate-plantuml-action@master
       with:
         message: "Render PlantUML files"
         server: http://www.plantuml.com/plantuml
-        path: docs/out
+        path: out
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
