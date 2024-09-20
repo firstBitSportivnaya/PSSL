@@ -15,6 +15,6 @@ jobs:
       with:
         message: "Render PlantUML files"
         server: http://www.plantuml.com/plantuml
-        path: out
+        path: docs/out
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
