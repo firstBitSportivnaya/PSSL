@@ -195,7 +195,13 @@ eIntHistory --> eIntFlows : ИнтреграционныйПоток
 eIntHistory --> eUsers : Пользователь
 eIntHistory -> eCreatedUpdated : СозданОбновлен (объекты интеграции)
 
+
+
+
 newpage
+
+
+
 
 note as eIntSettings_predetermined
     Справочник: Настройки интеграции - предопределенные элементы
@@ -204,6 +210,5 @@ note as eIntSettings_predetermined
     <#white>|  000000002  |  Kafka  | <пустая ссылка> | Kafka | Kafka | <путь к серверу> | <порт сервера> | - | <пустая ссылка> | "базовая" по умолчанию | <идентификатор> | Ложь | - | Ложь |
     <#white>|  000000003  |  ActiveDirectory  | <пустая ссылка> | ActiveDirectory | COM | Provider="ADsDSOObject" | - | - | <пустая ссылка> | "базовая" по умолчанию | <идентификатор> | Ложь | ADODB.Connection | Ложь |
 end note
-
 
 @enduml
