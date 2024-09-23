@@ -4,4 +4,4 @@
 
 ![image](docs/images/ERArchitectureIntegrationsSubsystem.svg)
 
-</details></details>
+</details>
