@@ -3,6 +3,10 @@ on: push
 jobs:
   generate_plantuml:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+      repository-projects: write
     name: plantuml
     steps:
     - name: checkout
