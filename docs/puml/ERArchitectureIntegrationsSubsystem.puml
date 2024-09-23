@@ -205,4 +205,5 @@ note as eIntSettings_predetermined
     <#white>|  000000003  |  ActiveDirectory  | <пустая ссылка> | ActiveDirectory | COM | Provider="ADsDSOObject" | - | - | <пустая ссылка> | "базовая" по умолчанию | <идентификатор> | Ложь | ADODB.Connection | Ложь |
 end note
 
+
 @enduml
