@@ -2,6 +2,6 @@
 
 <details>
 
-![image](out/ERArchitectureIntegrationsSubsystem.svg)
+![image](docs/images/ERArchitectureIntegrationsSubsystem.svg)
 
 </details></details>
