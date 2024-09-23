@@ -196,11 +196,7 @@ eIntHistory --> eUsers : Пользователь
 eIntHistory -> eCreatedUpdated : СозданОбновлен (объекты интеграции)
 
 
-
-
 newpage
-
-
 
 
 note as eIntSettings_predetermined
