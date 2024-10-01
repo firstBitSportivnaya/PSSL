@@ -1382,7 +1382,9 @@
 	
 	РезультатПроверки = Ложь;
 	
+	// BSLLS:MissingTemporaryFileDeletion-off
 	ИмяФайлаПроверки = ПолучитьИмяВременногоФайла("txt");
+	// BSLLS:MissingTemporaryFileDeletion-on
 	
 	КомандаПроверки = СтрШаблон("command -v %1 > %2", ИмяУтилиты, ИмяФайлаПроверки);
 	
