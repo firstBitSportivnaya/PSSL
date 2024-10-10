@@ -300,6 +300,8 @@
 			<CommonModule>пбп_ПользователиКлиентСервер</CommonModule>
 			<CommonModule>пбп_ПользователиСлужебный</CommonModule>
 			<CommonModule>пбп_ПредопределенныеЗначения</CommonModule>
+			<CommonModule>пбп_ПредопределенныеЗначенияВызовСервера</CommonModule>
+			<CommonModule>пбп_ПредопределенныеЗначенияКлиент</CommonModule>
 			<CommonModule>пбп_ПредопределенныеЗначенияПереопределяемый</CommonModule>
 			<CommonModule>пбп_РаботаСДиалогамиКлиент</CommonModule>
 			<CommonModule>пбп_РаботаСДиалогамиСервер</CommonModule>
@@ -328,7 +330,9 @@
 			<EventSubscription>пбп_СправочникиПриКопировании</EventSubscription>
 			<ScheduledJob>пбп_ОчисткаИсторииИнтеграции</ScheduledJob>
 			<DefinedType>пбп_ТипыОбъектовСоответствийИБ</DefinedType>
+			<DefinedType>пбп_ПредопределенныеВсеСсылкиПереопределяемый</DefinedType>
 			<CommonForm>пбп_ФормаВыбораПоля</CommonForm>
+			<CommonForm>пбп_ФормаРазрешенияКонфликтовПредопределенныхЭлементов</CommonForm>
 			<Catalog>пбп_ИнтегрируемыеСистемы</Catalog>
 			<Catalog>пбп_ИсторияИнтеграции</Catalog>
 			<Catalog>пбп_МетодыИнтеграции</Catalog>
@@ -343,6 +347,7 @@
 			<Enum>пбп_ТипыJSON</Enum>
 			<Enum>пбп_ФорматыЗапросовИнтеграции</Enum>
 			<InformationRegister>пбп_СоответствияОбъектовИБ</InformationRegister>
+			<InformationRegister>пбп_СостоянияПредопределенныхЭлементов</InformationRegister>
 			<ChartOfCharacteristicTypes>пбп_ПредопределенныеЗначения</ChartOfCharacteristicTypes>
 		</ChildObjects>
 	</Configuration>
