@@ -21,7 +21,7 @@
 				<v8:Type>cfg:CatalogRef.пбп_ТипСоответствияОбъектовИБ</v8:Type>
 				<v8:Type>cfg:CatalogRef.пбп_ИнтегрируемыеСистемы</v8:Type>
 				<v8:Type>cfg:ChartOfCharacteristicTypesRef.пбп_ПредопределенныеЗначения</v8:Type>
-				<v8:Type>cfg:CatalogRef.пбп_МетодыИнтеграции</v8:Type>
+				<v8:Type>cfg:CatalogRef.пбп_ИнтеграционныеПотоки</v8:Type>
 			</Type>
 		</Properties>
 	</DefinedType>
