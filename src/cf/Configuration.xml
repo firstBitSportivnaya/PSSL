@@ -57,7 +57,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок</xr:Item>
 			</DefaultRoles>
 			<Vendor>Первый БИТ</Vendor>
-			<Version>1.0.3.0</Version>
+			<Version>1.0.3.7</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>false</UseManagedFormInOrdinaryApplication>
@@ -260,11 +260,13 @@
 			<Role>пбп_РедактированиеПланаВидовХарактеристикПредопределенныеЗначения</Role>
 			<Role>пбп_РедактированиеПользовательскихФункций</Role>
 			<Role>пбп_РедактированиеРегистраСведенийСоответствияОбъектовИБ</Role>
+			<Role>пбп_РедактированиеСостоянийПредопределенныхЭлементов</Role>
 			<Role>пбп_РедактированиеТиповСоответствияОбъектовИБ</Role>
 			<Role>пбп_ЧтениеКонстантыИспользоватьПользовательскиеФункции</Role>
 			<Role>пбп_ЧтениеНастроекОтборовОбъектов</Role>
 			<Role>пбп_ЧтениеПланаВидовХарактеристикПредопределенныеЗначения</Role>
 			<Role>пбп_ЧтениеРегистраСведенийСоответствияОбъектовИБ</Role>
+			<Role>пбп_ЧтениеСостоянийПредопределенныхЭлементов</Role>
 			<Role>пбп_ЧтениеТиповСоответствияОбъектовИБ</Role>
 			<Role>ПолныеПрава</Role>
 			<CommonTemplate>пбп_BSLEditor</CommonTemplate>
