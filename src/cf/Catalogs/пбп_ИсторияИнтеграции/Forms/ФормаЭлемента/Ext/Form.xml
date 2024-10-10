@@ -93,13 +93,13 @@
 			<ExtendedTooltip name="ГруппаМетодФорматРасширеннаяПодсказка" id="131"/>
 			<ChildItems>
 				<InputField name="МетодИнтеграции" id="97">
-					<DataPath>Объект.МетодИнтеграции</DataPath>
+					<DataPath>Объект.ИнтеграционныйПоток</DataPath>
 					<ReadOnly>true</ReadOnly>
 					<ContextMenu name="МетодИнтеграцииКонтекстноеМеню" id="98"/>
 					<ExtendedTooltip name="МетодИнтеграцииРасширеннаяПодсказка" id="99"/>
 				</InputField>
 				<InputField name="ФорматЗапросаИнтеграции" id="127">
-					<DataPath>Объект.ФорматЗапросаИнтеграции</DataPath>
+					<DataPath>Объект.ФорматИнтеграции</DataPath>
 					<ReadOnly>true</ReadOnly>
 					<ContextMenu name="ФорматЗапросаИнтеграцииКонтекстноеМеню" id="128"/>
 					<ExtendedTooltip name="ФорматЗапросаИнтеграцииРасширеннаяПодсказка" id="129"/>

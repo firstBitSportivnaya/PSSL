@@ -94,6 +94,11 @@
 					<ContextMenu name="НаименованиеКонтекстноеМеню" id="17"/>
 					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="18"/>
 				</LabelField>
+				<LabelField name="ТипИнтеграции" id="24">
+					<DataPath>Список.ТипИнтеграции</DataPath>
+					<ContextMenu name="ТипИнтеграцииКонтекстноеМеню" id="25"/>
+					<ExtendedTooltip name="ТипИнтеграцииРасширеннаяПодсказка" id="26"/>
+				</LabelField>
 			</ChildItems>
 		</Table>
 	</ChildItems>

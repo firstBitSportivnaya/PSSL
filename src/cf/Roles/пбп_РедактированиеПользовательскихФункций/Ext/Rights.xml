@@ -43,7 +43,7 @@
 		</right>
 	</object>
 	<object>
-		<name>Catalog.пбп_МетодыИнтеграции</name>
+		<name>Catalog.пбп_ИнтеграционныеПотоки</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>
@@ -78,6 +78,33 @@
 		</right>
 		<right>
 			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Configuration.ПроектнаяБиблиотекаПодсистем</name>
+		<right>
+			<name>MainWindowModeNormal</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>MainWindowModeWorkplace</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>MainWindowModeEmbeddedWorkplace</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>MainWindowModeFullscreenWorkplace</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>MainWindowModeKiosk</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>AnalyticsSystemClient</name>
 			<value>true</value>
 		</right>
 	</object>
@@ -156,6 +183,25 @@
 		</right>
 		<right>
 			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Constant.пбп_ИспользоватьПользовательскиеФункции</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
 			<value>true</value>
 		</right>
 	</object>

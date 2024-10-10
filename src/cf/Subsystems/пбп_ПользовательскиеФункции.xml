@@ -30,8 +30,12 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_РаботаСДиалогамиСервер</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_РаботаСКоллекциямиКлиентСервер</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_СтроковыеФункцииКлиентСервер</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ОбщегоНазначенияКлиентСервер</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.пбп_ФормаВыбораПоля</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.пбп_ИспользоватьПользовательскиеФункции</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.пбп_ЧтениеКонстантыИспользоватьПользовательскиеФункции</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ОбщегоНазначенияКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_СхемыЗапросов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.пбп_ИспользоватьПользовательскиеФункции</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
