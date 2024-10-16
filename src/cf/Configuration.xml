@@ -308,6 +308,7 @@
 			<CommonModule>пбп_ПредопределенныеЗначенияВызовСервера</CommonModule>
 			<CommonModule>пбп_ПредопределенныеЗначенияКлиент</CommonModule>
 			<CommonModule>пбп_ПредопределенныеЗначенияПереопределяемый</CommonModule>
+			<CommonModule>пбп_ПредопределенныеЗначенияПовтИсп</CommonModule>
 			<CommonModule>пбп_РаботаСДиалогамиКлиент</CommonModule>
 			<CommonModule>пбп_РаботаСДиалогамиСервер</CommonModule>
 			<CommonModule>пбп_РаботаСКоллекциямиКлиентСервер</CommonModule>

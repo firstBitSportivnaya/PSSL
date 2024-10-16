@@ -1,12 +1,14 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
 	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<ChildItems>
 			<Button name="ФормаОбработатьЭлементы" id="24">
 				<Type>CommandBarButton</Type>
 				<DefaultButton>true</DefaultButton>
 				<CommandName>Form.Command.ОбработатьЭлементы</CommandName>
+				<ToolTipRepresentation>Button</ToolTipRepresentation>
 				<ExtendedTooltip name="ФормаОбработатьЭлементыРасширеннаяПодсказка" id="25"/>
 			</Button>
 		</ChildItems>
@@ -16,6 +18,27 @@
 		<Event name="OnClose">ПриЗакрытии</Event>
 	</Events>
 	<ChildItems>
+		<LabelDecoration name="Информация" id="33">
+			<TextColor>style:TableFooterTextColor</TextColor>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменение элементов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Для элемента установлен флаг обновления: Элемент будет обновлен данными из программного кода, а также обновится хеш элемента в регистре.
+
+Для элемента установлен флаг обновления: Элемент не будет обновлен. В записи регистра будет установлен флаг "Ручное изменение", указывающий на то, что элемент был изменен вручную и не подлежит автоматическому обновлению.
+</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ToolTipRepresentation>Button</ToolTipRepresentation>
+			<ContextMenu name="ИнформацияКонтекстноеМеню" id="34"/>
+			<ExtendedTooltip name="ИнформацияРасширеннаяПодсказка" id="35"/>
+		</LabelDecoration>
 		<Table name="ТаблицаКонфликтов" id="1">
 			<Representation>List</Representation>
 			<ChangeRowSet>false</ChangeRowSet>
@@ -28,6 +51,26 @@
 			<ContextMenu name="ТаблицаКонфликтовКонтекстноеМеню" id="2"/>
 			<AutoCommandBar name="ТаблицаКонфликтовКоманднаяПанель" id="3">
 				<Autofill>false</Autofill>
+				<ChildItems>
+					<Button name="ТаблицаКонфликтовОтметитьВсе" id="29">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ОтметитьВсе</CommandName>
+						<Picture>
+							<xr:Ref>StdPicture.CheckAll</xr:Ref>
+							<xr:LoadTransparent>true</xr:LoadTransparent>
+						</Picture>
+						<ExtendedTooltip name="ТаблицаКонфликтовОтметитьВсеРасширеннаяПодсказка" id="30"/>
+					</Button>
+					<Button name="ТаблицаКонфликтовСнятьОтметку" id="31">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.СнятьОтметку</CommandName>
+						<Picture>
+							<xr:Ref>StdPicture.UncheckAll</xr:Ref>
+							<xr:LoadTransparent>true</xr:LoadTransparent>
+						</Picture>
+						<ExtendedTooltip name="ТаблицаКонфликтовСнятьОтметкуРасширеннаяПодсказка" id="32"/>
+					</Button>
+				</ChildItems>
 			</AutoCommandBar>
 			<ExtendedTooltip name="ТаблицаКонфликтовРасширеннаяПодсказка" id="4"/>
 			<SearchStringAddition name="ТаблицаКонфликтовСтрокаПоиска" id="5">
@@ -222,6 +265,38 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ОбработатьЭлементы</Action>
+		</Command>
+		<Command name="ОтметитьВсе" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отметить все</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отметить все</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтметитьВсе</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="СнятьОтметку" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять отметку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять отметку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СнятьОтметку</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 	</Commands>
 </Form>
