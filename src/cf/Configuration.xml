@@ -57,7 +57,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок</xr:Item>
 			</DefaultRoles>
 			<Vendor>Первый БИТ</Vendor>
-			<Version>1.0.2.6</Version>
+			<Version>1.0.2.7</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>false</UseManagedFormInOrdinaryApplication>
@@ -266,6 +266,7 @@
 			<Role>пбп_ЧтениеПланаВидовХарактеристикПредопределенныеЗначения</Role>
 			<Role>пбп_ЧтениеРегистраСведенийСоответствияОбъектовИБ</Role>
 			<Role>пбп_ЧтениеТиповСоответствияОбъектовИБ</Role>
+			<Role>пбп_ПросмотрИсторииИнтеграции</Role>
 			<Role>ПолныеПрава</Role>
 			<CommonTemplate>пбп_BSLEditor</CommonTemplate>
 			<CommonTemplate>пбп_JSONEditor</CommonTemplate>
@@ -278,6 +279,8 @@
 			<CommonModule>пбп_ЗагрузкаФайлаЧерезТабличныйДокументВызовСервера</CommonModule>
 			<CommonModule>пбп_ЗагрузкаФайлаЧерезТабличныйДокументКлиент</CommonModule>
 			<CommonModule>пбп_ИнтеграцииСервер</CommonModule>
+			<CommonModule>пбп_ИнтеграцииСлужебный</CommonModule>
+			<CommonModule>пбп_ИнтеграцииFTPSFTP</CommonModule>
 			<CommonModule>пбп_КоннекторHTTP</CommonModule>
 			<CommonModule>пбп_МетодыРегламентныхЗаданийСервер</CommonModule>
 			<CommonModule>пбп_МодификацияКонфигурацииКлиентПереопределяемый</CommonModule>
@@ -320,6 +323,9 @@
 			<CommonModule>пбп_СхемыЗапросов</CommonModule>
 			<CommonModule>пбп_ФайловаяСистема</CommonModule>
 			<CommonModule>пбп_ФайловаяСистемаПереадресация</CommonModule>
+			<CommonModule>пбп_ФайловаяСистемаКлиентПереадресация</CommonModule>
+			<CommonModule>пбп_ФайловаяСистемаКлиент</CommonModule>
+			<CommonModule>пбп_ФайловаяСистемаСлужебныйКлиент</CommonModule>
 			<EventSubscription>пбп_ДокументыОбработкаЗаполнения</EventSubscription>
 			<EventSubscription>пбп_ДокументыОбработкаПроведения</EventSubscription>
 			<EventSubscription>пбп_ДокументыОбработкаПроверкиЗаполнения</EventSubscription>

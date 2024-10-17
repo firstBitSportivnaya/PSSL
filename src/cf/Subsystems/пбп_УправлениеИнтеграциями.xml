@@ -46,6 +46,9 @@
 				<xr:Item xsi:type="xr:MDObjectRef">DefinedType.пбп_Пользователи</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DefinedType.пбп_УчетныеЗаписиЭлектроннойПочты</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.пбп_ТипыАвторизации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.пбп_ПросмотрИсторииИнтеграции</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ИнтеграцииСлужебный</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ИнтеграцииFTPSFTP</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

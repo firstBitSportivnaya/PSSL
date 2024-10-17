@@ -10,7 +10,7 @@
         "userWordsToIgnore": "пбп"
       },
       "LatinAndCyrillicSymbolInWord": {
-        "excludeWords": "ЧтениеXML, ЧтениеJSON, ЗаписьXML, ЗаписьJSON, ComОбъект, ФабрикаXDTO, ОбъектXDTO, СоединениеFTP, HTTPСоединение, HTTPЗапрос, HTTPСервисОтвет, SMSСообщение, WSПрокси, ИмяCOMОбъекта, ЭтоWindowsКлиент",
+        "excludeWords": "ЧтениеXML, ЧтениеJSON, ЗаписьXML, ЗаписьJSON, ComОбъект, ФабрикаXDTO, ОбъектXDTO, СоединениеFTP, HTTPСоединение, HTTPЗапрос, HTTPСервисОтвет, SMSСообщение, WSПрокси, ИмяCOMОбъекта, ЭтоWindowsКлиент, ЭтоLinuxСервер, ВыполнитьПодключениеКFTPСерверуДляИнтеграционногоПотока, ЗаполнитьПараметрыПодключенияКSFTPСерверу, ПолучитьТаблицуФайловСодержимогоSFTPСервера",
         "allowTrailingPartsInAnotherLanguage": true
 }
     }
