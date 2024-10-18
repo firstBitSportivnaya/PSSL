@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<Enum uuid="7d95f2bb-3bb7-461b-8133-ee979cb0be6f">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.пбп_НаправленияИнтеграционныхПотоков" category="Ref">
+				<xr:TypeId>75dd31a4-0ead-4223-a679-8602b15d4859</xr:TypeId>
+				<xr:ValueId>c6709619-496b-4e06-bccf-f1cddd8144c2</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.пбп_НаправленияИнтеграционныхПотоков" category="Manager">
+				<xr:TypeId>c5bf9be7-b85b-44fb-9d2f-a52e884d14d1</xr:TypeId>
+				<xr:ValueId>fed5253e-a60d-4e06-bdcc-1896b5abf6b1</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.пбп_НаправленияИнтеграционныхПотоков" category="List">
+				<xr:TypeId>581eabd5-48c6-4a04-ae82-9b45db360e78</xr:TypeId>
+				<xr:ValueId>d702c6b4-92e3-4d5b-b8b9-5d868fabd705</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>пбп_НаправленияИнтеграционныхПотоков</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Направления интеграционных потоков</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>false</UseStandardCommands>
+			<Characteristics/>
+			<QuickChoice>true</QuickChoice>
+			<ChoiceMode>BothWays</ChoiceMode>
+			<DefaultListForm/>
+			<DefaultChoiceForm/>
+			<AuxiliaryListForm/>
+			<AuxiliaryChoiceForm/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="0c5d1f6a-5ba7-4851-a129-033f66dfcb0a">
+				<Properties>
+					<Name>Исходящий</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Исходящий</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="bff1f162-9694-4f4f-bf68-e4891532129f">
+				<Properties>
+					<Name>Входящий</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Входящий</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="c4eb1c95-399e-4bb8-8b13-65863044d00a">
+				<Properties>
+					<Name>Служебный</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Служебный</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

@@ -88,6 +88,12 @@
 				<Event name="StartChoice">НастройкаИнтеграцииНачалоВыбора</Event>
 			</Events>
 		</InputField>
+		<InputField name="НаправлениеПотока" id="59">
+			<DataPath>Объект.НаправлениеПотока</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="НаправлениеПотокаКонтекстноеМеню" id="60"/>
+			<ExtendedTooltip name="НаправлениеПотокаРасширеннаяПодсказка" id="61"/>
+		</InputField>
 		<InputField name="ПользовательскаяФункция" id="40">
 			<DataPath>Объект.ПользовательскаяФункция</DataPath>
 			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
