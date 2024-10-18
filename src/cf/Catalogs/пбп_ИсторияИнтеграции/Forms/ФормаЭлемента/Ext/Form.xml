@@ -284,13 +284,47 @@
 					</ToolTip>
 					<ExtendedTooltip name="ГруппаЗапросИсходящийРасширеннаяПодсказка" id="63"/>
 					<ChildItems>
-						<TextDocumentField name="ЗапросИсходящий" id="7">
+						<TextDocumentField name="ИсходящееСообщение" id="7">
 							<DataPath>ЗапросИсходящийОтформатированный</DataPath>
 							<TitleLocation>None</TitleLocation>
 							<EditMode>EnterOnInput</EditMode>
-							<ContextMenu name="ЗапросИсходящийКонтекстноеМеню" id="8"/>
-							<ExtendedTooltip name="ЗапросИсходящийРасширеннаяПодсказка" id="9"/>
+							<ContextMenu name="ИсходящееСообщениеКонтекстноеМеню" id="8"/>
+							<ExtendedTooltip name="ИсходящееСообщениеРасширеннаяПодсказка" id="9"/>
 						</TextDocumentField>
+						<UsualGroup name="ГруппаДанныеСообщенияИсходящего" id="163">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа данные сообщения исходящего</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа данные сообщения исходящего</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДанныеСообщенияИсходящегоРасширеннаяПодсказка" id="164"/>
+							<ChildItems>
+								<LabelDecoration name="Декорация1" id="158">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Прикрепленный файл обмена:</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="Декорация1КонтекстноеМеню" id="159"/>
+									<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="160"/>
+								</LabelDecoration>
+								<Button name="СохранитьФайлСообщенияОбменаИсх" id="161">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.СохранитьФайлСообщенияОбмена</CommandName>
+									<ExtendedTooltip name="СохранитьФайлСообщенияОбменаИсхРасширеннаяПодсказка" id="162"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
 					</ChildItems>
 				</Page>
 				<Page name="ГруппаЗапросВходящий" id="102">
@@ -313,13 +347,47 @@
 					</ToolTip>
 					<ExtendedTooltip name="ГруппаЗапросВходящийРасширеннаяПодсказка" id="103"/>
 					<ChildItems>
-						<TextDocumentField name="ЗапросВходящий" id="104">
+						<TextDocumentField name="ВходящееСообщение" id="104">
 							<DataPath>ЗапросВходящийОтформатированный</DataPath>
 							<TitleLocation>None</TitleLocation>
 							<EditMode>EnterOnInput</EditMode>
-							<ContextMenu name="ЗапросВходящийКонтекстноеМеню" id="105"/>
-							<ExtendedTooltip name="ЗапросВходящийРасширеннаяПодсказка" id="106"/>
+							<ContextMenu name="ВходящееСообщениеКонтекстноеМеню" id="105"/>
+							<ExtendedTooltip name="ВходящееСообщениеРасширеннаяПодсказка" id="106"/>
 						</TextDocumentField>
+						<UsualGroup name="ГруппаДанныеСообщенияВходящего" id="165">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа данные сообщения входящего</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа данные сообщения исходящего</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДанныеСообщенияВходящегоРасширеннаяПодсказка" id="166"/>
+							<ChildItems>
+								<LabelDecoration name="Декорация2" id="167">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Прикрепленный файл обмена:</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="Декорация2КонтекстноеМеню" id="168"/>
+									<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="169"/>
+								</LabelDecoration>
+								<Button name="СохранитьФайлСообщенияОбменаВх" id="170">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.СохранитьФайлСообщенияОбмена</CommandName>
+									<ExtendedTooltip name="СохранитьФайлСообщенияОбменаВхРасширеннаяПодсказка" id="171"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
 					</ChildItems>
 				</Page>
 				<Page name="ГруппаТекстОшибки" id="66">
@@ -585,6 +653,21 @@
 			</Picture>
 			<Action>КопироватьВБуферОбмена</Action>
 			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="СохранитьФайлСообщенияОбмена" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить файл сообщения обмена</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить файл сообщения обмена</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СохранитьФайлСообщенияОбмена</Action>
 		</Command>
 	</Commands>
 </Form>
