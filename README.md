@@ -5,7 +5,7 @@
 [![Release](https://img.shields.io/github/v/release/firstBitSportivnaya/PSSL?include_prereleases&label=last%20release&style=badge)](https://github.com/firstBitSportivnaya/PSSL/releases/latest)
 [![GitHub issues](https://img.shields.io/github/issues-raw/firstBitSportivnaya/PSSL?style=badge)](https://github.com/firstBitSportivnaya/PSSL/issues)
 [![License](https://img.shields.io/github/license/firstBitSportivnaya/PSSL?style=badge)](https://github.com/firstBitSportivnaya/PSSL/blob/develop/LICENSE)
-[![OpenYellow](https://img.shields.io/endpoint?url=https://openyellow.neocities.org/badges/4/751858948.json)](https://openyellow.notion.site/openyellow/24727888daa641af95514b46bee4d6f2?p=aec5d010e2aa4fcf9ec351e0b013705e&amp;pm=s)
+[![OpenYellow](https://img.shields.io/endpoint?url=https://openyellow.org/data/badges/4/751858948.json)](https://openyellow.org/grid?data=top&repo=751858948)
 
 ![image](https://repository-images.githubusercontent.com/751858948/a45ea547-c23c-4ce1-b30e-609d9ac8d558)
 
@@ -19,7 +19,7 @@
 2. [Соответствия объектов ИБ](docs/СоответствиеОбъектовИнформационнойБазы.md)
 3. [Программная модификация форм](docs/МодификацияФорм.md)
 4. [Подписки на события](docs/ПодпискиНаСобытия.md)
-5. Управление интеграциями
+5. [Управление интеграциями](docs/УправлениеИнтеграциями.md)
 6. [Пользовательские функции](docs/ПользовательскиеФункции.md)
 7. [Настройки отбора объектов](docs/ПолучениеДанныхПоНастройкеОтбора.md)
 8. [Загрузка файла через табличный документ](docs/ЗагрузкаФайлаЧерезТабличныйДокумент.md)
