@@ -57,7 +57,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок</xr:Item>
 			</DefaultRoles>
 			<Vendor>Первый БИТ</Vendor>
-			<Version>1.0.2.7</Version>
+			<Version>1.0.3.8</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>false</UseManagedFormInOrdinaryApplication>
@@ -260,11 +260,13 @@
 			<Role>пбп_РедактированиеПланаВидовХарактеристикПредопределенныеЗначения</Role>
 			<Role>пбп_РедактированиеПользовательскихФункций</Role>
 			<Role>пбп_РедактированиеРегистраСведенийСоответствияОбъектовИБ</Role>
+			<Role>пбп_РедактированиеСостоянийПредопределенныхЭлементов</Role>
 			<Role>пбп_РедактированиеТиповСоответствияОбъектовИБ</Role>
 			<Role>пбп_ЧтениеКонстантыИспользоватьПользовательскиеФункции</Role>
 			<Role>пбп_ЧтениеНастроекОтборовОбъектов</Role>
 			<Role>пбп_ЧтениеПланаВидовХарактеристикПредопределенныеЗначения</Role>
 			<Role>пбп_ЧтениеРегистраСведенийСоответствияОбъектовИБ</Role>
+			<Role>пбп_ЧтениеСостоянийПредопределенныхЭлементов</Role>
 			<Role>пбп_ЧтениеТиповСоответствияОбъектовИБ</Role>
 			<Role>пбп_ПросмотрИсторииИнтеграции</Role>
 			<Role>ПолныеПрава</Role>
@@ -306,7 +308,10 @@
 			<CommonModule>пбп_ПользователиКлиентСервер</CommonModule>
 			<CommonModule>пбп_ПользователиСлужебный</CommonModule>
 			<CommonModule>пбп_ПредопределенныеЗначения</CommonModule>
+			<CommonModule>пбп_ПредопределенныеЗначенияВызовСервера</CommonModule>
+			<CommonModule>пбп_ПредопределенныеЗначенияКлиент</CommonModule>
 			<CommonModule>пбп_ПредопределенныеЗначенияПереопределяемый</CommonModule>
+			<CommonModule>пбп_ПредопределенныеЗначенияПовтИсп</CommonModule>
 			<CommonModule>пбп_РаботаСДиалогамиКлиент</CommonModule>
 			<CommonModule>пбп_РаботаСДиалогамиСервер</CommonModule>
 			<CommonModule>пбп_РаботаСКоллекциямиКлиентСервер</CommonModule>
@@ -343,8 +348,10 @@
 			<DefinedType>пбп_Пользователи</DefinedType>
 			<DefinedType>пбп_ТипыОбъектовСоответствийИБ</DefinedType>
 			<DefinedType>пбп_УчетныеЗаписиЭлектроннойПочты</DefinedType>
+			<DefinedType>пбп_ПредопределенныеВсеСсылкиПереопределяемый</DefinedType>
 			<Constant>пбп_ИспользоватьПользовательскиеФункции</Constant>
 			<CommonForm>пбп_ФормаВыбораПоля</CommonForm>
+			<CommonForm>пбп_ФормаРазрешенияКонфликтовПредопределенныхЭлементов</CommonForm>
 			<Catalog>пбп_ИнтеграционныеПотоки</Catalog>
 			<Catalog>пбп_ИнтегрируемыеСистемы</Catalog>
 			<Catalog>пбп_ИсторияИнтеграции</Catalog>
@@ -362,6 +369,7 @@
 			<Enum>пбп_ТипыАвторизации</Enum>
 			<Enum>пбп_ФорматыИнтеграций</Enum>
 			<InformationRegister>пбп_СоответствияОбъектовИБ</InformationRegister>
+			<InformationRegister>пбп_СостоянияПредопределенныхЭлементов</InformationRegister>
 			<ChartOfCharacteristicTypes>пбп_ПредопределенныеЗначения</ChartOfCharacteristicTypes>
 		</ChildObjects>
 	</Configuration>
