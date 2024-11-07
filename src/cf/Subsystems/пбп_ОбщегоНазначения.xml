@@ -58,6 +58,9 @@
 				<xr:Item xsi:type="xr:MDObjectRef">DefinedType.пбп_УчетныеЗаписиЭлектроннойПочты</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ФайловаяСистема</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ФайловаяСистемаПереадресация</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ФайловаяСистемаКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ФайловаяСистемаКлиентПереадресация</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ФайловаяСистемаСлужебныйКлиент</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

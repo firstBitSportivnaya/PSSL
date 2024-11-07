@@ -29,6 +29,12 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ОбщегоНазначенияСервер</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.пбп_ФормаРазрешенияКонфликтовПредопределенныхЭлементов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.пбп_СостоянияПредопределенныхЭлементов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.пбп_РедактированиеСостоянийПредопределенныхЭлементов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.пбп_ЧтениеСостоянийПредопределенныхЭлементов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DefinedType.пбп_ПредопределенныеВсеСсылкиПереопределяемый</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ПредопределенныеЗначенияВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ПредопределенныеЗначенияКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ПредопределенныеЗначенияПовтИсп</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
