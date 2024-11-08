@@ -35,6 +35,8 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ПредопределенныеЗначенияВызовСервера</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ПредопределенныеЗначенияКлиент</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ПредопределенныеЗначенияПовтИсп</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ПредопределенныеЗначенияСлужебныйКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.пбп_ЗаполнениеПредопределенныхЭлементов</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

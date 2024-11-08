@@ -57,7 +57,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок</xr:Item>
 			</DefaultRoles>
 			<Vendor>Первый БИТ</Vendor>
-			<Version>1.0.3.12</Version>
+			<Version>1.0.4.12</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>false</UseManagedFormInOrdinaryApplication>
@@ -313,12 +313,15 @@
 			<CommonModule>пбп_ПредопределенныеЗначенияКлиент</CommonModule>
 			<CommonModule>пбп_ПредопределенныеЗначенияПереопределяемый</CommonModule>
 			<CommonModule>пбп_ПредопределенныеЗначенияПовтИсп</CommonModule>
+			<CommonModule>пбп_ПредопределенныеЗначенияСлужебныйКлиент</CommonModule>
 			<CommonModule>пбп_РаботаСДиалогамиКлиент</CommonModule>
 			<CommonModule>пбп_РаботаСДиалогамиСервер</CommonModule>
 			<CommonModule>пбп_РаботаСКоллекциямиКлиентСервер</CommonModule>
 			<CommonModule>пбп_РаботаСФормами</CommonModule>
 			<CommonModule>пбп_РегламентныеЗаданияСервер</CommonModule>
 			<CommonModule>пбп_РегламентныеЗаданияСлужебныйСервер</CommonModule>
+			<CommonModule>пбп_СерверныеОповещения</CommonModule>
+			<CommonModule>пбп_СерверныеОповещенияСлужебный</CommonModule>
 			<CommonModule>пбп_СправочникиОбработкаСобытий</CommonModule>
 			<CommonModule>пбп_СтандартныеПодсистемыКлиент</CommonModule>
 			<CommonModule>пбп_СтандартныеПодсистемыПовтИсп</CommonModule>
@@ -345,6 +348,7 @@
 			<EventSubscription>пбп_СправочникиПриКопировании</EventSubscription>
 			<ScheduledJob>пбп_ВыполнениеПользовательскихФункцийФайловыхОбменов</ScheduledJob>
 			<ScheduledJob>пбп_ОчисткаИсторииИнтеграции</ScheduledJob>
+			<ScheduledJob>пбп_ЗаполнениеПредопределенныхЭлементов</ScheduledJob>
 			<FunctionalOption>пбп_ИспользоватьПользовательскиеФункции</FunctionalOption>
 			<DefinedType>пбп_Пользователи</DefinedType>
 			<DefinedType>пбп_ТипыОбъектовСоответствийИБ</DefinedType>
