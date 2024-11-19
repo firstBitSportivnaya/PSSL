@@ -374,6 +374,7 @@
 			<Enum>пбп_ТипыАвторизации</Enum>
 			<Enum>пбп_ФорматыИнтеграций</Enum>
 			<Enum>пбп_НаправленияИнтеграционныхПотоков</Enum>
+			<Enum>пбп_ВидыОшибокПредопределенныхЭлементов</Enum>
 			<InformationRegister>пбп_СоответствияОбъектовИБ</InformationRegister>
 			<InformationRegister>пбп_СостоянияПредопределенныхЭлементов</InformationRegister>
 			<ChartOfCharacteristicTypes>пбп_ПредопределенныеЗначения</ChartOfCharacteristicTypes>
