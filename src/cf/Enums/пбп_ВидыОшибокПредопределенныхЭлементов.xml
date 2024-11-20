@@ -40,11 +40,11 @@
 		<ChildObjects>
 			<EnumValue uuid="a4d8d3b8-89cb-4273-9edd-81fa9bcb007d">
 				<Properties>
-					<Name>КоллизииИдентификаторов</Name>
+					<Name>ДублированиеИдентификаторов</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Коллизии идентификаторов</v8:content>
+							<v8:content>Дублирование идентификаторов</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
