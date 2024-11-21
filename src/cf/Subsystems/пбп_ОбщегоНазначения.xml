@@ -61,6 +61,8 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ФайловаяСистемаКлиент</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ФайловаяСистемаКлиентПереадресация</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ФайловаяСистемаСлужебныйКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_СерверныеОповещения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_СерверныеОповещенияСлужебный</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

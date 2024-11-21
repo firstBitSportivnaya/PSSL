@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<Enum uuid="82c0a4bc-ec79-46ff-a515-4253a2c8f23d">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.пбп_ВидыОшибокПредопределенныхЭлементов" category="Ref">
+				<xr:TypeId>d19e6cd7-a544-4af2-a923-97366bdf778a</xr:TypeId>
+				<xr:ValueId>c2a6df89-c776-4b13-97f9-db414d6510ec</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.пбп_ВидыОшибокПредопределенныхЭлементов" category="Manager">
+				<xr:TypeId>8d3ca197-5a33-43dd-8f27-cff772250a15</xr:TypeId>
+				<xr:ValueId>2ce00242-bd5a-4bd6-9648-272db55dbda4</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.пбп_ВидыОшибокПредопределенныхЭлементов" category="List">
+				<xr:TypeId>7e48d43a-4700-4cb2-a04b-cf86b777eee5</xr:TypeId>
+				<xr:ValueId>943081b5-f331-4cee-8e81-440c2754cf47</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>пбп_ВидыОшибокПредопределенныхЭлементов</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Виды ошибок предопределенных элементов</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>false</UseStandardCommands>
+			<Characteristics/>
+			<QuickChoice>true</QuickChoice>
+			<ChoiceMode>BothWays</ChoiceMode>
+			<DefaultListForm/>
+			<DefaultChoiceForm/>
+			<AuxiliaryListForm/>
+			<AuxiliaryChoiceForm/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="a4d8d3b8-89cb-4273-9edd-81fa9bcb007d">
+				<Properties>
+					<Name>ДублированиеИдентификаторов</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дублирование идентификаторов</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="62f8cc45-9836-41ec-98d3-fd595ffe2941">
+				<Properties>
+					<Name>РасхождениеЭлементаСКодом</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Расхождение элемента с кодом</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>
