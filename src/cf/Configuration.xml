@@ -276,8 +276,6 @@
 			<CommonTemplate>пбп_SimpleKafkaAdapter</CommonTemplate>
 			<CommonTemplate>пбп_XMLEditor</CommonTemplate>
 			<CommonModule>пбп_ДокументыОбработкаСобытий</CommonModule>
-			<CommonModule>пбп_ЖурналРегистрации</CommonModule>
-			<CommonModule>пбп_ЖурналРегистрацииСлужебный</CommonModule>
 			<CommonModule>пбп_ЗагрузкаФайлаЧерезТабличныйДокументВызовСервера</CommonModule>
 			<CommonModule>пбп_ЗагрузкаФайлаЧерезТабличныйДокументКлиент</CommonModule>
 			<CommonModule>пбп_ЗагрузкаФайлаЧерезТабличныйДокументСервер</CommonModule>
@@ -295,19 +293,14 @@
 			<CommonModule>пбп_МодификацияКонфигурацииПовтИсп</CommonModule>
 			<CommonModule>пбп_ОбновлениеИнформационнойБазыПБП</CommonModule>
 			<CommonModule>пбп_ОбщегоНазначенияВызовСервера</CommonModule>
-			<CommonModule>пбп_ОбщегоНазначенияКлиент</CommonModule>
 			<CommonModule>пбп_ОбщегоНазначенияКлиентСервер</CommonModule>
 			<CommonModule>пбп_ОбщегоНазначенияПовтИсп</CommonModule>
-			<CommonModule>пбп_ОбщегоНазначенияПолныеПрава</CommonModule>
 			<CommonModule>пбп_ОбщегоНазначенияСервер</CommonModule>
-			<CommonModule>пбп_ОбщегоНазначенияСлужебный</CommonModule>
-			<CommonModule>пбп_ОбщегоНазначенияСлужебныйКлиент</CommonModule>
-			<CommonModule>пбп_ОбщегоНазначенияСлужебныйКлиентСервер</CommonModule>
-			<CommonModule>пбп_ПолучениеФайловИзИнтернета</CommonModule>
-			<CommonModule>пбп_ПолучениеФайловИзИнтернетаСлужебный</CommonModule>
-			<CommonModule>пбп_Пользователи</CommonModule>
-			<CommonModule>пбп_ПользователиКлиентСервер</CommonModule>
-			<CommonModule>пбп_ПользователиСлужебный</CommonModule>
+			<CommonModule>пбп_Переадресация</CommonModule>
+			<CommonModule>пбп_ПереадресацияКлиент</CommonModule>
+			<CommonModule>пбп_ПереадресацияКлиентПовтИсп</CommonModule>
+			<CommonModule>пбп_ПереадресацияКлиентСервер</CommonModule>
+			<CommonModule>пбп_ПереадресацияПовтИсп</CommonModule>
 			<CommonModule>пбп_ПредопределенныеЗначения</CommonModule>
 			<CommonModule>пбп_ПредопределенныеЗначенияВызовСервера</CommonModule>
 			<CommonModule>пбп_ПредопределенныеЗначенияКлиент</CommonModule>
@@ -318,23 +311,9 @@
 			<CommonModule>пбп_РаботаСДиалогамиСервер</CommonModule>
 			<CommonModule>пбп_РаботаСКоллекциямиКлиентСервер</CommonModule>
 			<CommonModule>пбп_РаботаСФормами</CommonModule>
-			<CommonModule>пбп_РегламентныеЗаданияСервер</CommonModule>
-			<CommonModule>пбп_РегламентныеЗаданияСлужебныйСервер</CommonModule>
-			<CommonModule>пбп_СерверныеОповещения</CommonModule>
-			<CommonModule>пбп_СерверныеОповещенияСлужебный</CommonModule>
 			<CommonModule>пбп_СправочникиОбработкаСобытий</CommonModule>
-			<CommonModule>пбп_СтандартныеПодсистемыКлиент</CommonModule>
-			<CommonModule>пбп_СтандартныеПодсистемыПовтИсп</CommonModule>
-			<CommonModule>пбп_СтандартныеПодсистемыСлужебныйКлиент</CommonModule>
-			<CommonModule>пбп_СтандартныеПодсистемыСлужебныйПовтИсп</CommonModule>
 			<CommonModule>пбп_СтроковыеФункцииКлиентСервер</CommonModule>
-			<CommonModule>пбп_СтроковыеФункцииСлужебныйКлиентСервер</CommonModule>
 			<CommonModule>пбп_СхемыЗапросов</CommonModule>
-			<CommonModule>пбп_ФайловаяСистема</CommonModule>
-			<CommonModule>пбп_ФайловаяСистемаКлиент</CommonModule>
-			<CommonModule>пбп_ФайловаяСистемаКлиентПереадресация</CommonModule>
-			<CommonModule>пбп_ФайловаяСистемаПереадресация</CommonModule>
-			<CommonModule>пбп_ФайловаяСистемаСлужебныйКлиент</CommonModule>
 			<EventSubscription>пбп_ДокументыОбработкаЗаполнения</EventSubscription>
 			<EventSubscription>пбп_ДокументыОбработкаПроведения</EventSubscription>
 			<EventSubscription>пбп_ДокументыОбработкаПроверкиЗаполнения</EventSubscription>

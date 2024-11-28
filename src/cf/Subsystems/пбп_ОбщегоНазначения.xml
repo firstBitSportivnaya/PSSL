@@ -20,10 +20,10 @@
 			<Explanation/>
 			<Picture/>
 			<Content>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ОбщегоНазначенияКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ea239394-f82e-4130-8e72-35a5d54e904b</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ОбщегоНазначенияПовтИсп</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ОбщегоНазначенияСервер</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ОбщегоНазначенияПолныеПрава</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">037f61f2-578e-4e83-b9fb-196f0c4e321a</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ПолныеПрава</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Role.АдминистраторСистемы</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок</xr:Item>
@@ -33,36 +33,20 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_РаботаСДиалогамиСервер</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_РаботаСКоллекциямиКлиентСервер</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_СтроковыеФункцииКлиентСервер</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ЖурналРегистрации</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ЖурналРегистрацииСлужебный</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_МодификацияКонфигурацииКлиентПовтИсп</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ОбновлениеИнформационнойБазыПБП</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ОбщегоНазначенияВызовСервера</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ОбщегоНазначенияСлужебный</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ОбщегоНазначенияСлужебныйКлиент</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ОбщегоНазначенияСлужебныйКлиентСервер</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ПолучениеФайловИзИнтернета</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ПолучениеФайловИзИнтернетаСлужебный</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_Пользователи</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ПользователиКлиентСервер</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ПользователиСлужебный</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_РегламентныеЗаданияСервер</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_РегламентныеЗаданияСлужебныйСервер</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_СтандартныеПодсистемыКлиент</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_СтандартныеПодсистемыПовтИсп</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_СтандартныеПодсистемыСлужебныйКлиент</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_СтандартныеПодсистемыСлужебныйПовтИсп</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_СтроковыеФункцииСлужебныйКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">3a5a58ec-9b8c-4c00-90df-b4fac7e8e71f</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">0c6b95c8-5689-4349-ad06-c6a3f985a597</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">813e3212-8e28-4ee1-bf6c-afd0977ac779</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_СхемыЗапросов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DefinedType.пбп_Пользователи</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DefinedType.пбп_УчетныеЗаписиЭлектроннойПочты</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ФайловаяСистема</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ФайловаяСистемаПереадресация</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ФайловаяСистемаКлиент</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ФайловаяСистемаКлиентПереадресация</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ФайловаяСистемаСлужебныйКлиент</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_СерверныеОповещения</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_СерверныеОповещенияСлужебный</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_Переадресация</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ПереадресацияКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ПереадресацияКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">547c2772-ff81-4b4e-9654-9071ab5274da</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ПереадресацияПовтИсп</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
