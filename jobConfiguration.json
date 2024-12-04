@@ -2,14 +2,19 @@
     "$schema": "https://raw.githubusercontent.com/firstBitMarksistskaya/jenkins-lib/develop/resources/schema.json",
     "stages": {
         "initSteps": true,
+        "edtValidate": true,
         "syntaxCheck": true,
         "smoke": true,
         "yaxunit": true,
         "telegram": true,
         "bdd": true
     },
+    "edtVersion": "2024.1.3:x86_64",
     "sourceFormat": "designer",
     "srcDir": "src/cf",
+    "resultsTransform": {
+        "transformer": "edt-ripper"
+    },
     "initInfobase": {
         "initMethod": "fromSource",
         "extensions": [
