@@ -161,6 +161,7 @@
 			<CommonModule>ЮТЧитательСлужебныйВызовСервера</CommonModule>
 			<CommonModule>ОМ_ОбщегоНазаначенияСервер</CommonModule>
 			<CommonModule>ОМ_КоннекторHTTP</CommonModule>
+			<CommonModule>ОМ_ПредопределенныеЗначения</CommonModule>
 			<DataProcessor>ЮТHTTPServiceRequest</DataProcessor>
 			<DataProcessor>ЮТHTTPСервисЗапрос</DataProcessor>
 			<DataProcessor>ЮТRecordSet</DataProcessor>
