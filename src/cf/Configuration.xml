@@ -57,7 +57,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок</xr:Item>
 			</DefaultRoles>
 			<Vendor>Первый БИТ</Vendor>
-			<Version>1.0.4.13</Version>
+			<Version>1.0.4.14</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>false</UseManagedFormInOrdinaryApplication>
@@ -293,6 +293,7 @@
 			<CommonModule>пбп_МодификацияКонфигурацииПовтИсп</CommonModule>
 			<CommonModule>пбп_ОбновлениеИнформационнойБазыПБП</CommonModule>
 			<CommonModule>пбп_ОбщегоНазначенияВызовСервера</CommonModule>
+			<CommonModule>пбп_ОбщегоНазначенияКлиент</CommonModule>
 			<CommonModule>пбп_ОбщегоНазначенияКлиентСервер</CommonModule>
 			<CommonModule>пбп_ОбщегоНазначенияПовтИсп</CommonModule>
 			<CommonModule>пбп_ОбщегоНазначенияСервер</CommonModule>
@@ -306,6 +307,7 @@
 			<CommonModule>пбп_ПредопределенныеЗначенияКлиент</CommonModule>
 			<CommonModule>пбп_ПредопределенныеЗначенияПереопределяемый</CommonModule>
 			<CommonModule>пбп_ПредопределенныеЗначенияПовтИсп</CommonModule>
+			<CommonModule>пбп_ПредопределенныеЗначенияСлужебный</CommonModule>
 			<CommonModule>пбп_ПредопределенныеЗначенияСлужебныйКлиент</CommonModule>
 			<CommonModule>пбп_РаботаСДиалогамиКлиент</CommonModule>
 			<CommonModule>пбп_РаботаСДиалогамиСервер</CommonModule>
