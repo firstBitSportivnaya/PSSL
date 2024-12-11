@@ -32,7 +32,7 @@
     },
     "bdd": {
         "coverage": true
-    }
+    },
     "yaxunit": {
         "coverage": true,
         "publishToAllureReport": false,
