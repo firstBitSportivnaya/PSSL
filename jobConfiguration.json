@@ -30,7 +30,11 @@
         "publishToAllureReport": false,
         "publishToJUnitReport": true
     },
+    "bdd": {
+        "coverage": true
+    }
     "yaxunit": {
+        "coverage": true,
         "publishToAllureReport": false,
         "publishToJUnitReport": true
     },
