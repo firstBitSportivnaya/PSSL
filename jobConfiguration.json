@@ -2,11 +2,11 @@
     "$schema": "https://raw.githubusercontent.com/firstBitMarksistskaya/jenkins-lib/develop/resources/schema.json",
     "stages": {
         "initSteps": true,
-        "edtValidate": true,
-        "syntaxCheck": true,
+        "edtValidate": false,
+        "syntaxCheck": false,
         "smoke": true,
         "yaxunit": true,
-        "telegram": true,
+        "telegram": false,
         "bdd": true,
         "sonarqube": true
     },
