@@ -38,6 +38,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ПредопределенныеЗначенияСлужебныйКлиент</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.пбп_ЗаполнениеПредопределенныхЭлементов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.пбп_ВидыОшибокПредопределенныхЭлементов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ПредопределенныеЗначенияСлужебный</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
