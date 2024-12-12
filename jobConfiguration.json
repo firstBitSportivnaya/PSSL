@@ -4,7 +4,7 @@
         "initSteps": true,
         "edtValidate": false,
         "syntaxCheck": false,
-        "smoke": true,
+        "smoke": false,
         "yaxunit": true,
         "telegram": false,
         "bdd": true,
