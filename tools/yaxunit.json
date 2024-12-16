@@ -1,9 +1,6 @@
 {
   "reportPath": "./build/out/yaxunit/junit.xml",
   "closeAfterTests": true,
-  "default": {
-    "--additional": "/debug -http -attach /debuggerURL http://localhost:1550"
-  },
   "filter": {
     "extensions": [
       "YAXUNIT"
