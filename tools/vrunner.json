@@ -5,11 +5,15 @@
         "--db-user": "",
         "--db-pwd": "",
         "--workspace": ".",
-        "--ordinaryapp": "0"
+        "--ordinaryapp": "0",
+        "--additional": "/debug -http -attach /debuggerURL http://localhost:1550"
     },
     "vanessa": {
         "--vanessasettings": "./tools/VBParams.json",
         "--pathvanessa": "./oscript_modules/vanessa-automation-single/vanessa-automation-single.epf",
         "--additional": "/DisplayAllFunctions /L ru"
+    },
+    "xunit": {
+        "--testclient-additional": "/debug -http -attach /debuggerURL http://localhost:1550"
     }
 }
