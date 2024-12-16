@@ -162,6 +162,8 @@
 			<CommonModule>ОМ_ОбщегоНазаначенияСервер</CommonModule>
 			<CommonModule>ОМ_КоннекторHTTP</CommonModule>
 			<CommonModule>ОМ_ПредопределенныеЗначения</CommonModule>
+			<CommonModule>ОМ_ПредопределенныеЗначенияСлужебный</CommonModule>
+			<CommonModule>пбп_ПредопределенныеЗначенияПереопределяемый</CommonModule>
 			<DataProcessor>ЮТHTTPServiceRequest</DataProcessor>
 			<DataProcessor>ЮТHTTPСервисЗапрос</DataProcessor>
 			<DataProcessor>ЮТRecordSet</DataProcessor>
