@@ -40,6 +40,7 @@
         "publishToJUnitReport": true
     },
     "sonarqube": {
+        "sonarQubeInstallation": "Sonar.openbsl",
         "waitForQualityGate": true
     },
     "notifications": {
