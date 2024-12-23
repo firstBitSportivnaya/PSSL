@@ -181,7 +181,7 @@
 					</dcsset:filter>
 					<dcsset:order>
 						<dcsset:item xsi:type="dcsset:OrderItemField">
-							<dcsset:field>ДатаОбмена</dcsset:field>
+							<dcsset:field>ДатаИнтеграцииВМиллисекундах</dcsset:field>
 							<dcsset:orderType>Desc</dcsset:orderType>
 						</dcsset:item>
 						<dcsset:viewMode>Normal</dcsset:viewMode>

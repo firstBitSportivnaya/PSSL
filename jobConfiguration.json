@@ -2,14 +2,20 @@
     "$schema": "https://raw.githubusercontent.com/firstBitMarksistskaya/jenkins-lib/develop/resources/schema.json",
     "stages": {
         "initSteps": true,
+        "edtValidate": true,
         "syntaxCheck": true,
         "smoke": true,
         "yaxunit": true,
         "telegram": true,
-        "bdd": true
+        "bdd": true,
+        "sonarqube": true
     },
+    "edtVersion": "2024.1.3:x86_64",
     "sourceFormat": "designer",
     "srcDir": "src/cf",
+    "resultsTransform": {
+        "transformer": "edt-ripper"
+    },
     "initInfobase": {
         "initMethod": "fromSource",
         "extensions": [
@@ -25,9 +31,17 @@
         "publishToAllureReport": false,
         "publishToJUnitReport": true
     },
+    "bdd": {
+        "coverage": true
+    },
     "yaxunit": {
+        "coverage": true,
         "publishToAllureReport": false,
         "publishToJUnitReport": true
+    },
+    "sonarqube": {
+        "sonarQubeInstallation": "Sonar.openbsl",
+        "waitForQualityGate": true
     },
     "notifications": {
         "telegram": {
