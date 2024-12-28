@@ -136,6 +136,83 @@
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="СтрокаПодключенияМногострочнаяКонтекстноеМеню" id="70"/>
 					<ExtendedTooltip name="СтрокаПодключенияМногострочнаяРасширеннаяПодсказка" id="71"/>
+					<Events>
+						<Event name="OnChange">СтрокаПодключенияМногострочнаяПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ТипСУБД" id="76">
+					<DataPath>Объект.ТипСУБД</DataPath>
+					<DropListButton>true</DropListButton>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ChoiceList>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Microsoft SQL Server</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:string">MSSQLServer</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Postgre SQL</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:string">PostgreSQL</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>IDM Db2</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:string">IBMDB2</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Oracle Database</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:string">OracleDatabase</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>MySQL</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:string">MySQL</Value>
+							</xr:Value>
+						</xr:Item>
+					</ChoiceList>
+					<ContextMenu name="ТипСУБДКонтекстноеМеню" id="77"/>
+					<ExtendedTooltip name="ТипСУБДРасширеннаяПодсказка" id="78"/>
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
