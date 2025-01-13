@@ -4,49 +4,98 @@
 	<setForAttributesByDefault>true</setForAttributesByDefault>
 	<independentRightsOfChildObjects>false</independentRightsOfChildObjects>
 	<object>
+		<name>InformationRegister.пбп_СоответствиеОбъектовИнтегрируемыхСистем.Dimension.ИнтегрируемаяСистема</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.пбп_СоответствиеОбъектовИнтегрируемыхСистем.Resource.ДополнительныйИдентификатор</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>InformationRegister.пбп_СоответствиеОбъектовИнтегрируемыхСистем</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>
 		</right>
-		<right>
-			<name>Update</name>
-			<value>true</value>
-		</right>
+	</object>
+	<object>
+		<name>InformationRegister.пбп_СоответствиеОбъектовИнтегрируемыхСистем.StandardAttribute.Active</name>
 		<right>
 			<name>View</name>
-			<value>true</value>
+			<value>false</value>
 		</right>
 		<right>
 			<name>Edit</name>
-			<value>true</value>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
-		<name>Configuration.ПроектнаяБиблиотекаПодсистем</name>
+		<name>InformationRegister.пбп_СоответствиеОбъектовИнтегрируемыхСистем.StandardAttribute.LineNumber</name>
 		<right>
-			<name>MainWindowModeNormal</name>
-			<value>true</value>
+			<name>View</name>
+			<value>false</value>
 		</right>
 		<right>
-			<name>MainWindowModeWorkplace</name>
-			<value>true</value>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.пбп_СоответствиеОбъектовИнтегрируемыхСистем.StandardAttribute.Recorder</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
 		</right>
 		<right>
-			<name>MainWindowModeEmbeddedWorkplace</name>
-			<value>true</value>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.пбп_СоответствиеОбъектовИнтегрируемыхСистем.StandardAttribute.Period</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
 		</right>
 		<right>
-			<name>MainWindowModeFullscreenWorkplace</name>
-			<value>true</value>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.пбп_СоответствиеОбъектовИнтегрируемыхСистем.Dimension.ИдентификаторСистемы</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
 		</right>
 		<right>
-			<name>MainWindowModeKiosk</name>
-			<value>true</value>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.пбп_СоответствиеОбъектовИнтегрируемыхСистем.Dimension.СсылкаНаОбъект</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
 		</right>
 		<right>
-			<name>AnalyticsSystemClient</name>
-			<value>true</value>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 </Rights>
