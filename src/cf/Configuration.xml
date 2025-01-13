@@ -57,7 +57,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок</xr:Item>
 			</DefaultRoles>
 			<Vendor>Первый БИТ</Vendor>
-			<Version>1.0.5.19</Version>
+			<Version>1.0.5.22</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>false</UseManagedFormInOrdinaryApplication>
@@ -254,6 +254,8 @@
 			<CommonPicture>пбп_Реквизиты</CommonPicture>
 			<Role>АдминистраторСистемы</Role>
 			<Role>ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок</Role>
+			<Role>пбп_ИспользованиеОбработкиВалидаторПакетов</Role>
+			<Role>пбп_ПросмотрИсторииИнтеграции</Role>
 			<Role>пбп_РедактированиеДокументаДемоКаркас</Role>
 			<Role>пбп_РедактированиеНастроекИнтеграции</Role>
 			<Role>пбп_РедактированиеНастроекОтбораОбъектов</Role>
@@ -268,13 +270,14 @@
 			<Role>пбп_ЧтениеРегистраСведенийСоответствияОбъектовИБ</Role>
 			<Role>пбп_ЧтениеСостоянийПредопределенныхЭлементов</Role>
 			<Role>пбп_ЧтениеТиповСоответствияОбъектовИБ</Role>
-			<Role>пбп_ПросмотрИсторииИнтеграции</Role>
 			<Role>ПолныеПрава</Role>
 			<CommonTemplate>пбп_BSLEditor</CommonTemplate>
 			<CommonTemplate>пбп_JSONEditor</CommonTemplate>
 			<CommonTemplate>пбп_PinkRabbitMQ</CommonTemplate>
 			<CommonTemplate>пбп_SimpleKafkaAdapter</CommonTemplate>
 			<CommonTemplate>пбп_XMLEditor</CommonTemplate>
+			<CommonModule>пбп_ВалидаторПакетов</CommonModule>
+			<CommonModule>пбп_ВалидаторПакетовПовтИсп</CommonModule>
 			<CommonModule>пбп_ДокументыОбработкаСобытий</CommonModule>
 			<CommonModule>пбп_ЗагрузкаФайлаЧерезТабличныйДокументВызовСервера</CommonModule>
 			<CommonModule>пбп_ЗагрузкаФайлаЧерезТабличныйДокументКлиент</CommonModule>
@@ -332,9 +335,9 @@
 			<ScheduledJob>пбп_ЗаполнениеПредопределенныхЭлементов</ScheduledJob>
 			<FunctionalOption>пбп_ИспользоватьПользовательскиеФункции</FunctionalOption>
 			<DefinedType>пбп_Пользователи</DefinedType>
+			<DefinedType>пбп_ПредопределенныеВсеСсылкиПереопределяемый</DefinedType>
 			<DefinedType>пбп_ТипыОбъектовСоответствийИБ</DefinedType>
 			<DefinedType>пбп_УчетныеЗаписиЭлектроннойПочты</DefinedType>
-			<DefinedType>пбп_ПредопределенныеВсеСсылкиПереопределяемый</DefinedType>
 			<Constant>пбп_ИспользоватьПользовательскиеФункции</Constant>
 			<CommonForm>пбп_ФормаВыбораПоля</CommonForm>
 			<CommonForm>пбп_ФормаРазрешенияКонфликтовПредопределенныхЭлементов</CommonForm>
@@ -356,6 +359,7 @@
 			<Enum>пбп_ФорматыИнтеграций</Enum>
 			<Enum>пбп_НаправленияИнтеграционныхПотоков</Enum>
 			<Enum>пбп_ВидыОшибокПредопределенныхЭлементов</Enum>
+			<DataProcessor>пбп_ВалидаторПакетов</DataProcessor>
 			<InformationRegister>пбп_СоответствияОбъектовИБ</InformationRegister>
 			<InformationRegister>пбп_СостоянияПредопределенныхЭлементов</InformationRegister>
 			<ChartOfCharacteristicTypes>пбп_ПредопределенныеЗначения</ChartOfCharacteristicTypes>
