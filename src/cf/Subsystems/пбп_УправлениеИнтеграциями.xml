@@ -53,7 +53,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ИнтеграцииFTPSFTP</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.пбп_НаправленияИнтеграционныхПотоков</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">42c7c36a-535b-4de5-8eba-3a6b666449a6</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Role.пбп_ИспользованиеОбработкиВалидаторПакетов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">6f13db10-dc43-4982-b2f3-798bda6e5c15</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.пбп_СоответствиеОбъектовИнтегрируемыхСистем</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Role.пбп_ЧтениеСоответствияОбъектовИнтегрируемыхСистем</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Role.пбп_РедактированиеСоответствияОбъектовИнтегрируемыхСистем</xr:Item>
