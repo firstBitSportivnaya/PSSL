@@ -103,6 +103,49 @@
 				<Event name="OnChange">ПользовательскаяФункцияПриИзменении</Event>
 			</Events>
 		</InputField>
+		<UsualGroup name="ГруппаКоличествоДнейХранения" id="62">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество дней хранения истории интеграции</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Если не указано, то будут использованы значения предопределенных элементов "Количество дней хранения истории интеграции" и "Количество дней хранения ошибок истории интеграции"</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ToolTipRepresentation>Button</ToolTipRepresentation>
+			<Behavior>Usual</Behavior>
+			<ExtendedTooltip name="ГруппаКоличествоДнейХраненияРасширеннаяПодсказка" id="63"/>
+			<ChildItems>
+				<InputField name="КоличествоДнейХранения" id="64">
+					<DataPath>Объект.КоличествоДнейХранения</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Без ошибки</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="КоличествоДнейХраненияКонтекстноеМеню" id="65"/>
+					<ExtendedTooltip name="КоличествоДнейХраненияРасширеннаяПодсказка" id="66"/>
+				</InputField>
+				<InputField name="КоличествоДнейХраненияОшибок" id="67">
+					<DataPath>Объект.КоличествоДнейХраненияОшибок</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>С ошибкой</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="КоличествоДнейХраненияОшибокКонтекстноеМеню" id="68"/>
+					<ExtendedTooltip name="КоличествоДнейХраненияОшибокРасширеннаяПодсказка" id="69"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
 		<Table name="ПараметрыВхода" id="15">
 			<TitleLocation>Top</TitleLocation>
 			<AutoInsertNewRow>true</AutoInsertNewRow>
