@@ -1,4 +1,4 @@
-﻿// BSLLS:NestedFunctionInParameters-off
+// BSLLS:NestedFunctionInParameters-off
 // Библиотека проектных подсистем для упрощения разработки архитектуры на 1С: Предприятие 8,
 // включая доработку типовых конфигураций.
 //

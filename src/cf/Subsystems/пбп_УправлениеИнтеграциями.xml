@@ -33,6 +33,8 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.пбп_JSONEditor</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.пбп_ФорматыИнтеграций</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.пбп_НастройкиИнтеграции</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ВалидаторПакетовПовтИсп</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ВалидаторПакетов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.пбп_ИсторияИнтеграции</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ИнтеграцииСервер</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.пбп_ОчисткаИсторииИнтеграции</xr:Item>
@@ -53,6 +55,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.пбп_СоответствиеОбъектовИнтегрируемыхСистем</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Role.пбп_ЧтениеСоответствияОбъектовИнтегрируемыхСистем</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Role.пбп_РедактированиеСоответствияОбъектовИнтегрируемыхСистем</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ВалидаторПакетовСлужебный</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
