@@ -524,6 +524,20 @@
 									<ContextMenu name="ОбъектыОбменаЗагруженныйОбъектТипЗначенияКонтекстноеМеню" id="111"/>
 									<ExtendedTooltip name="ОбъектыОбменаЗагруженныйОбъектТипЗначенияРасширеннаяПодсказка" id="112"/>
 								</InputField>
+								<InputField name="ОбъектыОбменаИдентификатор" id="172">
+									<DataPath>Объект.ОбъектыИнтеграции.Идентификатор</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ОбъектыОбменаИдентификаторКонтекстноеМеню" id="173"/>
+									<ExtendedTooltip name="ОбъектыОбменаИдентификаторРасширеннаяПодсказка" id="174"/>
+								</InputField>
+								<InputField name="ОбъектыОбменаТипИдентификатора" id="175">
+									<DataPath>Объект.ОбъектыИнтеграции.ТипИдентификатора</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ОбъектыОбменаТипИдентификатораКонтекстноеМеню" id="176"/>
+									<ExtendedTooltip name="ОбъектыОбменаТипИдентификатораРасширеннаяПодсказка" id="177"/>
+								</InputField>
 								<CheckBoxField name="ОбъектыОбменаСозданОбновлен" id="88">
 									<DataPath>Объект.ОбъектыИнтеграции.СозданОбновлен</DataPath>
 									<ReadOnly>true</ReadOnly>
@@ -531,6 +545,13 @@
 									<ContextMenu name="ОбъектыОбменаСозданОбновленКонтекстноеМеню" id="89"/>
 									<ExtendedTooltip name="ОбъектыОбменаСозданОбновленРасширеннаяПодсказка" id="90"/>
 								</CheckBoxField>
+								<InputField name="ОбъектыОбменаДополнительнаяИнформация" id="178">
+									<DataPath>Объект.ОбъектыИнтеграции.ДополнительнаяИнформация</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ОбъектыОбменаДополнительнаяИнформацияКонтекстноеМеню" id="179"/>
+									<ExtendedTooltip name="ОбъектыОбменаДополнительнаяИнформацияРасширеннаяПодсказка" id="180"/>
+								</InputField>
 							</ChildItems>
 						</Table>
 					</ChildItems>

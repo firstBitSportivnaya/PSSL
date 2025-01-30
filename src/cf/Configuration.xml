@@ -57,7 +57,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок</xr:Item>
 			</DefaultRoles>
 			<Vendor>Первый БИТ</Vendor>
-			<Version>1.0.5.23</Version>
+			<Version>1.0.5.24</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>false</UseManagedFormInOrdinaryApplication>
@@ -353,15 +353,15 @@
 			<Catalog>пбп_ТипСоответствияОбъектовИБ</Catalog>
 			<Catalog>пбп_ТипыИнтеграций</Catalog>
 			<Document>ДемоРаботаСФормами</Document>
+			<Enum>пбп_ВидыОшибокПредопределенныхЭлементов</Enum>
 			<Enum>пбп_КонтекстыВыполненияПользовательскихФункций</Enum>
 			<Enum>пбп_МетодыЗапросаREST</Enum>
+			<Enum>пбп_НаправленияИнтеграционныхПотоков</Enum>
 			<Enum>пбп_СозданОбновлен</Enum>
 			<Enum>пбп_СтатусыИнтеграции</Enum>
 			<Enum>пбп_ТипыJSON</Enum>
 			<Enum>пбп_ТипыАвторизации</Enum>
 			<Enum>пбп_ФорматыИнтеграций</Enum>
-			<Enum>пбп_НаправленияИнтеграционныхПотоков</Enum>
-			<Enum>пбп_ВидыОшибокПредопределенныхЭлементов</Enum>
 			<InformationRegister>пбп_СоответствиеОбъектовИнтегрируемыхСистем</InformationRegister>
 			<InformationRegister>пбп_СоответствияОбъектовИБ</InformationRegister>
 			<InformationRegister>пбп_СостоянияПредопределенныхЭлементов</InformationRegister>
