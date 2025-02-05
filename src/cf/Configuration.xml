@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
 	<Configuration uuid="68a7cc13-add7-462a-a553-7c6f1b87af8c">
 		<InternalInfo>
@@ -57,7 +57,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок</xr:Item>
 			</DefaultRoles>
 			<Vendor>Первый БИТ</Vendor>
-			<Version>1.0.5.25</Version>
+			<Version>1.0.6.0</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>false</UseManagedFormInOrdinaryApplication>
@@ -277,6 +277,11 @@
 			<CommonTemplate>пбп_PinkRabbitMQ</CommonTemplate>
 			<CommonTemplate>пбп_SimpleKafkaAdapter</CommonTemplate>
 			<CommonTemplate>пбп_XMLEditor</CommonTemplate>
+			<CommonTemplate>СпецификацияИконка16СтраницыREST</CommonTemplate>
+			<CommonTemplate>СпецификацияИконка32СтраницыREST</CommonTemplate>
+			<CommonTemplate>СпецификацияСкриптыСтраницыREST</CommonTemplate>
+			<CommonTemplate>СпецификацияСтилиСтраницыREST</CommonTemplate>
+			<CommonTemplate>СпецификацияСтраницаREST</CommonTemplate>
 			<CommonModule>пбп_ВалидаторПакетов</CommonModule>
 			<CommonModule>пбп_ВалидаторПакетовПовтИсп</CommonModule>
 			<CommonModule>пбп_ВалидаторПакетовСлужебный</CommonModule>
@@ -321,6 +326,9 @@
 			<CommonModule>пбп_СправочникиОбработкаСобытий</CommonModule>
 			<CommonModule>пбп_СтроковыеФункцииКлиентСервер</CommonModule>
 			<CommonModule>пбп_СхемыЗапросов</CommonModule>
+			<CommonModule>пбп_ПостроительСпецификацииOpenAPI</CommonModule>
+			<CommonModule>пбп_ПостроительСпецификацииOpenAPIПереопределяемый</CommonModule>
+			<CommonModule>пбп_ПостроительСпецификацииOpenAPIПовтИсп</CommonModule>
 			<EventSubscription>пбп_ДокументыОбработкаЗаполнения</EventSubscription>
 			<EventSubscription>пбп_ДокументыОбработкаПроведения</EventSubscription>
 			<EventSubscription>пбп_ДокументыОбработкаПроверкиЗаполнения</EventSubscription>
@@ -355,13 +363,14 @@
 			<Document>ДемоРаботаСФормами</Document>
 			<Enum>пбп_ВидыОшибокПредопределенныхЭлементов</Enum>
 			<Enum>пбп_КонтекстыВыполненияПользовательскихФункций</Enum>
-			<Enum>пбп_МетодыЗапросаREST</Enum>
-			<Enum>пбп_НаправленияИнтеграционныхПотоков</Enum>
 			<Enum>пбп_СозданОбновлен</Enum>
+			<Enum>пбп_НаправленияИнтеграционныхПотоков</Enum>
 			<Enum>пбп_СтатусыИнтеграции</Enum>
+			<Enum>пбп_МетодыЗапросаREST</Enum>
 			<Enum>пбп_ТипыJSON</Enum>
 			<Enum>пбп_ТипыАвторизации</Enum>
 			<Enum>пбп_ФорматыИнтеграций</Enum>
+			<Enum>пбп_ТипыОтветовREST</Enum>
 			<InformationRegister>пбп_СоответствиеОбъектовИнтегрируемыхСистем</InformationRegister>
 			<InformationRegister>пбп_СоответствияОбъектовИБ</InformationRegister>
 			<InformationRegister>пбп_СостоянияПредопределенныхЭлементов</InformationRegister>

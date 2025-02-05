@@ -56,6 +56,15 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.пбп_ЧтениеСоответствияОбъектовИнтегрируемыхСистем</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Role.пбп_РедактированиеСоответствияОбъектовИнтегрируемыхСистем</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ВалидаторПакетовСлужебный</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ПостроительСпецификацииOpenAPI</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ПостроительСпецификацииOpenAPIПереопределяемый</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ПостроительСпецификацииOpenAPIПовтИсп</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.СпецификацияСтраницаREST</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.СпецификацияСтилиСтраницыREST</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.СпецификацияСкриптыСтраницыREST</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.СпецификацияИконка32СтраницыREST</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.СпецификацияИконка16СтраницыREST</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.пбп_ТипыОтветовREST</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
