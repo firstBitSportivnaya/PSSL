@@ -152,6 +152,12 @@
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
+		<LabelField name="СвязьИстории" id="181">
+			<DataPath>Объект.СвязьИстории</DataPath>
+			<Hiperlink>true</Hiperlink>
+			<ContextMenu name="СвязьИсторииКонтекстноеМеню" id="182"/>
+			<ExtendedTooltip name="СвязьИсторииРасширеннаяПодсказка" id="183"/>
+		</LabelField>
 		<UsualGroup name="ГруппаФорматированиеТекстаЗапроса" id="138">
 			<Title>
 				<v8:item>
