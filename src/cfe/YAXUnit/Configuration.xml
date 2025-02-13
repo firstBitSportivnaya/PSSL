@@ -166,6 +166,8 @@
 			<CommonModule>пбп_ПредопределенныеЗначенияПереопределяемый</CommonModule>
 			<CommonModule>ОМ_ПредопределенныеЗначенияВызовСервера</CommonModule>
 			<CommonModule>пбп_ПредопределенныеЗначения</CommonModule>
+			<CommonModule>ОМ_ПостроительСпецификацииOpenAPI</CommonModule>
+			<CommonModule>пбп_ПостроительСпецификацииOpenAPI</CommonModule>
 			<DataProcessor>ЮТHTTPServiceRequest</DataProcessor>
 			<DataProcessor>ЮТHTTPСервисЗапрос</DataProcessor>
 			<DataProcessor>ЮТRecordSet</DataProcessor>
