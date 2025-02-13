@@ -370,7 +370,6 @@
 			<Enum>пбп_ТипыJSON</Enum>
 			<Enum>пбп_ТипыАвторизации</Enum>
 			<Enum>пбп_ФорматыИнтеграций</Enum>
-			<Enum>пбп_ТипыОтветовREST</Enum>
 			<InformationRegister>пбп_СоответствиеОбъектовИнтегрируемыхСистем</InformationRegister>
 			<InformationRegister>пбп_СоответствияОбъектовИБ</InformationRegister>
 			<InformationRegister>пбп_СостоянияПредопределенныхЭлементов</InformationRegister>

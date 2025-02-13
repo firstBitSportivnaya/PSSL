@@ -64,7 +64,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.СпецификацияСкриптыСтраницыREST</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.СпецификацияИконка32СтраницыREST</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.СпецификацияИконка16СтраницыREST</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Enum.пбп_ТипыОтветовREST</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">82149a47-116c-41b3-b8af-13d26d001e62</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
