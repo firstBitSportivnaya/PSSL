@@ -65,6 +65,9 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.СпецификацияИконка32СтраницыREST</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.СпецификацияИконка16СтраницыREST</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">82149a47-116c-41b3-b8af-13d26d001e62</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.пбп_ИсторияЗагрузкиФайлов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.пбп_ЧтениеИсторииЗагрузкиФайлов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.пбп_РедактированиеИсторииЗагрузкиФайлов</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
