@@ -279,11 +279,11 @@
 			<CommonTemplate>пбп_PinkRabbitMQ</CommonTemplate>
 			<CommonTemplate>пбп_SimpleKafkaAdapter</CommonTemplate>
 			<CommonTemplate>пбп_XMLEditor</CommonTemplate>
-			<CommonTemplate>СпецификацияИконка16СтраницыREST</CommonTemplate>
-			<CommonTemplate>СпецификацияИконка32СтраницыREST</CommonTemplate>
-			<CommonTemplate>СпецификацияСкриптыСтраницыREST</CommonTemplate>
-			<CommonTemplate>СпецификацияСтилиСтраницыREST</CommonTemplate>
-			<CommonTemplate>СпецификацияСтраницаREST</CommonTemplate>
+			<CommonTemplate>пбп_СпецификацияИконка16СтраницыREST</CommonTemplate>
+			<CommonTemplate>пбп_СпецификацияИконка32СтраницыREST</CommonTemplate>
+			<CommonTemplate>пбп_СпецификацияСкриптыСтраницыREST</CommonTemplate>
+			<CommonTemplate>пбп_СпецификацияСтилиСтраницыREST</CommonTemplate>
+			<CommonTemplate>пбп_СпецификацияСтраницаREST</CommonTemplate>
 			<CommonModule>пбп_ВалидаторПакетов</CommonModule>
 			<CommonModule>пбп_ВалидаторПакетовПовтИсп</CommonModule>
 			<CommonModule>пбп_ВалидаторПакетовСлужебный</CommonModule>
@@ -314,6 +314,9 @@
 			<CommonModule>пбп_ПереадресацияКлиентПовтИсп</CommonModule>
 			<CommonModule>пбп_ПереадресацияКлиентСервер</CommonModule>
 			<CommonModule>пбп_ПереадресацияПовтИсп</CommonModule>
+			<CommonModule>пбп_ПостроительСпецификацииOpenAPI</CommonModule>
+			<CommonModule>пбп_ПостроительСпецификацииOpenAPIПереопределяемый</CommonModule>
+			<CommonModule>пбп_ПостроительСпецификацииOpenAPIПовтИсп</CommonModule>
 			<CommonModule>пбп_ПредопределенныеЗначения</CommonModule>
 			<CommonModule>пбп_ПредопределенныеЗначенияВызовСервера</CommonModule>
 			<CommonModule>пбп_ПредопределенныеЗначенияКлиент</CommonModule>
@@ -328,9 +331,6 @@
 			<CommonModule>пбп_СправочникиОбработкаСобытий</CommonModule>
 			<CommonModule>пбп_СтроковыеФункцииКлиентСервер</CommonModule>
 			<CommonModule>пбп_СхемыЗапросов</CommonModule>
-			<CommonModule>пбп_ПостроительСпецификацииOpenAPI</CommonModule>
-			<CommonModule>пбп_ПостроительСпецификацииOpenAPIПереопределяемый</CommonModule>
-			<CommonModule>пбп_ПостроительСпецификацииOpenAPIПовтИсп</CommonModule>
 			<EventSubscription>пбп_ДокументыОбработкаЗаполнения</EventSubscription>
 			<EventSubscription>пбп_ДокументыОбработкаПроведения</EventSubscription>
 			<EventSubscription>пбп_ДокументыОбработкаПроверкиЗаполнения</EventSubscription>

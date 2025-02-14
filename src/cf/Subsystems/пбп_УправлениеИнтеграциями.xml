@@ -59,15 +59,14 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ПостроительСпецификацииOpenAPI</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ПостроительСпецификацииOpenAPIПереопределяемый</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ПостроительСпецификацииOpenAPIПовтИсп</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.СпецификацияСтраницаREST</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.СпецификацияСтилиСтраницыREST</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.СпецификацияСкриптыСтраницыREST</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.СпецификацияИконка32СтраницыREST</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.СпецификацияИконка16СтраницыREST</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">82149a47-116c-41b3-b8af-13d26d001e62</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.пбп_ИсторияЗагрузкиФайлов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.пбп_СпецификацияСтраницаREST</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.пбп_СпецификацияСтилиСтраницыREST</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.пбп_СпецификацияСкриптыСтраницыREST</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.пбп_СпецификацияИконка32СтраницыREST</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.пбп_СпецификацияИконка16СтраницыREST</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Role.пбп_ЧтениеИсторииЗагрузкиФайлов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Role.пбп_РедактированиеИсторииЗагрузкиФайлов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.пбп_ИсторияЗагрузкиФайлов</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
