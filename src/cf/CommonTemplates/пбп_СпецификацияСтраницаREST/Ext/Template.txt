@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" type="image/png" href="[Иконка16Ссылка]" sizes="16x16">
+<link rel="icon" type="image/png" href="[Иконка32Ссылка]" sizes="32x32">
+<link type="text/css" rel="stylesheet" href="[СтилиСсылка]">
+<title>[Заголовок]</title>
+</head>
+<body>
+<div id="swagger-ui">
+</div>
+<script src="[СкриптыСсылка]"></script>
+<script>
+const ui = SwaggerUIBundle({
+    url: '[СпецификацияСсылка]',
+    dom_id: '#swagger-ui',
+    presets: [
+    SwaggerUIBundle.presets.apis,
+    SwaggerUIBundle.SwaggerUIStandalonePreset
+    ],
+    layout: "BaseLayout",
+    deepLinking: true,
+    showExtensions: true,
+    showCommonExtensions: true
+})
+</script>
+</body>
+</html>
