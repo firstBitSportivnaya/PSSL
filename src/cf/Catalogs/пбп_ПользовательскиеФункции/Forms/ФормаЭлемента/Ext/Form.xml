@@ -232,6 +232,14 @@
 												<Event name="StartChoice">ПараметрыФункцииЗначениеВФормеНачалоВыбора</Event>
 											</Events>
 										</InputField>
+										<InputField name="ПараметрыФункцииОписание" id="160">
+											<DataPath>Объект.ПараметрыФункции.Описание</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<MultiLine>true</MultiLine>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ПараметрыФункцииОписаниеКонтекстноеМеню" id="161"/>
+											<ExtendedTooltip name="ПараметрыФункцииОписаниеРасширеннаяПодсказка" id="162"/>
+										</InputField>
 										<InputField name="ПараметрыФункцииАдресЗначения" id="157">
 											<DataPath>Объект.ПараметрыФункции.АдресЗначения</DataPath>
 											<Visible>false</Visible>
@@ -329,6 +337,14 @@
 											<EditMode>EnterOnInput</EditMode>
 											<ContextMenu name="ПеременныеЗначениеКонтекстноеМеню" id="39"/>
 											<ExtendedTooltip name="ПеременныеЗначениеExtendedTooltip" id="90"/>
+										</InputField>
+										<InputField name="ПеременныеОписание" id="163">
+											<DataPath>Объект.Переменные.Описание</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<MultiLine>true</MultiLine>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ПеременныеОписаниеКонтекстноеМеню" id="164"/>
+											<ExtendedTooltip name="ПеременныеОписаниеРасширеннаяПодсказка" id="165"/>
 										</InputField>
 									</ChildItems>
 								</Table>
