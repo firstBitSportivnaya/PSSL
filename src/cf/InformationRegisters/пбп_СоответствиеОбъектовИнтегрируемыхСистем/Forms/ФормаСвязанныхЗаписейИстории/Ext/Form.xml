@@ -221,7 +221,7 @@
 					<v8:content>Закрыть форму</v8:content>
 				</v8:item>
 			</ToolTip>
-			<Action>Закрыть</Action>
+			<Action>ЗакрытьФорму</Action>
 		</Command>
 	</Commands>
 	<Parameters>
