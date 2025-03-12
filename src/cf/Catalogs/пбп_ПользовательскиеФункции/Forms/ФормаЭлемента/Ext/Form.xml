@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
 	<VerticalScroll>useIfNecessary</VerticalScroll>
 	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
@@ -14,75 +15,93 @@
 		<Event name="OnClose">ПриЗакрытии</Event>
 	</Events>
 	<ChildItems>
-		<InputField name="Родитель" id="5">
-			<DataPath>Объект.Parent</DataPath>
+		<UsualGroup name="ГруппаОсновные" id="166">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Группа</v8:content>
-				</v8:item>
-				<v8:item>
-					<v8:lang>en</v8:lang>
-					<v8:content>Group</v8:content>
+					<v8:content>Основные</v8:content>
 				</v8:item>
 			</Title>
-			<EditMode>EnterOnInput</EditMode>
-			<ContextMenu name="РодительКонтекстноеМеню" id="6"/>
-			<ExtendedTooltip name="РодительExtendedTooltip" id="74"/>
-		</InputField>
-		<UsualGroup name="ГруппаНаименованиеКод" id="40">
-			<Title>
+			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Группа наименование код</v8:content>
+					<v8:content>Группа основные</v8:content>
 				</v8:item>
-				<v8:item>
-					<v8:lang>en</v8:lang>
-					<v8:content>Name Code group</v8:content>
-				</v8:item>
-			</Title>
-			<Group>Horizontal</Group>
-			<Behavior>Usual</Behavior>
-			<Representation>None</Representation>
-			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ГруппаНаименованиеКодExtendedTooltip" id="75"/>
+			</ToolTip>
+			<Behavior>Collapsible</Behavior>
+			<ExtendedTooltip name="ГруппаОсновныеРасширеннаяПодсказка" id="167"/>
 			<ChildItems>
-				<InputField name="Наименование" id="3">
-					<DataPath>Объект.Description</DataPath>
+				<InputField name="Родитель" id="5">
+					<DataPath>Объект.Parent</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Group</v8:content>
+						</v8:item>
+					</Title>
 					<EditMode>EnterOnInput</EditMode>
-					<ContextMenu name="НаименованиеКонтекстноеМеню" id="4"/>
-					<ExtendedTooltip name="НаименованиеExtendedTooltip" id="76"/>
+					<ContextMenu name="РодительКонтекстноеМеню" id="6"/>
+					<ExtendedTooltip name="РодительExtendedTooltip" id="74"/>
+				</InputField>
+				<UsualGroup name="ГруппаНаименованиеКод" id="40">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа наименование код</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Name Code group</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Horizontal</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаНаименованиеКодExtendedTooltip" id="75"/>
+					<ChildItems>
+						<InputField name="Наименование" id="3">
+							<DataPath>Объект.Description</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="НаименованиеКонтекстноеМеню" id="4"/>
+							<ExtendedTooltip name="НаименованиеExtendedTooltip" id="76"/>
+							<Events>
+								<Event name="OnChange">НаименованиеПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="Код" id="1">
+							<DataPath>Объект.Code</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+							<ExtendedTooltip name="КодExtendedTooltip" id="77"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<InputField name="Контекст" id="13">
+					<DataPath>Объект.Контекст</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КонтекстКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="КонтекстExtendedTooltip" id="78"/>
 					<Events>
-						<Event name="OnChange">НаименованиеПриИзменении</Event>
+						<Event name="OnChange">КонтекстПриИзменении</Event>
 					</Events>
 				</InputField>
-				<InputField name="Код" id="1">
-					<DataPath>Объект.Code</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<ContextMenu name="КодКонтекстноеМеню" id="2"/>
-					<ExtendedTooltip name="КодExtendedTooltip" id="77"/>
+				<InputField name="КаталогИсходногоКодаКонфигурации" id="145">
+					<DataPath>КаталогИсходногоКодаКонфигурации</DataPath>
+					<ChoiceButton>true</ChoiceButton>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="КаталогИсходногоКодаКонфигурацииКонтекстноеМеню" id="146"/>
+					<ExtendedTooltip name="КаталогИсходногоКодаКонфигурацииРасширеннаяПодсказка" id="147"/>
+					<Events>
+						<Event name="StartChoice">КаталогИсходногоКодаКонфигурацииНачалоВыбора</Event>
+					</Events>
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
-		<InputField name="Контекст" id="13">
-			<DataPath>Объект.Контекст</DataPath>
-			<EditMode>EnterOnInput</EditMode>
-			<ContextMenu name="КонтекстКонтекстноеМеню" id="14"/>
-			<ExtendedTooltip name="КонтекстExtendedTooltip" id="78"/>
-			<Events>
-				<Event name="OnChange">КонтекстПриИзменении</Event>
-			</Events>
-		</InputField>
-		<InputField name="КаталогИсходногоКодаКонфигурации" id="145">
-			<DataPath>КаталогИсходногоКодаКонфигурации</DataPath>
-			<ChoiceButton>true</ChoiceButton>
-			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-			<ContextMenu name="КаталогИсходногоКодаКонфигурацииКонтекстноеМеню" id="146"/>
-			<ExtendedTooltip name="КаталогИсходногоКодаКонфигурацииРасширеннаяПодсказка" id="147"/>
-			<Events>
-				<Event name="StartChoice">КаталогИсходногоКодаКонфигурацииНачалоВыбора</Event>
-			</Events>
-		</InputField>
 		<UsualGroup name="ГруппаПараметры" id="143">
 			<Title>
 				<v8:item>
