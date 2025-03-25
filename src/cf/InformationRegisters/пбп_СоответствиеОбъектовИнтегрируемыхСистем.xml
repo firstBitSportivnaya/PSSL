@@ -42,8 +42,8 @@
 			<Comment/>
 			<UseStandardCommands>true</UseStandardCommands>
 			<EditType>InDialog</EditType>
-			<DefaultRecordForm/>
-			<DefaultListForm/>
+			<DefaultRecordForm>InformationRegister.пбп_СоответствиеОбъектовИнтегрируемыхСистем.Form.ФормаЗаписи</DefaultRecordForm>
+			<DefaultListForm>InformationRegister.пбп_СоответствиеОбъектовИнтегрируемыхСистем.Form.ФормаСписка</DefaultListForm>
 			<AuxiliaryRecordForm/>
 			<AuxiliaryListForm/>
 			<StandardAttributes>
@@ -343,6 +343,9 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Dimension>
+			<Form>ФормаСписка</Form>
+			<Form>ФормаЗаписи</Form>
+			<Form>ФормаСвязанныхЗаписейИстории</Form>
 		</ChildObjects>
 	</InformationRegister>
 </MetaDataObject>

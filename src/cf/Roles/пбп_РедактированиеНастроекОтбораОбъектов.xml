@@ -6,11 +6,11 @@
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Редактирование настроек отбора объектов</v8:content>
+					<v8:content>[ПБП] Редактирование настроек отбора объектов</v8:content>
 				</v8:item>
 				<v8:item>
 					<v8:lang>en</v8:lang>
-					<v8:content>Editing object selection settings</v8:content>
+					<v8:content>[PSSL] Editing object selection settings</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
