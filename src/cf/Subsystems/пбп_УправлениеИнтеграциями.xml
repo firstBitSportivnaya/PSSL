@@ -67,6 +67,8 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.пбп_ЧтениеИсторииЗагрузкиФайлов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Role.пбп_РедактированиеИсторииЗагрузкиФайлов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.пбп_ИсторияЗагрузкиФайлов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.пбп_ЧтениеНастроекИнтеграции</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.пбп_ПросмотрПодсистемыУправлениеИнтеграциями</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
