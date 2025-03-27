@@ -1,0 +1,44 @@
+﻿<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://www.pssl-packages.org/forms-settings">
+	<valueType name="Ref" base="xs:string" variety="Atomic"/>
+	<valueType name="TypeInt1" base="xs:int" totalDigits="1"/>
+	<valueType name="TypeRowNumber" base="xs:int" totalDigits="10"/>
+	<valueType name="TypeString4" base="xs:string" maxLength="4"/>
+	<valueType name="TypeString10" base="xs:string" maxLength="10"/>
+	<valueType name="TypeString150" base="xs:string" maxLength="150"/>
+	<valueType name="TypeString300" base="xs:string" maxLength="300"/>
+	<objectType name="Exchange.UniversalFileDownloadFromTableFile">
+		<property xmlns:d3p1="http://www.pssl-packages.org/forms-settings" name="DownloadWithUserFunctions" type="d3p1:TypeInt1"/>
+		<property xmlns:d3p1="http://www.pssl-packages.org/forms-settings" name="TemplateIsLayout" type="d3p1:TypeInt1"/>
+		<property xmlns:d3p1="http://www.pssl-packages.org/forms-settings" name="FilePath" type="d3p1:TypeString300" nillable="true"/>
+		<property xmlns:d3p1="http://www.pssl-packages.org/forms-settings" name="UserFunction" type="d3p1:Ref" nillable="true"/>
+		<property name="SheetName" type="xs:string" nillable="true"/>
+		<property name="BeginningNumber" type="xs:int" nillable="true"/>
+		<property name="BooleanValueTrue" type="xs:string" nillable="true"/>
+		<property name="MatchByName" type="xs:boolean" nillable="true"/>
+		<property name="ShowErrorIfSheetAbsent" type="xs:boolean" nillable="true"/>
+		<property name="ConvertDates" type="xs:boolean" nillable="true"/>
+		<property xmlns:d3p1="http://www.pssl-packages.org/forms-settings" name="ColumnsSettings" type="d3p1:Exchange.UniversalFileDownloadFromTableFile.ColumnsSettings" lowerBound="0"/>
+	</objectType>
+	<objectType name="Exchange.UniversalFileDownloadFromTableFile.ColumnsSettings">
+		<property xmlns:d3p1="http://www.pssl-packages.org/forms-settings" name="Row" type="d3p1:Exchange.UniversalFileDownloadFromTableFile.ColumnsSettings.Row" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="Exchange.UniversalFileDownloadFromTableFile.ColumnsSettings.Row">
+		<property xmlns:d3p1="http://www.pssl-packages.org/forms-settings" name="RowNumber" type="d3p1:TypeRowNumber" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.pssl-packages.org/forms-settings" name="ColumnName" type="d3p1:TypeString150"/>
+		<property xmlns:d3p1="http://www.pssl-packages.org/forms-settings" name="ColumnSynonym" type="d3p1:TypeString150" nillable="true"/>
+		<property xmlns:d3p1="http://www.pssl-packages.org/forms-settings" name="GroupName" type="d3p1:TypeString150" nillable="true"/>
+		<property xmlns:d3p1="http://www.pssl-packages.org/forms-settings" name="ValueType" type="d3p1:TypeString150"/>
+		<property xmlns:d3p1="http://www.pssl-packages.org/forms-settings" name="ConditionOperator" type="d3p1:TypeString4"/>
+		<property xmlns:d3p1="http://www.pssl-packages.org/forms-settings" name="ConversionFunction" type="d3p1:TypeString300" nillable="true"/>
+		<property xmlns:d3p1="http://www.pssl-packages.org/forms-settings" name="DateFormat" type="d3p1:TypeString10" nillable="true"/>
+		<property xmlns:d3p1="http://www.pssl-packages.org/forms-settings" name="SearchField1" type="d3p1:TypeString150" nillable="true"/>
+		<property xmlns:d3p1="http://www.pssl-packages.org/forms-settings" name="SearchOperator1" type="d3p1:TypeString4" nillable="true"/>
+		<property xmlns:d3p1="http://www.pssl-packages.org/forms-settings" name="SearchValue1" type="d3p1:TypeString150" nillable="true"/>
+		<property xmlns:d3p1="http://www.pssl-packages.org/forms-settings" name="SearchField2" type="d3p1:TypeString150" nillable="true"/>
+		<property xmlns:d3p1="http://www.pssl-packages.org/forms-settings" name="SearchOperator2" type="d3p1:TypeString4" nillable="true"/>
+		<property xmlns:d3p1="http://www.pssl-packages.org/forms-settings" name="SearchValue2" type="d3p1:TypeString150" nillable="true"/>
+		<property xmlns:d3p1="http://www.pssl-packages.org/forms-settings" name="SearchField3" type="d3p1:TypeString150" nillable="true"/>
+		<property xmlns:d3p1="http://www.pssl-packages.org/forms-settings" name="SearchOperator3" type="d3p1:TypeString4" nillable="true"/>
+		<property xmlns:d3p1="http://www.pssl-packages.org/forms-settings" name="SearchValue3" type="d3p1:TypeString150" nillable="true"/>
+	</objectType>
+</package>

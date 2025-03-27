@@ -333,6 +333,7 @@
 			<CommonModule>пбп_СправочникиОбработкаСобытий</CommonModule>
 			<CommonModule>пбп_СтроковыеФункцииКлиентСервер</CommonModule>
 			<CommonModule>пбп_СхемыЗапросов</CommonModule>
+			<XDTOPackage>пбп_НастройкиФорм</XDTOPackage>
 			<EventSubscription>пбп_ДокументыОбработкаЗаполнения</EventSubscription>
 			<EventSubscription>пбп_ДокументыОбработкаПроведения</EventSubscription>
 			<EventSubscription>пбп_ДокументыОбработкаПроверкиЗаполнения</EventSubscription>
@@ -374,6 +375,7 @@
 			<Enum>пбп_ТипыJSON</Enum>
 			<Enum>пбп_ТипыАвторизации</Enum>
 			<Enum>пбп_ФорматыИнтеграций</Enum>
+			<DataProcessor>пбп_УниверсальнаяЗагрузкаИзФайлаЧерезТабличныйДокумент</DataProcessor>
 			<InformationRegister>пбп_ИсторияЗагрузкиФайлов</InformationRegister>
 			<InformationRegister>пбп_СоответствиеОбъектовИнтегрируемыхСистем</InformationRegister>
 			<InformationRegister>пбп_СоответствияОбъектовИБ</InformationRegister>
