@@ -29,6 +29,7 @@
 		</Properties>
 		<ChildObjects>
 			<Form>Форма</Form>
+			<Template>СтруктураКолонокФайла</Template>
 			<Command uuid="aa1b48f7-535d-45f0-b85f-9b3e7ebc15f0">
 				<Properties>
 					<Name>УниверсальнаяЗагрузкаИзФайла</Name>
