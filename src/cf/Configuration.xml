@@ -57,7 +57,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок</xr:Item>
 			</DefaultRoles>
 			<Vendor>Первый БИТ</Vendor>
-			<Version>1.0.6.4</Version>
+			<Version>1.0.7.1</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>false</UseManagedFormInOrdinaryApplication>
@@ -255,6 +255,7 @@
 			<Role>АдминистраторСистемы</Role>
 			<Role>ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок</Role>
 			<Role>пбп_ПросмотрИсторииИнтеграции</Role>
+			<Role>пбп_ПросмотрПодсистемыУправлениеИнтеграциями</Role>
 			<Role>пбп_РедактированиеДокументаДемоКаркас</Role>
 			<Role>пбп_РедактированиеИсторииЗагрузкиФайлов</Role>
 			<Role>пбп_РедактированиеНастроекИнтеграции</Role>
@@ -267,6 +268,7 @@
 			<Role>пбп_РедактированиеТиповСоответствияОбъектовИБ</Role>
 			<Role>пбп_ЧтениеИсторииЗагрузкиФайлов</Role>
 			<Role>пбп_ЧтениеКонстантыИспользоватьПользовательскиеФункции</Role>
+			<Role>пбп_ЧтениеНастроекИнтеграции</Role>
 			<Role>пбп_ЧтениеНастроекОтборовОбъектов</Role>
 			<Role>пбп_ЧтениеПланаВидовХарактеристикПредопределенныеЗначения</Role>
 			<Role>пбп_ЧтениеРегистраСведенийСоответствияОбъектовИБ</Role>
