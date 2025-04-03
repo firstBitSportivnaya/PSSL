@@ -103,6 +103,13 @@
 				<Event name="OnChange">ПользовательскаяФункцияПриИзменении</Event>
 			</Events>
 		</InputField>
+		<CheckBoxField name="ХранитьНомераВерсий" id="70">
+			<DataPath>Объект.ХранитьНомераВерсий</DataPath>
+			<TitleLocation>Right</TitleLocation>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ХранитьНомераВерсийКонтекстноеМеню" id="71"/>
+			<ExtendedTooltip name="ХранитьНомераВерсийРасширеннаяПодсказка" id="72"/>
+		</CheckBoxField>
 		<UsualGroup name="ГруппаКоличествоДнейХранения" id="62">
 			<Title>
 				<v8:item>
