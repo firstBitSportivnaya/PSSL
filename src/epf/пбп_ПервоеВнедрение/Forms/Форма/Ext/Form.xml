@@ -3,6 +3,7 @@
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<Events>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="FillCheckProcessingAtServer">ОбработкаПроверкиЗаполненияНаСервере</Event>
 	</Events>
 	<ChildItems>
 		<InputField name="КаталогИсходныхФайлов" id="3">
@@ -62,12 +63,45 @@
 								<Event name="OnChange">ЗаменятьПрефиксПриИзменении</Event>
 							</Events>
 						</CheckBoxField>
-						<InputField name="Префикс" id="15">
-							<DataPath>Префикс</DataPath>
-							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-							<ContextMenu name="ПрефиксКонтекстноеМеню" id="16"/>
-							<ExtendedTooltip name="ПрефиксРасширеннаяПодсказка" id="17"/>
-						</InputField>
+						<UsualGroup name="ГруппаПрефиксСиноним" id="30">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Префикс/синоним</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа префикс синоним</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаПрефиксСинонимРасширеннаяПодсказка" id="31"/>
+							<ChildItems>
+								<InputField name="Префикс" id="15">
+									<DataPath>Префикс</DataPath>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ПрефиксКонтекстноеМеню" id="16"/>
+									<ExtendedTooltip name="ПрефиксРасширеннаяПодсказка" id="17"/>
+								</InputField>
+								<InputField name="ПрефиксСуфиксСинонимаRU" id="32">
+									<DataPath>ПрефиксСуфиксСинонимаRU</DataPath>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ПрефиксСуфиксСинонимаRUКонтекстноеМеню" id="33"/>
+									<ExtendedTooltip name="ПрефиксСуфиксСинонимаRUРасширеннаяПодсказка" id="34"/>
+								</InputField>
+								<InputField name="ПрефиксСуфиксСинонимаEN" id="35">
+									<DataPath>ПрефиксСуфиксСинонимаEN</DataPath>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ПрефиксСуфиксСинонимаENКонтекстноеМеню" id="36"/>
+									<ExtendedTooltip name="ПрефиксСуфиксСинонимаENРасширеннаяПодсказка" id="37"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
 						<CheckBoxField name="АдаптироватьПодБСП" id="18">
 							<DataPath>АдаптироватьПодБСП</DataPath>
 							<TitleLocation>Right</TitleLocation>
@@ -170,6 +204,7 @@
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
 			</Type>
+			<FillCheck>ShowError</FillCheck>
 		</Attribute>
 		<Attribute name="ВыходнойПуть" id="4">
 			<Title>
@@ -185,6 +220,7 @@
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
 			</Type>
+			<FillCheck>ShowError</FillCheck>
 		</Attribute>
 		<Attribute name="ЗаменятьПрефикс" id="3">
 			<Title>
@@ -211,6 +247,7 @@
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
 			</Type>
+			<FillCheck>ShowError</FillCheck>
 		</Attribute>
 		<Attribute name="АдаптироватьПодБСП" id="6">
 			<Title>
@@ -319,6 +356,53 @@
 				<v8:item>
 					<v8:lang>ru</v8:lang>
 					<v8:content>Версия конфигурации</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПрефиксСуфиксСинонимаRU" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Префикс/суфикс синонима (ru)</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="ПрефиксСуфиксСинонимаEN" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Префикс/суфикс синонима (en)</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="ПрефиксСуфиксСинонимовБиблиотекиEN" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Префикс суфикс синонимов библиотеки (en)</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
