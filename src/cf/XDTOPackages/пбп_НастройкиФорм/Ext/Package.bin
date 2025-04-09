@@ -5,7 +5,7 @@
 	<valueType name="TypeString10" base="xs:string" maxLength="10"/>
 	<valueType name="TypeString150" base="xs:string" maxLength="150"/>
 	<valueType name="TypeString300" base="xs:string" maxLength="300"/>
-	<objectType name="Exchange.UniversalFileDownloadFromTableFile">
+	<objectType name="DataProcessor.UniversalFileDownloadFromTableFile" ordered="false">
 		<property xmlns:d3p1="http://www.pssl-packages.org/forms-settings" name="ЭтоЗагрузка" type="d3p1:TypeInt1" localName="ThisDownload"/>
 		<property xmlns:d3p1="http://www.pssl-packages.org/forms-settings" name="ШаблонВМакет" type="d3p1:TypeInt1" localName="TemplateIsLayout"/>
 		<property xmlns:d3p1="http://www.pssl-packages.org/forms-settings" name="ПостобработкаПользовательскойФункцией" type="d3p1:TypeInt1" nillable="true" localName="PostHandleWithUserFunction"/>
@@ -19,12 +19,12 @@
 		<property name="КонвертироватьДаты" type="xs:boolean" nillable="true" localName="ConvertDates"/>
 		<property name="ИскатьПомеченныеНаУдаление" type="xs:boolean" nillable="true" localName="FindRefsWithDeletionMark"/>
 		<property name="КодПостобработки" type="xs:string" nillable="true" localName="FunctionCode"/>
-		<property xmlns:d3p1="http://www.pssl-packages.org/forms-settings" name="НастройкаСтруктурыКолонокФайла" type="d3p1:Exchange.UniversalFileDownloadFromTableFile.ColumnsSettings" lowerBound="0" localName="ColumnsSettings"/>
+		<property xmlns:d3p1="http://www.pssl-packages.org/forms-settings" name="НастройкаСтруктурыКолонокФайла" type="d3p1:DataProcessor.UniversalFileDownloadFromTableFile.ColumnsSettings" lowerBound="0" localName="ColumnsSettings"/>
 	</objectType>
-	<objectType name="Exchange.UniversalFileDownloadFromTableFile.ColumnsSettings">
-		<property xmlns:d3p1="http://www.pssl-packages.org/forms-settings" name="Строка" type="d3p1:Exchange.UniversalFileDownloadFromTableFile.ColumnsSettings.Row" lowerBound="0" upperBound="-1" localName="Row"/>
+	<objectType name="DataProcessor.UniversalFileDownloadFromTableFile.ColumnsSettings">
+		<property xmlns:d3p1="http://www.pssl-packages.org/forms-settings" name="Строка" type="d3p1:DataProcessor.UniversalFileDownloadFromTableFile.ColumnsSettings.Row" lowerBound="0" upperBound="-1" localName="Row"/>
 	</objectType>
-	<objectType name="Exchange.UniversalFileDownloadFromTableFile.ColumnsSettings.Row">
+	<objectType name="DataProcessor.UniversalFileDownloadFromTableFile.ColumnsSettings.Row">
 		<property xmlns:d3p1="http://www.pssl-packages.org/forms-settings" name="НомерСтроки" type="d3p1:TypeRowNumber" lowerBound="0" localName="RowNumber"/>
 		<property xmlns:d3p1="http://www.pssl-packages.org/forms-settings" name="ИмяКолонки" type="d3p1:TypeString150" localName="ColumnName"/>
 		<property xmlns:d3p1="http://www.pssl-packages.org/forms-settings" name="ИмяВТабДоке" type="d3p1:TypeString150" nillable="true" localName="ColumnSynonym"/>
