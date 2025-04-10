@@ -21,6 +21,11 @@
 				<xr:Common>true</xr:Common>
 			</Visibility>
 		</Command>
+		<Command name="DataProcessor.пбп_УниверсальнаяЗагрузкаИзФайлаЧерезТабличныйДокумент.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
 	</CommandsVisibility>
 	<CommandsPlacement>
 		<Command name="Catalog.пбп_ИнтегрируемыеСистемы.StandardCommand.OpenList">
@@ -53,8 +58,22 @@
 		<Command name="Catalog.пбп_ИсторияИнтеграции.StandardCommand.OpenList">
 			<CommandGroup>NavigationPanelImportant</CommandGroup>
 		</Command>
+		<Command name="InformationRegister.пбп_ИсторияЗагрузкиФайлов.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="InformationRegister.пбп_СоответствиеОбъектовИнтегрируемыхСистем.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.пбп_УниверсальнаяЗагрузкаИзФайлаЧерезТабличныйДокумент.Command.УниверсальнаяЗагрузкаИзФайла">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Catalog.пбп_ТипыИнтеграций.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
 	</CommandsOrder>
 	<GroupsOrder>
 		<Group>NavigationPanelImportant</Group>
+		<Group>NavigationPanelOrdinary</Group>
+		<Group>NavigationPanelSeeAlso</Group>
 	</GroupsOrder>
 </CommandInterface>

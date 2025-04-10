@@ -1,0 +1,2021 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="ГруппаСтраницы" id="71">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="ГруппаСтраницыРасширеннаяПодсказка" id="72"/>
+			<ChildItems>
+				<Page name="ГруппаПараметрыЗагрузки" id="112">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>1. Параметры загрузки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа параметры загрузки</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаПараметрыЗагрузкиРасширеннаяПодсказка" id="113"/>
+					<ChildItems>
+						<RadioButtonField name="ИспользоватьКак" id="68">
+							<DataPath>ЭтоЗагрузка</DataPath>
+							<RadioButtonType>Auto</RadioButtonType>
+							<ChoiceList>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Шаблон структуры колонок файла</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">0</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Загрузку с постобработкой</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">1</Value>
+									</xr:Value>
+								</xr:Item>
+							</ChoiceList>
+							<ContextMenu name="ИспользоватьКакКонтекстноеМеню" id="69"/>
+							<ExtendedTooltip name="ИспользоватьКакРасширеннаяПодсказка" id="70"/>
+							<Events>
+								<Event name="OnChange">ИспользоватьКакПриИзменении</Event>
+							</Events>
+						</RadioButtonField>
+						<RadioButtonField name="ШаблонВМакет" id="79">
+							<DataPath>ШаблонВМакет</DataPath>
+							<RadioButtonType>Auto</RadioButtonType>
+							<ChoiceList>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Кода</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">0</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Макета</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">1</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Внешней обработки</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">2</Value>
+									</xr:Value>
+								</xr:Item>
+							</ChoiceList>
+							<ContextMenu name="ШаблонВМакетКонтекстноеМеню" id="80"/>
+							<ExtendedTooltip name="ШаблонВМакетРасширеннаяПодсказка" id="81"/>
+							<Events>
+								<Event name="OnChange">ШаблонВВидеПриИзменении</Event>
+							</Events>
+						</RadioButtonField>
+						<RadioButtonField name="Постобработка" id="136">
+							<DataPath>ПостобработкаПользовательскойФункцией</DataPath>
+							<RadioButtonType>Auto</RadioButtonType>
+							<ChoiceList>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Произвольным кодом</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">0</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Пользовательской функцией</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">1</Value>
+									</xr:Value>
+								</xr:Item>
+							</ChoiceList>
+							<ContextMenu name="ПостобработкаКонтекстноеМеню" id="137"/>
+							<ExtendedTooltip name="ПостобработкаРасширеннаяПодсказка" id="138"/>
+							<Events>
+								<Event name="OnChange">ПостобработкаПриИзменении</Event>
+							</Events>
+						</RadioButtonField>
+						<InputField name="ПутьКФайлу" id="99">
+							<DataPath>ПутьКФайлу</DataPath>
+							<ChoiceButton>true</ChoiceButton>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ПутьКФайлуКонтекстноеМеню" id="100"/>
+							<ExtendedTooltip name="ПутьКФайлуРасширеннаяПодсказка" id="101"/>
+							<Events>
+								<Event name="StartChoice">ПутьКФайлуНачалоВыбора</Event>
+							</Events>
+						</InputField>
+						<InputField name="ФункцияПостобработкиДанных" id="86">
+							<DataPath>ФункцияПостобработкиДанных</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ФункцияПостобработкиДанныхКонтекстноеМеню" id="87"/>
+							<ExtendedTooltip name="ФункцияПостобработкиДанныхРасширеннаяПодсказка" id="88"/>
+						</InputField>
+						<UsualGroup name="ГруппаПараметрыЧтенияФайла" id="107">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Параметры чтения файла</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа параметры чтения файла</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<ExtendedTooltip name="ГруппаПараметрыЧтенияФайлаРасширеннаяПодсказка" id="108"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаПараметрыЧтенияФайлаЛист" id="117">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа параметры чтения файла лист</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа параметры чтения файла лист</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаПараметрыЧтенияФайлаЛистРасширеннаяПодсказка" id="118"/>
+									<ChildItems>
+										<InputField name="НазваниеЛиста" id="109">
+											<DataPath>НазваниеЛиста</DataPath>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="НазваниеЛистаКонтекстноеМеню" id="110"/>
+											<ExtendedTooltip name="НазваниеЛистаРасширеннаяПодсказка" id="111"/>
+										</InputField>
+										<InputField name="НачальныйНомерСтроки" id="114">
+											<DataPath>НачальныйНомерСтроки</DataPath>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="НачальныйНомерСтрокиКонтекстноеМеню" id="115"/>
+											<ExtendedTooltip name="НачальныйНомерСтрокиРасширеннаяПодсказка" id="116"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<InputField name="ЗначениеИстина" id="119">
+									<DataPath>ЗначениеИстина</DataPath>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ЗначениеИстинаКонтекстноеМеню" id="120"/>
+									<ExtendedTooltip name="ЗначениеИстинаРасширеннаяПодсказка" id="121"/>
+								</InputField>
+								<CheckBoxField name="СопоставлениеПоНаименованию" id="122">
+									<DataPath>СопоставлениеПоНаименованию</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="СопоставлениеПоНаименованиюКонтекстноеМеню" id="123"/>
+									<ExtendedTooltip name="СопоставлениеПоНаименованиюРасширеннаяПодсказка" id="124"/>
+								</CheckBoxField>
+								<CheckBoxField name="ВыдаватьОшибкуПриОтсутствииЛиста" id="125">
+									<DataPath>ВыдаватьОшибкуПриОтсутствииЛиста</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ВыдаватьОшибкуПриОтсутствииЛистаКонтекстноеМеню" id="126"/>
+									<ExtendedTooltip name="ВыдаватьОшибкуПриОтсутствииЛистаРасширеннаяПодсказка" id="127"/>
+								</CheckBoxField>
+								<CheckBoxField name="КонвертироватьДаты" id="128">
+									<DataPath>КонвертироватьДаты</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="КонвертироватьДатыКонтекстноеМеню" id="129"/>
+									<ExtendedTooltip name="КонвертироватьДатыРасширеннаяПодсказка" id="130"/>
+								</CheckBoxField>
+								<CheckBoxField name="ИскатьПомеченныеНаУдаление" id="146">
+									<DataPath>ИскатьПомеченныеНаУдаление</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ИскатьПомеченныеНаУдалениеКонтекстноеМеню" id="147"/>
+									<ExtendedTooltip name="ИскатьПомеченныеНаУдалениеРасширеннаяПодсказка" id="148"/>
+								</CheckBoxField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаНастройкаКолонок" id="73">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>2. Настройка колонок</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа настройка колонок</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаНастройкаКолонокРасширеннаяПодсказка" id="74"/>
+					<ChildItems>
+						<Table name="НастройкаСтруктурыКолонокФайла" id="1">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>НастройкаСтруктурыКолонокФайла</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="НастройкаСтруктурыКолонокФайлаКонтекстноеМеню" id="2"/>
+							<AutoCommandBar name="НастройкаСтруктурыКолонокФайлаКоманднаяПанель" id="3">
+								<ChildItems>
+									<Button name="НастройкаСтруктурыКолонокФайлаСформироватьШаблон" id="95">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.СформироватьШаблон</CommandName>
+										<BackColor>style:ImportantColor</BackColor>
+										<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+										<ExtendedTooltip name="НастройкаСтруктурыКолонокФайлаСформироватьШаблонРасширеннаяПодсказка" id="96"/>
+									</Button>
+									<Button name="НастройкаСтруктурыКолонокФайлаВыполнитьФункцию" id="97">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ВыполнитьФункцию</CommandName>
+										<BackColor>style:ImportantColor</BackColor>
+										<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+										<ExtendedTooltip name="НастройкаСтруктурыКолонокФайлаВыполнитьФункциюРасширеннаяПодсказка" id="98"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="НастройкаСтруктурыКолонокФайлаРасширеннаяПодсказка" id="4"/>
+							<SearchStringAddition name="НастройкаСтруктурыКолонокФайлаСтрокаПоиска" id="5">
+								<AdditionSource>
+									<Item>НастройкаСтруктурыКолонокФайла</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="НастройкаСтруктурыКолонокФайлаСтрокаПоискаКонтекстноеМеню" id="6"/>
+								<ExtendedTooltip name="НастройкаСтруктурыКолонокФайлаСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="НастройкаСтруктурыКолонокФайлаСостояниеПросмотра" id="8">
+								<AdditionSource>
+									<Item>НастройкаСтруктурыКолонокФайла</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="НастройкаСтруктурыКолонокФайлаСостояниеПросмотраКонтекстноеМеню" id="9"/>
+								<ExtendedTooltip name="НастройкаСтруктурыКолонокФайлаСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="НастройкаСтруктурыКолонокФайлаУправлениеПоиском" id="11">
+								<AdditionSource>
+									<Item>НастройкаСтруктурыКолонокФайла</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="НастройкаСтруктурыКолонокФайлаУправлениеПоискомКонтекстноеМеню" id="12"/>
+								<ExtendedTooltip name="НастройкаСтруктурыКолонокФайлаУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="НастройкаСтруктурыКолонокФайлаГруппа" id="20">
+									<DataPath>НастройкаСтруктурыКолонокФайла.Группа</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="НастройкаСтруктурыКолонокФайлаГруппаКонтекстноеМеню" id="21"/>
+									<ExtendedTooltip name="НастройкаСтруктурыКолонокФайлаГруппаРасширеннаяПодсказка" id="22"/>
+								</InputField>
+								<InputField name="НастройкаСтруктурыКолонокФайлаИмяКолонки" id="14">
+									<DataPath>НастройкаСтруктурыКолонокФайла.ИмяКолонки</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="НастройкаСтруктурыКолонокФайлаИмяКолонкиКонтекстноеМеню" id="15"/>
+									<ExtendedTooltip name="НастройкаСтруктурыКолонокФайлаИмяКолонкиРасширеннаяПодсказка" id="16"/>
+								</InputField>
+								<InputField name="НастройкаСтруктурыКолонокФайлаИмяВТабДоке" id="17">
+									<DataPath>НастройкаСтруктурыКолонокФайла.ИмяВТабДоке</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="НастройкаСтруктурыКолонокФайлаИмяВТабДокеКонтекстноеМеню" id="18"/>
+									<ExtendedTooltip name="НастройкаСтруктурыКолонокФайлаИмяВТабДокеРасширеннаяПодсказка" id="19"/>
+								</InputField>
+								<InputField name="НастройкаСтруктурыКолонокФайлаТипЗначения" id="23">
+									<DataPath>НастройкаСтруктурыКолонокФайла.ТипЗначения</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="НастройкаСтруктурыКолонокФайлаТипЗначенияКонтекстноеМеню" id="24"/>
+									<ExtendedTooltip name="НастройкаСтруктурыКолонокФайлаТипЗначенияРасширеннаяПодсказка" id="25"/>
+								</InputField>
+								<InputField name="НастройкаСтруктурыКолонокФайлаОператорУсловия" id="26">
+									<DataPath>НастройкаСтруктурыКолонокФайла.ОператорУсловия</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<DropListButton>true</DropListButton>
+									<ListChoiceMode>true</ListChoiceMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ChoiceList>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Равно</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">=</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Не равно</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">&lt;&gt;</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Больше чем</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">&gt;</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Больше равно</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">&gt;=</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Меньше чем</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">&lt;</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Меньше равно</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">&lt;=</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>В списке</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">В</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>В группе</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">В ИЕРАРХИИ</Value>
+											</xr:Value>
+										</xr:Item>
+									</ChoiceList>
+									<ContextMenu name="НастройкаСтруктурыКолонокФайлаОператорУсловияКонтекстноеМеню" id="27"/>
+									<ExtendedTooltip name="НастройкаСтруктурыКолонокФайлаОператорУсловияРасширеннаяПодсказка" id="28"/>
+								</InputField>
+								<InputField name="НастройкаСтруктурыКолонокФайлаФункцияПреобразования" id="29">
+									<DataPath>НастройкаСтруктурыКолонокФайла.ФункцияПреобразования</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="НастройкаСтруктурыКолонокФайлаФункцияПреобразованияКонтекстноеМеню" id="30"/>
+									<ExtendedTooltip name="НастройкаСтруктурыКолонокФайлаФункцияПреобразованияРасширеннаяПодсказка" id="31"/>
+								</InputField>
+								<ColumnGroup name="НастройкаСтруктурыКолонокФайлаГруппаДата" id="131">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Конвертация даты</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Настройка структуры колонок файла группа дата</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="НастройкаСтруктурыКолонокФайлаГруппаДатаРасширеннаяПодсказка" id="132"/>
+									<ChildItems>
+										<InputField name="НастройкаСтруктурыКолонокФайлаФорматДаты" id="32">
+											<DataPath>НастройкаСтруктурыКолонокФайла.ФорматДаты</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Формат даты</v8:content>
+												</v8:item>
+											</Title>
+											<EditMode>EnterOnInput</EditMode>
+											<ListChoiceMode>true</ListChoiceMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<EditTextUpdate>DontUse</EditTextUpdate>
+											<ChoiceList>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>ISO 8601</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">0_0</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>12.31.1999</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">1_0</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>1999.12.31</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">1_1</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>31.12.1999</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">1_2</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>31.Dec.1999</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">1_3</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>12/31/1999</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">2_0</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>1999/12/31</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">2_1</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>31/12/1999</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">2_2</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>31/Dec/1999</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">2_3</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>12-31-1999</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">3_0</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>1999-12-31</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">3_1</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>31-12-1999</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">3_2</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>31-Dec-1999</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">3_3</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>12 31 1999</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">4_0</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>1999 12 31</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">4_1</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>31 12 1999</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">4_2</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>31 Dec 1999</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">4_3</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>12311999</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">5_0</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>19991231</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">5_1</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>31121999</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">5_2</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>31Dec1999</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">5_3</Value>
+													</xr:Value>
+												</xr:Item>
+											</ChoiceList>
+											<ContextMenu name="НастройкаСтруктурыКолонокФайлаФорматДатыКонтекстноеМеню" id="33"/>
+											<ExtendedTooltip name="НастройкаСтруктурыКолонокФайлаФорматДатыРасширеннаяПодсказка" id="34"/>
+										</InputField>
+										<InputField name="НастройкаСтруктурыКолонокФайлаЕстьВремя" id="133">
+											<DataPath>НастройкаСтруктурыКолонокФайла.ЕстьВремя</DataPath>
+											<HorizontalAlign>Left</HorizontalAlign>
+											<EditMode>EnterOnInput</EditMode>
+											<DropListButton>true</DropListButton>
+											<ListChoiceMode>true</ListChoiceMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ChoiceList>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Не требуется</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:decimal">0</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>24-х часовое</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:decimal">1</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>12-ти часовое (AM/PM)</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:decimal">2</Value>
+													</xr:Value>
+												</xr:Item>
+											</ChoiceList>
+											<ContextMenu name="НастройкаСтруктурыКолонокФайлаЕстьВремяКонтекстноеМеню" id="134"/>
+											<ExtendedTooltip name="НастройкаСтруктурыКолонокФайлаЕстьВремяРасширеннаяПодсказка" id="135"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="НастройкаСтруктурыКолонокФайлаГруппаПредопределенные1" id="62">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Поле сравнения 1</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Настройка структуры колонок файла группа предопределенные1</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ShowInHeader>true</ShowInHeader>
+									<ExtendedTooltip name="НастройкаСтруктурыКолонокФайлаГруппаПредопределенные1РасширеннаяПодсказка" id="63"/>
+									<ChildItems>
+										<InputField name="НастройкаСтруктурыКолонокФайлаПолеПоиска1" id="35">
+											<DataPath>НастройкаСтруктурыКолонокФайла.ПолеПоиска1</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="НастройкаСтруктурыКолонокФайлаПолеПоиска1КонтекстноеМеню" id="36"/>
+											<ExtendedTooltip name="НастройкаСтруктурыКолонокФайлаПолеПоиска1РасширеннаяПодсказка" id="37"/>
+										</InputField>
+										<InputField name="НастройкаСтруктурыКолонокФайлаОператор1" id="38">
+											<DataPath>НастройкаСтруктурыКолонокФайла.Оператор1</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<DropListButton>true</DropListButton>
+											<ListChoiceMode>true</ListChoiceMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ChoiceList>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Равно</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">=</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Не равно</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">&lt;&gt;</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Больше чем</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">&gt;</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Больше равно</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">&gt;=</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Меньше чем</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">&lt;</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Меньше равно</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">&lt;=</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>В списке</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">В</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>В группе</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">В ИЕРАРХИИ</Value>
+													</xr:Value>
+												</xr:Item>
+											</ChoiceList>
+											<ContextMenu name="НастройкаСтруктурыКолонокФайлаОператор1КонтекстноеМеню" id="39"/>
+											<ExtendedTooltip name="НастройкаСтруктурыКолонокФайлаОператор1РасширеннаяПодсказка" id="40"/>
+										</InputField>
+										<InputField name="НастройкаСтруктурыКолонокФайлаЗначение1" id="41">
+											<DataPath>НастройкаСтруктурыКолонокФайла.Значение1</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Предопределенное значение</v8:content>
+												</v8:item>
+											</Title>
+											<EditMode>EnterOnInput</EditMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="НастройкаСтруктурыКолонокФайлаЗначение1КонтекстноеМеню" id="42"/>
+											<ExtendedTooltip name="НастройкаСтруктурыКолонокФайлаЗначение1РасширеннаяПодсказка" id="43"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="НастройкаСтруктурыКолонокФайлаГруппаПредопределенные2" id="64">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Поле сравнения 2</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Настройка структуры колонок файла группа предопределенные1</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ShowInHeader>true</ShowInHeader>
+									<ExtendedTooltip name="НастройкаСтруктурыКолонокФайлаГруппаПредопределенные2РасширеннаяПодсказка" id="65"/>
+									<ChildItems>
+										<InputField name="НастройкаСтруктурыКолонокФайлаПолеПоиска2" id="44">
+											<DataPath>НастройкаСтруктурыКолонокФайла.ПолеПоиска2</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="НастройкаСтруктурыКолонокФайлаПолеПоиска2КонтекстноеМеню" id="45"/>
+											<ExtendedTooltip name="НастройкаСтруктурыКолонокФайлаПолеПоиска2РасширеннаяПодсказка" id="46"/>
+										</InputField>
+										<InputField name="НастройкаСтруктурыКолонокФайлаОператор2" id="47">
+											<DataPath>НастройкаСтруктурыКолонокФайла.Оператор2</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<DropListButton>true</DropListButton>
+											<ListChoiceMode>true</ListChoiceMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ChoiceList>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Равно</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">=</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Не равно</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">&lt;&gt;</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Больше чем</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">&gt;</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Больше равно</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">&gt;=</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Меньше</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">&lt;</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Меньше равно</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">&lt;=</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>В списке</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">В</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>В группе</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">В ИЕРАРХИИ</Value>
+													</xr:Value>
+												</xr:Item>
+											</ChoiceList>
+											<ContextMenu name="НастройкаСтруктурыКолонокФайлаОператор2КонтекстноеМеню" id="48"/>
+											<ExtendedTooltip name="НастройкаСтруктурыКолонокФайлаОператор2РасширеннаяПодсказка" id="49"/>
+										</InputField>
+										<InputField name="НастройкаСтруктурыКолонокФайлаЗначение2" id="50">
+											<DataPath>НастройкаСтруктурыКолонокФайла.Значение2</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Предопределенное значение</v8:content>
+												</v8:item>
+											</Title>
+											<EditMode>EnterOnInput</EditMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="НастройкаСтруктурыКолонокФайлаЗначение2КонтекстноеМеню" id="51"/>
+											<ExtendedTooltip name="НастройкаСтруктурыКолонокФайлаЗначение2РасширеннаяПодсказка" id="52"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="НастройкаСтруктурыКолонокФайлаГруппаПредопределенные3" id="66">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Поле сравнения 3</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Настройка структуры колонок файла группа предопределенные1</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ShowInHeader>true</ShowInHeader>
+									<ExtendedTooltip name="НастройкаСтруктурыКолонокФайлаГруппаПредопределенные3РасширеннаяПодсказка" id="67"/>
+									<ChildItems>
+										<InputField name="НастройкаСтруктурыКолонокФайлаПолеПоиска3" id="53">
+											<DataPath>НастройкаСтруктурыКолонокФайла.ПолеПоиска3</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="НастройкаСтруктурыКолонокФайлаПолеПоиска3КонтекстноеМеню" id="54"/>
+											<ExtendedTooltip name="НастройкаСтруктурыКолонокФайлаПолеПоиска3РасширеннаяПодсказка" id="55"/>
+										</InputField>
+										<InputField name="НастройкаСтруктурыКолонокФайлаОператор3" id="56">
+											<DataPath>НастройкаСтруктурыКолонокФайла.Оператор3</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<DropListButton>true</DropListButton>
+											<ListChoiceMode>true</ListChoiceMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ChoiceList>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Равно</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">=</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Не равно</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">&lt;&gt;</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Больше чем</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">&gt;</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Больше равно</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">&gt;=</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Меньше чем</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">&lt;</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Меньше равно</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">&lt;=</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>В списке</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">В</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>В группе</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">В ИЕРАРХИИ</Value>
+													</xr:Value>
+												</xr:Item>
+											</ChoiceList>
+											<ContextMenu name="НастройкаСтруктурыКолонокФайлаОператор3КонтекстноеМеню" id="57"/>
+											<ExtendedTooltip name="НастройкаСтруктурыКолонокФайлаОператор3РасширеннаяПодсказка" id="58"/>
+										</InputField>
+										<InputField name="НастройкаСтруктурыКолонокФайлаЗначение3" id="59">
+											<DataPath>НастройкаСтруктурыКолонокФайла.Значение3</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Предопределенное значение</v8:content>
+												</v8:item>
+											</Title>
+											<EditMode>EnterOnInput</EditMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="НастройкаСтруктурыКолонокФайлаЗначение3КонтекстноеМеню" id="60"/>
+											<ExtendedTooltip name="НастройкаСтруктурыКолонокФайлаЗначение3РасширеннаяПодсказка" id="61"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаРезультатМодуль" id="75">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>3. Код модуля</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа результат модуль</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаРезультатМодульРасширеннаяПодсказка" id="76"/>
+					<ChildItems>
+						<InputField name="РезультатКод" id="89">
+							<DataPath>РезультатКод</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<TitleLocation>None</TitleLocation>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<AutoMaxHeight>false</AutoMaxHeight>
+							<MultiLine>true</MultiLine>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="РезультатКодКонтекстноеМеню" id="90"/>
+							<ExtendedTooltip name="РезультатКодРасширеннаяПодсказка" id="91"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаРезультатМакет" id="77">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>3. Макет</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа результат макет</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаРезультатМакетРасширеннаяПодсказка" id="78"/>
+					<ChildItems>
+						<SpreadSheetDocumentField name="РезультатМакет" id="92">
+							<DataPath>РезультатМакет</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<TitleLocation>None</TitleLocation>
+							<ContextMenu name="РезультатМакетКонтекстноеМеню" id="93"/>
+							<ExtendedTooltip name="РезультатМакетРасширеннаяПодсказка" id="94"/>
+						</SpreadSheetDocumentField>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаКодПостобработки" id="139">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>3. Код постобработки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа код постобработки</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаКодПостобработкиРасширеннаяПодсказка" id="140"/>
+					<ChildItems>
+						<Button name="ВыполнитьКод" id="144">
+							<Type>UsualButton</Type>
+							<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+							<CommandName>Form.Command.ВыполнитьКод</CommandName>
+							<BackColor>style:ImportantColor</BackColor>
+							<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+							<ExtendedTooltip name="ВыполнитьКодРасширеннаяПодсказка" id="145"/>
+						</Button>
+						<InputField name="КодПостобработки" id="141">
+							<DataPath>КодПостобработки</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<AutoMaxHeight>false</AutoMaxHeight>
+							<MultiLine>true</MultiLine>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="КодПостобработкиКонтекстноеМеню" id="142"/>
+							<ExtendedTooltip name="КодПостобработкиРасширеннаяПодсказка" id="143"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.пбп_УниверсальнаяЗагрузкаИзФайлаЧерезТабличныйДокумент</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="НастройкаСтруктурыКолонокФайла" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройка структуры колонок файла</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ИмяКолонки" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя колонки (после преобразования)</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>150</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИмяВТабДоке" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя колонки (в файле)</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>150</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Группа" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>150</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ТипЗначения" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип значения</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>v8:TypeDescription</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ОператорУсловия" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Оператор условия</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>10</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ФункцияПреобразования" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Функция преобразования</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>300</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ФорматДаты" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Формат даты</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>10</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПолеПоиска1" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Поле поиска</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>150</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Оператор1" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Оператор</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>10</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Значение1" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Значение</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>150</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПолеПоиска2" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Поле поиска</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>150</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Оператор2" id="12">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Оператор</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>10</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Значение2" id="13">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Значение</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>150</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПолеПоиска3" id="14">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Поле поиска</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>150</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Оператор3" id="15">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Оператор</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>10</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Значение3" id="16">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Значение</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>150</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ЕстьВремя" id="18">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Есть время</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>1</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ЭтоЗагрузка" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Использовать как</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ШаблонВМакет" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шаблон в виде</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ФункцияПостобработкиДанных" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Функция постобработки данных</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.пбп_ПользовательскиеФункции</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="РезультатКод" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Результат код</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="РезультатМакет" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Результат макет</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet">mxl:SpreadsheetDocument</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПутьКФайлу" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Путь к файлу</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>300</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="НазваниеЛиста" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Название листа</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>30</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="НачальныйНомерСтроки" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Начальный номер строки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СопоставлениеПоНаименованию" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сопоставление по наименованию</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗначениеИстина" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Значение "Истина"</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>20</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КонвертироватьДаты" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Конвертировать даты</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВыдаватьОшибкуПриОтсутствииЛиста" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выдавать ошибку при отсутствии листа</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ИскатьПомеченныеНаУдаление" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Искать помеченные на удаление</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПостобработкаПользовательскойФункцией" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Постобработка пользовательской функцией</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КодПостобработки" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>3. Код постобработки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>НастройкаСтруктурыКолонокФайлаФорматДаты</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">НастройкаСтруктурыКолонокФайла.ФорматДаты</dcsset:left>
+						<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">web:DarkGray</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>&lt;Авто&gt;</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>НастройкаСтруктурыКолонокФайлаЕстьВремя</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">НастройкаСтруктурыКолонокФайла.ЕстьВремя</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">web:DarkGray</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>&lt;Не требуется&gt;</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>НастройкаСтруктурыКолонокФайлаОператорУсловия</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">НастройкаСтруктурыКолонокФайла.ОператорУсловия</dcsset:left>
+						<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">web:DarkGray</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>&lt;Равно&gt;</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="СформироватьШаблон" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать шаблон</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать шаблон</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.ExternalDataSourceFunction</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СформироватьШаблон</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ВыполнитьФункцию" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить функцию</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить функцию</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.GenerateReport</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ВыполнитьФункцию</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ВыполнитьКод" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить код</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить код</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.GenerateReport</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ВыполнитьКод</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+	</Commands>
+</Form>

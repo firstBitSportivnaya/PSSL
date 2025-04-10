@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<DataProcessor uuid="13f219c8-5e70-4edd-953f-6cd62a98cc9a">
+		<InternalInfo>
+			<xr:GeneratedType name="DataProcessorObject.пбп_УниверсальнаяЗагрузкаИзФайлаЧерезТабличныйДокумент" category="Object">
+				<xr:TypeId>b65b2637-36c8-4738-a4ae-05e1d5ad9757</xr:TypeId>
+				<xr:ValueId>600fe8e3-0a01-474e-ab53-39941b427c92</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DataProcessorManager.пбп_УниверсальнаяЗагрузкаИзФайлаЧерезТабличныйДокумент" category="Manager">
+				<xr:TypeId>77689ee3-6f2c-4db5-a192-fedc7b356a63</xr:TypeId>
+				<xr:ValueId>412062ce-c439-4fd0-9ae9-5a813c2ae8e0</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>пбп_УниверсальнаяЗагрузкаИзФайлаЧерезТабличныйДокумент</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Универсальная загрузка из файла через табличный документ</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>true</UseStandardCommands>
+			<DefaultForm>DataProcessor.пбп_УниверсальнаяЗагрузкаИзФайлаЧерезТабличныйДокумент.Form.Форма</DefaultForm>
+			<AuxiliaryForm/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<ExtendedPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects>
+			<Form>Форма</Form>
+			<Template>СтруктураКолонокФайла</Template>
+			<Template>ШаблонВнешнейОбработки</Template>
+			<Command uuid="aa1b48f7-535d-45f0-b85f-9b3e7ebc15f0">
+				<Properties>
+					<Name>УниверсальнаяЗагрузкаИзФайла</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Универсальная загрузка из файла</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Group>NavigationPanelOrdinary</Group>
+					<CommandParameterType/>
+					<ParameterUseMode>Single</ParameterUseMode>
+					<ModifiesData>false</ModifiesData>
+					<Representation>Auto</Representation>
+					<ToolTip/>
+					<Picture/>
+					<Shortcut/>
+					<OnMainServerUnavalableBehavior>Auto</OnMainServerUnavalableBehavior>
+				</Properties>
+			</Command>
+		</ChildObjects>
+	</DataProcessor>
+</MetaDataObject>

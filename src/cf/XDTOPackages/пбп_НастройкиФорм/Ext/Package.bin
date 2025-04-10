@@ -1,0 +1,46 @@
+﻿<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://www.pssl-packages.org/forms-settings">
+	<valueType name="Ref" base="xs:string" variety="Atomic"/>
+	<valueType name="TypeInt1" base="xs:int" totalDigits="1"/>
+	<valueType name="TypeRowNumber" base="xs:int" totalDigits="10"/>
+	<valueType name="TypeString10" base="xs:string" maxLength="10"/>
+	<valueType name="TypeString150" base="xs:string" maxLength="150"/>
+	<valueType name="TypeString300" base="xs:string" maxLength="300"/>
+	<objectType name="DataProcessor.UniversalFileDownloadFromTableFile" ordered="false">
+		<property xmlns:d3p1="http://www.pssl-packages.org/forms-settings" name="ЭтоЗагрузка" type="d3p1:TypeInt1" localName="ThisDownload"/>
+		<property xmlns:d3p1="http://www.pssl-packages.org/forms-settings" name="ШаблонВМакет" type="d3p1:TypeInt1" localName="TemplateIsLayout"/>
+		<property xmlns:d3p1="http://www.pssl-packages.org/forms-settings" name="ПостобработкаПользовательскойФункцией" type="d3p1:TypeInt1" nillable="true" localName="PostHandleWithUserFunction"/>
+		<property xmlns:d3p1="http://www.pssl-packages.org/forms-settings" name="ПутьКФайлу" type="d3p1:TypeString300" nillable="true" localName="FilePath"/>
+		<property xmlns:d3p1="http://www.pssl-packages.org/forms-settings" name="ФункцияПостобработкиДанных" type="d3p1:Ref" nillable="true" localName="UserFunction"/>
+		<property name="НазваниеЛиста" type="xs:string" nillable="true" localName="SheetName"/>
+		<property name="НачальныйНомерСтроки" type="xs:int" nillable="true" localName="BeginningNumber"/>
+		<property name="ЗначениеИстина" type="xs:string" nillable="true" localName="BooleanValueTrue"/>
+		<property name="СопоставлениеПоНаименованию" type="xs:boolean" nillable="true" localName="MatchByName"/>
+		<property name="ВыдаватьОшибкуПриОтсутствииЛиста" type="xs:boolean" nillable="true" localName="ShowErrorIfSheetAbsent"/>
+		<property name="КонвертироватьДаты" type="xs:boolean" nillable="true" localName="ConvertDates"/>
+		<property name="ИскатьПомеченныеНаУдаление" type="xs:boolean" nillable="true" localName="FindRefsWithDeletionMark"/>
+		<property name="КодПостобработки" type="xs:string" nillable="true" localName="FunctionCode"/>
+		<property xmlns:d3p1="http://www.pssl-packages.org/forms-settings" name="НастройкаСтруктурыКолонокФайла" type="d3p1:DataProcessor.UniversalFileDownloadFromTableFile.ColumnsSettings" lowerBound="0" localName="ColumnsSettings"/>
+	</objectType>
+	<objectType name="DataProcessor.UniversalFileDownloadFromTableFile.ColumnsSettings">
+		<property xmlns:d3p1="http://www.pssl-packages.org/forms-settings" name="Строка" type="d3p1:DataProcessor.UniversalFileDownloadFromTableFile.ColumnsSettings.Row" lowerBound="0" upperBound="-1" localName="Row"/>
+	</objectType>
+	<objectType name="DataProcessor.UniversalFileDownloadFromTableFile.ColumnsSettings.Row">
+		<property xmlns:d3p1="http://www.pssl-packages.org/forms-settings" name="НомерСтроки" type="d3p1:TypeRowNumber" lowerBound="0" localName="RowNumber"/>
+		<property xmlns:d3p1="http://www.pssl-packages.org/forms-settings" name="ИмяКолонки" type="d3p1:TypeString150" localName="ColumnName"/>
+		<property xmlns:d3p1="http://www.pssl-packages.org/forms-settings" name="ИмяВТабДоке" type="d3p1:TypeString150" nillable="true" localName="ColumnSynonym"/>
+		<property xmlns:d3p1="http://www.pssl-packages.org/forms-settings" name="Группа" type="d3p1:TypeString150" nillable="true" localName="GroupName"/>
+		<property xmlns:d3p1="http://www.pssl-packages.org/forms-settings" name="ТипЗначения" type="d3p1:TypeString150" localName="ValueType"/>
+		<property xmlns:d3p1="http://www.pssl-packages.org/forms-settings" name="ОператорУсловия" type="d3p1:TypeString10" localName="ConditionOperator"/>
+		<property xmlns:d3p1="http://www.pssl-packages.org/forms-settings" name="ФункцияПреобразования" type="d3p1:TypeString300" nillable="true" localName="ConversionFunction"/>
+		<property xmlns:d3p1="http://www.pssl-packages.org/forms-settings" name="ФорматДаты" type="d3p1:TypeString10" nillable="true" localName="DateFormat"/>
+		<property xmlns:d3p1="http://www.pssl-packages.org/forms-settings" name="ПолеПоиска1" type="d3p1:TypeString150" nillable="true" localName="SearchField1"/>
+		<property xmlns:d3p1="http://www.pssl-packages.org/forms-settings" name="Оператор1" type="d3p1:TypeString10" nillable="true" localName="SearchOperator1"/>
+		<property xmlns:d3p1="http://www.pssl-packages.org/forms-settings" name="Значение1" type="d3p1:TypeString150" nillable="true" localName="SearchValue1"/>
+		<property xmlns:d3p1="http://www.pssl-packages.org/forms-settings" name="ПолеПоиска2" type="d3p1:TypeString150" nillable="true" localName="SearchField2"/>
+		<property xmlns:d3p1="http://www.pssl-packages.org/forms-settings" name="Оператор2" type="d3p1:TypeString10" nillable="true" localName="SearchOperator2"/>
+		<property xmlns:d3p1="http://www.pssl-packages.org/forms-settings" name="Значение2" type="d3p1:TypeString150" nillable="true" localName="SearchValue2"/>
+		<property xmlns:d3p1="http://www.pssl-packages.org/forms-settings" name="ПолеПоиска3" type="d3p1:TypeString150" nillable="true" localName="SearchField3"/>
+		<property xmlns:d3p1="http://www.pssl-packages.org/forms-settings" name="Оператор3" type="d3p1:TypeString10" nillable="true" localName="SearchOperator3"/>
+		<property xmlns:d3p1="http://www.pssl-packages.org/forms-settings" name="Значение3" type="d3p1:TypeString150" nillable="true" localName="SearchValue3"/>
+	</objectType>
+</package>
