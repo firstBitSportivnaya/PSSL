@@ -391,6 +391,11 @@
 					<CommandName>Form.Command.ВыполнитьКод</CommandName>
 					<ExtendedTooltip name="ВыполнитьКодExtendedTooltip" id="98"/>
 				</Button>
+				<Button name="ОтладитьКод" id="168">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.Command.ОтладитьКод</CommandName>
+					<ExtendedTooltip name="ОтладитьКодРасширеннаяПодсказка" id="169"/>
+				</Button>
 				<ButtonGroup name="ГруппаИнструменты" id="141">
 					<Title>
 						<v8:item>
@@ -1173,6 +1178,26 @@
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
 			<Action>ПодсвечиватьЗапросы</Action>
+		</Command>
+		<Command name="ОтладитьКод" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отладить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Для вызова отладки необходимо в форме элемента справочника "Пользовательские функции" поставить точку останова на строку "Результат = ОбработкаОбъект.ОтладитьПроизвольнуюФункцию();" функции "ВыполнитьОтладкуОбработки". Когда точка станет активна, нажать н</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.пбп_Отладка</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОтладитьКод</Action>
+			<Representation>TextPicture</Representation>
 		</Command>
 	</Commands>
 	<CommandInterface>

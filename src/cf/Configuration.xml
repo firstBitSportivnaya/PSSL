@@ -253,6 +253,7 @@
 			<CommonPicture>пбп_ПодсистемаУправлениеНастройками</CommonPicture>
 			<CommonPicture>пбп_Реквизит</CommonPicture>
 			<CommonPicture>пбп_Реквизиты</CommonPicture>
+			<CommonPicture>пбп_Отладка</CommonPicture>
 			<Role>АдминистраторСистемы</Role>
 			<Role>ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок</Role>
 			<Role>пбп_ПросмотрИсторииИнтеграции</Role>

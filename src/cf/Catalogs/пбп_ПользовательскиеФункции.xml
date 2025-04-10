@@ -970,6 +970,7 @@
 			<Form>ФормаСтруктуры</Form>
 			<Form>ФормаМассива</Form>
 			<Template>НастройкиПоУмолчанию</Template>
+			<Template>КаркасОтладки</Template>
 		</ChildObjects>
 	</Catalog>
 </MetaDataObject>
