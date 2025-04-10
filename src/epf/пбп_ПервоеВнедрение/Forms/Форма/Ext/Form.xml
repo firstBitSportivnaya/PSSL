@@ -8,6 +8,13 @@
 	<ChildItems>
 		<InputField name="КаталогИсходныхФайлов" id="3">
 			<DataPath>КаталогИсходныхФайлов</DataPath>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Указывается путь к исходным файлам библиотеки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ToolTipRepresentation>Button</ToolTipRepresentation>
 			<ChoiceButton>true</ChoiceButton>
 			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 			<ContextMenu name="КаталогИсходныхФайловКонтекстноеМеню" id="4"/>
@@ -63,6 +70,21 @@
 								<Event name="OnChange">ЗаменятьПрефиксПриИзменении</Event>
 							</Events>
 						</CheckBoxField>
+						<LabelDecoration name="Пояснение1" id="41">
+							<TextColor>#5E5E5E</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>По умолчанию в библиотеке используется:
+- префикс - "пбп_";
+- для синонимов ru - "пбп";
+- для синонимов en - "pssl".
+Если флаг установлен, то префиксы/суфиксы будут заменены согласно настройке ниже</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="Пояснение1КонтекстноеМеню" id="42"/>
+							<ExtendedTooltip name="Пояснение1РасширеннаяПодсказка" id="43"/>
+						</LabelDecoration>
 						<UsualGroup name="ГруппаПрефиксСиноним" id="30">
 							<Title>
 								<v8:item>
@@ -85,18 +107,36 @@
 								<InputField name="Префикс" id="15">
 									<DataPath>Префикс</DataPath>
 									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<InputHint>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>пбп_</v8:content>
+										</v8:item>
+									</InputHint>
 									<ContextMenu name="ПрефиксКонтекстноеМеню" id="16"/>
 									<ExtendedTooltip name="ПрефиксРасширеннаяПодсказка" id="17"/>
 								</InputField>
 								<InputField name="ПрефиксСуфиксСинонимаRU" id="32">
 									<DataPath>ПрефиксСуфиксСинонимаRU</DataPath>
 									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<InputHint>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>пбп</v8:content>
+										</v8:item>
+									</InputHint>
 									<ContextMenu name="ПрефиксСуфиксСинонимаRUКонтекстноеМеню" id="33"/>
 									<ExtendedTooltip name="ПрефиксСуфиксСинонимаRUРасширеннаяПодсказка" id="34"/>
 								</InputField>
 								<InputField name="ПрефиксСуфиксСинонимаEN" id="35">
 									<DataPath>ПрефиксСуфиксСинонимаEN</DataPath>
 									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<InputHint>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>pssl</v8:content>
+										</v8:item>
+									</InputHint>
 									<ContextMenu name="ПрефиксСуфиксСинонимаENКонтекстноеМеню" id="36"/>
 									<ExtendedTooltip name="ПрефиксСуфиксСинонимаENРасширеннаяПодсказка" id="37"/>
 								</InputField>
@@ -109,6 +149,17 @@
 							<ContextMenu name="АдаптироватьПодБСПКонтекстноеМеню" id="19"/>
 							<ExtendedTooltip name="АдаптироватьПодБСПРасширеннаяПодсказка" id="20"/>
 						</CheckBoxField>
+						<LabelDecoration name="Пояснение2" id="44">
+							<TextColor>#5E5E5E</TextColor>
+							<Title formatted="true">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>При установленом флаге будет в конфигурации будут заменены модули &lt;b&gt;переадресации&lt;/&gt; на модули из БСП</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="Пояснение2КонтекстноеМеню" id="45"/>
+							<ExtendedTooltip name="Пояснение2РасширеннаяПодсказка" id="46"/>
+						</LabelDecoration>
 					</ChildItems>
 				</Page>
 				<Page name="ВыходныеДанные" id="25">
@@ -128,6 +179,13 @@
 					<ChildItems>
 						<RadioButtonField name="ФорматСохранения" id="27">
 							<DataPath>ФорматСохранения</DataPath>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Если указан формат (*.cf), то библиотека будет сохранена в указанном формате в каталог из реквизита "Выходной путь". Если указан формат (src), то будет подготовлен zip-архив с исходными файлами библиотеки.</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ToolTipRepresentation>Button</ToolTipRepresentation>
 							<RadioButtonType>Tumbler</RadioButtonType>
 							<ChoiceList>
 								<xr:Item>
