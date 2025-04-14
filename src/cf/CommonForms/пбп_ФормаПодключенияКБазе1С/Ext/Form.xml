@@ -37,6 +37,38 @@
 					<ContextMenu name="ДекорацияЗаголовокКонтекстноеМеню" id="5"/>
 					<ExtendedTooltip name="ДекорацияЗаголовокРасширеннаяПодсказка" id="6"/>
 				</LabelDecoration>
+				<UsualGroup name="ГруппаДопИнформация" id="51">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа доп информация</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа доп информация</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>true</HorizontalStretch>
+					<Behavior>Usual</Behavior>
+					<Representation>StrongSeparation</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаДопИнформацияРасширеннаяПодсказка" id="52"/>
+					<ChildItems>
+						<LabelDecoration name="Декорация1" id="48">
+							<HorizontalStretch>true</HorizontalStretch>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Для данного действия можно игнорировать подключение через стороннюю базу. Для этого необходимо нажать на кнопку "Создать временную файловую базу". Во временном каталоге будет создана папка с пустой информационной базой; после окончания выполнения действия база будет удалена.</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="Декорация1КонтекстноеМеню" id="49"/>
+							<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="50"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
 				<RadioButtonField name="ВариантПодключенияКБазе" id="1">
 					<DataPath>ВариантПодключенияКБазе</DataPath>
 					<RadioButtonType>Auto</RadioButtonType>
@@ -143,14 +175,43 @@
 					<ContextMenu name="ЗапомнитьДанныеКонтекстноеМеню" id="32"/>
 					<ExtendedTooltip name="ЗапомнитьДанныеРасширеннаяПодсказка" id="33"/>
 				</CheckBoxField>
-				<Button name="ВыполнитьДействиеПосле" id="34">
-					<Type>UsualButton</Type>
-					<GroupHorizontalAlign>Right</GroupHorizontalAlign>
-					<CommandName>Form.Command.ВыполнитьДействиеПосле</CommandName>
-					<BackColor>style:ImportantColor</BackColor>
-					<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
-					<ExtendedTooltip name="ВыполнитьДействиеПослеРасширеннаяПодсказка" id="35"/>
-				</Button>
+				<UsualGroup name="ГруппаКнопки" id="44">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа кнопки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа кнопки</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>true</HorizontalStretch>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаКнопкиРасширеннаяПодсказка" id="45"/>
+					<ChildItems>
+						<Button name="СоздатьВременнуюФайловуюБазу" id="46">
+							<Type>UsualButton</Type>
+							<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+							<CommandName>Form.Command.СоздатьВременнуюФайловуюБазу</CommandName>
+							<BackColor>style:NavigationColor</BackColor>
+							<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+							<ExtendedTooltip name="СоздатьВременнуюФайловуюБазуРасширеннаяПодсказка" id="47"/>
+						</Button>
+						<Button name="ВыполнитьДействиеПосле" id="34">
+							<Type>UsualButton</Type>
+							<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+							<CommandName>Form.Command.ВыполнитьДействиеПосле</CommandName>
+							<BackColor>style:ImportantColor</BackColor>
+							<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+							<ExtendedTooltip name="ВыполнитьДействиеПослеРасширеннаяПодсказка" id="35"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
 			</ChildItems>
 		</UsualGroup>
 	</ChildItems>
@@ -333,6 +394,26 @@
 			</Picture>
 			<Action>ПоказатьПароль</Action>
 			<Representation>Picture</Representation>
+		</Command>
+		<Command name="СоздатьВременнуюФайловуюБазу" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать временную файловую базу</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать временную файловую базу</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.ExternalDataSource</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СоздатьВременнуюФайловуюБазу</Action>
+			<Representation>TextPicture</Representation>
 		</Command>
 	</Commands>
 	<Parameters>

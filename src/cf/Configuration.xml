@@ -57,7 +57,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок</xr:Item>
 			</DefaultRoles>
 			<Vendor>Первый БИТ</Vendor>
-			<Version>1.0.8.0</Version>
+			<Version>1.0.8.1</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>false</UseManagedFormInOrdinaryApplication>
@@ -253,6 +253,7 @@
 			<CommonPicture>пбп_ПодсистемаУправлениеНастройками</CommonPicture>
 			<CommonPicture>пбп_Реквизит</CommonPicture>
 			<CommonPicture>пбп_Реквизиты</CommonPicture>
+			<CommonPicture>пбп_Отладка</CommonPicture>
 			<Role>АдминистраторСистемы</Role>
 			<Role>ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок</Role>
 			<Role>пбп_ПросмотрИсторииИнтеграции</Role>
@@ -317,8 +318,8 @@
 			<CommonModule>пбп_ПереадресацияКлиентПовтИсп</CommonModule>
 			<CommonModule>пбп_ПереадресацияКлиентСервер</CommonModule>
 			<CommonModule>пбп_ПереадресацияПовтИсп</CommonModule>
-			<CommonModule>пбп_ПодключаемыеКоманды</CommonModule>
 			<CommonModule>пбп_ПодключаемыеКомандыВызовСервера</CommonModule>
+			<CommonModule>пбп_ПодключаемыеКоманды</CommonModule>
 			<CommonModule>пбп_ПодключаемыеКомандыКлиент</CommonModule>
 			<CommonModule>пбп_ПодключаемыеКомандыСлужебныйКлиентСервер</CommonModule>
 			<CommonModule>пбп_ПодключаемыеКомандыПереопределяемый</CommonModule>
