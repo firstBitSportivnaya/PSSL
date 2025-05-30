@@ -8,15 +8,7 @@
 		<ExcludedCommand>MoveItem</ExcludedCommand>
 		<ExcludedCommand>SetDeletionMark</ExcludedCommand>
 	</CommandSet>
-	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
-		<ChildItems>
-			<Button name="ФормаЗаполнитьПредопределенные" id="31">
-				<Type>CommandBarButton</Type>
-				<CommandName>Form.Command.ЗаполнитьПредопределенные</CommandName>
-				<ExtendedTooltip name="ФормаЗаполнитьПредопределенныеРасширеннаяПодсказка" id="32"/>
-			</Button>
-		</ChildItems>
-	</AutoCommandBar>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<Events>
 		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>

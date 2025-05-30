@@ -29,7 +29,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ОбщегоНазначенияКлиентСервер</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_РаботаСДиалогамиКлиент</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_РаботаСДиалогамиСервер</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_РаботаСКоллекциямиКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ПредопределенныеЗначенияКлиентСервер</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_СтроковыеФункцииКлиентСервер</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_МодификацияКонфигурацииКлиентПовтИсп</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ОбновлениеИнформационнойБазыПБП</xr:Item>
