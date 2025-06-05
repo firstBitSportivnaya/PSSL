@@ -20,7 +20,6 @@
 			<Explanation/>
 			<Picture/>
 			<Content>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ПредопределенныеЗначенияКлиентСервер</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.пбп_КонтекстыВыполненияПользовательскихФункций</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.пбп_ПользовательскиеФункции</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Role.пбп_РедактированиеПользовательскихФункций</xr:Item>
