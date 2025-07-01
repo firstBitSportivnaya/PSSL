@@ -13,354 +13,404 @@
 		<Event name="OnWriteAtServer">ПриЗаписиНаСервере</Event>
 	</Events>
 	<ChildItems>
-		<UsualGroup name="ГруппаКодНаименование" id="7">
+		<Pages name="ГруппаСтраницы" id="87">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Группа код наименование</v8:content>
+					<v8:content>Страницы</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Группа код наименование</v8:content>
+					<v8:content>Группа страницы</v8:content>
 				</v8:item>
 			</ToolTip>
-			<Group>AlwaysHorizontal</Group>
-			<Behavior>Usual</Behavior>
-			<Representation>None</Representation>
-			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ГруппаКодНаименованиеРасширеннаяПодсказка" id="8"/>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="ГруппаСтраницыРасширеннаяПодсказка" id="88"/>
 			<ChildItems>
-				<InputField name="Наименование" id="4">
-					<DataPath>Объект.Description</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
-					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
-				</InputField>
-				<InputField name="Код" id="1">
-					<DataPath>Объект.Code</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<ContextMenu name="КодКонтекстноеМеню" id="2"/>
-					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
-				</InputField>
-			</ChildItems>
-		</UsualGroup>
-		<InputField name="ТипИнтеграции" id="52">
-			<DataPath>Объект.ТипИнтеграции</DataPath>
-			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-			<ContextMenu name="ТипИнтеграцииКонтекстноеМеню" id="53"/>
-			<ExtendedTooltip name="ТипИнтеграцииРасширеннаяПодсказка" id="54"/>
-			<Events>
-				<Event name="OnChange">ТипИнтеграцииПриИзменении</Event>
-			</Events>
-		</InputField>
-		<InputField name="ИнтегрируемаяСистема" id="49">
-			<DataPath>Объект.ИнтегрируемаяСистема</DataPath>
-			<ContextMenu name="ИнтегрируемаяСистемаКонтекстноеМеню" id="50"/>
-			<ExtendedTooltip name="ИнтегрируемаяСистемаРасширеннаяПодсказка" id="51"/>
-		</InputField>
-		<CheckBoxField name="ЭтоТехническаяНастройка" id="79">
-			<DataPath>Объект.ЭтоТехническаяНастройка</DataPath>
-			<TitleLocation>Right</TitleLocation>
-			<CheckBoxType>Auto</CheckBoxType>
-			<ContextMenu name="ЭтоТехническаяНастройкаКонтекстноеМеню" id="80"/>
-			<ExtendedTooltip name="ЭтоТехническаяНастройкаРасширеннаяПодсказка" id="81"/>
-			<Events>
-				<Event name="OnChange">ЭтоТехническаяНастройкаПриИзменении</Event>
-			</Events>
-		</CheckBoxField>
-		<UsualGroup name="ГруппаНастройкиВыполнения" id="82">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Группа настройки выполнения</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Группа настройки выполнения</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Group>Vertical</Group>
-			<Behavior>Usual</Behavior>
-			<Representation>None</Representation>
-			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ГруппаНастройкиВыполненияРасширеннаяПодсказка" id="83"/>
-			<ChildItems>
-				<InputField name="ИмяОбъекта" id="64">
-					<DataPath>Объект.ИмяОбъекта</DataPath>
-					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="ИмяОбъектаКонтекстноеМеню" id="65"/>
-					<ExtendedTooltip name="ИмяОбъектаРасширеннаяПодсказка" id="66"/>
-				</InputField>
-				<UsualGroup name="ГруппаОсновныеНастройки" id="32">
+				<Page name="ГруппаОсновное" id="89">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Группа основные настройки</v8:content>
+							<v8:content>Основное</v8:content>
 						</v8:item>
 					</Title>
 					<ToolTip>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Группа основные настройки</v8:content>
+							<v8:content>Группа основное</v8:content>
 						</v8:item>
 					</ToolTip>
-					<HorizontalStretch>true</HorizontalStretch>
-					<Group>Vertical</Group>
-					<Behavior>Usual</Behavior>
-					<Representation>None</Representation>
-					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ГруппаОсновныеНастройкиРасширеннаяПодсказка" id="33"/>
+					<ExtendedTooltip name="ГруппаОсновноеРасширеннаяПодсказка" id="90"/>
 					<ChildItems>
-						<UsualGroup name="ГруппаСтрокаПорт" id="72">
+						<InputField name="ТипИнтеграции" id="52">
+							<DataPath>Объект.ТипИнтеграции</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ТипИнтеграцииКонтекстноеМеню" id="53"/>
+							<ExtendedTooltip name="ТипИнтеграцииРасширеннаяПодсказка" id="54"/>
+							<Events>
+								<Event name="OnChange">ТипИнтеграцииПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="ИнтегрируемаяСистема" id="49">
+							<DataPath>Объект.ИнтегрируемаяСистема</DataPath>
+							<ContextMenu name="ИнтегрируемаяСистемаКонтекстноеМеню" id="50"/>
+							<ExtendedTooltip name="ИнтегрируемаяСистемаРасширеннаяПодсказка" id="51"/>
+						</InputField>
+						<CheckBoxField name="ЭтоТехническаяНастройка" id="79">
+							<DataPath>Объект.ЭтоТехническаяНастройка</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ЭтоТехническаяНастройкаКонтекстноеМеню" id="80"/>
+							<ExtendedTooltip name="ЭтоТехническаяНастройкаРасширеннаяПодсказка" id="81"/>
+							<Events>
+								<Event name="OnChange">ЭтоТехническаяНастройкаПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+						<UsualGroup name="ГруппаНастройкиВыполнения" id="82">
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Группа строка порт</v8:content>
+									<v8:content>Группа настройки выполнения</v8:content>
 								</v8:item>
 							</Title>
 							<ToolTip>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Группа строка порт</v8:content>
+									<v8:content>Группа настройки выполнения</v8:content>
 								</v8:item>
 							</ToolTip>
+							<Group>Vertical</Group>
 							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="ГруппаСтрокаПортРасширеннаяПодсказка" id="73"/>
+							<ExtendedTooltip name="ГруппаНастройкиВыполненияРасширеннаяПодсказка" id="83"/>
 							<ChildItems>
-								<InputField name="СтрокаПодключения" id="43">
-									<DataPath>Объект.СтрокаПодключения</DataPath>
+								<InputField name="ИмяОбъекта" id="64">
+									<DataPath>Объект.ИмяОбъекта</DataPath>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ИмяОбъектаКонтекстноеМеню" id="65"/>
+									<ExtendedTooltip name="ИмяОбъектаРасширеннаяПодсказка" id="66"/>
+								</InputField>
+								<UsualGroup name="ГруппаОсновныеНастройки" id="32">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа основные настройки</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа основные настройки</v8:content>
+										</v8:item>
+									</ToolTip>
 									<HorizontalStretch>true</HorizontalStretch>
-									<ContextMenu name="СтрокаПодключенияКонтекстноеМеню" id="44"/>
-									<ExtendedTooltip name="СтрокаПодключенияРасширеннаяПодсказка" id="45"/>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаОсновныеНастройкиРасширеннаяПодсказка" id="33"/>
+									<ChildItems>
+										<UsualGroup name="ГруппаСтрокаПорт" id="72">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа строка порт</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа строка порт</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаСтрокаПортРасширеннаяПодсказка" id="73"/>
+											<ChildItems>
+												<InputField name="СтрокаПодключения" id="43">
+													<DataPath>Объект.СтрокаПодключения</DataPath>
+													<HorizontalStretch>true</HorizontalStretch>
+													<ContextMenu name="СтрокаПодключенияКонтекстноеМеню" id="44"/>
+													<ExtendedTooltip name="СтрокаПодключенияРасширеннаяПодсказка" id="45"/>
+													<Events>
+														<Event name="StartChoice">СтрокаПодключенияНачалоВыбора</Event>
+													</Events>
+												</InputField>
+												<InputField name="Порт" id="37">
+													<DataPath>Объект.Порт</DataPath>
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<HorizontalStretch>false</HorizontalStretch>
+													<ContextMenu name="ПортКонтекстноеМеню" id="38"/>
+													<ExtendedTooltip name="ПортРасширеннаяПодсказка" id="39"/>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
+										<InputField name="СтрокаПодключенияМногострочная" id="69">
+											<DataPath>Объект.СтрокаПодключения</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Строка соединения (без данных аутентификации)</v8:content>
+												</v8:item>
+											</Title>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<HorizontalStretch>true</HorizontalStretch>
+											<MultiLine>true</MultiLine>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="СтрокаПодключенияМногострочнаяКонтекстноеМеню" id="70"/>
+											<ExtendedTooltip name="СтрокаПодключенияМногострочнаяРасширеннаяПодсказка" id="71"/>
+											<Events>
+												<Event name="OnChange">СтрокаПодключенияМногострочнаяПриИзменении</Event>
+											</Events>
+										</InputField>
+										<InputField name="ТипСУБД" id="76">
+											<DataPath>Объект.ТипСУБД</DataPath>
+											<DropListButton>true</DropListButton>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ChoiceList>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Microsoft SQL Server</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">MSSQLServer</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Postgre SQL</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">PostgreSQL</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>IDM Db2</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">IBMDB2</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Oracle Database</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">OracleDatabase</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>MySQL</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">MySQL</Value>
+													</xr:Value>
+												</xr:Item>
+											</ChoiceList>
+											<ContextMenu name="ТипСУБДКонтекстноеМеню" id="77"/>
+											<ExtendedTooltip name="ТипСУБДРасширеннаяПодсказка" id="78"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<InputField name="УчетнаяЗапись" id="58">
+									<DataPath>Объект.УчетнаяЗапись</DataPath>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="УчетнаяЗаписьКонтекстноеМеню" id="59"/>
+									<ExtendedTooltip name="УчетнаяЗаписьРасширеннаяПодсказка" id="60"/>
+								</InputField>
+								<InputField name="ТипАвторизации" id="61">
+									<DataPath>Объект.ТипАвторизации</DataPath>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТипАвторизацииКонтекстноеМеню" id="62"/>
+									<ExtendedTooltip name="ТипАвторизацииРасширеннаяПодсказка" id="63"/>
+								</InputField>
+								<CheckBoxField name="ИспользоватьПользовательскиеФункции" id="55">
+									<DataPath>Объект.ИспользоватьПользовательскиеФункции</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ИспользоватьПользовательскиеФункцииКонтекстноеМеню" id="56"/>
+									<ExtendedTooltip name="ИспользоватьПользовательскиеФункцииРасширеннаяПодсказка" id="57"/>
+								</CheckBoxField>
+								<Button name="ПодключитьВнешнююКомпоненту" id="67">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.ПодключитьВнешнююКомпонентуИзФайла</CommandName>
+									<ExtendedTooltip name="ПодключитьВнешнююКомпонентуРасширеннаяПодсказка" id="68"/>
+								</Button>
+								<Button name="УстановитьСоединениеСБазойДанных" id="74">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.УстановитьСоединениеСБазойДанных</CommandName>
+									<ExtendedTooltip name="УстановитьСоединениеСБазойДанныхРасширеннаяПодсказка" id="75"/>
+								</Button>
+								<Table name="СписокНастроек" id="9">
+									<Representation>List</Representation>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<DataPath>СписокНастроек</DataPath>
+									<SearchStringLocation>None</SearchStringLocation>
+									<ViewStatusLocation>None</ViewStatusLocation>
+									<SearchControlLocation>None</SearchControlLocation>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="СписокНастроекКонтекстноеМеню" id="10"/>
+									<AutoCommandBar name="СписокНастроекКоманднаяПанель" id="11">
+										<ChildItems>
+											<Button name="СписокНастроекДобавитьОбщиеНастройки" id="28">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ДобавитьОбщиеНастройки</CommandName>
+												<BackColor>style:ImportantColor</BackColor>
+												<BorderColor>win:Highlight</BorderColor>
+												<ExtendedTooltip name="СписокНастроекДобавитьОбщиеНастройкиРасширеннаяПодсказка" id="29"/>
+											</Button>
+											<Button name="СписокНастроекПоказатьЗначения" id="30">
+												<Type>CommandBarButton</Type>
+												<Representation>Picture</Representation>
+												<CommandName>Form.Command.ПоказатьЗначения</CommandName>
+												<ExtendedTooltip name="СписокНастроекПоказатьЗначенияРасширеннаяПодсказка" id="31"/>
+											</Button>
+										</ChildItems>
+									</AutoCommandBar>
+									<ExtendedTooltip name="СписокНастроекРасширеннаяПодсказка" id="12"/>
+									<SearchStringAddition name="СписокНастроекСтрокаПоиска" id="13">
+										<AdditionSource>
+											<Item>СписокНастроек</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="СписокНастроекСтрокаПоискаКонтекстноеМеню" id="14"/>
+										<ExtendedTooltip name="СписокНастроекСтрокаПоискаРасширеннаяПодсказка" id="15"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="СписокНастроекСостояниеПросмотра" id="16">
+										<AdditionSource>
+											<Item>СписокНастроек</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="СписокНастроекСостояниеПросмотраКонтекстноеМеню" id="17"/>
+										<ExtendedTooltip name="СписокНастроекСостояниеПросмотраРасширеннаяПодсказка" id="18"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="СписокНастроекУправлениеПоиском" id="19">
+										<AdditionSource>
+											<Item>СписокНастроек</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="СписокНастроекУправлениеПоискомКонтекстноеМеню" id="20"/>
+										<ExtendedTooltip name="СписокНастроекУправлениеПоискомРасширеннаяПодсказка" id="21"/>
+									</SearchControlAddition>
 									<Events>
-										<Event name="StartChoice">СтрокаПодключенияНачалоВыбора</Event>
+										<Event name="OnChange">СписокНастроекПриИзменении</Event>
 									</Events>
-								</InputField>
-								<InputField name="Порт" id="37">
-									<DataPath>Объект.Порт</DataPath>
-									<AutoMaxWidth>false</AutoMaxWidth>
-									<HorizontalStretch>false</HorizontalStretch>
-									<ContextMenu name="ПортКонтекстноеМеню" id="38"/>
-									<ExtendedTooltip name="ПортРасширеннаяПодсказка" id="39"/>
-								</InputField>
+									<ChildItems>
+										<InputField name="СписокНастроекИмяНастройки" id="22">
+											<DataPath>СписокНастроек.ИмяНастройки</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="СписокНастроекИмяНастройкиКонтекстноеМеню" id="23"/>
+											<ExtendedTooltip name="СписокНастроекИмяНастройкиРасширеннаяПодсказка" id="24"/>
+										</InputField>
+										<InputField name="СписокНастроекЗначение" id="25">
+											<DataPath>СписокНастроек.Значение</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<PasswordMode>true</PasswordMode>
+											<ContextMenu name="СписокНастроекЗначениеКонтекстноеМеню" id="26"/>
+											<ExtendedTooltip name="СписокНастроекЗначениеРасширеннаяПодсказка" id="27"/>
+										</InputField>
+										<InputField name="СписокНастроекЗначениеПредставление" id="40">
+											<DataPath>СписокНастроек.Значение</DataPath>
+											<Visible>false</Visible>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="СписокНастроекЗначениеПредставлениеКонтекстноеМеню" id="41"/>
+											<ExtendedTooltip name="СписокНастроекЗначениеПредставлениеРасширеннаяПодсказка" id="42"/>
+										</InputField>
+									</ChildItems>
+								</Table>
 							</ChildItems>
 						</UsualGroup>
-						<InputField name="СтрокаПодключенияМногострочная" id="69">
-							<DataPath>Объект.СтрокаПодключения</DataPath>
+						<InputField name="ПланОбмена" id="84">
+							<DataPath>Объект.ПланОбмена</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ПланОбменаКонтекстноеМеню" id="85"/>
+							<ExtendedTooltip name="ПланОбменаРасширеннаяПодсказка" id="86"/>
+						</InputField>
+						<UsualGroup name="ГруппаКодНаименование" id="7">
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Строка соединения (без данных аутентификации)</v8:content>
+									<v8:content>Группа код наименование</v8:content>
 								</v8:item>
 							</Title>
-							<AutoMaxWidth>false</AutoMaxWidth>
-							<HorizontalStretch>true</HorizontalStretch>
-							<MultiLine>true</MultiLine>
-							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-							<ContextMenu name="СтрокаПодключенияМногострочнаяКонтекстноеМеню" id="70"/>
-							<ExtendedTooltip name="СтрокаПодключенияМногострочнаяРасширеннаяПодсказка" id="71"/>
-							<Events>
-								<Event name="OnChange">СтрокаПодключенияМногострочнаяПриИзменении</Event>
-							</Events>
-						</InputField>
-						<InputField name="ТипСУБД" id="76">
-							<DataPath>Объект.ТипСУБД</DataPath>
-							<DropListButton>true</DropListButton>
-							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-							<ChoiceList>
-								<xr:Item>
-									<xr:Presentation/>
-									<xr:CheckState>0</xr:CheckState>
-									<xr:Value xsi:type="FormChoiceListDesTimeValue">
-										<Presentation>
-											<v8:item>
-												<v8:lang>ru</v8:lang>
-												<v8:content>Microsoft SQL Server</v8:content>
-											</v8:item>
-										</Presentation>
-										<Value xsi:type="xs:string">MSSQLServer</Value>
-									</xr:Value>
-								</xr:Item>
-								<xr:Item>
-									<xr:Presentation/>
-									<xr:CheckState>0</xr:CheckState>
-									<xr:Value xsi:type="FormChoiceListDesTimeValue">
-										<Presentation>
-											<v8:item>
-												<v8:lang>ru</v8:lang>
-												<v8:content>Postgre SQL</v8:content>
-											</v8:item>
-										</Presentation>
-										<Value xsi:type="xs:string">PostgreSQL</Value>
-									</xr:Value>
-								</xr:Item>
-								<xr:Item>
-									<xr:Presentation/>
-									<xr:CheckState>0</xr:CheckState>
-									<xr:Value xsi:type="FormChoiceListDesTimeValue">
-										<Presentation>
-											<v8:item>
-												<v8:lang>ru</v8:lang>
-												<v8:content>IDM Db2</v8:content>
-											</v8:item>
-										</Presentation>
-										<Value xsi:type="xs:string">IBMDB2</Value>
-									</xr:Value>
-								</xr:Item>
-								<xr:Item>
-									<xr:Presentation/>
-									<xr:CheckState>0</xr:CheckState>
-									<xr:Value xsi:type="FormChoiceListDesTimeValue">
-										<Presentation>
-											<v8:item>
-												<v8:lang>ru</v8:lang>
-												<v8:content>Oracle Database</v8:content>
-											</v8:item>
-										</Presentation>
-										<Value xsi:type="xs:string">OracleDatabase</Value>
-									</xr:Value>
-								</xr:Item>
-								<xr:Item>
-									<xr:Presentation/>
-									<xr:CheckState>0</xr:CheckState>
-									<xr:Value xsi:type="FormChoiceListDesTimeValue">
-										<Presentation>
-											<v8:item>
-												<v8:lang>ru</v8:lang>
-												<v8:content>MySQL</v8:content>
-											</v8:item>
-										</Presentation>
-										<Value xsi:type="xs:string">MySQL</Value>
-									</xr:Value>
-								</xr:Item>
-							</ChoiceList>
-							<ContextMenu name="ТипСУБДКонтекстноеМеню" id="77"/>
-							<ExtendedTooltip name="ТипСУБДРасширеннаяПодсказка" id="78"/>
-						</InputField>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа код наименование</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>AlwaysHorizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаКодНаименованиеРасширеннаяПодсказка" id="8"/>
+							<ChildItems>
+								<InputField name="Наименование" id="4">
+									<DataPath>Объект.Description</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+									<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+								</InputField>
+								<InputField name="Код" id="1">
+									<DataPath>Объект.Code</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+									<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
 					</ChildItems>
-				</UsualGroup>
-				<InputField name="УчетнаяЗапись" id="58">
-					<DataPath>Объект.УчетнаяЗапись</DataPath>
-					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="УчетнаяЗаписьКонтекстноеМеню" id="59"/>
-					<ExtendedTooltip name="УчетнаяЗаписьРасширеннаяПодсказка" id="60"/>
-				</InputField>
-				<InputField name="ТипАвторизации" id="61">
-					<DataPath>Объект.ТипАвторизации</DataPath>
-					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="ТипАвторизацииКонтекстноеМеню" id="62"/>
-					<ExtendedTooltip name="ТипАвторизацииРасширеннаяПодсказка" id="63"/>
-				</InputField>
-				<CheckBoxField name="ИспользоватьПользовательскиеФункции" id="55">
-					<DataPath>Объект.ИспользоватьПользовательскиеФункции</DataPath>
-					<TitleLocation>Right</TitleLocation>
-					<CheckBoxType>Auto</CheckBoxType>
-					<ContextMenu name="ИспользоватьПользовательскиеФункцииКонтекстноеМеню" id="56"/>
-					<ExtendedTooltip name="ИспользоватьПользовательскиеФункцииРасширеннаяПодсказка" id="57"/>
-				</CheckBoxField>
-				<Button name="ПодключитьВнешнююКомпоненту" id="67">
-					<Type>Hyperlink</Type>
-					<CommandName>Form.Command.ПодключитьВнешнююКомпонентуИзФайла</CommandName>
-					<ExtendedTooltip name="ПодключитьВнешнююКомпонентуРасширеннаяПодсказка" id="68"/>
-				</Button>
-				<Button name="УстановитьСоединениеСБазойДанных" id="74">
-					<Type>UsualButton</Type>
-					<CommandName>Form.Command.УстановитьСоединениеСБазойДанных</CommandName>
-					<ExtendedTooltip name="УстановитьСоединениеСБазойДанныхРасширеннаяПодсказка" id="75"/>
-				</Button>
-				<Table name="СписокНастроек" id="9">
-					<Representation>List</Representation>
-					<AutoInsertNewRow>true</AutoInsertNewRow>
-					<EnableStartDrag>true</EnableStartDrag>
-					<EnableDrag>true</EnableDrag>
-					<DataPath>СписокНастроек</DataPath>
-					<SearchStringLocation>None</SearchStringLocation>
-					<ViewStatusLocation>None</ViewStatusLocation>
-					<SearchControlLocation>None</SearchControlLocation>
-					<RowFilter xsi:nil="true"/>
-					<ContextMenu name="СписокНастроекКонтекстноеМеню" id="10"/>
-					<AutoCommandBar name="СписокНастроекКоманднаяПанель" id="11">
-						<ChildItems>
-							<Button name="СписокНастроекДобавитьОбщиеНастройки" id="28">
-								<Type>CommandBarButton</Type>
-								<CommandName>Form.Command.ДобавитьОбщиеНастройки</CommandName>
-								<BackColor>style:ImportantColor</BackColor>
-								<BorderColor>win:Highlight</BorderColor>
-								<ExtendedTooltip name="СписокНастроекДобавитьОбщиеНастройкиРасширеннаяПодсказка" id="29"/>
-							</Button>
-							<Button name="СписокНастроекПоказатьЗначения" id="30">
-								<Type>CommandBarButton</Type>
-								<Representation>Picture</Representation>
-								<CommandName>Form.Command.ПоказатьЗначения</CommandName>
-								<ExtendedTooltip name="СписокНастроекПоказатьЗначенияРасширеннаяПодсказка" id="31"/>
-							</Button>
-						</ChildItems>
-					</AutoCommandBar>
-					<ExtendedTooltip name="СписокНастроекРасширеннаяПодсказка" id="12"/>
-					<SearchStringAddition name="СписокНастроекСтрокаПоиска" id="13">
-						<AdditionSource>
-							<Item>СписокНастроек</Item>
-							<Type>SearchStringRepresentation</Type>
-						</AdditionSource>
-						<ContextMenu name="СписокНастроекСтрокаПоискаКонтекстноеМеню" id="14"/>
-						<ExtendedTooltip name="СписокНастроекСтрокаПоискаРасширеннаяПодсказка" id="15"/>
-					</SearchStringAddition>
-					<ViewStatusAddition name="СписокНастроекСостояниеПросмотра" id="16">
-						<AdditionSource>
-							<Item>СписокНастроек</Item>
-							<Type>ViewStatusRepresentation</Type>
-						</AdditionSource>
-						<ContextMenu name="СписокНастроекСостояниеПросмотраКонтекстноеМеню" id="17"/>
-						<ExtendedTooltip name="СписокНастроекСостояниеПросмотраРасширеннаяПодсказка" id="18"/>
-					</ViewStatusAddition>
-					<SearchControlAddition name="СписокНастроекУправлениеПоиском" id="19">
-						<AdditionSource>
-							<Item>СписокНастроек</Item>
-							<Type>SearchControl</Type>
-						</AdditionSource>
-						<ContextMenu name="СписокНастроекУправлениеПоискомКонтекстноеМеню" id="20"/>
-						<ExtendedTooltip name="СписокНастроекУправлениеПоискомРасширеннаяПодсказка" id="21"/>
-					</SearchControlAddition>
-					<Events>
-						<Event name="OnChange">СписокНастроекПриИзменении</Event>
-					</Events>
-					<ChildItems>
-						<InputField name="СписокНастроекИмяНастройки" id="22">
-							<DataPath>СписокНастроек.ИмяНастройки</DataPath>
-							<EditMode>EnterOnInput</EditMode>
-							<ContextMenu name="СписокНастроекИмяНастройкиКонтекстноеМеню" id="23"/>
-							<ExtendedTooltip name="СписокНастроекИмяНастройкиРасширеннаяПодсказка" id="24"/>
-						</InputField>
-						<InputField name="СписокНастроекЗначение" id="25">
-							<DataPath>СписокНастроек.Значение</DataPath>
-							<EditMode>EnterOnInput</EditMode>
-							<PasswordMode>true</PasswordMode>
-							<ContextMenu name="СписокНастроекЗначениеКонтекстноеМеню" id="26"/>
-							<ExtendedTooltip name="СписокНастроекЗначениеРасширеннаяПодсказка" id="27"/>
-						</InputField>
-						<InputField name="СписокНастроекЗначениеПредставление" id="40">
-							<DataPath>СписокНастроек.Значение</DataPath>
-							<Visible>false</Visible>
-							<EditMode>EnterOnInput</EditMode>
-							<ContextMenu name="СписокНастроекЗначениеПредставлениеКонтекстноеМеню" id="41"/>
-							<ExtendedTooltip name="СписокНастроекЗначениеПредставлениеРасширеннаяПодсказка" id="42"/>
-						</InputField>
-					</ChildItems>
-				</Table>
+				</Page>
+				<Page name="ГруппаДополнительныеНастройки" id="91">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дополнительные настройки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа дополнительные настройки</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаДополнительныеНастройкиРасширеннаяПодсказка" id="92"/>
+				</Page>
 			</ChildItems>
-		</UsualGroup>
-		<InputField name="ПланОбмена" id="84">
-			<DataPath>Объект.ПланОбмена</DataPath>
-			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-			<ContextMenu name="ПланОбменаКонтекстноеМеню" id="85"/>
-			<ExtendedTooltip name="ПланОбменаРасширеннаяПодсказка" id="86"/>
-		</InputField>
+		</Pages>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">
