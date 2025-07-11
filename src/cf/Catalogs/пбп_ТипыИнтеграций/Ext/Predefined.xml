@@ -18,6 +18,18 @@
 				<Description>Rabbit MQ</Description>
 				<IsFolder>false</IsFolder>
 			</Item>
+			<Item id="3cc8dc76-3908-4f09-8ff9-b677450567c6">
+				<Name>Брокер1СШина</Name>
+				<Code>000000019</Code>
+				<Description>Брокер 1С:Шина</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="5175ebb2-b244-4957-9854-d0779ea778ed">
+				<Name>БрокерDatareon</Name>
+				<Code>000000020</Code>
+				<Description>Брокер Datareon</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
 		</ChildItems>
 	</Item>
 	<Item id="2ce81f0d-7064-4696-ae29-73af01df3517">
