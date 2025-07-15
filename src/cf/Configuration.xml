@@ -377,15 +377,17 @@
 			<Document>ДемоРаботаСФормами</Document>
 			<Enum>пбп_ВидыОшибокПредопределенныхЭлементов</Enum>
 			<Enum>пбп_КонтекстыВыполненияПользовательскихФункций</Enum>
-			<Enum>пбп_СозданОбновлен</Enum>
-			<Enum>пбп_НаправленияИнтеграционныхПотоков</Enum>
-			<Enum>пбп_СтатусыИнтеграции</Enum>
 			<Enum>пбп_МетодыЗапросаREST</Enum>
+			<Enum>пбп_НаправленияИнтеграционныхПотоков</Enum>
+			<Enum>пбп_СозданОбновлен</Enum>
+			<Enum>пбп_СтатусыАсинхронныхВызовов</Enum>
+			<Enum>пбп_СтатусыИнтеграции</Enum>
 			<Enum>пбп_ТипыJSON</Enum>
 			<Enum>пбп_ТипыАвторизации</Enum>
 			<Enum>пбп_ФорматыИнтеграций</Enum>
 			<DataProcessor>пбп_УниверсальнаяЗагрузкаИзФайлаЧерезТабличныйДокумент</DataProcessor>
 			<InformationRegister>пбп_ИсторияЗагрузкиФайлов</InformationRegister>
+			<InformationRegister>пбп_ОжиданиеАсинхронныхВызовов</InformationRegister>
 			<InformationRegister>пбп_СоответствиеОбъектовИнтегрируемыхСистем</InformationRegister>
 			<InformationRegister>пбп_СоответствияОбъектовИБ</InformationRegister>
 			<InformationRegister>пбп_СостоянияПредопределенныхЭлементов</InformationRegister>

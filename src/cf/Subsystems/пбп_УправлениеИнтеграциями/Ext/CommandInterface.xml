@@ -64,6 +64,9 @@
 		<Command name="InformationRegister.пбп_СоответствиеОбъектовИнтегрируемыхСистем.StandardCommand.OpenList">
 			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
 		</Command>
+		<Command name="InformationRegister.пбп_ОжиданиеАсинхронныхВызовов.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
 		<Command name="DataProcessor.пбп_УниверсальнаяЗагрузкаИзФайлаЧерезТабличныйДокумент.Command.УниверсальнаяЗагрузкаИзФайла">
 			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
 		</Command>
