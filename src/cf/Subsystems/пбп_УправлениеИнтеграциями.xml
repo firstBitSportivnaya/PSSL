@@ -70,6 +70,9 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.пбп_ЧтениеНастроекИнтеграции</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Role.пбп_ПросмотрПодсистемыУправлениеИнтеграциями</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.пбп_УниверсальнаяЗагрузкаИзФайлаЧерезТабличныйДокумент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.пбп_ТипыТочкиОбменаRabbitMQ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_RabbitMQ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_RabbitMQПовтИсп</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
