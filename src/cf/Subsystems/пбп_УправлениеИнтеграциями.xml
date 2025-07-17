@@ -70,6 +70,10 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.пбп_ЧтениеНастроекИнтеграции</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Role.пбп_ПросмотрПодсистемыУправлениеИнтеграциями</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.пбп_УниверсальнаяЗагрузкаИзФайлаЧерезТабличныйДокумент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.пбп_ОжиданиеАсинхронныхВызовов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.пбп_СтатусыАсинхронныхВызовов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.пбп_ЧтениеОжиданияАсинхронныхВызовов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.пбп_РедактированиеОжиданияАсинхронныхВызовов</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
