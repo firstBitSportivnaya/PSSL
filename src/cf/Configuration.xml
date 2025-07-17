@@ -57,7 +57,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок</xr:Item>
 			</DefaultRoles>
 			<Vendor>Первый БИТ</Vendor>
-			<Version>1.0.9.2</Version>
+			<Version>1.0.10.1</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>false</UseManagedFormInOrdinaryApplication>
@@ -262,6 +262,7 @@
 			<Role>пбп_РедактированиеИсторииЗагрузкиФайлов</Role>
 			<Role>пбп_РедактированиеНастроекИнтеграции</Role>
 			<Role>пбп_РедактированиеНастроекОтбораОбъектов</Role>
+			<Role>пбп_РедактированиеОжиданияАсинхронныхВызовов</Role>
 			<Role>пбп_РедактированиеПланаВидовХарактеристикПредопределенныеЗначения</Role>
 			<Role>пбп_РедактированиеПользовательскихФункций</Role>
 			<Role>пбп_РедактированиеРегистраСведенийСоответствияОбъектовИБ</Role>
@@ -272,6 +273,7 @@
 			<Role>пбп_ЧтениеКонстантыИспользоватьПользовательскиеФункции</Role>
 			<Role>пбп_ЧтениеНастроекИнтеграции</Role>
 			<Role>пбп_ЧтениеНастроекОтборовОбъектов</Role>
+			<Role>пбп_ЧтениеОжиданияАсинхронныхВызовов</Role>
 			<Role>пбп_ЧтениеПланаВидовХарактеристикПредопределенныеЗначения</Role>
 			<Role>пбп_ЧтениеРегистраСведенийСоответствияОбъектовИБ</Role>
 			<Role>пбп_ЧтениеСоответствияОбъектовИнтегрируемыхСистем</Role>
@@ -377,15 +379,17 @@
 			<Document>ДемоРаботаСФормами</Document>
 			<Enum>пбп_ВидыОшибокПредопределенныхЭлементов</Enum>
 			<Enum>пбп_КонтекстыВыполненияПользовательскихФункций</Enum>
-			<Enum>пбп_СозданОбновлен</Enum>
-			<Enum>пбп_НаправленияИнтеграционныхПотоков</Enum>
-			<Enum>пбп_СтатусыИнтеграции</Enum>
 			<Enum>пбп_МетодыЗапросаREST</Enum>
+			<Enum>пбп_НаправленияИнтеграционныхПотоков</Enum>
+			<Enum>пбп_СозданОбновлен</Enum>
+			<Enum>пбп_СтатусыАсинхронныхВызовов</Enum>
+			<Enum>пбп_СтатусыИнтеграции</Enum>
 			<Enum>пбп_ТипыJSON</Enum>
 			<Enum>пбп_ТипыАвторизации</Enum>
 			<Enum>пбп_ФорматыИнтеграций</Enum>
 			<DataProcessor>пбп_УниверсальнаяЗагрузкаИзФайлаЧерезТабличныйДокумент</DataProcessor>
 			<InformationRegister>пбп_ИсторияЗагрузкиФайлов</InformationRegister>
+			<InformationRegister>пбп_ОжиданиеАсинхронныхВызовов</InformationRegister>
 			<InformationRegister>пбп_СоответствиеОбъектовИнтегрируемыхСистем</InformationRegister>
 			<InformationRegister>пбп_СоответствияОбъектовИБ</InformationRegister>
 			<InformationRegister>пбп_СостоянияПредопределенныхЭлементов</InformationRegister>
