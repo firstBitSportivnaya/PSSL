@@ -296,7 +296,7 @@
 							<v8:content>Object 1</v8:content>
 						</v8:item>
 					</Synonym>
-					<Comment>Объект из сопряженной системы</Comment>
+					<Comment/>
 					<Type>
 						<v8:TypeSet>cfg:DefinedType.пбп_ТипыОбъектовСоответствийИБ</v8:TypeSet>
 					</Type>
@@ -342,7 +342,7 @@
 							<v8:content>Object 2</v8:content>
 						</v8:item>
 					</Synonym>
-					<Comment>Объект из базы УХ</Comment>
+					<Comment/>
 					<Type>
 						<v8:TypeSet>cfg:DefinedType.пбп_ТипыОбъектовСоответствийИБ</v8:TypeSet>
 					</Type>
