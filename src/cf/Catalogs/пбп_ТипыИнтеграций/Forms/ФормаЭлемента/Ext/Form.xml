@@ -28,83 +28,101 @@
 			<ContextMenu name="РодительКонтекстноеМеню" id="8"/>
 			<ExtendedTooltip name="РодительРасширеннаяПодсказка" id="9"/>
 		</InputField>
-		<Table name="ДополнительныеПараметрыНастроекИнтеграций" id="10">
-			<Representation>List</Representation>
-			<TitleLocation>Top</TitleLocation>
-			<AutoInsertNewRow>true</AutoInsertNewRow>
-			<EnableStartDrag>true</EnableStartDrag>
-			<EnableDrag>true</EnableDrag>
-			<DataPath>Объект.ДополнительныеПараметрыНастроекИнтеграций</DataPath>
-			<TitleFont ref="style:NormalTextFont" kind="StyleItem" scale="100"/>
-			<RowFilter xsi:nil="true"/>
-			<ContextMenu name="ДополнительныеПараметрыНастроекИнтеграцийКонтекстноеМеню" id="11"/>
-			<AutoCommandBar name="ДополнительныеПараметрыНастроекИнтеграцийКоманднаяПанель" id="12"/>
-			<ExtendedTooltip name="ДополнительныеПараметрыНастроекИнтеграцийРасширеннаяПодсказка" id="13"/>
-			<SearchStringAddition name="ДополнительныеПараметрыНастроекИнтеграцийСтрокаПоиска" id="14">
-				<AdditionSource>
-					<Item>ДополнительныеПараметрыНастроекИнтеграций</Item>
-					<Type>SearchStringRepresentation</Type>
-				</AdditionSource>
-				<ContextMenu name="ДополнительныеПараметрыНастроекИнтеграцийСтрокаПоискаКонтекстноеМеню" id="15"/>
-				<ExtendedTooltip name="ДополнительныеПараметрыНастроекИнтеграцийСтрокаПоискаРасширеннаяПодсказка" id="16"/>
-			</SearchStringAddition>
-			<ViewStatusAddition name="ДополнительныеПараметрыНастроекИнтеграцийСостояниеПросмотра" id="17">
-				<AdditionSource>
-					<Item>ДополнительныеПараметрыНастроекИнтеграций</Item>
-					<Type>ViewStatusRepresentation</Type>
-				</AdditionSource>
-				<ContextMenu name="ДополнительныеПараметрыНастроекИнтеграцийСостояниеПросмотраКонтекстноеМеню" id="18"/>
-				<ExtendedTooltip name="ДополнительныеПараметрыНастроекИнтеграцийСостояниеПросмотраРасширеннаяПодсказка" id="19"/>
-			</ViewStatusAddition>
-			<SearchControlAddition name="ДополнительныеПараметрыНастроекИнтеграцийУправлениеПоиском" id="20">
-				<AdditionSource>
-					<Item>ДополнительныеПараметрыНастроекИнтеграций</Item>
-					<Type>SearchControl</Type>
-				</AdditionSource>
-				<ContextMenu name="ДополнительныеПараметрыНастроекИнтеграцийУправлениеПоискомКонтекстноеМеню" id="21"/>
-				<ExtendedTooltip name="ДополнительныеПараметрыНастроекИнтеграцийУправлениеПоискомРасширеннаяПодсказка" id="22"/>
-			</SearchControlAddition>
+		<UsualGroup name="ГруппаДополнительныеПараметрыНастроекИнтеграций" id="35">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа дополнительные параметры настроек интеграций</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа дополнительные параметры настроек интеграций</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Behavior>Usual</Behavior>
+			<ExtendedTooltip name="ГруппаДополнительныеПараметрыНастроекИнтеграцийРасширеннаяПодсказка" id="36"/>
 			<ChildItems>
-				<LabelField name="ДополнительныеПараметрыНастроекИнтеграцийНомерСтроки" id="23">
-					<DataPath>Объект.ДополнительныеПараметрыНастроекИнтеграций.LineNumber</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<ContextMenu name="ДополнительныеПараметрыНастроекИнтеграцийНомерСтрокиКонтекстноеМеню" id="24"/>
-					<ExtendedTooltip name="ДополнительныеПараметрыНастроекИнтеграцийНомерСтрокиРасширеннаяПодсказка" id="25"/>
-				</LabelField>
-				<InputField name="ДополнительныеПараметрыНастроекИнтеграцийИдентификатор" id="26">
-					<DataPath>Объект.ДополнительныеПараметрыНастроекИнтеграций.Идентификатор</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="ДополнительныеПараметрыНастроекИнтеграцийИдентификаторКонтекстноеМеню" id="27"/>
-					<ExtendedTooltip name="ДополнительныеПараметрыНастроекИнтеграцийИдентификаторРасширеннаяПодсказка" id="28"/>
-				</InputField>
-				<InputField name="ДополнительныеПараметрыНастроекИнтеграцийСиноним" id="29">
-					<DataPath>Объект.ДополнительныеПараметрыНастроекИнтеграций.Синоним</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="ДополнительныеПараметрыНастроекИнтеграцийСинонимКонтекстноеМеню" id="30"/>
-					<ExtendedTooltip name="ДополнительныеПараметрыНастроекИнтеграцийСинонимРасширеннаяПодсказка" id="31"/>
-				</InputField>
-				<InputField name="ДополнительныеПараметрыНастроекИнтеграцийТипВФорме" id="32">
-					<DataPath>Объект.ДополнительныеПараметрыНастроекИнтеграций.ТипВФорме</DataPath>
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Тип</v8:content>
-						</v8:item>
-					</Title>
-					<EditMode>EnterOnInput</EditMode>
-					<ChoiceButton>true</ChoiceButton>
-					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<TextEdit>false</TextEdit>
-					<ContextMenu name="ДополнительныеПараметрыНастроекИнтеграцийТипВФормеКонтекстноеМеню" id="33"/>
-					<ExtendedTooltip name="ДополнительныеПараметрыНастроекИнтеграцийТипВФормеРасширеннаяПодсказка" id="34"/>
-					<Events>
-						<Event name="StartChoice">ДополнительныеПараметрыНастроекИнтеграцийТипВФормеНачалоВыбора</Event>
-					</Events>
-				</InputField>
+				<Table name="ДополнительныеПараметрыНастроекИнтеграций" id="10">
+					<Representation>List</Representation>
+					<TitleLocation>Auto</TitleLocation>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>Объект.ДополнительныеПараметрыНастроекИнтеграций</DataPath>
+					<TitleFont ref="style:NormalTextFont" kind="StyleItem" scale="100"/>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="ДополнительныеПараметрыНастроекИнтеграцийКонтекстноеМеню" id="11"/>
+					<AutoCommandBar name="ДополнительныеПараметрыНастроекИнтеграцийКоманднаяПанель" id="12"/>
+					<ExtendedTooltip name="ДополнительныеПараметрыНастроекИнтеграцийРасширеннаяПодсказка" id="13"/>
+					<SearchStringAddition name="ДополнительныеПараметрыНастроекИнтеграцийСтрокаПоиска" id="14">
+						<AdditionSource>
+							<Item>ДополнительныеПараметрыНастроекИнтеграций</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ДополнительныеПараметрыНастроекИнтеграцийСтрокаПоискаКонтекстноеМеню" id="15"/>
+						<ExtendedTooltip name="ДополнительныеПараметрыНастроекИнтеграцийСтрокаПоискаРасширеннаяПодсказка" id="16"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ДополнительныеПараметрыНастроекИнтеграцийСостояниеПросмотра" id="17">
+						<AdditionSource>
+							<Item>ДополнительныеПараметрыНастроекИнтеграций</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ДополнительныеПараметрыНастроекИнтеграцийСостояниеПросмотраКонтекстноеМеню" id="18"/>
+						<ExtendedTooltip name="ДополнительныеПараметрыНастроекИнтеграцийСостояниеПросмотраРасширеннаяПодсказка" id="19"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ДополнительныеПараметрыНастроекИнтеграцийУправлениеПоиском" id="20">
+						<AdditionSource>
+							<Item>ДополнительныеПараметрыНастроекИнтеграций</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ДополнительныеПараметрыНастроекИнтеграцийУправлениеПоискомКонтекстноеМеню" id="21"/>
+						<ExtendedTooltip name="ДополнительныеПараметрыНастроекИнтеграцийУправлениеПоискомРасширеннаяПодсказка" id="22"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<LabelField name="ДополнительныеПараметрыНастроекИнтеграцийНомерСтроки" id="23">
+							<DataPath>Объект.ДополнительныеПараметрыНастроекИнтеграций.LineNumber</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ДополнительныеПараметрыНастроекИнтеграцийНомерСтрокиКонтекстноеМеню" id="24"/>
+							<ExtendedTooltip name="ДополнительныеПараметрыНастроекИнтеграцийНомерСтрокиРасширеннаяПодсказка" id="25"/>
+						</LabelField>
+						<InputField name="ДополнительныеПараметрыНастроекИнтеграцийИдентификатор" id="26">
+							<DataPath>Объект.ДополнительныеПараметрыНастроекИнтеграций.Идентификатор</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ДополнительныеПараметрыНастроекИнтеграцийИдентификаторКонтекстноеМеню" id="27"/>
+							<ExtendedTooltip name="ДополнительныеПараметрыНастроекИнтеграцийИдентификаторРасширеннаяПодсказка" id="28"/>
+						</InputField>
+						<InputField name="ДополнительныеПараметрыНастроекИнтеграцийСиноним" id="29">
+							<DataPath>Объект.ДополнительныеПараметрыНастроекИнтеграций.Синоним</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ДополнительныеПараметрыНастроекИнтеграцийСинонимКонтекстноеМеню" id="30"/>
+							<ExtendedTooltip name="ДополнительныеПараметрыНастроекИнтеграцийСинонимРасширеннаяПодсказка" id="31"/>
+						</InputField>
+						<InputField name="ДополнительныеПараметрыНастроекИнтеграцийТипВФорме" id="32">
+							<DataPath>Объект.ДополнительныеПараметрыНастроекИнтеграций.ТипВФорме</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Тип</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<ChoiceButton>true</ChoiceButton>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<TextEdit>false</TextEdit>
+							<ContextMenu name="ДополнительныеПараметрыНастроекИнтеграцийТипВФормеКонтекстноеМеню" id="33"/>
+							<ExtendedTooltip name="ДополнительныеПараметрыНастроекИнтеграцийТипВФормеРасширеннаяПодсказка" id="34"/>
+							<Events>
+								<Event name="StartChoice">ДополнительныеПараметрыНастроекИнтеграцийТипВФормеНачалоВыбора</Event>
+							</Events>
+						</InputField>
+					</ChildItems>
+				</Table>
 			</ChildItems>
-		</Table>
+		</UsualGroup>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">
@@ -140,4 +158,16 @@
 			<Settings xsi:type="v8:TypeDescription"/>
 		</Attribute>
 	</Attributes>
+	<CommandInterface>
+		<CommandBar>
+			<Item>
+				<Command>0:b916edae-46b8-4f8f-a179-7579c0be1998</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+		</CommandBar>
+	</CommandInterface>
 </Form>
