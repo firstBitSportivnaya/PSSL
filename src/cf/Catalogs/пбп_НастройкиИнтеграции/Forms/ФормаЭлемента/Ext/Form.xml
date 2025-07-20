@@ -44,6 +44,39 @@
 					</ToolTip>
 					<ExtendedTooltip name="ГруппаОсновноеРасширеннаяПодсказка" id="90"/>
 					<ChildItems>
+						<UsualGroup name="ГруппаКодНаименование" id="7">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа код наименование</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа код наименование</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>AlwaysHorizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаКодНаименованиеРасширеннаяПодсказка" id="8"/>
+							<ChildItems>
+								<InputField name="Наименование" id="4">
+									<DataPath>Объект.Description</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+									<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+								</InputField>
+								<InputField name="Код" id="1">
+									<DataPath>Объект.Code</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+									<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
 						<InputField name="ТипИнтеграции" id="52">
 							<DataPath>Объект.ТипИнтеграции</DataPath>
 							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
@@ -359,39 +392,6 @@
 							<ContextMenu name="ПланОбменаКонтекстноеМеню" id="85"/>
 							<ExtendedTooltip name="ПланОбменаРасширеннаяПодсказка" id="86"/>
 						</InputField>
-						<UsualGroup name="ГруппаКодНаименование" id="7">
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Группа код наименование</v8:content>
-								</v8:item>
-							</Title>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Группа код наименование</v8:content>
-								</v8:item>
-							</ToolTip>
-							<Group>AlwaysHorizontal</Group>
-							<Behavior>Usual</Behavior>
-							<Representation>None</Representation>
-							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="ГруппаКодНаименованиеРасширеннаяПодсказка" id="8"/>
-							<ChildItems>
-								<InputField name="Наименование" id="4">
-									<DataPath>Объект.Description</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
-									<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
-								</InputField>
-								<InputField name="Код" id="1">
-									<DataPath>Объект.Code</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="КодКонтекстноеМеню" id="2"/>
-									<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
-								</InputField>
-							</ChildItems>
-						</UsualGroup>
 					</ChildItems>
 				</Page>
 				<Page name="ГруппаДополнительныеНастройки" id="91">
