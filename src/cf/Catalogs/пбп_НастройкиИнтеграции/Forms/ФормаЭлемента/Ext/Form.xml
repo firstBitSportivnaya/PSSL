@@ -387,7 +387,7 @@
 							</ChildItems>
 						</UsualGroup>
 						<InputField name="ПланОбмена" id="84">
-							<DataPath>Объект.ПланОбмена</DataPath>
+							<DataPath>Объект.УзелОбмена</DataPath>
 							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 							<ContextMenu name="ПланОбменаКонтекстноеМеню" id="85"/>
 							<ExtendedTooltip name="ПланОбменаРасширеннаяПодсказка" id="86"/>

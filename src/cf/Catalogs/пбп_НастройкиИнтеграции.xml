@@ -940,11 +940,11 @@
 			</Attribute>
 			<Attribute uuid="cd171fd9-7d3b-4012-96eb-e22a4039ae87">
 				<Properties>
-					<Name>ПланОбмена</Name>
+					<Name>УзелОбмена</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>План обмена</v8:content>
+							<v8:content>Узел обмена</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
