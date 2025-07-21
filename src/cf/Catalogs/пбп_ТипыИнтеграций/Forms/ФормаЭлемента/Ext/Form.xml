@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Код" id="1">
+			<DataPath>Объект.Code</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Наименование" id="4">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="Родитель" id="7">
+			<DataPath>Объект.Parent</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="РодительКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="РодительРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<UsualGroup name="ГруппаДополнительныеПараметрыНастроекИнтеграций" id="35">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дополнительные параметры настроек интеграций</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа дополнительные параметры настроек интеграций</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Behavior>Usual</Behavior>
+			<ExtendedTooltip name="ГруппаДополнительныеПараметрыНастроекИнтеграцийРасширеннаяПодсказка" id="36"/>
+			<ChildItems>
+				<Table name="ДополнительныеПараметрыНастроекИнтеграций" id="10">
+					<Representation>List</Representation>
+					<TitleLocation>Auto</TitleLocation>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>Объект.ДополнительныеПараметрыНастроекИнтеграций</DataPath>
+					<TitleFont ref="style:NormalTextFont" kind="StyleItem" scale="100"/>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="ДополнительныеПараметрыНастроекИнтеграцийКонтекстноеМеню" id="11"/>
+					<AutoCommandBar name="ДополнительныеПараметрыНастроекИнтеграцийКоманднаяПанель" id="12"/>
+					<ExtendedTooltip name="ДополнительныеПараметрыНастроекИнтеграцийРасширеннаяПодсказка" id="13"/>
+					<SearchStringAddition name="ДополнительныеПараметрыНастроекИнтеграцийСтрокаПоиска" id="14">
+						<AdditionSource>
+							<Item>ДополнительныеПараметрыНастроекИнтеграций</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ДополнительныеПараметрыНастроекИнтеграцийСтрокаПоискаКонтекстноеМеню" id="15"/>
+						<ExtendedTooltip name="ДополнительныеПараметрыНастроекИнтеграцийСтрокаПоискаРасширеннаяПодсказка" id="16"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ДополнительныеПараметрыНастроекИнтеграцийСостояниеПросмотра" id="17">
+						<AdditionSource>
+							<Item>ДополнительныеПараметрыНастроекИнтеграций</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ДополнительныеПараметрыНастроекИнтеграцийСостояниеПросмотраКонтекстноеМеню" id="18"/>
+						<ExtendedTooltip name="ДополнительныеПараметрыНастроекИнтеграцийСостояниеПросмотраРасширеннаяПодсказка" id="19"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ДополнительныеПараметрыНастроекИнтеграцийУправлениеПоиском" id="20">
+						<AdditionSource>
+							<Item>ДополнительныеПараметрыНастроекИнтеграций</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ДополнительныеПараметрыНастроекИнтеграцийУправлениеПоискомКонтекстноеМеню" id="21"/>
+						<ExtendedTooltip name="ДополнительныеПараметрыНастроекИнтеграцийУправлениеПоискомРасширеннаяПодсказка" id="22"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<LabelField name="ДополнительныеПараметрыНастроекИнтеграцийНомерСтроки" id="23">
+							<DataPath>Объект.ДополнительныеПараметрыНастроекИнтеграций.LineNumber</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ДополнительныеПараметрыНастроекИнтеграцийНомерСтрокиКонтекстноеМеню" id="24"/>
+							<ExtendedTooltip name="ДополнительныеПараметрыНастроекИнтеграцийНомерСтрокиРасширеннаяПодсказка" id="25"/>
+						</LabelField>
+						<InputField name="ДополнительныеПараметрыНастроекИнтеграцийИдентификатор" id="26">
+							<DataPath>Объект.ДополнительныеПараметрыНастроекИнтеграций.Идентификатор</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ДополнительныеПараметрыНастроекИнтеграцийИдентификаторКонтекстноеМеню" id="27"/>
+							<ExtendedTooltip name="ДополнительныеПараметрыНастроекИнтеграцийИдентификаторРасширеннаяПодсказка" id="28"/>
+						</InputField>
+						<InputField name="ДополнительныеПараметрыНастроекИнтеграцийСиноним" id="29">
+							<DataPath>Объект.ДополнительныеПараметрыНастроекИнтеграций.Синоним</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ДополнительныеПараметрыНастроекИнтеграцийСинонимКонтекстноеМеню" id="30"/>
+							<ExtendedTooltip name="ДополнительныеПараметрыНастроекИнтеграцийСинонимРасширеннаяПодсказка" id="31"/>
+						</InputField>
+						<InputField name="ДополнительныеПараметрыНастроекИнтеграцийТипВФорме" id="32">
+							<DataPath>Объект.ДополнительныеПараметрыНастроекИнтеграций.ТипВФорме</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Тип</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<ChoiceButton>true</ChoiceButton>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<TextEdit>false</TextEdit>
+							<ContextMenu name="ДополнительныеПараметрыНастроекИнтеграцийТипВФормеКонтекстноеМеню" id="33"/>
+							<ExtendedTooltip name="ДополнительныеПараметрыНастроекИнтеграцийТипВФормеРасширеннаяПодсказка" id="34"/>
+							<Events>
+								<Event name="StartChoice">ДополнительныеПараметрыНастроекИнтеграцийТипВФормеНачалоВыбора</Event>
+							</Events>
+						</InputField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.пбп_ТипыИнтеграций</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<Columns>
+				<AdditionalColumns table="Объект.ДополнительныеПараметрыНастроекИнтеграций">
+					<Column name="ТипВФорме" id="1">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Тип в форме</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+				</AdditionalColumns>
+			</Columns>
+		</Attribute>
+		<Attribute name="СписокТипов" id="2">
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription"/>
+		</Attribute>
+	</Attributes>
+	<CommandInterface>
+		<CommandBar>
+			<Item>
+				<Command>0:b916edae-46b8-4f8f-a179-7579c0be1998</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+		</CommandBar>
+	</CommandInterface>
+</Form>
