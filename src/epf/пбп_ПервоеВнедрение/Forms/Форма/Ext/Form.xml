@@ -60,52 +60,45 @@
 					</ToolTip>
 					<ExtendedTooltip name="ДействияРасширеннаяПодсказка" id="24"/>
 					<ChildItems>
-						<CheckBoxField name="ЗаменятьПрефикс" id="12">
-							<DataPath>ЗаменятьПрефикс</DataPath>
+						<CheckBoxField name="ЗаменятьПрефиксКонфигурации" id="12">
+							<DataPath>ЗаменятьПрефиксКонфигурации</DataPath>
 							<TitleLocation>Right</TitleLocation>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>По умолчанию в библиотеке используется:
+- префикс конфигурации - "пбп_".
+Если флаг установлен, то префикс будет заменен согласно настройке ниже</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ToolTipRepresentation>Button</ToolTipRepresentation>
 							<CheckBoxType>Auto</CheckBoxType>
-							<ContextMenu name="ЗаменятьПрефиксКонтекстноеМеню" id="13"/>
-							<ExtendedTooltip name="ЗаменятьПрефиксРасширеннаяПодсказка" id="14"/>
+							<ContextMenu name="ЗаменятьПрефиксКонфигурацииКонтекстноеМеню" id="13"/>
+							<ExtendedTooltip name="ЗаменятьПрефиксКонфигурацииРасширеннаяПодсказка" id="14"/>
 							<Events>
 								<Event name="OnChange">ЗаменятьПрефиксПриИзменении</Event>
 							</Events>
 						</CheckBoxField>
-						<LabelDecoration name="Пояснение1" id="41">
-							<TextColor>#5E5E5E</TextColor>
-							<Title formatted="false">
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>По умолчанию в библиотеке используется:
-- префикс - "пбп_";
-- для синонимов ru - "пбп";
-- для синонимов en - "pssl".
-Если флаг установлен, то префиксы/суфиксы будут заменены согласно настройке ниже</v8:content>
-								</v8:item>
-							</Title>
-							<ContextMenu name="Пояснение1КонтекстноеМеню" id="42"/>
-							<ExtendedTooltip name="Пояснение1РасширеннаяПодсказка" id="43"/>
-						</LabelDecoration>
-						<UsualGroup name="ГруппаПрефиксСиноним" id="30">
+						<UsualGroup name="ГруппаПрефиксКонфигурации" id="50">
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Префикс/синоним</v8:content>
+									<v8:content>Группа префикс конфигурации</v8:content>
 								</v8:item>
 							</Title>
 							<ToolTip>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Группа префикс синоним</v8:content>
+									<v8:content>Группа префикс конфигурации</v8:content>
 								</v8:item>
 							</ToolTip>
-							<Group>Vertical</Group>
 							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="ГруппаПрефиксСинонимРасширеннаяПодсказка" id="31"/>
+							<ExtendedTooltip name="ГруппаПрефиксКонфигурацииРасширеннаяПодсказка" id="51"/>
 							<ChildItems>
-								<InputField name="Префикс" id="15">
-									<DataPath>Префикс</DataPath>
+								<InputField name="ПрефиксКонфигурации" id="15">
+									<DataPath>ПрефиксКонфигурации</DataPath>
 									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 									<InputHint>
 										<v8:item>
@@ -113,11 +106,82 @@
 											<v8:content>пбп_</v8:content>
 										</v8:item>
 									</InputHint>
-									<ContextMenu name="ПрефиксКонтекстноеМеню" id="16"/>
-									<ExtendedTooltip name="ПрефиксРасширеннаяПодсказка" id="17"/>
+									<ContextMenu name="ПрефиксКонфигурацииКонтекстноеМеню" id="16"/>
+									<ExtendedTooltip name="ПрефиксКонфигурацииРасширеннаяПодсказка" id="17"/>
 								</InputField>
-								<InputField name="ПрефиксСуфиксСинонимаRU" id="32">
-									<DataPath>ПрефиксСуфиксСинонимаRU</DataPath>
+							</ChildItems>
+						</UsualGroup>
+						<CheckBoxField name="ИспользоватьПрефиксСуффиксСинонима" id="47">
+							<DataPath>ИспользоватьПрефиксСуффиксСинонима</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<EditFormat>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>БЛ=Суффикс; БИ=Префикс</v8:content>
+								</v8:item>
+							</EditFormat>
+							<ContextMenu name="ИспользоватьПрефиксСуффиксСинонимаКонтекстноеМеню" id="48"/>
+							<ExtendedTooltip name="ИспользоватьПрефиксСуффиксСинонимаРасширеннаяПодсказка" id="49"/>
+							<Events>
+								<Event name="OnChange">ИспользоватьПрефиксСуффиксПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+						<UsualGroup name="ГруппаПрефиксСуффиксСиноним" id="30">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Префикс/суффикс синоним</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа префикс суффикс синоним</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаПрефиксСуффиксСинонимРасширеннаяПодсказка" id="31"/>
+							<ChildItems>
+								<RadioButtonField name="ВыбратьПрефиксСуффикс" id="52">
+									<DataPath>ВыбратьПрефиксСуффикс</DataPath>
+									<RadioButtonType>Tumbler</RadioButtonType>
+									<ChoiceList>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Префикс</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">Префикс</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Суффикс</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">Суффикс</Value>
+											</xr:Value>
+										</xr:Item>
+									</ChoiceList>
+									<ContextMenu name="ВыбратьПрефиксСуффиксКонтекстноеМеню" id="53"/>
+									<ExtendedTooltip name="ВыбратьПрефиксСуффиксРасширеннаяПодсказка" id="54"/>
+								</RadioButtonField>
+								<InputField name="ПрефиксСуффиксСинонимаRU" id="32">
+									<DataPath>ПрефиксСуффиксСинонимаRU</DataPath>
 									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 									<InputHint>
 										<v8:item>
@@ -125,11 +189,11 @@
 											<v8:content>пбп</v8:content>
 										</v8:item>
 									</InputHint>
-									<ContextMenu name="ПрефиксСуфиксСинонимаRUКонтекстноеМеню" id="33"/>
-									<ExtendedTooltip name="ПрефиксСуфиксСинонимаRUРасширеннаяПодсказка" id="34"/>
+									<ContextMenu name="ПрефиксСуффиксСинонимаRUКонтекстноеМеню" id="33"/>
+									<ExtendedTooltip name="ПрефиксСуффиксСинонимаRUРасширеннаяПодсказка" id="34"/>
 								</InputField>
-								<InputField name="ПрефиксСуфиксСинонимаEN" id="35">
-									<DataPath>ПрефиксСуфиксСинонимаEN</DataPath>
+								<InputField name="ПрефиксСуффиксСинонимаEN" id="35">
+									<DataPath>ПрефиксСуффиксСинонимаEN</DataPath>
 									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 									<InputHint>
 										<v8:item>
@@ -137,29 +201,25 @@
 											<v8:content>pssl</v8:content>
 										</v8:item>
 									</InputHint>
-									<ContextMenu name="ПрефиксСуфиксСинонимаENКонтекстноеМеню" id="36"/>
-									<ExtendedTooltip name="ПрефиксСуфиксСинонимаENРасширеннаяПодсказка" id="37"/>
+									<ContextMenu name="ПрефиксСуффиксСинонимаENКонтекстноеМеню" id="36"/>
+									<ExtendedTooltip name="ПрефиксСуффиксСинонимаENРасширеннаяПодсказка" id="37"/>
 								</InputField>
 							</ChildItems>
 						</UsualGroup>
 						<CheckBoxField name="АдаптироватьПодБСП" id="18">
 							<DataPath>АдаптироватьПодБСП</DataPath>
 							<TitleLocation>Right</TitleLocation>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>При установленом флаге будет в конфигурации будут заменены модули переадресации на модули из БСП</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ToolTipRepresentation>Button</ToolTipRepresentation>
 							<CheckBoxType>Auto</CheckBoxType>
 							<ContextMenu name="АдаптироватьПодБСПКонтекстноеМеню" id="19"/>
 							<ExtendedTooltip name="АдаптироватьПодБСПРасширеннаяПодсказка" id="20"/>
 						</CheckBoxField>
-						<LabelDecoration name="Пояснение2" id="44">
-							<TextColor>#5E5E5E</TextColor>
-							<Title formatted="true">
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>При установленом флаге будет в конфигурации будут заменены модули &lt;b&gt;переадресации&lt;/&gt; на модули из БСП</v8:content>
-								</v8:item>
-							</Title>
-							<ContextMenu name="Пояснение2КонтекстноеМеню" id="45"/>
-							<ExtendedTooltip name="Пояснение2РасширеннаяПодсказка" id="46"/>
-						</LabelDecoration>
 					</ChildItems>
 				</Page>
 				<Page name="ВыходныеДанные" id="25">
@@ -280,22 +340,22 @@
 			</Type>
 			<FillCheck>ShowError</FillCheck>
 		</Attribute>
-		<Attribute name="ЗаменятьПрефикс" id="3">
+		<Attribute name="ЗаменятьПрефиксКонфигурации" id="3">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Заменять префикс</v8:content>
+					<v8:content>Заменять префикс конфигурации</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
-		<Attribute name="Префикс" id="5">
+		<Attribute name="ПрефиксКонфигурации" id="5">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Префикс</v8:content>
+					<v8:content>Префикс конфигурации</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
@@ -379,11 +439,11 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
-		<Attribute name="ПрефиксСуфиксСинонимовБиблиотеки" id="11">
+		<Attribute name="ПрефиксСуффиксСинонимовБиблиотеки" id="11">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Префикс суфикс синонимов библиотеки</v8:content>
+					<v8:content>Префикс суффикс синонимов библиотеки</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
@@ -424,11 +484,11 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
-		<Attribute name="ПрефиксСуфиксСинонимаRU" id="14">
+		<Attribute name="ПрефиксСуффиксСинонимаRU" id="14">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Префикс/суфикс синонима (ru)</v8:content>
+					<v8:content>Префикс/суффикс синонима (ru)</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
@@ -438,13 +498,12 @@
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
 			</Type>
-			<FillCheck>ShowError</FillCheck>
 		</Attribute>
-		<Attribute name="ПрефиксСуфиксСинонимаEN" id="15">
+		<Attribute name="ПрефиксСуффиксСинонимаEN" id="15">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Префикс/суфикс синонима (en)</v8:content>
+					<v8:content>Префикс/суффикс синонима (en)</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
@@ -454,13 +513,38 @@
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
 			</Type>
-			<FillCheck>ShowError</FillCheck>
 		</Attribute>
-		<Attribute name="ПрефиксСуфиксСинонимовБиблиотекиEN" id="16">
+		<Attribute name="ПрефиксСуффиксСинонимовБиблиотекиEN" id="16">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Префикс суфикс синонимов библиотеки (en)</v8:content>
+					<v8:content>Префикс суффикс синонимов библиотеки (en)</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИспользоватьПрефиксСуффиксСинонима" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Использовать префикс/суффикс синонима</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВыбратьПрефиксСуффикс" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать префикс/суффикс</v8:content>
 				</v8:item>
 			</Title>
 			<Type>

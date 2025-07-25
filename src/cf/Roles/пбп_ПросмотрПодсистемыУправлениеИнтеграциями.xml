@@ -6,11 +6,11 @@
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>[ПБП] Просмотр подсистемы "Управление интеграциями"</v8:content>
+					<v8:content>Просмотр подсистемы "Управление интеграциями"</v8:content>
 				</v8:item>
 				<v8:item>
 					<v8:lang>en</v8:lang>
-					<v8:content>[PSSL] Viewing subsystem "Integration Management"</v8:content>
+					<v8:content>Viewing subsystem "Integration Management"</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
