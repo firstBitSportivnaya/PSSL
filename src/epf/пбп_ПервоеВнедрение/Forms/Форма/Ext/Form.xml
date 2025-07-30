@@ -76,7 +76,7 @@
 							<ContextMenu name="ЗаменятьПрефиксКонфигурацииКонтекстноеМеню" id="13"/>
 							<ExtendedTooltip name="ЗаменятьПрефиксКонфигурацииРасширеннаяПодсказка" id="14"/>
 							<Events>
-								<Event name="OnChange">ЗаменятьПрефиксПриИзменении</Event>
+								<Event name="OnChange">ЗаменятьПрефиксКонфигурацииПриИзменении</Event>
 							</Events>
 						</CheckBoxField>
 						<UsualGroup name="ГруппаПрефиксКонфигурации" id="50">
