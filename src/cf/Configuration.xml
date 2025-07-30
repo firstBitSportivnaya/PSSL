@@ -310,6 +310,10 @@
 			<CommonModule>пбп_МодификацияКонфигурацииПереопределяемыйПланВидовХарактеристик</CommonModule>
 			<CommonModule>пбп_МодификацияКонфигурацииПовтИсп</CommonModule>
 			<CommonModule>пбп_ОбновлениеИнформационнойБазыПБП</CommonModule>
+			<CommonModule>пбп_ОбработкаСобытийМенеджеров</CommonModule>
+			<CommonModule>пбп_ОбработкаСобытийНаборов</CommonModule>
+			<CommonModule>пбп_ОбработкаСобытийОбъектов</CommonModule>
+			<CommonModule>пбп_ОбработкаСобытийПереопределяемый</CommonModule>
 			<CommonModule>пбп_ОбщегоНазначенияВызовСервера</CommonModule>
 			<CommonModule>пбп_ОбщегоНазначенияКлиент</CommonModule>
 			<CommonModule>пбп_ОбщегоНазначенияКлиентСервер</CommonModule>

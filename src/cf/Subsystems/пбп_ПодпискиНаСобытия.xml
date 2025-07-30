@@ -34,6 +34,10 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ОбщегоНазначенияПовтИсп</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ДокументыОбработкаСобытий</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_СправочникиОбработкаСобытий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ОбработкаСобытийПереопределяемый</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ОбработкаСобытийОбъектов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ОбработкаСобытийНаборов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ОбработкаСобытийМенеджеров</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
