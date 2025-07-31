@@ -38,6 +38,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ОбработкаСобытийОбъектов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ОбработкаСобытийНаборов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ОбработкаСобытийМенеджеров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ОбработкаСобытий</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

@@ -310,6 +310,7 @@
 			<CommonModule>пбп_МодификацияКонфигурацииПереопределяемыйПланВидовХарактеристик</CommonModule>
 			<CommonModule>пбп_МодификацияКонфигурацииПовтИсп</CommonModule>
 			<CommonModule>пбп_ОбновлениеИнформационнойБазыПБП</CommonModule>
+			<CommonModule>пбп_ОбработкаСобытий</CommonModule>
 			<CommonModule>пбп_ОбработкаСобытийМенеджеров</CommonModule>
 			<CommonModule>пбп_ОбработкаСобытийНаборов</CommonModule>
 			<CommonModule>пбп_ОбработкаСобытийОбъектов</CommonModule>
