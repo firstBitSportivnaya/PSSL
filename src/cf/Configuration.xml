@@ -290,6 +290,7 @@
 			<CommonTemplate>пбп_СпецификацияСкриптыСтраницыREST</CommonTemplate>
 			<CommonTemplate>пбп_СпецификацияСтилиСтраницыREST</CommonTemplate>
 			<CommonTemplate>пбп_СпецификацияСтраницаREST</CommonTemplate>
+			<CommonModule>пбп_БизнесПроцессыОбработкаСобытий</CommonModule>
 			<CommonModule>пбп_ВалидаторПакетов</CommonModule>
 			<CommonModule>пбп_ВалидаторПакетовПовтИсп</CommonModule>
 			<CommonModule>пбп_ВалидаторПакетовСлужебный</CommonModule>
@@ -297,10 +298,12 @@
 			<CommonModule>пбп_ЗагрузкаФайлаЧерезТабличныйДокументВызовСервера</CommonModule>
 			<CommonModule>пбп_ЗагрузкаФайлаЧерезТабличныйДокументКлиент</CommonModule>
 			<CommonModule>пбп_ЗагрузкаФайлаЧерезТабличныйДокументСервер</CommonModule>
+			<CommonModule>пбп_ЗадачиОбработкаСобытий</CommonModule>
 			<CommonModule>пбп_ИнтеграцииFTPSFTP</CommonModule>
 			<CommonModule>пбп_ИнтеграцииСервер</CommonModule>
 			<CommonModule>пбп_ИнтеграцииСлужебный</CommonModule>
 			<CommonModule>пбп_КоннекторHTTP</CommonModule>
+			<CommonModule>пбп_КонстантыОбработкаСобытий</CommonModule>
 			<CommonModule>пбп_МетодыРегламентныхЗаданийСервер</CommonModule>
 			<CommonModule>пбп_МодификацияКонфигурацииКлиентПереопределяемый</CommonModule>
 			<CommonModule>пбп_МодификацияКонфигурацииКлиентПовтИсп</CommonModule>
@@ -314,7 +317,7 @@
 			<CommonModule>пбп_ОбработкаСобытийМенеджеров</CommonModule>
 			<CommonModule>пбп_ОбработкаСобытийНаборов</CommonModule>
 			<CommonModule>пбп_ОбработкаСобытийОбъектов</CommonModule>
-			<CommonModule>пбп_ОбработкаСобытийПереопределяемый</CommonModule>
+			<CommonModule>пбп_ОбработкаСобытийПовтИсп</CommonModule>
 			<CommonModule>пбп_ОбщегоНазначенияВызовСервера</CommonModule>
 			<CommonModule>пбп_ОбщегоНазначенияКлиент</CommonModule>
 			<CommonModule>пбп_ОбщегоНазначенияКлиентСервер</CommonModule>
@@ -325,6 +328,7 @@
 			<CommonModule>пбп_ПереадресацияКлиентПовтИсп</CommonModule>
 			<CommonModule>пбп_ПереадресацияКлиентСервер</CommonModule>
 			<CommonModule>пбп_ПереадресацияПовтИсп</CommonModule>
+			<CommonModule>пбп_ПланыОбработкаСобытий</CommonModule>
 			<CommonModule>пбп_ПодключаемыеКоманды</CommonModule>
 			<CommonModule>пбп_ПодключаемыеКомандыВызовСервера</CommonModule>
 			<CommonModule>пбп_ПодключаемыеКомандыКлиент</CommonModule>
@@ -341,10 +345,12 @@
 			<CommonModule>пбп_ПредопределенныеЗначенияПовтИсп</CommonModule>
 			<CommonModule>пбп_ПредопределенныеЗначенияСлужебный</CommonModule>
 			<CommonModule>пбп_ПредопределенныеЗначенияСлужебныйКлиент</CommonModule>
+			<CommonModule>пбп_ПрочиеМенеджерыОбработкаСобытий</CommonModule>
 			<CommonModule>пбп_РаботаСДиалогамиКлиент</CommonModule>
 			<CommonModule>пбп_РаботаСДиалогамиСервер</CommonModule>
 			<CommonModule>пбп_РаботаСКоллекциямиКлиентСервер</CommonModule>
 			<CommonModule>пбп_РаботаСФормами</CommonModule>
+			<CommonModule>пбп_РегистрыОбработкаСобытий</CommonModule>
 			<CommonModule>пбп_СправочникиОбработкаСобытий</CommonModule>
 			<CommonModule>пбп_СтроковыеФункцииКлиентСервер</CommonModule>
 			<CommonModule>пбп_СхемыЗапросов</CommonModule>
