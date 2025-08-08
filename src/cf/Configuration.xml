@@ -364,6 +364,7 @@
 			<EventSubscription>пбп_СправочникиПриЗаписи</EventSubscription>
 			<EventSubscription>пбп_СправочникиПриКопировании</EventSubscription>
 			<EventSubscription>пбп_РегистрыСведенийПередЗаписью</EventSubscription>
+			<EventSubscription>пбп_РегистрыСведенийПриЗаписи</EventSubscription>
 			<ScheduledJob>пбп_ВыполнениеПользовательскихФункцийФайловыхОбменов</ScheduledJob>
 			<ScheduledJob>пбп_ОчисткаИсторииИнтеграции</ScheduledJob>
 			<ScheduledJob>пбп_ЗаполнениеПредопределенныхЭлементов</ScheduledJob>
