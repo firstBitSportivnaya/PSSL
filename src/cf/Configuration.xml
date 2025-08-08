@@ -314,9 +314,6 @@
 			<CommonModule>пбп_МодификацияКонфигурацииПовтИсп</CommonModule>
 			<CommonModule>пбп_ОбновлениеИнформационнойБазыПБП</CommonModule>
 			<CommonModule>пбп_ОбработкаСобытий</CommonModule>
-			<CommonModule>пбп_ОбработкаСобытийМенеджеров</CommonModule>
-			<CommonModule>пбп_ОбработкаСобытийНаборов</CommonModule>
-			<CommonModule>пбп_ОбработкаСобытийОбъектов</CommonModule>
 			<CommonModule>пбп_ОбработкаСобытийПовтИсп</CommonModule>
 			<CommonModule>пбп_ОбщегоНазначенияВызовСервера</CommonModule>
 			<CommonModule>пбп_ОбщегоНазначенияКлиент</CommonModule>
@@ -366,6 +363,7 @@
 			<EventSubscription>пбп_СправочникиПередЗаписью</EventSubscription>
 			<EventSubscription>пбп_СправочникиПриЗаписи</EventSubscription>
 			<EventSubscription>пбп_СправочникиПриКопировании</EventSubscription>
+			<EventSubscription>пбп_РегистрыСведенийПередЗаписью</EventSubscription>
 			<ScheduledJob>пбп_ВыполнениеПользовательскихФункцийФайловыхОбменов</ScheduledJob>
 			<ScheduledJob>пбп_ОчисткаИсторииИнтеграции</ScheduledJob>
 			<ScheduledJob>пбп_ЗаполнениеПредопределенныхЭлементов</ScheduledJob>

@@ -18,7 +18,7 @@
 				<v8:TypeSet>cfg:CatalogObject</v8:TypeSet>
 			</Source>
 			<Event>Filling</Event>
-			<Handler>CommonModule.пбп_ОбработкаСобытийОбъектов.ОбработкаЗаполнения</Handler>
+			<Handler>CommonModule.пбп_ОбработкаСобытий.ОбработкаЗаполнения</Handler>
 		</Properties>
 	</EventSubscription>
 </MetaDataObject>

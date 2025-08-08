@@ -35,9 +35,9 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ДокументыОбработкаСобытий</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_СправочникиОбработкаСобытий</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ОбработкаСобытийПовтИсп</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ОбработкаСобытийОбъектов</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ОбработкаСобытийНаборов</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ОбработкаСобытийМенеджеров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">df0b85a1-3763-4525-a27a-4a43da054c2b</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">11ea5fdf-138b-47ea-b1e6-e36c066e1854</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">3eb9fac2-5c5a-42f2-90da-1ef92a0acf96</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ОбработкаСобытий</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_КонстантыОбработкаСобытий</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ПланыОбработкаСобытий</xr:Item>
