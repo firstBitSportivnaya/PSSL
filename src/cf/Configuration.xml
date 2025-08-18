@@ -364,6 +364,7 @@
 			<DefinedType>пбп_ПредопределенныеВсеСсылкиПереопределяемый</DefinedType>
 			<DefinedType>пбп_ТипыОбъектовСоответствийИБ</DefinedType>
 			<DefinedType>пбп_УчетныеЗаписиЭлектроннойПочты</DefinedType>
+			<DefinedType>пбп_Организации</DefinedType>
 			<Constant>пбп_ИспользоватьПользовательскиеФункции</Constant>
 			<CommonForm>пбп_ФормаВыбораПоля</CommonForm>
 			<CommonForm>пбп_ФормаПодключенияКБазе1С</CommonForm>
@@ -384,6 +385,7 @@
 			<Enum>пбп_СозданОбновлен</Enum>
 			<Enum>пбп_СтатусыАсинхронныхВызовов</Enum>
 			<Enum>пбп_СтатусыИнтеграции</Enum>
+			<Enum>пбп_СущностиАвторизации</Enum>
 			<Enum>пбп_ТипыJSON</Enum>
 			<Enum>пбп_ТипыАвторизации</Enum>
 			<Enum>пбп_ФорматыИнтеграций</Enum>
@@ -393,6 +395,7 @@
 			<InformationRegister>пбп_СоответствиеОбъектовИнтегрируемыхСистем</InformationRegister>
 			<InformationRegister>пбп_СоответствияОбъектовИБ</InformationRegister>
 			<InformationRegister>пбп_СостоянияПредопределенныхЭлементов</InformationRegister>
+			<InformationRegister>пбп_ТокеныИнтегрируемыхСистем</InformationRegister>
 			<ChartOfCharacteristicTypes>пбп_ПредопределенныеЗначения</ChartOfCharacteristicTypes>
 		</ChildObjects>
 	</Configuration>
