@@ -6,11 +6,11 @@
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>[ПБП] Чтение константы использовать пользовательские функции</v8:content>
+					<v8:content>Чтение константы использовать пользовательские функции</v8:content>
 				</v8:item>
 				<v8:item>
 					<v8:lang>en</v8:lang>
-					<v8:content>[PSSL] Reading constant use user functions</v8:content>
+					<v8:content>Reading constant use user functions</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>

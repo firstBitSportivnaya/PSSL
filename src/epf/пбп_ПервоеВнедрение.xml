@@ -19,7 +19,7 @@
 					<v8:content>Первое внедрение</v8:content>
 				</v8:item>
 			</Synonym>
-			<Comment>v.1.0.1</Comment>
+			<Comment>v.1.1.0</Comment>
 			<DefaultForm>ExternalDataProcessor.пбп_ПервоеВнедрение.Form.Форма</DefaultForm>
 			<AuxiliaryForm/>
 		</Properties>
