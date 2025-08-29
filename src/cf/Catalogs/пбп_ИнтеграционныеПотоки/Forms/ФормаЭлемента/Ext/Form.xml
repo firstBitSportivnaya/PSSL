@@ -103,6 +103,12 @@
 				<Event name="OnChange">ПользовательскаяФункцияПриИзменении</Event>
 			</Events>
 		</InputField>
+		<InputField name="Метод" id="73">
+			<DataPath>Объект.Метод</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="МетодКонтекстноеМеню" id="74"/>
+			<ExtendedTooltip name="МетодРасширеннаяПодсказка" id="75"/>
+		</InputField>
 		<CheckBoxField name="ХранитьНомераВерсий" id="70">
 			<DataPath>Объект.ХранитьНомераВерсий</DataPath>
 			<TitleLocation>Right</TitleLocation>
