@@ -99,7 +99,7 @@
 					<LinkByType/>
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 					<Indexing>DontIndex</Indexing>
-					<FullTextSearch>Use</FullTextSearch>
+					<FullTextSearch>DontUse</FullTextSearch>
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Resource>
@@ -284,7 +284,7 @@
 					<Type>
 						<v8:Type>xs:string</v8:Type>
 						<v8:StringQualifiers>
-							<v8:Length>50</v8:Length>
+							<v8:Length>128</v8:Length>
 							<v8:AllowedLength>Variable</v8:AllowedLength>
 						</v8:StringQualifiers>
 					</Type>
