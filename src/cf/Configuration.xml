@@ -369,12 +369,14 @@
 			<ScheduledJob>пбп_ОчисткаИсторииИнтеграции</ScheduledJob>
 			<ScheduledJob>пбп_ЗаполнениеПредопределенныхЭлементов</ScheduledJob>
 			<FunctionalOption>пбп_ИспользоватьПользовательскиеФункции</FunctionalOption>
+			<FunctionalOption>пбп_ИспользоватьСоответствияОбъектовИнтегрируемыхСистем</FunctionalOption>
 			<DefinedType>пбп_ОбъектыИнтегрируемыхСистем</DefinedType>
 			<DefinedType>пбп_Пользователи</DefinedType>
 			<DefinedType>пбп_ПредопределенныеВсеСсылкиПереопределяемый</DefinedType>
 			<DefinedType>пбп_ТипыОбъектовСоответствийИБ</DefinedType>
 			<DefinedType>пбп_УчетныеЗаписиЭлектроннойПочты</DefinedType>
 			<Constant>пбп_ИспользоватьПользовательскиеФункции</Constant>
+			<Constant>пбп_ИспользоватьСоответствияОбъектовИнтегрируемыхСистем</Constant>
 			<CommonForm>пбп_ФормаВыбораПоля</CommonForm>
 			<CommonForm>пбп_ФормаПодключенияКБазе1С</CommonForm>
 			<CommonForm>пбп_ФормаРазрешенияКонфликтовПредопределенныхЭлементов</CommonForm>
