@@ -74,6 +74,11 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.пбп_СтатусыАсинхронныхВызовов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Role.пбп_ЧтениеОжиданияАсинхронныхВызовов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Role.пбп_РедактированиеОжиданияАсинхронныхВызовов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.пбп_ТокеныИнтегрируемыхСистем</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DefinedType.пбп_Организации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.пбп_СущностиАвторизации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.пбп_ЧтениеТокеновИнтегрируемыхСистем</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.пбп_РедактированиеТокеновИнтегрируемыхСистем</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
