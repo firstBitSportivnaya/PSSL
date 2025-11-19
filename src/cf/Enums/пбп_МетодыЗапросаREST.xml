@@ -20,7 +20,7 @@
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Методы запроса</v8:content>
+					<v8:content>Методы запроса REST</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
@@ -86,12 +86,7 @@
 			<DefaultChoiceForm/>
 			<AuxiliaryListForm/>
 			<AuxiliaryChoiceForm/>
-			<ListPresentation>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>REST: Методы запроса</v8:content>
-				</v8:item>
-			</ListPresentation>
+			<ListPresentation/>
 			<ExtendedListPresentation/>
 			<Explanation/>
 			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
