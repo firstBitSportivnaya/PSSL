@@ -57,7 +57,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок</xr:Item>
 			</DefaultRoles>
 			<Vendor>Первый БИТ</Vendor>
-			<Version>1.0.10.4</Version>
+			<Version>1.0.10.6</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>false</UseManagedFormInOrdinaryApplication>
@@ -269,6 +269,7 @@
 			<Role>пбп_РедактированиеСоответствияОбъектовИнтегрируемыхСистем</Role>
 			<Role>пбп_РедактированиеСостоянийПредопределенныхЭлементов</Role>
 			<Role>пбп_РедактированиеТиповСоответствияОбъектовИБ</Role>
+			<Role>пбп_РедактированиеТокеновИнтегрируемыхСистем</Role>
 			<Role>пбп_ЧтениеИсторииЗагрузкиФайлов</Role>
 			<Role>пбп_ЧтениеКонстантыИспользоватьПользовательскиеФункции</Role>
 			<Role>пбп_ЧтениеНастроекИнтеграции</Role>
@@ -279,6 +280,7 @@
 			<Role>пбп_ЧтениеСоответствияОбъектовИнтегрируемыхСистем</Role>
 			<Role>пбп_ЧтениеСостоянийПредопределенныхЭлементов</Role>
 			<Role>пбп_ЧтениеТиповСоответствияОбъектовИБ</Role>
+			<Role>пбп_ЧтениеТокеновИнтегрируемыхСистем</Role>
 			<Role>ПолныеПрава</Role>
 			<CommonTemplate>пбп_BSLEditor</CommonTemplate>
 			<CommonTemplate>пбп_JSONEditor</CommonTemplate>
@@ -375,6 +377,7 @@
 			<DefinedType>пбп_ПредопределенныеВсеСсылкиПереопределяемый</DefinedType>
 			<DefinedType>пбп_ТипыОбъектовСоответствийИБ</DefinedType>
 			<DefinedType>пбп_УчетныеЗаписиЭлектроннойПочты</DefinedType>
+			<DefinedType>пбп_Организации</DefinedType>
 			<Constant>пбп_ИспользоватьПользовательскиеФункции</Constant>
 			<Constant>пбп_ИспользоватьСоответствияОбъектовИнтегрируемыхСистем</Constant>
 			<CommonForm>пбп_ФормаВыбораПоля</CommonForm>
@@ -396,6 +399,7 @@
 			<Enum>пбп_СозданОбновлен</Enum>
 			<Enum>пбп_СтатусыАсинхронныхВызовов</Enum>
 			<Enum>пбп_СтатусыИнтеграции</Enum>
+			<Enum>пбп_СущностиАвторизации</Enum>
 			<Enum>пбп_ТипыJSON</Enum>
 			<Enum>пбп_ТипыАвторизации</Enum>
 			<Enum>пбп_ФорматыИнтеграций</Enum>
@@ -405,6 +409,7 @@
 			<InformationRegister>пбп_СоответствиеОбъектовИнтегрируемыхСистем</InformationRegister>
 			<InformationRegister>пбп_СоответствияОбъектовИБ</InformationRegister>
 			<InformationRegister>пбп_СостоянияПредопределенныхЭлементов</InformationRegister>
+			<InformationRegister>пбп_ТокеныИнтегрируемыхСистем</InformationRegister>
 			<ChartOfCharacteristicTypes>пбп_ПредопределенныеЗначения</ChartOfCharacteristicTypes>
 		</ChildObjects>
 	</Configuration>
