@@ -57,7 +57,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок</xr:Item>
 			</DefaultRoles>
 			<Vendor>Первый БИТ</Vendor>
-			<Version>1.0.10.6</Version>
+			<Version>1.0.10.7</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>false</UseManagedFormInOrdinaryApplication>
@@ -272,6 +272,7 @@
 			<Role>пбп_РедактированиеТокеновИнтегрируемыхСистем</Role>
 			<Role>пбп_ЧтениеИсторииЗагрузкиФайлов</Role>
 			<Role>пбп_ЧтениеКонстантыИспользоватьПользовательскиеФункции</Role>
+			<Role>пбп_ЧтениеКонстантыИспользоватьСоответствияОбъектовИнтегрируемыхСистем</Role>
 			<Role>пбп_ЧтениеНастроекИнтеграции</Role>
 			<Role>пбп_ЧтениеНастроекОтборовОбъектов</Role>
 			<Role>пбп_ЧтениеОжиданияАсинхронныхВызовов</Role>
