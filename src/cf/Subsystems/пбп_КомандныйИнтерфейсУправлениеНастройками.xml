@@ -21,6 +21,7 @@
 			<Content>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ДемоРаботаСФормами</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.пбп_ПодсистемаУправлениеНастройками</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.пбп_Константы</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects>

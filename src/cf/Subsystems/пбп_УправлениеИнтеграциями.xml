@@ -79,6 +79,9 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.пбп_СущностиАвторизации</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Role.пбп_ЧтениеТокеновИнтегрируемыхСистем</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Role.пбп_РедактированиеТокеновИнтегрируемыхСистем</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.пбп_ИспользоватьСоответствияОбъектовИнтегрируемыхСистем</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.пбп_ИспользоватьСоответствияОбъектовИнтегрируемыхСистем</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.пбп_ЧтениеКонстантыИспользоватьСоответствияОбъектовИнтегрируемыхСистем</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

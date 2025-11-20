@@ -57,7 +57,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок</xr:Item>
 			</DefaultRoles>
 			<Vendor>Первый БИТ</Vendor>
-			<Version>1.0.10.6</Version>
+			<Version>1.0.10.7</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>false</UseManagedFormInOrdinaryApplication>
@@ -272,6 +272,7 @@
 			<Role>пбп_РедактированиеТокеновИнтегрируемыхСистем</Role>
 			<Role>пбп_ЧтениеИсторииЗагрузкиФайлов</Role>
 			<Role>пбп_ЧтениеКонстантыИспользоватьПользовательскиеФункции</Role>
+			<Role>пбп_ЧтениеКонстантыИспользоватьСоответствияОбъектовИнтегрируемыхСистем</Role>
 			<Role>пбп_ЧтениеНастроекИнтеграции</Role>
 			<Role>пбп_ЧтениеНастроекОтборовОбъектов</Role>
 			<Role>пбп_ЧтениеОжиданияАсинхронныхВызовов</Role>
@@ -371,16 +372,20 @@
 			<ScheduledJob>пбп_ОчисткаИсторииИнтеграции</ScheduledJob>
 			<ScheduledJob>пбп_ЗаполнениеПредопределенныхЭлементов</ScheduledJob>
 			<FunctionalOption>пбп_ИспользоватьПользовательскиеФункции</FunctionalOption>
+			<FunctionalOption>пбп_ИспользоватьСоответствияОбъектовИнтегрируемыхСистем</FunctionalOption>
 			<DefinedType>пбп_ОбъектыИнтегрируемыхСистем</DefinedType>
 			<DefinedType>пбп_Пользователи</DefinedType>
 			<DefinedType>пбп_ПредопределенныеВсеСсылкиПереопределяемый</DefinedType>
 			<DefinedType>пбп_ТипыОбъектовСоответствийИБ</DefinedType>
 			<DefinedType>пбп_УчетныеЗаписиЭлектроннойПочты</DefinedType>
 			<DefinedType>пбп_Организации</DefinedType>
+			<CommonCommand>пбп_Константы</CommonCommand>
 			<Constant>пбп_ИспользоватьПользовательскиеФункции</Constant>
+			<Constant>пбп_ИспользоватьСоответствияОбъектовИнтегрируемыхСистем</Constant>
 			<CommonForm>пбп_ФормаВыбораПоля</CommonForm>
 			<CommonForm>пбп_ФормаПодключенияКБазе1С</CommonForm>
 			<CommonForm>пбп_ФормаРазрешенияКонфликтовПредопределенныхЭлементов</CommonForm>
+			<CommonForm>пбп_Константы</CommonForm>
 			<Catalog>пбп_ИнтеграционныеПотоки</Catalog>
 			<Catalog>пбп_ИнтегрируемыеСистемы</Catalog>
 			<Catalog>пбп_ИсторияИнтеграции</Catalog>
