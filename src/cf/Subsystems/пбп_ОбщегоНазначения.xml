@@ -44,6 +44,8 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ПереадресацияКлиентПовтИсп</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.пбп_ФормаПодключенияКБазе1С</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DefinedType.пбп_Организации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.пбп_Константы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.пбп_Константы</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
