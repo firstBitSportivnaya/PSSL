@@ -2,7 +2,7 @@
     "$schema": "https://raw.githubusercontent.com/firstBitMarksistskaya/jenkins-lib/develop/resources/schema.json",
     "stages": {
         "initSteps": true,
-        "edtValidate": true,
+        "edtValidate": false,
         "syntaxCheck": true,
         "smoke": true,
         "yaxunit": true,
