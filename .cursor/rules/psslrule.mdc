@@ -1,0 +1,40 @@
+---
+alwaysApply: true
+---
+
+Persona
+Опытный разработчик 1С (BSL), senior. Платформенные API сверять по справке Unica / LS / Напарник, не из памяти версии.
+
+Project info
+Это репозиторий **Проектная библиотека подсистем (ПБП / PSSL)**, дамп `src/cf`. Язык кода и ответов — русский. Префикс объектов ядра — `пбп_`. Совместимость конфигурации 8.3.24, разработка на платформе 8.3.27. Есть модули `пбп_Переадресация*` — вызовы аналогов БСП идут через них.
+
+Пины ИБ и абсолютные пути платформы — только в локальном `.dev.env` / `v8project.local.yaml` (не в Git). Краткий контракт дампа — `AGENTS.md`. Workspace skill: **`pssl-library`** (ядро, загрузка в ИБ, YaXUnit). Методика «куда класть обработчики при встраивании ПБП в чужую КФ» — user skill `1c-pssl`; здесь правят **ядро библиотеки**.
+
+MCP
+Иерархия (не пересекать контуры):
+
+- **Unica** (`user-unica`): дамп XML, поиск, формы/метаданные, diagnostics. Во все вызовы — `cwd` = корень workspace (`v8project.yaml` / `.dev.env` `WORKSPACE_ROOT`), не опускать. Runtime: `unica_runtime_job_start` `build` и `test` **только YaXUnit**. Не `unica_build_*`. Не `test` `va` — фичи гонять через Vanessa MCP. `GetDynamicTools` — один `toolName`. Applied `launch` `mcp-va` / thin — fail-closed.
+- Пока `user-unica` `ready`: чтение и запись дампа (`src/cf`, `src/cfe/YAXUnit`) только инструментами Unica (`unica_source_*`, `unica_code_search` / `unica_code_patch`, `form-*` / `meta-*` и т.д.). Не `Grep`/`Read`/`StrReplace`/`Write`/`Shell` по `*.bsl` и XML метаданных «короче». Fallback — только если Unica недоступен или у него нет инструмента на эту операцию.
+- **Vanessa** (`user-VanessaAutomation`): живой Gherkin / TestClient **и прогон фич** (`run_scenario`). Канон шагов — skill `vanessa-automation`. `project-notes.md` DemoSSL не применять. Если namespace `error` или порт не слушает `1cv8c` — `tools/va/Start-VanessaMcp.ps1` (пины `.dev.env`, без Bypass). После старта — `GetDynamicTools` / `get_VanessaAutomation_state`; `Not connected` — пользователь MCP Restart.
+- **Напарник / LS**: ITS и сниппеты / hover у курсора. Не дублировать тот же факт Unica.
+
+Загрузка КФ/CFE и прогон YaXUnit — skill `pssl-library`. Отдельный `build` на каждый source-set (`main`, затем `YAXUNIT`). Не `-AllExtensions`.
+
+Coding Guidelines
+Не использовать Попытка...Исключение вокруг обычного чтения/записи БД, кроме обоснованного управления транзакцией.
+Не использовать ЗаписьЖурналаРегистрации() и Сообщить(), если пользователь явно не просил.
+Булевы условия без сравнения с Истина/Ложь.
+
+Code Formatting
+Лимит 130 символов в строке; не переносить, если на новой строке останется одна переменная.
+Внутри Если/Цикл — пустые строки до и после тела блока.
+
+Cursor Workflow (1C)
+Одна логическая правка за раз. Минимальные обратимые диффы, без рефакторинга «заодно».
+
+Performance
+Массовые операции — на сервере. Запросы предпочтительнее обхода коллекций. УстановитьПривилегированныйРежим() только по необходимости.
+
+Documentation
+Публичные процедуры/функции: назначение, параметры, возвращаемое значение.
+Точечные отключения bsl-language-server: //BSLLS:

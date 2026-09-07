@@ -4,3 +4,19 @@ dumplist.txt
 /.metadata/
 /.scannerwork/
 build/
+.build/
+DumpFilesIndex.txt
+
+# Local Cursor / Unica pins (do not commit machine paths)
+.dev.env
+v8project.yaml
+v8project.local.yaml
+unica.toml
+unica.local.toml
+.cursor/mcp.json
+.cursorignore
+
+# Local Vanessa Automation (Jenkins keeps tools/VBParams.json and tools/vrunner.json)
+tools/VBParams.local.json
+tools/vrunner.local.json
+features/png/
