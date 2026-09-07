@@ -1,11 +1,9 @@
-# Copy to tools/VBParams.local.json (gitignored). Jenkins CI keeps tools/VBParams.json.
-# For Cursor MCP VanessaAutomation: do not shut down 1C or TestClient after features.
 {
 	"Lang": "ru",
 	"DebugLog": false,
-	"ВыполнитьСценарии": false,
-	"ЗавершитьРаботуСистемы": false,
-	"ЗакрытьTestClientПослеЗапускаСценариев": false,
+	"ВыполнитьСценарии": true,
+	"ЗавершитьРаботуСистемы": true,
+	"ЗакрытьTestClientПослеЗапускаСценариев": true,
 	"КаталогФич": "$workspaceRoot/features",
 	"КаталогиБиблиотек": [
 		"$workspaceRoot/features"

@@ -1,0 +1,16 @@
+{
+	"Version": "1.2.043.28",
+	"Lang": "ru",
+	"КаталогФич": "features",
+	"КаталогПроекта": ".",
+	"ИспользоватьКомпонентуVanessaExt": true,
+	"ИспользоватьРедакторVanessaEditor": true,
+	"ЗагрузкаФичПриОткрытии": "Загружать",
+	"ВыполнитьСценарии": false,
+	"ЗавершитьРаботуСистемы": false,
+	"ОстановкаПриВозникновенииОшибки": true,
+	"DisableFirstRunHelper": true,
+	"ДелатьОтчетВФорматеАллюр": false,
+	"ТихаяУстановкаVanessaExt": true,
+	"InstallVanessaExtOnFailOfQuietInstall": true
+}

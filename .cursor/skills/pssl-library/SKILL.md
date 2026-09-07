@@ -11,7 +11,7 @@ description: >-
 
 # pssl-library — ядро ПБП в этом репозитории
 
-Дамп: `src/cf` (source-set `main`). Конфигурация `ПроектнаяБиблиотекаПодсистем` (vendor Первый БИТ). Префикс **`пбп_`**.
+Дамп: `src/cf` (source-set `main`). Конфигурация `ПроектнаяБиблиотекаПодсистем` (vendor Первый БИТ). Префикс **`пбп_`**. Разработка на платформе **8.3.27**, режим совместимости **8.3.24**.
 
 Расширение тестов: `src/cfe/YAXUnit`, имя в метаданных `YAXUNIT` (source-set `YAXUNIT`). Это не `tools-download` артефакт.
 
@@ -27,6 +27,7 @@ description: >-
 - Формы и подписки библиотеки — по документации подсистем и user skill `1c-pssl` (имена с `пбп_`).
 - Обработка первого внедрения — `src/epf`, не смешивать с дампом КФ без нужды.
 - XML форм/метаданных — Unica leaf (`form-*`, `meta-*`). Поиск по дампу — `unica_code_search` / `unica_source_resolve`.
+- Правка BSL дампа — `unica_code_patch` (после `unica_source_resolve`). Не `StrReplace` / `Write` / `Shell` по `src/cf/**/*.bsl` и `src/cfe/YAXUnit/**/*.bsl`, пока `user-unica` готов.
 - Сценарии YaXUnit — в `src/cfe/YAXUnit`, не в `src/cf`.
 
 ## Запреты для этого репозитория
@@ -77,8 +78,8 @@ description: >-
 
 ## Vanessa Automation (MCP)
 
-CI/Jenkins: `tools/VBParams.json`, `tools/vrunner.json` — не менять ради локального MCP.
+Последовательность инструментов — skill `vanessa-automation`. `project-notes.md` DemoSSL не применять. Пины и автоподъём — `.cursor/rules/psslrule.mdc`.
 
-Локальный запуск: `tools/VBParams.local.json` и `tools/vrunner.local.json` (gitignore). Шаблоны — `*.local.json.example`. В локальном VBParams не завершать сеанс 1С и не закрывать TestClient после фич.
+CI/Jenkins: `tools/VBParams.json`. Пакетный Unica `test` `va`: `tools/VBParams.local.json` (gitignore). Живой MCP: `tools/va/VAParams.json` (`ВыполнитьСценарии` = false), скрипт `tools/va/Start-VanessaMcp.ps1`.
 
-Расширения в ИБ для MCP: `VAExtension` (без безопасного режима), `client_mcp`. Живой MCP: skill `vanessa-automation`, namespace `user-VanessaAutomation`, порт 9876. Design тестов — Unica `test-authoring`.
+Если `user-VanessaAutomation` `error` или порт не слушает `1cv8c`: Shell `tools/va/Start-VanessaMcp.ps1` (без Bypass), затем `GetDynamicTools` / `get_VanessaAutomation_state`. Прогон фич — `run_scenario`, не Unica `test` `va`. Не `unica launch mcp-va` applied. Не использовать Vanessa MCP для фактов дампа XML (это Unica).
