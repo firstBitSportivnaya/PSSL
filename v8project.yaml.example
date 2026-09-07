@@ -1,0 +1,15 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/alkoleft/v8-runner-rust/master/docs/schemas/v8project.schema.json
+# Copy this file to v8project.yaml at the workspace root (Unica expects that name). Do not commit v8project.yaml.
+# Infobase and platform path belong in v8project.local.yaml (see v8project.local.yaml.example).
+workPath: build
+execution_timeout: 900000
+format: DESIGNER
+builder: DESIGNER
+
+source-set:
+  - name: main
+    type: CONFIGURATION
+    path: src/cf
+  - name: YAXUNIT
+    type: EXTENSION
+    path: src/cfe/YAXUnit

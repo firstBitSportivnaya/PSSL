@@ -1,0 +1,22 @@
+# Скопировать в v8project.local.yaml (файл в .gitignore).
+# Не класть сюда source-set / format / builder / execution_timeout — они в v8project.yaml.
+# yaml-language-server: $schema=https://raw.githubusercontent.com/alkoleft/v8-runner-rust/master/docs/schemas/v8project.local.schema.json
+
+tools:
+  platform:
+    version: "8.3.23.XXXX"
+    path: "C:\\Program Files\\1cv8\\8.3.23.XXXX\\bin"
+    strict: true
+  va:
+    epf_path: "oscript_modules/vanessa-automation-single/vanessa-automation-single.epf"
+  client_mcp:
+    extension:
+      name: client_mcp
+      artifact:
+        path: "build/cfe/client_mcp.cfe"
+
+infobase:
+  # Та же файловая ИБ, что INFOBASE_PATH в .dev.env.
+  connection: 'File="C:\path\to\InfoBase"'
+  user: "Администратор"
+  password: ""

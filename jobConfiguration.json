@@ -6,7 +6,6 @@
         "syntaxCheck": true,
         "smoke": true,
         "yaxunit": true,
-        "telegram": true,
         "bdd": true,
         "sonarqube": true
     },
@@ -42,10 +41,5 @@
     "sonarqube": {
         "sonarQubeInstallation": "Sonar.openbsl",
         "waitForQualityGate": true
-    },
-    "notifications": {
-        "telegram": {
-            "onAlways":true 
-        }
     }
 }
