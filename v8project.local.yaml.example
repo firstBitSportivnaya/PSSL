@@ -4,8 +4,8 @@
 
 tools:
   platform:
-    version: "8.3.23.XXXX"
-    path: "C:\\Program Files\\1cv8\\8.3.23.XXXX\\bin"
+    version: "8.3.27.XXXX"
+    path: "C:\\Program Files\\1cv8\\8.3.27.XXXX\\bin"
     strict: true
   va:
     epf_path: "oscript_modules/vanessa-automation-single/vanessa-automation-single.epf"

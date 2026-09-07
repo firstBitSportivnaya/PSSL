@@ -19,3 +19,4 @@ unica.local.toml
 # Local Vanessa Automation (Jenkins keeps tools/VBParams.json and tools/vrunner.json)
 tools/VBParams.local.json
 tools/vrunner.local.json
+features/png/
