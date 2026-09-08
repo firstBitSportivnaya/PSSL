@@ -59,7 +59,7 @@ description: >-
 - Экспорт `ИсполняемыеСценарии()` — только регистрация через `ЮТТесты` (`ДобавитьТестовыйНабор` / `ДобавитьТест` / `СПараметрами` / `ВТранзакции`); без создания данных в этой процедуре.
 - Утверждения и данные: `ЮТест.ОжидаетЧто(...)`, `ЮТест.Данные()`, при необходимости `ЮТест.Варианты` / `ЮТест.Предикат` / `Мокито`.
 - В новых тестах `НеЗаполнено()`, не `Пусто()` (алиас совместимости 25.x).
-- Флаги `ОМ_*` для пакетного прогона: обычно `Server=true`, `ExternalConnection=true`; клиентские флаги — только если тест реально клиентский.
+- Флаги `ОМ_*` для пакетного прогона: обычно `Server=true`, `ExternalConnection=true`; клиентские флаги — только если тест реально клиентский. `ДобавитьКлиентскийТест` выбирает клиентский контекст лишь среди доступных модулю по метаданным; `Server` сам по себе клиент не даёт.
 - Не менять движок `ЮТ*` без явной просьбы на обновление YAxUnit.
 
 ## YaXUnit — applied-запуск
@@ -84,4 +84,4 @@ description: >-
 
 CI/Jenkins: `tools/VBParams.json`. Пакетный Unica `test` `va`: `tools/VBParams.local.json` (gitignore). Живой MCP: `tools/va/VAParams.json` (`ВыполнитьСценарии` = false), скрипт `tools/va/Start-VanessaMcp.ps1`.
 
-Если `user-VanessaAutomation` `error` или порт не слушает `1cv8c`: Shell `tools/va/Start-VanessaMcp.ps1` (без Bypass), затем `GetDynamicTools` / `get_VanessaAutomation_state`. Прогон фич — `run_scenario`, не Unica `test` `va`. Не `unica launch mcp-va` applied. Не использовать Vanessa MCP для фактов дампа XML (это Unica).
+Перед VA-инструментами всегда **`mcp_auth`** на `user-VanessaAutomation` (пустые arguments), даже если порт уже слушает. Если namespace `error`/`needsAuth` или порт не слушает `1cv8c`: Shell `tools/va/Start-VanessaMcp.ps1` (без Bypass) → снова **`mcp_auth`** → `GetDynamicTools` / `get_VanessaAutomation_state`. Прогон фич — `run_scenario`, не Unica `test` `va`. Не `unica launch mcp-va` applied. Не использовать Vanessa MCP для фактов дампа XML (это Unica).

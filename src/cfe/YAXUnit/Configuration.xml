@@ -181,6 +181,7 @@
 			<CommonModule>ОМ_ПостроительСпецификацииOpenAPI</CommonModule>
 			<CommonModule>пбп_ПостроительСпецификацииOpenAPI</CommonModule>
 			<CommonModule>ОМ_ПредопределенныеЗначения</CommonModule>
+			<CommonModule>ОМ_СтроковыеФункцииКлиентСервер</CommonModule>
 			<CommonModule>ЮТРаботаСТекстом</CommonModule>
 			<CommonModule>ЮТРазрешениеЗависимостейСлужебныйВызовСервера</CommonModule>
 			<CommonModule>ЮТРазрешениеЗависимостейСлужебныйКлиент</CommonModule>
