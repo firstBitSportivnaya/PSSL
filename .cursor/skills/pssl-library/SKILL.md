@@ -84,4 +84,4 @@ description: >-
 
 CI/Jenkins: `tools/VBParams.json`. Пакетный Unica `test` `va`: `tools/VBParams.local.json` (gitignore). Живой MCP: `tools/va/VAParams.json` (`ВыполнитьСценарии` = false), скрипт `tools/va/Start-VanessaMcp.ps1`.
 
-Если `user-VanessaAutomation` `error` или порт не слушает `1cv8c`: Shell `tools/va/Start-VanessaMcp.ps1` (без Bypass), затем `GetDynamicTools` / `get_VanessaAutomation_state`. Прогон фич — `run_scenario`, не Unica `test` `va`. Не `unica launch mcp-va` applied. Не использовать Vanessa MCP для фактов дампа XML (это Unica).
+Перед VA-инструментами всегда **`mcp_auth`** на `user-VanessaAutomation` (пустые arguments), даже если порт уже слушает. Если namespace `error`/`needsAuth` или порт не слушает `1cv8c`: Shell `tools/va/Start-VanessaMcp.ps1` (без Bypass) → снова **`mcp_auth`** → `GetDynamicTools` / `get_VanessaAutomation_state`. Прогон фич — `run_scenario`, не Unica `test` `va`. Не `unica launch mcp-va` applied. Не использовать Vanessa MCP для фактов дампа XML (это Unica).
