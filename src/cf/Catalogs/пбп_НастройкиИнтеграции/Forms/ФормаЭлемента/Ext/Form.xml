@@ -287,6 +287,9 @@
 									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 									<ContextMenu name="ТипАвторизацииКонтекстноеМеню" id="62"/>
 									<ExtendedTooltip name="ТипАвторизацииРасширеннаяПодсказка" id="63"/>
+									<Events>
+										<Event name="OnChange">ТипАвторизацииПриИзменении</Event>
+									</Events>
 								</InputField>
 								<CheckBoxField name="ИспользоватьПользовательскиеФункции" id="55">
 									<DataPath>Объект.ИспользоватьПользовательскиеФункции</DataPath>
