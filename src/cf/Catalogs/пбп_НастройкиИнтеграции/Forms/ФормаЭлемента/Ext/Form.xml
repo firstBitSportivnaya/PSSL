@@ -557,6 +557,11 @@
 				</Column>
 			</Columns>
 		</Attribute>
+		<Attribute name="ТипАвторизацииДоИзменения" id="6">
+			<Type>
+				<v8:Type>cfg:EnumRef.пбп_ТипыАвторизации</v8:Type>
+			</Type>
+		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="ДобавитьОбщиеНастройки" id="1">
