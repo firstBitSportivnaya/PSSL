@@ -91,6 +91,13 @@
 		</right>
 	</object>
 	<object>
+		<name>InformationRegister.пбп_СоответствиеОбъектовИнтегрируемыхСистем.Dimension.ИнтеграционныйПоток</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>InformationRegister.пбп_СоответствиеОбъектовИнтегрируемыхСистем.Dimension.СсылкаНаОбъект</name>
 		<right>
 			<name>Edit</name>

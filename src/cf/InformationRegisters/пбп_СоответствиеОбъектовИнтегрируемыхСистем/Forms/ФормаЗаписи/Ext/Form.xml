@@ -17,6 +17,12 @@
 			<ContextMenu name="ИнтегрируемаяСистемаКонтекстноеМеню" id="2"/>
 			<ExtendedTooltip name="ИнтегрируемаяСистемаРасширеннаяПодсказка" id="3"/>
 		</InputField>
+		<InputField name="ИнтеграционныйПоток" id="15">
+			<DataPath>Запись.ИнтеграционныйПоток</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ИнтеграционныйПотокКонтекстноеМеню" id="16"/>
+			<ExtendedTooltip name="ИнтеграционныйПотокРасширеннаяПодсказка" id="17"/>
+		</InputField>
 		<InputField name="СсылкаНаОбъект" id="4">
 			<DataPath>Запись.СсылкаНаОбъект</DataPath>
 			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
