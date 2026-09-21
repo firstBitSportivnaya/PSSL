@@ -182,6 +182,16 @@
 												</InputField>
 											</ChildItems>
 										</UsualGroup>
+										<CheckBoxField name="ПортВИнтеграционномПотоке" id="93">
+											<DataPath>Объект.ПортВИнтеграционномПотоке</DataPath>
+											<TitleLocation>Right</TitleLocation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ПортВИнтеграционномПотокеКонтекстноеМеню" id="94"/>
+											<ExtendedTooltip name="ПортВИнтеграционномПотокеРасширеннаяПодсказка" id="95"/>
+											<Events>
+												<Event name="OnChange">ПортВИнтеграционномПотокеПриИзменении</Event>
+											</Events>
+										</CheckBoxField>
 										<InputField name="СтрокаПодключенияМногострочная" id="69">
 											<DataPath>Объект.СтрокаПодключения</DataPath>
 											<Title>
