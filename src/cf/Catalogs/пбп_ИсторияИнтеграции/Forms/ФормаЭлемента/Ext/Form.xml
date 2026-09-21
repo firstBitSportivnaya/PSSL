@@ -473,112 +473,150 @@
 					</ToolTip>
 					<ExtendedTooltip name="ГруппаОбъектыОбменаРасширеннаяПодсказка" id="69"/>
 					<ChildItems>
-						<Table name="ОбъектыОбмена" id="32">
-							<AutoInsertNewRow>true</AutoInsertNewRow>
-							<EnableStartDrag>true</EnableStartDrag>
-							<EnableDrag>true</EnableDrag>
-							<FileDragMode>AsFile</FileDragMode>
-							<DataPath>Объект.ОбъектыИнтеграции</DataPath>
-							<RowFilter xsi:nil="true"/>
-							<ContextMenu name="ОбъектыОбменаКонтекстноеМеню" id="33"/>
-							<AutoCommandBar name="ОбъектыОбменаКоманднаяПанель" id="34">
-								<Autofill>false</Autofill>
-							</AutoCommandBar>
-							<ExtendedTooltip name="ОбъектыОбменаРасширеннаяПодсказка" id="35"/>
-							<SearchStringAddition name="ОбъектыОбменаСтрокаПоиска" id="36">
-								<AdditionSource>
-									<Item>ОбъектыОбмена</Item>
-									<Type>SearchStringRepresentation</Type>
-								</AdditionSource>
-								<ContextMenu name="ОбъектыОбменаСтрокаПоискаКонтекстноеМеню" id="37"/>
-								<ExtendedTooltip name="ОбъектыОбменаСтрокаПоискаРасширеннаяПодсказка" id="38"/>
-							</SearchStringAddition>
-							<ViewStatusAddition name="ОбъектыОбменаСостояниеПросмотра" id="39">
-								<AdditionSource>
-									<Item>ОбъектыОбмена</Item>
-									<Type>ViewStatusRepresentation</Type>
-								</AdditionSource>
-								<ContextMenu name="ОбъектыОбменаСостояниеПросмотраКонтекстноеМеню" id="40"/>
-								<ExtendedTooltip name="ОбъектыОбменаСостояниеПросмотраРасширеннаяПодсказка" id="41"/>
-							</ViewStatusAddition>
-							<SearchControlAddition name="ОбъектыОбменаУправлениеПоиском" id="42">
-								<AdditionSource>
-									<Item>ОбъектыОбмена</Item>
-									<Type>SearchControl</Type>
-								</AdditionSource>
-								<ContextMenu name="ОбъектыОбменаУправлениеПоискомКонтекстноеМеню" id="43"/>
-								<ExtendedTooltip name="ОбъектыОбменаУправлениеПоискомРасширеннаяПодсказка" id="44"/>
-							</SearchControlAddition>
-							<Events>
-								<Event name="Selection">ОбъектыОбменаВыбор</Event>
-							</Events>
+						<Pages name="ГруппаОбъектыПоТипам" id="184">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа объекты по типам</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа объекты по типам</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ГруппаОбъектыПоТипамРасширеннаяПодсказка" id="185"/>
 							<ChildItems>
-								<LabelField name="ОбъектыОбменаНомерСтроки" id="45">
-									<DataPath>Объект.ОбъектыИнтеграции.LineNumber</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="ОбъектыОбменаНомерСтрокиКонтекстноеМеню" id="46"/>
-									<ExtendedTooltip name="ОбъектыОбменаНомерСтрокиРасширеннаяПодсказка" id="47"/>
-								</LabelField>
-								<InputField name="ОбъектыОбменаОбъектОбмена" id="48">
-									<DataPath>Объект.ОбъектыИнтеграции.ОбъектИнтеграции</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<OpenButton>true</OpenButton>
-									<ContextMenu name="ОбъектыОбменаОбъектОбменаКонтекстноеМеню" id="49"/>
-									<ExtendedTooltip name="ОбъектыОбменаОбъектОбменаРасширеннаяПодсказка" id="50"/>
-								</InputField>
-								<InputField name="ОбъектыОбменаЗагруженныйОбъектТипЗначения" id="110">
-									<DataPath>Объект.ОбъектыИнтеграции.ЗагруженныйОбъектТипЗначения</DataPath>
-									<ReadOnly>true</ReadOnly>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="ОбъектыОбменаЗагруженныйОбъектТипЗначенияКонтекстноеМеню" id="111"/>
-									<ExtendedTooltip name="ОбъектыОбменаЗагруженныйОбъектТипЗначенияРасширеннаяПодсказка" id="112"/>
-								</InputField>
-								<InputField name="ОбъектыОбменаИдентификатор" id="172">
-									<DataPath>Объект.ОбъектыИнтеграции.Идентификатор</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-									<ContextMenu name="ОбъектыОбменаИдентификаторКонтекстноеМеню" id="173"/>
-									<ExtendedTooltip name="ОбъектыОбменаИдентификаторРасширеннаяПодсказка" id="174"/>
-								</InputField>
-								<InputField name="ОбъектыОбменаТипИдентификатора" id="175">
-									<DataPath>Объект.ОбъектыИнтеграции.ТипИдентификатора</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-									<ContextMenu name="ОбъектыОбменаТипИдентификатораКонтекстноеМеню" id="176"/>
-									<ExtendedTooltip name="ОбъектыОбменаТипИдентификатораРасширеннаяПодсказка" id="177"/>
-								</InputField>
-								<CheckBoxField name="ОбъектыОбменаСозданОбновлен" id="88">
-									<DataPath>Объект.ОбъектыИнтеграции.СозданОбновлен</DataPath>
-									<ReadOnly>true</ReadOnly>
-									<CheckBoxType>Auto</CheckBoxType>
-									<ContextMenu name="ОбъектыОбменаСозданОбновленКонтекстноеМеню" id="89"/>
-									<ExtendedTooltip name="ОбъектыОбменаСозданОбновленРасширеннаяПодсказка" id="90"/>
-								</CheckBoxField>
-								<InputField name="ОбъектыОбменаДополнительнаяИнформация" id="178">
-									<DataPath>Объект.ОбъектыИнтеграции.ДополнительнаяИнформация</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-									<ContextMenu name="ОбъектыОбменаДополнительнаяИнформацияКонтекстноеМеню" id="179"/>
-									<ExtendedTooltip name="ОбъектыОбменаДополнительнаяИнформацияРасширеннаяПодсказка" id="180"/>
-								</InputField>
-								<LabelField name="ОбъектыОбменаНомерВерсии" id="184">
-									<DataPath>Объект.ОбъектыИнтеграции.НомерВерсии</DataPath>
+								<Page name="ГруппаСсылочныеТипы" id="186">
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Сравнение версий</v8:content>
+											<v8:content>Ссылочные типы</v8:content>
 										</v8:item>
 									</Title>
-									<HorizontalAlign>Left</HorizontalAlign>
-									<EditMode>EnterOnInput</EditMode>
-									<CellHyperlink>true</CellHyperlink>
-									<MaxWidth>25</MaxWidth>
-									<Hiperlink>true</Hiperlink>
-									<ContextMenu name="ОбъектыОбменаНомерВерсииКонтекстноеМеню" id="185"/>
-									<ExtendedTooltip name="ОбъектыОбменаНомерВерсииРасширеннаяПодсказка" id="186"/>
-								</LabelField>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа ссылочные типы</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ГруппаСсылочныеТипыРасширеннаяПодсказка" id="187"/>
+									<ChildItems>
+										<Table name="ОбъектыОбмена" id="188">
+											<Representation>List</Representation>
+											<ReadOnly>true</ReadOnly>
+											<AutoInsertNewRow>false</AutoInsertNewRow>
+											<EnableStartDrag>true</EnableStartDrag>
+											<EnableDrag>true</EnableDrag>
+											<FileDragMode>AsFile</FileDragMode>
+											<DataPath>ОбъектыОбмена</DataPath>
+											<RowFilter xsi:nil="true"/>
+											<ContextMenu name="ОбъектыОбменаКонтекстноеМеню" id="189"/>
+											<AutoCommandBar name="ОбъектыОбменаКоманднаяПанель" id="190">
+												<Autofill>false</Autofill>
+											</AutoCommandBar>
+											<ExtendedTooltip name="ОбъектыОбменаРасширеннаяПодсказка" id="191"/>
+											<SearchStringAddition name="ОбъектыОбменаСтрокаПоиска" id="192">
+												<AdditionSource>
+													<Item>ОбъектыОбмена</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="ОбъектыОбменаСтрокаПоискаКонтекстноеМеню" id="193"/>
+												<ExtendedTooltip name="ОбъектыОбменаСтрокаПоискаРасширеннаяПодсказка" id="194"/>
+											</SearchStringAddition>
+											<ViewStatusAddition name="ОбъектыОбменаСостояниеПросмотра" id="195">
+												<AdditionSource>
+													<Item>ОбъектыОбмена</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="ОбъектыОбменаСостояниеПросмотраКонтекстноеМеню" id="196"/>
+												<ExtendedTooltip name="ОбъектыОбменаСостояниеПросмотраРасширеннаяПодсказка" id="197"/>
+											</ViewStatusAddition>
+											<SearchControlAddition name="ОбъектыОбменаУправлениеПоиском" id="198">
+												<AdditionSource>
+													<Item>ОбъектыОбмена</Item>
+													<Type>SearchControl</Type>
+												</AdditionSource>
+												<ContextMenu name="ОбъектыОбменаУправлениеПоискомКонтекстноеМеню" id="199"/>
+												<ExtendedTooltip name="ОбъектыОбменаУправлениеПоискомРасширеннаяПодсказка" id="200"/>
+											</SearchControlAddition>
+											<Events>
+												<Event name="Selection">ОбъектыОбменаВыбор</Event>
+											</Events>
+											<ChildItems>
+												<InputField name="ОбъектыОбменаНомерСтроки" id="201">
+													<DataPath>ОбъектыОбмена.НомерСтроки</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+													<ContextMenu name="ОбъектыОбменаНомерСтрокиКонтекстноеМеню" id="202"/>
+													<ExtendedTooltip name="ОбъектыОбменаНомерСтрокиРасширеннаяПодсказка" id="203"/>
+												</InputField>
+												<InputField name="ОбъектыОбменаОбъектИнтеграции" id="204">
+													<DataPath>ОбъектыОбмена.ОбъектИнтеграции</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<OpenButton>true</OpenButton>
+													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+													<ContextMenu name="ОбъектыОбменаОбъектИнтеграцииКонтекстноеМеню" id="205"/>
+													<ExtendedTooltip name="ОбъектыОбменаОбъектИнтеграцииРасширеннаяПодсказка" id="206"/>
+												</InputField>
+												<InputField name="ОбъектыОбменаЗагруженныйОбъектТипЗначения" id="207">
+													<DataPath>ОбъектыОбмена.ЗагруженныйОбъектТипЗначения</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ReadOnly>true</ReadOnly>
+													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+													<ContextMenu name="ОбъектыОбменаЗагруженныйОбъектТипЗначенияКонтекстноеМеню" id="208"/>
+													<ExtendedTooltip name="ОбъектыОбменаЗагруженныйОбъектТипЗначенияРасширеннаяПодсказка" id="209"/>
+												</InputField>
+												<InputField name="ОбъектыОбменаИдентификатор" id="210">
+													<DataPath>ОбъектыОбмена.Идентификатор</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+													<ContextMenu name="ОбъектыОбменаИдентификаторКонтекстноеМеню" id="211"/>
+													<ExtendedTooltip name="ОбъектыОбменаИдентификаторРасширеннаяПодсказка" id="212"/>
+												</InputField>
+												<InputField name="ОбъектыОбменаТипИдентификатора" id="213">
+													<DataPath>ОбъектыОбмена.ТипИдентификатора</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+													<ContextMenu name="ОбъектыОбменаТипИдентификатораКонтекстноеМеню" id="214"/>
+													<ExtendedTooltip name="ОбъектыОбменаТипИдентификатораРасширеннаяПодсказка" id="215"/>
+												</InputField>
+												<InputField name="ОбъектыОбменаСозданОбновлен" id="216">
+													<DataPath>ОбъектыОбмена.СозданОбновлен</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ReadOnly>true</ReadOnly>
+													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+													<ContextMenu name="ОбъектыОбменаСозданОбновленКонтекстноеМеню" id="217"/>
+													<ExtendedTooltip name="ОбъектыОбменаСозданОбновленРасширеннаяПодсказка" id="218"/>
+												</InputField>
+												<InputField name="ОбъектыОбменаДополнительнаяИнформация" id="219">
+													<DataPath>ОбъектыОбмена.ДополнительнаяИнформация</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+													<ContextMenu name="ОбъектыОбменаДополнительнаяИнформацияКонтекстноеМеню" id="220"/>
+													<ExtendedTooltip name="ОбъектыОбменаДополнительнаяИнформацияРасширеннаяПодсказка" id="221"/>
+												</InputField>
+												<LabelField name="ОбъектыОбменаНомерВерсии" id="222">
+													<DataPath>ОбъектыОбмена.НомерВерсии</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Сравнение версий</v8:content>
+														</v8:item>
+													</Title>
+													<EditMode>EnterOnInput</EditMode>
+													<CellHyperlink>true</CellHyperlink>
+													<Hiperlink>true</Hiperlink>
+													<ContextMenu name="ОбъектыОбменаНомерВерсииКонтекстноеМеню" id="223"/>
+													<ExtendedTooltip name="ОбъектыОбменаНомерВерсииРасширеннаяПодсказка" id="224"/>
+												</LabelField>
+											</ChildItems>
+										</Table>
+									</ChildItems>
+								</Page>
 							</ChildItems>
-						</Table>
+						</Pages>
 					</ChildItems>
 				</Page>
 			</ChildItems>
@@ -652,6 +690,127 @@
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
+		<Attribute name="ОбъектыОбмена" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объекты обмена</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="НомерСтроки" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>N</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ОбъектИнтеграции" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Объект интеграции</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:TypeSet>cfg:AnyIBRef</v8:TypeSet>
+					</Type>
+				</Column>
+				<Column name="ЗагруженныйОбъектТипЗначения" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип значения</v8:content>
+						</v8:item>
+					</Title>
+					<Type/>
+				</Column>
+				<Column name="Идентификатор" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Идентификатор</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>100</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ТипИдентификатора" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Поиск по</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>30</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="СозданОбновлен" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Создан/обновлен</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:EnumRef.пбп_СозданОбновлен</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ДополнительнаяИнформация" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дополнительная информация</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>200</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="НомерВерсии" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер версии</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
 		<ConditionalAppearance>
 			<dcsset:item>
 				<dcsset:selection>
@@ -661,12 +820,12 @@
 				</dcsset:selection>
 				<dcsset:filter>
 					<dcsset:item xsi:type="dcsset:FilterItemComparison">
-						<dcsset:left xsi:type="dcscor:Field">Объект.ОбъектыИнтеграции.НомерВерсии</dcsset:left>
+						<dcsset:left xsi:type="dcscor:Field">ОбъектыОбмена.НомерВерсии</dcsset:left>
 						<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
 						<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
 					</dcsset:item>
 					<dcsset:item xsi:type="dcsset:FilterItemComparison">
-						<dcsset:left xsi:type="dcscor:Field">Объект.ОбъектыИнтеграции.СозданОбновлен</dcsset:left>
+						<dcsset:left xsi:type="dcscor:Field">ОбъектыОбмена.СозданОбновлен</dcsset:left>
 						<dcsset:comparisonType>Equal</dcsset:comparisonType>
 						<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.пбп_СозданОбновлен.Создан</dcsset:right>
 					</dcsset:item>
@@ -695,12 +854,12 @@
 				</dcsset:selection>
 				<dcsset:filter>
 					<dcsset:item xsi:type="dcsset:FilterItemComparison">
-						<dcsset:left xsi:type="dcscor:Field">Объект.ОбъектыИнтеграции.НомерВерсии</dcsset:left>
+						<dcsset:left xsi:type="dcscor:Field">ОбъектыОбмена.НомерВерсии</dcsset:left>
 						<dcsset:comparisonType>Equal</dcsset:comparisonType>
 						<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
 					</dcsset:item>
 					<dcsset:item xsi:type="dcsset:FilterItemComparison">
-						<dcsset:left xsi:type="dcscor:Field">Объект.ОбъектыИнтеграции.СозданОбновлен</dcsset:left>
+						<dcsset:left xsi:type="dcscor:Field">ОбъектыОбмена.СозданОбновлен</dcsset:left>
 						<dcsset:comparisonType>InList</dcsset:comparisonType>
 						<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.пбп_СозданОбновлен.Создан</dcsset:right>
 						<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.пбп_СозданОбновлен.Обновлен</dcsset:right>
@@ -734,12 +893,12 @@
 				</dcsset:selection>
 				<dcsset:filter>
 					<dcsset:item xsi:type="dcsset:FilterItemComparison">
-						<dcsset:left xsi:type="dcscor:Field">Объект.ОбъектыИнтеграции.НомерВерсии</dcsset:left>
+						<dcsset:left xsi:type="dcscor:Field">ОбъектыОбмена.НомерВерсии</dcsset:left>
 						<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
 						<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
 					</dcsset:item>
 					<dcsset:item xsi:type="dcsset:FilterItemComparison">
-						<dcsset:left xsi:type="dcscor:Field">Объект.ОбъектыИнтеграции.СозданОбновлен</dcsset:left>
+						<dcsset:left xsi:type="dcscor:Field">ОбъектыОбмена.СозданОбновлен</dcsset:left>
 						<dcsset:comparisonType>Equal</dcsset:comparisonType>
 						<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.пбп_СозданОбновлен.Обновлен</dcsset:right>
 					</dcsset:item>
@@ -768,12 +927,12 @@
 				</dcsset:selection>
 				<dcsset:filter>
 					<dcsset:item xsi:type="dcsset:FilterItemComparison">
-						<dcsset:left xsi:type="dcscor:Field">Объект.ОбъектыИнтеграции.НомерВерсии</dcsset:left>
+						<dcsset:left xsi:type="dcscor:Field">ОбъектыОбмена.НомерВерсии</dcsset:left>
 						<dcsset:comparisonType>Equal</dcsset:comparisonType>
 						<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
 					</dcsset:item>
 					<dcsset:item xsi:type="dcsset:FilterItemComparison">
-						<dcsset:left xsi:type="dcscor:Field">Объект.ОбъектыИнтеграции.СозданОбновлен</dcsset:left>
+						<dcsset:left xsi:type="dcscor:Field">ОбъектыОбмена.СозданОбновлен</dcsset:left>
 						<dcsset:comparisonType>InList</dcsset:comparisonType>
 						<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.пбп_СозданОбновлен.ОшибкаСоздания</dcsset:right>
 						<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.пбп_СозданОбновлен.ОшибкаОбновления</dcsset:right>
