@@ -102,6 +102,7 @@
 			<CommonModule>МокитоПроверки</CommonModule>
 			<CommonModule>МокитоСлужебный</CommonModule>
 			<CommonModule>ОМ_ИнтеграцииСлужебный</CommonModule>
+			<CommonModule>ОМ_ИнтеграцииСервер</CommonModule>
 			<CommonModule>ЮТАлюр</CommonModule>
 			<CommonModule>ЮТАсинхроннаяОбработкаСлужебныйКлиент</CommonModule>
 			<CommonModule>ЮТВнешниеОбработкиСлужебныйСервер</CommonModule>
