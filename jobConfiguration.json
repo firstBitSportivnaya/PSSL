@@ -49,7 +49,8 @@
     "notifications": {
         "telegram": {
             "onAlways": true,
-            "useHttpProxy": true
+            "useHttpProxy": true,
+            "useOtherBranchesChat": true
         }
     }
 }
