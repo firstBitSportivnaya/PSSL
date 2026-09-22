@@ -11,7 +11,7 @@
     "vanessa": {
         "--vanessasettings": "./tools/VBParams.json",
         "--pathvanessa": "./oscript_modules/vanessa-automation-single/vanessa-automation-single.epf",
-        "--additional": "/DisplayAllFunctions /L ru"
+        "--additional": "/DisplayAllFunctions /L ru /debug -http -attach /debuggerURL http://localhost:1551"
     },
     "xunit": {
         "--testclient-additional": "/debug -http -attach /debuggerURL http://localhost:1550"

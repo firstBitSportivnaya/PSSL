@@ -297,6 +297,9 @@
 									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 									<ContextMenu name="ТипАвторизацииКонтекстноеМеню" id="62"/>
 									<ExtendedTooltip name="ТипАвторизацииРасширеннаяПодсказка" id="63"/>
+									<Events>
+										<Event name="OnChange">ТипАвторизацииПриИзменении</Event>
+									</Events>
 								</InputField>
 								<CheckBoxField name="ИспользоватьПользовательскиеФункции" id="55">
 									<DataPath>Объект.ИспользоватьПользовательскиеФункции</DataPath>
@@ -563,6 +566,16 @@
 					</Type>
 				</Column>
 			</Columns>
+		</Attribute>
+		<Attribute name="ТипАвторизацииДоИзменения" id="6">
+			<Type>
+				<v8:Type>cfg:EnumRef.пбп_ТипыАвторизации</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПараметрыАутентификацииОчищены" id="7">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
 		</Attribute>
 	</Attributes>
 	<Commands>

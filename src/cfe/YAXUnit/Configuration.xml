@@ -177,6 +177,7 @@
 			<CommonModule>ЮТПроверкиСлужебный</CommonModule>
 			<CommonModule>ОМ_ОбщегоНазаначенияСервер</CommonModule>
 			<CommonModule>ОМ_КоннекторHTTP</CommonModule>
+			<CommonModule>ОМ_НастройкиИнтеграции</CommonModule>
 			<CommonModule>ОМ_ПредопределенныеЗначенияСлужебный</CommonModule>
 			<CommonModule>ОМ_ПредопределенныеЗначенияВызовСервера</CommonModule>
 			<CommonModule>пбп_ПредопределенныеЗначения</CommonModule>

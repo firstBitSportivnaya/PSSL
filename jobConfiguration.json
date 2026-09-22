@@ -7,11 +7,13 @@
         "smoke": true,
         "yaxunit": true,
         "bdd": true,
-        "sonarqube": true
+        "sonarqube": true,
+        "telegram": true
     },
     "edtVersion": "2024.1.3:x86_64",
     "sourceFormat": "designer",
     "srcDir": "src/cf",
+    "defaultBranch": "develop",
     "resultsTransform": {
         "transformer": "edt-ripper"
     },
@@ -19,7 +21,7 @@
         "initMethod": "fromSource",
         "extensions": [
             {
-                "name": "YAXUnit",
+                "name": "YAXUNIT",
                 "initMethod": "fromSource",
                 "path": "src/cfe/YAXUnit",
                 "stages": ["yaxunit"]
@@ -31,15 +33,24 @@
         "publishToJUnitReport": true
     },
     "bdd": {
-        "coverage": true
+        "coverage": true,
+        "dbgsPort": 1551
     },
     "yaxunit": {
         "coverage": true,
+        "dbgsPort": 1550,
         "publishToAllureReport": false,
         "publishToJUnitReport": true
     },
     "sonarqube": {
         "sonarQubeInstallation": "Sonar.openbsl",
         "waitForQualityGate": true
+    },
+    "notifications": {
+        "telegram": {
+            "onAlways": true,
+            "useHttpProxy": true,
+            "useOtherBranchesChat": true
+        }
     }
 }
