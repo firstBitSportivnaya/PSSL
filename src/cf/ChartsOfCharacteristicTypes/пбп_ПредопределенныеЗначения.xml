@@ -744,6 +744,7 @@
 			<Form>ФормаЭлемента</Form>
 			<Form>ФормаСписка</Form>
 			<Form>ФормаГруппы</Form>
+			<Form>ФормаГенератораКода</Form>
 		</ChildObjects>
 	</ChartOfCharacteristicTypes>
 </MetaDataObject>
