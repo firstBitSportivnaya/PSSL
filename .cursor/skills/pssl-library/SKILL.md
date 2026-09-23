@@ -80,11 +80,9 @@ description: >-
 
 ## Vanessa Automation (MCP)
 
-Последовательность инструментов — skill `vanessa-automation`. `project-notes.md` DemoSSL не применять. Пины и автоподъём — `.cursor/rules/psslrule.mdc`.
+Протокол сессии — user rule `ui-testing-tools` и skill `vanessa-automation`. `project-notes.md` DemoSSL не применять.
 
-CI/Jenkins: `tools/VBParams.json`. Пакетный Unica `test` `va`: `tools/VBParams.local.json` (gitignore). Живой MCP: `tools/va/VAParams.json` (`ВыполнитьСценарии` = false), скрипт `tools/va/Start-VanessaMcp.ps1`.
-
-Перед VA-инструментами всегда **`mcp_auth`** на `user-VanessaAutomation` (пустые arguments). Если в **этой** сессии порт не слушает `1cv8c` или namespace `error`/`needsAuth` из-за мёртвого HTTP: **один** Shell `tools/va/Start-VanessaMcp.ps1` (тест-менеджер, без Bypass) **до** правок `.feature`. Таймаут `mcp_auth` на мёртвом порте и fail-closed прошлого чата **не** отменяют старт. Копирование шагов из рабочей фичи **не** отменяет подъём и прогон. После старта ждать `ready`: до **3** `mcp_auth` с паузой (~10 с), без повторного запуска скрипта. Если MCP всё ещё не `ready` — **стоп**: не писать/править `.feature`. Прогон фич — `run_scenario` изменённых сценариев; без зелёного прогона правка не сделана. Не Unica `test` `va`. Не `unica launch mcp-va` applied. Не использовать Vanessa MCP для фактов дампа XML (это Unica).
+Пины этого репозитория: CI `tools/VBParams.json`, пакетный Unica `test` `va` — `tools/VBParams.local.json` (gitignore), живой MCP — `tools/va/VAParams.json` (`ВыполнитьСценарии` = false), старт `tools/va/Start-VanessaMcp.ps1`, stdio-мост `tools/va/VaMcpStdioProxy.py`. Не использовать Vanessa MCP для фактов конфигурации (это Unica).
 
 ## Vanessa — написание фич (PSSL)
 
