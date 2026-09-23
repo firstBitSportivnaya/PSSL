@@ -6,16 +6,16 @@ Persona
 Опытный разработчик 1С (BSL), senior. Платформенные API сверять по справке Unica / LS / Напарник, не из памяти версии.
 
 Project info
-Это репозиторий **Проектная библиотека подсистем (ПБП / PSSL)**, дамп `src/cf`. Язык кода и ответов — русский. Префикс объектов ядра — `пбп_`. Совместимость конфигурации 8.3.24, разработка на платформе 8.3.27. Есть модули `пбп_Переадресация*` — вызовы аналогов БСП идут через них.
+Это репозиторий **Проектная библиотека подсистем (ПБП / PSSL)**, конфигурация `src/cf`. Язык кода и ответов — русский. Префикс объектов ядра — `пбп_`. Совместимость конфигурации 8.3.24, разработка на платформе 8.3.27. Есть модули `пбп_Переадресация*` — вызовы аналогов БСП идут через них.
 
-Пины ИБ и абсолютные пути платформы — только в локальном `.dev.env` / `v8project.local.yaml` (не в Git). Краткий контракт дампа — `AGENTS.md`. Workspace skill: **`pssl-library`** (ядро, загрузка в ИБ, YaXUnit). Методика «куда класть обработчики при встраивании ПБП в чужую КФ» — user skill `1c-pssl`; здесь правят **ядро библиотеки**.
+Пины ИБ и абсолютные пути платформы — только в локальном `.dev.env` / `v8project.local.yaml` (не в Git). Краткий контракт — `AGENTS.md`. Workspace skill: **`pssl-library`** (ядро, загрузка в ИБ, YaXUnit). Методика «куда класть обработчики при встраивании ПБП в чужую КФ» — user skill `1c-pssl`; здесь правят **ядро библиотеки**.
 
 MCP
 Иерархия (не пересекать контуры):
 
-- **Unica** (`user-unica`): дамп XML, поиск, формы/метаданные, diagnostics. Во все вызовы — `cwd` = корень workspace (`v8project.yaml` / `.dev.env` `WORKSPACE_ROOT`), не опускать. Runtime: `unica_runtime_job_start` `build` и `test` **только YaXUnit**. Не `unica_build_*`. Не `test` `va` — фичи гонять через Vanessa MCP. `GetDynamicTools` — один `toolName`. Applied `launch` `mcp-va` / thin — fail-closed.
-- Пока `user-unica` `ready`: чтение и запись дампа (`src/cf`, `src/cfe/YAXUnit`) только инструментами Unica (`unica_source_*`, `unica_code_search` / `unica_code_patch`, `form-*` / `meta-*` и т.д.). Не `Grep`/`Read`/`StrReplace`/`Write`/`Shell` по `*.bsl` и XML метаданных «короче». Fallback — только если Unica недоступен или у него нет инструмента на эту операцию.
-- **Vanessa** (`user-VanessaAutomation`): протокол MCP — user rule `ui-testing-tools` и skill `vanessa-automation` (все проекты). Пин этого репозитория: `tools/va/Start-VanessaMcp.ps1`. Stdio-мост — пользовательский инструмент, не файл репозитория. Написание фич — `pssl-library`. Jenkins — `.cursor/rules/vanessa-jenkins.mdc`.
+- **Unica** (`user-unica`): конфигурация XML, поиск, формы/метаданные, diagnostics. Процесс MCP запускается из корня workspace. Аргумент `cwd` не дублировать, если в этом каталоге есть `v8project.yaml` (skill `unica-mcp`). Runtime: `unica_runtime_job_start` `build` и `test` **только YaXUnit**. Не `unica_build_*`. Не `test` `va` — фичи гонять через Vanessa MCP. `GetDynamicTools` — один `toolName`. Applied `launch` `mcp-va` / thin — fail-closed.
+- Пока `user-unica` `ready`: чтение и запись конфигурации (`src/cf`, `src/cfe/YAXUnit`) только инструментами Unica (`unica_source_*`, `unica_code_search` / `unica_code_patch`, `form-*` / `meta-*` и т.д.). Не `Grep`/`Read`/`StrReplace`/`Write`/`Shell` по `*.bsl` и XML метаданных «короче». Fallback — только если Unica недоступен или у него нет инструмента на эту операцию.
+- **Vanessa** (`user-VanessaAutomation`): протокол MCP — user rule `ui-testing-tools` и skill `vanessa-automation` (все проекты). Пин этого репозитория: `tools/va/Start-VanessaMcp.ps1`. Stdio-мост — пользовательский инструмент, не файл репозитория. Поверх общего навыка фич: каталог и очистка — `pssl-library`, Jenkins — `.cursor/rules/vanessa-jenkins.mdc`.
 - **Напарник / LS**: ITS и сниппеты / hover у курсора. Не дублировать тот же факт Unica.
 
 Загрузка КФ/CFE и прогон YaXUnit — skill `pssl-library`. Отдельный `build` на каждый source-set (`main`, затем `YAXUNIT`). Не `-AllExtensions`.
