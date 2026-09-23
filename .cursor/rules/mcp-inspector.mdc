@@ -1,0 +1,22 @@
+---
+description: >-
+  Проверка MCP-сервера через mcp-inspector --cli (initialize, список tools,
+  вызов tool, smoke MCP). Веб и TUI только по явной просьбе открыть окно.
+alwaysApply: false
+---
+
+# MCP Inspector
+
+Канон команд — skill `mcp-inspector`. Бинарник ставит `.cursor/install.sh` (пакет `@modelcontextprotocol/inspector` 2.7.0), команда `mcp-inspector`.
+
+Проверка, что MCP-сервер отвечает, список tools, resources и prompts, вызов tool. Дамп 1С, YaXUnit и Vanessa этим правилом не гонять. Unica, Vanessa и Напарник CLI не заменяет. В `mcp.json` Cursor Inspector не регистрировать.
+
+## Вызов
+
+- Агенту только `mcp-inspector --cli`. Флаг режима первый. Дальше `--format json` и `--connect-timeout 10000`.
+- Сначала `--method initialize`, затем `tools/list`. Один `tools/call` — если пользователь назвал tool или без вызова вывод неполный. Вызов идемпотентный, без побочных эффектов. Аргументы — `--tool-args-json`.
+- Команда stdio-сервера идёт до флагов Inspector. Флаги самого сервера — до `--`, флаги Inspector — после.
+- HTTP и SSE без браузера: `--stored-auth-only`. Токен только заголовком `Authorization`. В URL и в аргументы stdio секреты не класть.
+- `--catalog` и `--config` не сочетать друг с другом и с разовой командой или URL. Чужой файл серверов открывать через `--config`.
+- stdout разбирать как JSON. stderr в этот разбор не сливать. Ненулевой код — провал. Причина — последняя строка stderr, поле `.error.code`.
+- Веб и `--tui` не запускать, пока пользователь не просил окно.
