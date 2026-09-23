@@ -15,7 +15,7 @@ MCP
 
 - **Unica** (`user-unica`): дамп XML, поиск, формы/метаданные, diagnostics. Во все вызовы — `cwd` = корень workspace (`v8project.yaml` / `.dev.env` `WORKSPACE_ROOT`), не опускать. Runtime: `unica_runtime_job_start` `build` и `test` **только YaXUnit**. Не `unica_build_*`. Не `test` `va` — фичи гонять через Vanessa MCP. `GetDynamicTools` — один `toolName`. Applied `launch` `mcp-va` / thin — fail-closed.
 - Пока `user-unica` `ready`: чтение и запись дампа (`src/cf`, `src/cfe/YAXUnit`) только инструментами Unica (`unica_source_*`, `unica_code_search` / `unica_code_patch`, `form-*` / `meta-*` и т.д.). Не `Grep`/`Read`/`StrReplace`/`Write`/`Shell` по `*.bsl` и XML метаданных «короче». Fallback — только если Unica недоступен или у него нет инструмента на эту операцию.
-- **Vanessa** (`user-VanessaAutomation`): протокол MCP — user rule `ui-testing-tools` и skill `vanessa-automation` (все проекты). Пины этого репозитория: `tools/va/Start-VanessaMcp.ps1`, stdio-мост `tools/va/VaMcpStdioProxy.py`. `project-notes.md` DemoSSL не применять. Написание фич — `pssl-library`. Jenkins — `.cursor/rules/vanessa-jenkins.mdc`.
+- **Vanessa** (`user-VanessaAutomation`): протокол MCP — user rule `ui-testing-tools` и skill `vanessa-automation` (все проекты). Пин этого репозитория: `tools/va/Start-VanessaMcp.ps1`. Stdio-мост — пользовательский инструмент, не файл репозитория. `project-notes.md` DemoSSL не применять. Написание фич — `pssl-library`. Jenkins — `.cursor/rules/vanessa-jenkins.mdc`.
 - **Напарник / LS**: ITS и сниппеты / hover у курсора. Не дублировать тот же факт Unica.
 
 Загрузка КФ/CFE и прогон YaXUnit — skill `pssl-library`. Отдельный `build` на каждый source-set (`main`, затем `YAXUNIT`). Не `-AllExtensions`.

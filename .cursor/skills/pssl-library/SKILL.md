@@ -82,7 +82,7 @@ description: >-
 
 Протокол сессии — user rule `ui-testing-tools` и skill `vanessa-automation`. `project-notes.md` DemoSSL не применять.
 
-Пины этого репозитория: CI `tools/VBParams.json`, пакетный Unica `test` `va` — `tools/VBParams.local.json` (gitignore), живой MCP — `tools/va/VAParams.json` (`ВыполнитьСценарии` = false), старт `tools/va/Start-VanessaMcp.ps1`, stdio-мост `tools/va/VaMcpStdioProxy.py`. Не использовать Vanessa MCP для фактов конфигурации (это Unica).
+Пины этого репозитория: CI `tools/VBParams.json`, пакетный Unica `test` `va` — `tools/VBParams.local.json` (gitignore), живой MCP — `tools/va/VAParams.json` (`ВыполнитьСценарии` = false), старт `tools/va/Start-VanessaMcp.ps1`. Stdio-мост — пользовательский инструмент, не файл репозитория. Не использовать Vanessa MCP для фактов конфигурации (это Unica).
 
 ## Vanessa — написание фич (PSSL)
 
