@@ -2,7 +2,7 @@
 name: pssl-library
 description: >-
   Overlay репозитория PSSL (Проектная библиотека подсистем): ядро с префиксом
-  пбп_, дамп src/cf, модули пбп_Переадресация*, загрузка в ИБ, тесты YaXUnit
+  пбп_, конфигурация src/cf, модули пбп_Переадресация*, загрузка в ИБ, тесты YaXUnit
   (YAXUNIT, модули ОМ_*). Использовать при правках этой библиотеки, прогоне
   yaxunit/юнит/ЮТТесты, правках src/cfe/YAXUnit, локальном Vanessa MCP;
   не при адаптации ERP/УТ с другим префиксом. Unica — XML и поиск;
@@ -11,23 +11,23 @@ description: >-
 
 # pssl-library — ядро ПБП в этом репозитории
 
-Дамп: `src/cf` (source-set `main`). Конфигурация `ПроектнаяБиблиотекаПодсистем` (vendor Первый БИТ). Префикс **`пбп_`**. Разработка на платформе **8.3.27**, режим совместимости **8.3.24**.
+Конфигурация: `src/cf` (source-set `main`). Имя `ПроектнаяБиблиотекаПодсистем` (vendor Первый БИТ). Префикс **`пбп_`**. Разработка на платформе **8.3.27**, режим совместимости **8.3.24**.
 
-Расширение тестов: `src/cfe/YAXUnit`, имя в метаданных `YAXUNIT` (source-set `YAXUNIT`). Версия движка в дампе — **25.12** (`Configuration.xml` → `Version`). Это не `tools-download` артефакт. Канон API: [Возможности YAxUnit](https://bia-technologies.github.io/yaxunit/docs/features); пины ПБП — `docs/РуководствоПоНаписаниюТестовYAxUnit.md`.
+Расширение тестов: `src/cfe/YAXUnit`, имя в метаданных `YAXUNIT` (source-set `YAXUNIT`). Версия движка — **25.12** (`Configuration.xml` → `Version`). Это не `tools-download` артефакт. Канон API: [Возможности YAxUnit](https://bia-technologies.github.io/yaxunit/docs/features); пины ПБП — `docs/РуководствоПоНаписаниюТестовYAxUnit.md`.
 
-Режим БСП: модули `пбп_Переадресация`, `пбп_ПереадресацияКлиент`, `пбп_ПереадресацияКлиентСервер` и ПовтИсп **есть**. Новые вызовы сервисов БСП в этом дампе — через переадресацию (`docs/ПереопределениеМетодовБСП.md`), не напрямую `ОбщегоНазначения.*`, если для метода есть обёртка.
+Режим БСП: модули `пбп_Переадресация`, `пбп_ПереадресацияКлиент`, `пбп_ПереадресацияКлиентСервер` и ПовтИсп **есть**. Новые вызовы сервисов БСП в этой конфигурации — через переадресацию (`docs/ПереопределениеМетодовБСП.md`), не напрямую `ОбщегоНазначения.*`, если для метода есть обёртка.
 
 Это **исходники библиотеки**, не готовое внедрение в типовую конфигурацию.
 
-Общий контракт Unica — `v8project.yaml`. ИБ и платформа — только `v8project.local.yaml`. Те же пины в `.dev.env`. `cwd` — абсолютный корень workspace (см. `psslrule.mdc`).
+Общий контракт Unica — `v8project.yaml`. ИБ и платформа — только `v8project.local.yaml`. Те же пины в `.dev.env`. Аргумент `cwd` не дублировать, если процесс уже в каталоге с `v8project.yaml` (skill `unica-mcp`).
 
 ## Куда класть правки
 
 - Новые объекты и общие модули ядра — с префиксом `пбп_`, в существующих подсистемах ПБП (`docs/*.md`).
 - Формы и подписки библиотеки — по документации подсистем и user skill `1c-pssl` (имена с `пбп_`).
-- Обработка первого внедрения — `src/epf`, не смешивать с дампом КФ без нужды.
-- XML форм/метаданных — Unica leaf (`form-*`, `meta-*`). Поиск по дампу — `unica_code_search` / `unica_source_resolve`.
-- Правка BSL дампа — `unica_code_patch` (после `unica_source_resolve`). Не `StrReplace` / `Write` / `Shell` по `src/cf/**/*.bsl` и `src/cfe/YAXUnit/**/*.bsl`, пока `user-unica` готов.
+- Обработка первого внедрения — `src/epf`, не смешивать с конфигурацией без нужды.
+- XML форм/метаданных — Unica leaf (`form-*`, `meta-*`). Поиск — `unica_code_search` / `unica_source_resolve`.
+- Правка BSL — `unica_code_patch` (после `unica_source_resolve`). Не `StrReplace` / `Write` / `Shell` по `src/cf/**/*.bsl` и `src/cfe/YAXUnit/**/*.bsl`, пока `user-unica` готов.
 - Сценарии YaXUnit — в `src/cfe/YAXUnit`, не в `src/cf`.
 
 ## Запреты для этого репозитория
@@ -42,7 +42,7 @@ description: >-
 
 В `build` передавать `sourceSet`, не параметр `extension`.
 
-1. Закрыть клиент/конфигуратор (`1cv8` / `1cv8c`) — Designer занимает базу эксклюзивно.
+1. Исключение к user rule `ui-testing-tools` (не завершать `1cv8` / `1cv8c`): только если пользователь явно просил загрузить конфигурацию. Designer занимает файловую базу эксклюзивно, поэтому перед `build` закрыть тест-клиент и тест-менеджер. После загрузки Vanessa MCP поднимать снова по `ui-testing-tools`.
 2. Пользователь явно просил загрузить. КФ: `unica_runtime_job_start` `operation=build` `sourceSet=main` `fullRebuild=true` `dryRun=false`.
 3. Затем тесты: тот же вызов с `sourceSet=YAXUNIT` `fullRebuild=true`. Не один `build` «на все расширения».
 4. Смотреть `unica_runtime_job_wait` / `unica_runtime_job_logs`. Пустой лог до конца у обычного build — норма.
@@ -80,13 +80,13 @@ description: >-
 
 ## Vanessa Automation (MCP)
 
-Последовательность инструментов — skill `vanessa-automation`. `project-notes.md` DemoSSL не применять. Пины и автоподъём — `.cursor/rules/psslrule.mdc`.
+Протокол сессии — user rule `ui-testing-tools` и skill `vanessa-automation`.
 
-CI/Jenkins: `tools/VBParams.json`. Пакетный Unica `test` `va`: `tools/VBParams.local.json` (gitignore). Живой MCP: `tools/va/VAParams.json` (`ВыполнитьСценарии` = false), скрипт `tools/va/Start-VanessaMcp.ps1`.
-
-Перед VA-инструментами всегда **`mcp_auth`** на `user-VanessaAutomation` (пустые arguments). Если в **этой** сессии порт не слушает `1cv8c` или namespace `error`/`needsAuth` из-за мёртвого HTTP: **один** Shell `tools/va/Start-VanessaMcp.ps1` (тест-менеджер, без Bypass) **до** правок `.feature`. Таймаут `mcp_auth` на мёртвом порте и fail-closed прошлого чата **не** отменяют старт. Копирование шагов из рабочей фичи **не** отменяет подъём и прогон. После старта ждать `ready`: до **3** `mcp_auth` с паузой (~10 с), без повторного запуска скрипта. Если MCP всё ещё не `ready` — **стоп**: не писать/править `.feature`. Прогон фич — `run_scenario` изменённых сценариев; без зелёного прогона правка не сделана. Не Unica `test` `va`. Не `unica launch mcp-va` applied. Не использовать Vanessa MCP для фактов дампа XML (это Unica).
+Пины этого репозитория: CI `tools/VBParams.json`, пакетный Unica `test` `va` — `tools/VBParams.local.json` (gitignore), живой MCP — `tools/va/VAParams.json` (`ВыполнитьСценарии` = false), старт `tools/va/Start-VanessaMcp.ps1`. Stdio-мост — пользовательский инструмент, не файл репозитория. Не использовать Vanessa MCP для фактов конфигурации (это Unica).
 
 ## Vanessa — написание фич (PSSL)
+
+Дополняет skill `vanessa-automation` (шаги и MCP). Здесь — каталог и приёмы этого репозитория.
 
 Эталон в репозитории: `features/Создание и пометка на удаление настройки отбора объектов.feature`. Шаги не выдумывать — копировать оттуда и из `search_for_steps_by_keywords`.
 
