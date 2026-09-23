@@ -248,6 +248,16 @@
 			<ContextMenu name="КодКонтекстноеМеню" id="56"/>
 			<ExtendedTooltip name="КодРасширеннаяПодсказка" id="57"/>
 		</InputField>
+		<Button name="Сгенерировать" id="58">
+			<CommandName>Form.Command.Сгенерировать</CommandName>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сгенерировать</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="СгенерироватьРасширеннаяПодсказка" id="59"/>
+		</Button>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Наименование" id="58">
