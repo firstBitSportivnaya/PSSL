@@ -72,18 +72,9 @@
 					<DropListButton>true</DropListButton>
 					<ContextMenu name="ИдентификаторРодительКонтекстноеМеню" id="13"/>
 					<ExtendedTooltip name="ИдентификаторРодительРасширеннаяПодсказка" id="14"/>
-				</InputField>
-				<InputField name="УровеньИерархии" id="15">
-					<DataPath>УровеньИерархии</DataPath>
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Уровень иерархии</v8:content>
-						</v8:item>
-					</Title>
-					<SpinButton>true</SpinButton>
-					<ContextMenu name="УровеньИерархииКонтекстноеМеню" id="16"/>
-					<ExtendedTooltip name="УровеньИерархииРасширеннаяПодсказка" id="17"/>
+					<Events>
+						<Event name="OnChange">ИдентификаторРодительПриИзменении</Event>
+					</Events>
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
@@ -140,12 +131,7 @@
 			<ChildItems>
 				<InputField name="ВидТипа" id="31">
 					<DataPath>ВидТипа</DataPath>
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Вид</v8:content>
-						</v8:item>
-					</Title>
+					<TitleLocation>None</TitleLocation>
 					<DropListButton>true</DropListButton>
 					<ContextMenu name="ВидТипаКонтекстноеМеню" id="32"/>
 					<ExtendedTooltip name="ВидТипаРасширеннаяПодсказка" id="33"/>
@@ -153,101 +139,25 @@
 						<Event name="OnChange">ВидТипаПриИзменении</Event>
 					</Events>
 				</InputField>
-				<InputField name="ДлинаСтроки" id="34">
-					<DataPath>ДлинаСтроки</DataPath>
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Длина строки</v8:content>
-						</v8:item>
-					</Title>
-					<SpinButton>true</SpinButton>
-					<ContextMenu name="ДлинаСтрокиКонтекстноеМеню" id="35"/>
-					<ExtendedTooltip name="ДлинаСтрокиРасширеннаяПодсказка" id="36"/>
-				</InputField>
-				<InputField name="ДопустимаяДлина" id="37">
-					<DataPath>ДопустимаяДлина</DataPath>
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Допустимая длина</v8:content>
-						</v8:item>
-					</Title>
-					<DropListButton>true</DropListButton>
-					<ContextMenu name="ДопустимаяДлинаКонтекстноеМеню" id="38"/>
-					<ExtendedTooltip name="ДопустимаяДлинаРасширеннаяПодсказка" id="39"/>
-				</InputField>
-				<InputField name="Разрядность" id="40">
-					<DataPath>Разрядность</DataPath>
-					<SpinButton>true</SpinButton>
-					<ContextMenu name="РазрядностьКонтекстноеМеню" id="41"/>
-					<ExtendedTooltip name="РазрядностьРасширеннаяПодсказка" id="42"/>
-				</InputField>
-				<InputField name="РазрядностьДробнойЧасти" id="43">
-					<DataPath>РазрядностьДробнойЧасти</DataPath>
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Дробная часть</v8:content>
-						</v8:item>
-					</Title>
-					<SpinButton>true</SpinButton>
-					<ContextMenu name="РазрядностьДробнойЧастиКонтекстноеМеню" id="44"/>
-					<ExtendedTooltip name="РазрядностьДробнойЧастиРасширеннаяПодсказка" id="45"/>
-				</InputField>
-				<CheckBoxField name="Неотрицательное" id="46">
-					<DataPath>Неотрицательное</DataPath>
-					<TitleLocation>Right</TitleLocation>
-					<CheckBoxType>Auto</CheckBoxType>
-					<ContextMenu name="НеотрицательноеКонтекстноеМеню" id="47"/>
-					<ExtendedTooltip name="НеотрицательноеРасширеннаяПодсказка" id="48"/>
-				</CheckBoxField>
-				<InputField name="ЧастиДаты" id="49">
-					<DataPath>ЧастиДаты</DataPath>
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Части даты</v8:content>
-						</v8:item>
-					</Title>
-					<DropListButton>true</DropListButton>
-					<ContextMenu name="ЧастиДатыКонтекстноеМеню" id="50"/>
-					<ExtendedTooltip name="ЧастиДатыРасширеннаяПодсказка" id="51"/>
-				</InputField>
-				<InputField name="ИмяТипа" id="52">
-					<DataPath>ИмяТипа</DataPath>
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Имя типа</v8:content>
-						</v8:item>
-					</Title>
-					<InputHint>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>СправочникСсылка.Валюты</v8:content>
-						</v8:item>
-					</InputHint>
-					<ContextMenu name="ИмяТипаКонтекстноеМеню" id="53"/>
-					<ExtendedTooltip name="ИмяТипаРасширеннаяПодсказка" id="54"/>
-				</InputField>
 			</ChildItems>
 		</UsualGroup>
-		<InputField name="Код" id="55">
+		<TextDocumentField name="Код" id="55">
 			<DataPath>Код</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<TitleLocation>Top</TitleLocation>
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
 					<v8:content>Код для конфигуратора</v8:content>
 				</v8:item>
 			</Title>
-			<ReadOnly>true</ReadOnly>
-			<MultiLine>true</MultiLine>
-			<Height>12</Height>
+			<Width>70</Width>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<Height>8</Height>
 			<HorizontalStretch>true</HorizontalStretch>
 			<ContextMenu name="КодКонтекстноеМеню" id="56"/>
 			<ExtendedTooltip name="КодРасширеннаяПодсказка" id="57"/>
-		</InputField>
+		</TextDocumentField>
 		<Button name="Сгенерировать" id="58">
 			<CommandName>Form.Command.Сгенерировать</CommandName>
 			<Title>

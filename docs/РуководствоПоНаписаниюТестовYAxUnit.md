@@ -3,7 +3,7 @@
 Соглашения репозитория **Проектная библиотека подсистем (ПБП / PSSL)** для юнит-тестов на [YAxUnit](https://bia-technologies.github.io/yaxunit/).
 
 - Дамп расширения: `src/cfe/YAXUnit` (имя в метаданных — `YAXUNIT`, source-set `YAXUNIT`).
-- Версия движка в дампе: **25.12** (`Configuration.xml` → `Version`). Не путать с артефактом `tools-download` yaxunit.
+- Версия движка в выгрузке конфигурации: **25.12** (`Configuration.xml` → `Version`). Не путать с артефактом `tools-download` yaxunit.
 - Канон API — в официальной документации; здесь только правила и примеры этого репозитория.
 
 Документация движка:
