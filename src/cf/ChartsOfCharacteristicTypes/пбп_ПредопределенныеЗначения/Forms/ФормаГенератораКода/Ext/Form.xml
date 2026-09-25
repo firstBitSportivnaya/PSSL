@@ -139,6 +139,100 @@
 						<Event name="OnChange">ВидТипаПриИзменении</Event>
 					</Events>
 				</InputField>
+				<UsualGroup name="ГруппаКвалификаторСтроки" id="60">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Строка</v8:content>
+						</v8:item>
+					</Title>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаКвалификаторСтрокиРасширеннаяПодсказка" id="61"/>
+					<ChildItems>
+						<InputField name="ДлинаСтроки" id="62">
+							<DataPath>ДлинаСтроки</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Длина</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДлинаСтрокиКонтекстноеМеню" id="63"/>
+							<ExtendedTooltip name="ДлинаСтрокиРасширеннаяПодсказка" id="64"/>
+						</InputField>
+						<InputField name="ДопустимаяДлина" id="65">
+							<DataPath>ДопустимаяДлина</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Допустимая длина</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДопустимаяДлинаКонтекстноеМеню" id="66"/>
+							<ExtendedTooltip name="ДопустимаяДлинаРасширеннаяПодсказка" id="67"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаКвалификаторЧисла" id="68">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Число</v8:content>
+						</v8:item>
+					</Title>
+					<ShowTitle>false</ShowTitle>
+					<Visible>false</Visible>
+					<ExtendedTooltip name="ГруппаКвалификаторЧислаРасширеннаяПодсказка" id="69"/>
+					<ChildItems>
+						<InputField name="Разрядность" id="70">
+							<DataPath>Разрядность</DataPath>
+							<ContextMenu name="РазрядностьКонтекстноеМеню" id="71"/>
+							<ExtendedTooltip name="РазрядностьРасширеннаяПодсказка" id="72"/>
+						</InputField>
+						<CheckBoxField name="Неотрицательное" id="73">
+							<DataPath>Неотрицательное</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="НеотрицательноеКонтекстноеМеню" id="74"/>
+							<ExtendedTooltip name="НеотрицательноеРасширеннаяПодсказка" id="75"/>
+						</CheckBoxField>
+						<InputField name="РазрядностьДробнойЧасти" id="76">
+							<DataPath>РазрядностьДробнойЧасти</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Дробная часть</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="РазрядностьДробнойЧастиКонтекстноеМеню" id="77"/>
+							<ExtendedTooltip name="РазрядностьДробнойЧастиРасширеннаяПодсказка" id="78"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаКвалификаторДаты" id="79">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата</v8:content>
+						</v8:item>
+					</Title>
+					<ShowTitle>false</ShowTitle>
+					<Visible>false</Visible>
+					<ExtendedTooltip name="ГруппаКвалификаторДатыРасширеннаяПодсказка" id="80"/>
+					<ChildItems>
+						<InputField name="ЧастиДаты" id="81">
+							<DataPath>ЧастиДаты</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Части даты</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ЧастиДатыКонтекстноеМеню" id="82"/>
+							<ExtendedTooltip name="ЧастиДатыРасширеннаяПодсказка" id="83"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
 			</ChildItems>
 		</UsualGroup>
 		<TextDocumentField name="Код" id="55">
