@@ -6,4 +6,4 @@
 
 ## Runtime
 
-Облачный образ (`.cursor/install.sh`) ставит только BSL Language Server. Прогон YaXUnit и загрузка КФ/CFE — на локальной машине через Unica (skill `pssl-library`), платформа 1С в этот образ не входит.
+Облачный образ (`.cursor/install.sh`) ставит только BSL Language Server. Прогон YaXUnit и загрузка CF/CFE — на локальной машине через Unica (skill `pssl-library`), платформа 1С в этот образ не входит.
