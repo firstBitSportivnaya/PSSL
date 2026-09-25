@@ -1,0 +1,478 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Управление настройками обмена через шину</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="ГруппаСтраницы" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="ГруппаСтраницыРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<Page name="ГруппаОграниченияТранспорта" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ограничения транспорта</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаОграниченияТранспортаРасширеннаяПодсказка" id="4"/>
+					<ChildItems>
+						<Table name="НастройкиТранспорта" id="5">
+							<Representation>Tree</Representation>
+							<DataPath>НастройкиТранспорта</DataPath>
+							<ContextMenu name="НастройкиТранспортаКонтекстноеМеню" id="6"/>
+							<AutoCommandBar name="НастройкиТранспортаКоманднаяПанель" id="7">
+								<ChildItems>
+									<Button name="ОбновитьОграниченияТранспорта" id="66">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ОбновитьОграниченияТранспорта</CommandName>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Обновить</v8:content>
+											</v8:item>
+										</Title>
+										<ExtendedTooltip name="ОбновитьОграниченияТранспортаРасширеннаяПодсказка" id="67"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="НастройкиТранспортаРасширеннаяПодсказка" id="8"/>
+							<SearchStringAddition name="НастройкиТранспортаСтрокаПоиска" id="9">
+								<AdditionSource>
+									<Item>НастройкиТранспорта</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="НастройкиТранспортаСтрокаПоискаКонтекстноеМеню" id="10"/>
+								<ExtendedTooltip name="НастройкиТранспортаСтрокаПоискаРасширеннаяПодсказка" id="11"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="НастройкиТранспортаСостояниеПросмотра" id="12">
+								<AdditionSource>
+									<Item>НастройкиТранспорта</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="НастройкиТранспортаСостояниеПросмотраКонтекстноеМеню" id="13"/>
+								<ExtendedTooltip name="НастройкиТранспортаСостояниеПросмотраРасширеннаяПодсказка" id="14"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="НастройкиТранспортаУправлениеПоиском" id="15">
+								<AdditionSource>
+									<Item>НастройкиТранспорта</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="НастройкиТранспортаУправлениеПоискомКонтекстноеМеню" id="16"/>
+								<ExtendedTooltip name="НастройкиТранспортаУправлениеПоискомРасширеннаяПодсказка" id="17"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="OnChange">НастройкиТранспортаПриИзменении</Event>
+							</Events>
+							<ChildItems>
+								<InputField name="НастройкиТранспортаИнтегрируемаяСистема" id="18">
+									<DataPath>НастройкиТранспорта.ИнтегрируемаяСистема</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<ContextMenu name="НастройкиТранспортаИнтегрируемаяСистемаКонтекстноеМеню" id="19"/>
+									<ExtendedTooltip name="НастройкиТранспортаИнтегрируемаяСистемаРасширеннаяПодсказка" id="20"/>
+								</InputField>
+								<InputField name="НастройкиТранспортаИнтеграционныеПотоки" id="21">
+									<DataPath>НастройкиТранспорта.ИнтеграционныйПоток</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<ContextMenu name="НастройкиТранспортаИнтеграционныеПотокиКонтекстноеМеню" id="22"/>
+									<ExtendedTooltip name="НастройкиТранспортаИнтеграционныеПотокиРасширеннаяПодсказка" id="23"/>
+								</InputField>
+								<CheckBoxField name="НастройкиТранспортаТранспортЗапрещен" id="24">
+									<DataPath>НастройкиТранспорта.ТранспортЗапрещен</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="НастройкиТранспортаТранспортЗапрещенКонтекстноеМеню" id="25"/>
+									<ExtendedTooltip name="НастройкиТранспортаТранспортЗапрещенРасширеннаяПодсказка" id="26"/>
+								</CheckBoxField>
+								<CheckBoxField name="НастройкиТранспортаКонтролироватьДоставку" id="27">
+									<DataPath>НастройкиТранспорта.КонтролироватьДоставку</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="НастройкиТранспортаКонтролироватьДоставкуКонтекстноеМеню" id="28"/>
+									<ExtendedTooltip name="НастройкиТранспортаКонтролироватьДоставкуРасширеннаяПодсказка" id="29"/>
+								</CheckBoxField>
+								<InputField name="НастройкиТранспортаПорядокОтправки" id="30">
+									<DataPath>НастройкиТранспорта.ПорядокОтправки</DataPath>
+									<ContextMenu name="НастройкиТранспортаПорядокОтправкиКонтекстноеМеню" id="31"/>
+									<ExtendedTooltip name="НастройкиТранспортаПорядокОтправкиРасширеннаяПодсказка" id="32"/>
+								</InputField>
+								<CheckBoxField name="НастройкиТранспортаКонтролироватьПолучение" id="33">
+									<DataPath>НастройкиТранспорта.КонтролироватьПолучение</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="НастройкиТранспортаКонтролироватьПолучениеКонтекстноеМеню" id="34"/>
+									<ExtendedTooltip name="НастройкиТранспортаКонтролироватьПолучениеРасширеннаяПодсказка" id="35"/>
+								</CheckBoxField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаЗадержкаПолученияСообщений" id="36">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Задержка получения сообщений</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаЗадержкаПолученияСообщенийРасширеннаяПодсказка" id="37"/>
+					<ChildItems>
+						<InputField name="МаксимальноеКоличествоПопытокЗагрузки" id="38">
+							<DataPath>МаксимальноеКоличествоПопытокЗагрузки</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<ContextMenu name="МаксимальноеКоличествоПопытокЗагрузкиКонтекстноеМеню" id="39"/>
+							<ExtendedTooltip name="МаксимальноеКоличествоПопытокЗагрузкиРасширеннаяПодсказка" id="40"/>
+						</InputField>
+						<RadioButtonField name="ТипНастройкиЗадержки" id="41">
+							<DataPath>ТипНастройкиЗадержки</DataPath>
+							<RadioButtonType>Auto</RadioButtonType>
+							<ChoiceList>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Все системы</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">0</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Конкретную систему</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">1</Value>
+									</xr:Value>
+								</xr:Item>
+							</ChoiceList>
+							<ContextMenu name="ТипНастройкиЗадержкиКонтекстноеМеню" id="42"/>
+							<ExtendedTooltip name="ТипНастройкиЗадержкиРасширеннаяПодсказка" id="43"/>
+							<Events>
+								<Event name="OnChange">ТипНастройкиЗадержкиПриИзменении</Event>
+							</Events>
+						</RadioButtonField>
+						<InputField name="СистемаНастройкаЗадержки" id="44">
+							<DataPath>СистемаНастройкаЗадержки</DataPath>
+							<ContextMenu name="СистемаНастройкаЗадержкиКонтекстноеМеню" id="45"/>
+							<ExtendedTooltip name="СистемаНастройкаЗадержкиРасширеннаяПодсказка" id="46"/>
+							<Events>
+								<Event name="OnChange">СистемаНастройкаЗадержкиПриИзменении</Event>
+							</Events>
+						</InputField>
+						<Table name="НастройкиЗадержки" id="47">
+							<Representation>List</Representation>
+							<DataPath>НастройкиЗадержки</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="НастройкиЗадержкиКонтекстноеМеню" id="48"/>
+							<AutoCommandBar name="НастройкиЗадержкиКоманднаяПанель" id="49">
+								<ChildItems>
+									<Button name="ОбновитьЗадержкуПолучения" id="68">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ОбновитьЗадержкуПолучения</CommandName>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Обновить</v8:content>
+											</v8:item>
+										</Title>
+										<ExtendedTooltip name="ОбновитьЗадержкуПолученияРасширеннаяПодсказка" id="69"/>
+									</Button>
+									<Button name="СохранитьЗадержкуПолучения" id="70">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.СохранитьЗадержкуПолучения</CommandName>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Сохранить</v8:content>
+											</v8:item>
+										</Title>
+										<ExtendedTooltip name="СохранитьЗадержкуПолученияРасширеннаяПодсказка" id="71"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="НастройкиЗадержкиРасширеннаяПодсказка" id="50"/>
+							<SearchStringAddition name="НастройкиЗадержкиСтрокаПоиска" id="51">
+								<AdditionSource>
+									<Item>НастройкиЗадержки</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="НастройкиЗадержкиСтрокаПоискаКонтекстноеМеню" id="52"/>
+								<ExtendedTooltip name="НастройкиЗадержкиСтрокаПоискаРасширеннаяПодсказка" id="53"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="НастройкиЗадержкиСостояниеПросмотра" id="54">
+								<AdditionSource>
+									<Item>НастройкиЗадержки</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="НастройкиЗадержкиСостояниеПросмотраКонтекстноеМеню" id="55"/>
+								<ExtendedTooltip name="НастройкиЗадержкиСостояниеПросмотраРасширеннаяПодсказка" id="56"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="НастройкиЗадержкиУправлениеПоиском" id="57">
+								<AdditionSource>
+									<Item>НастройкиЗадержки</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="НастройкиЗадержкиУправлениеПоискомКонтекстноеМеню" id="58"/>
+								<ExtendedTooltip name="НастройкиЗадержкиУправлениеПоискомРасширеннаяПодсказка" id="59"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="НастройкиЗадержкиНомерПопыткиЗагрузки" id="60">
+									<DataPath>НастройкиЗадержки.НомерПопыткиЗагрузки</DataPath>
+									<ContextMenu name="НастройкиЗадержкиНомерПопыткиЗагрузкиКонтекстноеМеню" id="61"/>
+									<ExtendedTooltip name="НастройкиЗадержкиНомерПопыткиЗагрузкиРасширеннаяПодсказка" id="62"/>
+								</InputField>
+								<InputField name="НастройкиЗадержкиВремяЗадержки" id="63">
+									<DataPath>НастройкиЗадержки.ВремяЗадержки</DataPath>
+									<ContextMenu name="НастройкиЗадержкиВремяЗадержкиКонтекстноеМеню" id="64"/>
+									<ExtendedTooltip name="НастройкиЗадержкиВремяЗадержкиРасширеннаяПодсказка" id="65"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="66">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.пбп_УправлениеНастройкамиОбменаЧерезШину</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="НастройкиТранспорта" id="67">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки транспорта</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ИнтегрируемаяСистема" id="68">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Интегрируемая система</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.пбп_ИнтегрируемыеСистемы</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ИнтеграционныйПоток" id="69">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Интеграционный поток</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.пбп_ИнтеграционныеПотоки</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ТранспортЗапрещен" id="70">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Транспорт запрещен</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="КонтролироватьДоставку" id="71">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Контролировать доставку</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ПорядокОтправки" id="72">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Порядок отправки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>2</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="КонтролироватьПолучение" id="73">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Контролировать получение</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ТипНастройкиЗадержки" id="74">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настроить задержку получения на</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СистемаНастройкаЗадержки" id="75">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Интегрируемая система</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.пбп_ИнтегрируемыеСистемы</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="НастройкиЗадержки" id="76">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки задержки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="НомерПопыткиЗагрузки" id="77">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер попытки загрузки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>2</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВремяЗадержки" id="78">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Время задержки (сек)</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>7</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="МаксимальноеКоличествоПопытокЗагрузки" id="79">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Максимальное количество попыток загрузки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>3</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ОбновитьОграниченияТранспорта" id="80">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</Title>
+			<Picture>
+				<xr:Ref>StdPicture.Refresh</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОбновитьОграниченияТранспорта</Action>
+		</Command>
+		<Command name="ОбновитьЗадержкуПолучения" id="81">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</Title>
+			<Picture>
+				<xr:Ref>StdPicture.Refresh</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОбновитьЗадержкуПолучения</Action>
+		</Command>
+		<Command name="СохранитьЗадержкуПолучения" id="82">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить</v8:content>
+				</v8:item>
+			</Title>
+			<Picture>
+				<xr:Ref>StdPicture.Write</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СохранитьЗадержкуПолучения</Action>
+		</Command>
+	</Commands>
+</Form>

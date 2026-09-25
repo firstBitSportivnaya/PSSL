@@ -506,7 +506,6 @@
 										<Table name="ОбъектыОбмена" id="188">
 											<Representation>List</Representation>
 											<ReadOnly>true</ReadOnly>
-											<AutoInsertNewRow>false</AutoInsertNewRow>
 											<EnableStartDrag>true</EnableStartDrag>
 											<EnableDrag>true</EnableDrag>
 											<FileDragMode>AsFile</FileDragMode>
@@ -562,8 +561,8 @@
 												</InputField>
 												<InputField name="ОбъектыОбменаЗагруженныйОбъектТипЗначения" id="207">
 													<DataPath>ОбъектыОбмена.ЗагруженныйОбъектТипЗначения</DataPath>
-													<EditMode>EnterOnInput</EditMode>
 													<ReadOnly>true</ReadOnly>
+													<EditMode>EnterOnInput</EditMode>
 													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 													<ContextMenu name="ОбъектыОбменаЗагруженныйОбъектТипЗначенияКонтекстноеМеню" id="208"/>
 													<ExtendedTooltip name="ОбъектыОбменаЗагруженныйОбъектТипЗначенияРасширеннаяПодсказка" id="209"/>
@@ -584,8 +583,8 @@
 												</InputField>
 												<InputField name="ОбъектыОбменаСозданОбновлен" id="216">
 													<DataPath>ОбъектыОбмена.СозданОбновлен</DataPath>
-													<EditMode>EnterOnInput</EditMode>
 													<ReadOnly>true</ReadOnly>
+													<EditMode>EnterOnInput</EditMode>
 													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 													<ContextMenu name="ОбъектыОбменаСозданОбновленКонтекстноеМеню" id="217"/>
 													<ExtendedTooltip name="ОбъектыОбменаСозданОбновленРасширеннаяПодсказка" id="218"/>
