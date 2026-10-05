@@ -14,6 +14,7 @@ reviews:
     drafts: false
   path_filters:
     - "!src/cfe/YAXUnit/**/ЮТ*/**"
+    - "!src/cfe/YAXUnit/**/ЮТ*.xml"
   path_instructions:
     - path: "src/**/*.bsl"
       instructions: >-
