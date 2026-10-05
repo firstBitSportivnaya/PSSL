@@ -12,5 +12,20 @@ reviews:
   auto_review:
     enabled: true
     drafts: false
+  path_filters:
+    - "!src/cfe/YAXUnit/**/ЮТ*/**"
+  path_instructions:
+    - path: "src/**/*.bsl"
+      instructions: >-
+        Сверять с AGENTS.md, разделы «Запреты» и «Правила BSL»: префикс пбп_ у новых объектов,
+        без Попытка вокруг обычного чтения и записи БД, без Сообщить и ЗаписьЖурналаРегистрации,
+        строка до 130 символов, документирование экспортных методов.
+    - path: "src/cf/**/пбп_Переадресация*/**"
+      instructions: >-
+        Обёртки над БСП. Не предлагать удалить их или заменить прямыми вызовами ОбщегоНазначения.
+    - path: "features/**/*.feature"
+      instructions: >-
+        Сверять с .cursor/rules/vanessa-jenkins.mdc: сценарий самодостаточен, сам чистит свои данные,
+        новая фича добавлена в конец СписокФичДляВыполнения в tools/VBParams.json и tools/VAParams.json.
 chat:
   auto_reply: true

@@ -20,9 +20,15 @@ BSL_LS_JAR="${BSL_LS_DIR}/bsl-language-server.jar"
 BSL_LS_URL="https://github.com/1c-syntax/bsl-language-server/releases/download/v${BSL_LS_VERSION}/bsl-language-server-${BSL_LS_VERSION}-exec.jar"
 
 echo ">>> Проверка Java..."
-if ! command -v java >/dev/null 2>&1; then
-  echo "ОШИБКА: java не найдена в PATH. BSL Language Server требует JRE 21+." >&2
-  exit 1
+java_major=""
+if command -v java >/dev/null 2>&1; then
+  java_major="$(java -version 2>&1 | sed -n 's/.*version "\([0-9]*\).*/\1/p' | head -n 1)"
+fi
+
+if [ -z "${java_major}" ] || [ "${java_major}" -lt 21 ]; then
+  echo "JRE 21+ не найдена — установка openjdk-21-jre-headless..."
+  sudo apt-get update -qq
+  sudo DEBIAN_FRONTEND=noninteractive apt-get install -y -qq openjdk-21-jre-headless
 fi
 java -version
 
