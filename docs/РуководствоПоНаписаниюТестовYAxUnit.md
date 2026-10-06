@@ -152,7 +152,7 @@
 
 1. После правок BSL: отдельный `build` source-set `main` (если менялось ядро), затем `YAXUNIT`. Не один `build` «на все расширения».
 2. Интерактивно — подсистема YAxUnit в 1С:Предприятие.
-3. Пакетно (Unica): `operation=test`, `testRunner=yaxunit`, `testScope=all` или `module` с именем `ОМ_…` (см. `pssl-library`).  
-   В фильтре YaXUnit часто достаточно имени модуля без префикса `CommonModule.`.
+3. Пакетно (Unica): `operation=test`, `testRunner=yaxunit`, только `testScope=all` (см. `pssl-library`).  
+   На движке 25.12 `testScope=module` с `CommonModule.ОМ_…` роняет прогон: точка в имени ломает фильтр.
 
 Закрыть клиент/конфигуратор перед `build` — Designer занимает ИБ эксклюзивно.
