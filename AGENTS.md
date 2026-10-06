@@ -45,5 +45,5 @@
 ## Ветки и PR
 
 - Ветка Issue — от `origin/develop`, PR в `develop`, без мержа агентом.
-- Ревью в PR делает CodeRabbit (`.coderabbit.yaml`). Локальный CodeRabbit CLI — skill `coderabbit-review`, только по прямой просьбе.
+- Бот CodeRabbit пишет в PR сам (`.coderabbit.yaml`). Агент его не ждёт и комментарии не разбирает, пока человек явно не попросит после ревью конвейера. Локальный CLI — skill `coderabbit-review`, только по прямой просьбе.
 - Индекс Cursor: скопировать `.cursorignore.example` → `.cursorignore` (файл в `.gitignore`). MCP проекта не коммитится.
