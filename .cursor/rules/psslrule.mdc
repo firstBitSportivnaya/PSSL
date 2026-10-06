@@ -16,4 +16,4 @@ MCP
 - **Vanessa** (`user-VanessaAutomation`): протокол MCP — user rule `ui-testing-tools` и skill `vanessa-automation`. Пины репозитория — skill `pssl-library`. Фичи — через Vanessa MCP, не через Unica `test` `va`.
 - **Напарник / LS**: ITS и сниппеты / hover у курсора. Не дублировать тот же факт Unica.
 
-Загрузка в ИБ, YaXUnit и фичи — skill `pssl-library`. Конвейер Issue (merge, спецификация, разработка без прогонов, тестировщик в том же чате, ревью, PR, CodeRabbit) — skill `pssl-pr-flow`. Правки только правил, навыков и документации тесты не запускают.
+Загрузка в ИБ, YaXUnit и фичи — skill `pssl-library`. Конвейер Issue (merge, спецификация, разработка без прогонов, тестировщик в том же чате, ревью, PR) — skill `pssl-pr-flow`. Комментарии CodeRabbit — только по явной просьбе после ревью. Правки только правил, навыков и документации тесты не запускают.
