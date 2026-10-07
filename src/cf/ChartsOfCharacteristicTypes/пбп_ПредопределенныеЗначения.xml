@@ -46,20 +46,21 @@
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
 				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>256</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
 				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
 				<v8:Type>xs:decimal</v8:Type>
 				<v8:NumberQualifiers>
 					<v8:Digits>15</v8:Digits>
 					<v8:FractionDigits>3</v8:FractionDigits>
 					<v8:AllowedSign>Any</v8:AllowedSign>
 				</v8:NumberQualifiers>
-				<v8:StringQualifiers>
-					<v8:Length>256</v8:Length>
-					<v8:AllowedLength>Variable</v8:AllowedLength>
-				</v8:StringQualifiers>
-				<v8:DateQualifiers>
-					<v8:DateFractions>Date</v8:DateFractions>
-				</v8:DateQualifiers>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.пбп_ПользовательскиеФункции</v8:Type>
 			</Type>
 			<Hierarchical>true</Hierarchical>
 			<FoldersOnTop>true</FoldersOnTop>
@@ -744,6 +745,7 @@
 			<Form>ФормаЭлемента</Form>
 			<Form>ФормаСписка</Form>
 			<Form>ФормаГруппы</Form>
+			<Form>ФормаГенератораКода</Form>
 		</ChildObjects>
 	</ChartOfCharacteristicTypes>
 </MetaDataObject>

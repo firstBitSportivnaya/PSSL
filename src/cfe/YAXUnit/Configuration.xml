@@ -104,6 +104,7 @@
 			<CommonModule>ОМ_ВалидаторПакетов</CommonModule>
 			<CommonModule>ОМ_ИнтеграцииСлужебный</CommonModule>
 			<CommonModule>ОМ_ИнтеграцииСервер</CommonModule>
+			<CommonModule>ОМ_ОбщегоНазначенияВызовСервера</CommonModule>
 			<CommonModule>ЮТАлюр</CommonModule>
 			<CommonModule>ЮТАсинхроннаяОбработкаСлужебныйКлиент</CommonModule>
 			<CommonModule>ЮТВнешниеОбработкиСлужебныйСервер</CommonModule>
@@ -185,6 +186,7 @@
 			<CommonModule>ОМ_ПостроительСпецификацииOpenAPI</CommonModule>
 			<CommonModule>пбп_ПостроительСпецификацииOpenAPI</CommonModule>
 			<CommonModule>ОМ_ПредопределенныеЗначения</CommonModule>
+			<CommonModule>ОМ_ПредопределенныеЗначенияКлиентСервер</CommonModule>
 			<CommonModule>ОМ_СтроковыеФункцииКлиентСервер</CommonModule>
 			<CommonModule>ЮТРаботаСТекстом</CommonModule>
 			<CommonModule>ЮТРазрешениеЗависимостейСлужебныйВызовСервера</CommonModule>
