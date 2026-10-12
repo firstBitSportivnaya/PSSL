@@ -2,9 +2,7 @@
 # Shared project contract (committed). Infobase and platform path belong in v8project.local.yaml
 # (see v8project.local.yaml.example); never put machine paths here.
 workPath: build
-execution_timeout: 900000
 format: DESIGNER
-builder: DESIGNER
 
 source-set:
   - name: main
