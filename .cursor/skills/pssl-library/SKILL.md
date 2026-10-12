@@ -13,31 +13,32 @@ description: >-
 
 Факты проекта, запреты и правила BSL — `AGENTS.md`. Здесь — инструменты и прогоны локального Cursor с user MCP.
 
-Контракт Unica — `v8project.yaml` (в Git). ИБ и платформа — `v8project.local.yaml` и `.dev.env`. В каждом вызове Unica `cwd` = `WORKSPACE_ROOT` из `.dev.env`: без `cwd` сессия видит каталог профиля пользователя.
+Контракт Unica — `v8project.yaml` (в Git). ИБ и платформа — `v8project.local.yaml` и `.dev.env`. `cwd` в вызовы Unica 0.13 не передавать: рабочее пространство задаёт корень MCP.
 
 ## Правки
 
-- XML форм и метаданных — Unica leaf (`form-*`, `meta-*`). Поиск — `unica_code_search` / `unica_source_resolve`.
-- Правка BSL — `unica_code_patch` после `unica_source_resolve`. Не `StrReplace` / `Write` / `Shell` по `src/cf/**/*.bsl` и `src/cfe/YAXUnit/**/*.bsl`, пока `user-unica` готов.
-- После правки BSL: `unica_code_diagnostics` `findings` по модулю (`sourceSet=YAXUNIT` для тестов); если Unica недоступен — LS. Затем Напарник `check_1c_code` → `review_1c_code`, без двойного синтаксиса на одном файле.
+- XML форм и метаданных — Unica leaf (`form-edit`, `meta-edit`). Поиск — `unica_search` (`corpus: "names"` для объекта, `corpus: "text"` для модуля).
+- Правка BSL — `unica_apply` (leaf `code-patch`): план `at` + `ops`, затем только `executionToken`. Не `StrReplace` / `Write` / `Shell` по `src/cf/**/*.bsl` и `src/cfe/YAXUnit/**/*.bsl`, пока `user-unica` готов.
+- После правки BSL: `unica_check` по адресу модуля (набор `YAXUNIT` для тестов); если Unica недоступен — LS. Затем Напарник `check_1c_code` → `review_1c_code`, без двойного синтаксиса на одном файле.
+- `cwd` не передавать: рабочее пространство — корень MCP этой сессии.
 
 ## Загрузка в ИБ
 
-Прогон — фаза тестировщика в `pssl-pr-flow`, в той же сессии сразу после записи запрошенного объёма в исходники или после законченного круга правок. Пока код ещё пишется, базу не обновлять и тесты не запускать. Отдельную фразу пользователя не ждать. Основная конфигурация — каталог `src/cf`, source-set `main`. Расширение — `src/cfe/YAXUnit`, source-set `YAXUNIT`. Каждый изменившийся source-set — своим `build`; без изменений повторно не грузить. YaXUnit — если менялась основная конфигурация или расширение YAXUNIT. Фичи Vanessa — если менялась основная конфигурация или `features/`.
+Прогон — фаза тестировщика в `pssl-pr-flow`, в той же сессии сразу после записи запрошенного объёма в исходники или после законченного круга правок. Пока код ещё пишется, базу не обновлять и тесты не запускать. Отдельную фразу пользователя не ждать. Основная конфигурация — каталог `src/cf`, source-set `main`. Расширение — `src/cfe/YAXUnit`, source-set `YAXUNIT`. Каждый изменившийся source-set — своим `push`; без изменений повторно не грузить. YaXUnit — если менялась основная конфигурация или расширение YAXUNIT. Фичи Vanessa — если менялась основная конфигурация или `features/`.
 
-1. Исключение к user rule `ui-testing-tools` (не завершать `1cv8` / `1cv8c`): Designer занимает файловую базу эксклюзивно. Перед `build` закрыть только сеансы, у которых `/F` совпадает с `INFOBASE_PATH`. После загрузки Vanessa MCP поднимать снова по `ui-testing-tools`.
-2. Для каждого изменившегося source-set — свой вызов `unica_runtime_job_start` `operation=build` `sourceSet=<main|YAXUNIT>` `dryRun=false`; если менялись оба — сначала `main`, затем `YAXUNIT`. Неизменившийся source-set не грузить. `fullRebuild=true` — только после переключения ветки, rebase, merge `origin/develop`, крупного переноса объектов или подозрения на испорченное инкрементальное состояние; иначе без него. В `build` передавать `sourceSet`, не `extension`. Не один `build` «на все расширения», не `-AllExtensions`.
-3. Наблюдать `unica_runtime_job_wait` (`timeoutSeconds` до 60) / `unica_runtime_job_logs`. Пустой лог до конца у обычного build — норма.
-4. Итог базы — журнал `build/logs/platform/build-00-<sourceSet>-update.log`. Строка «Обновление конфигурации успешно завершено» — source-set обновлён, тот же `build` повторно не запускать.
+1. Исключение к user rule `ui-testing-tools` (не завершать `1cv8` / `1cv8c`): Designer занимает файловую базу эксклюзивно. Перед `push` закрыть только сеансы, у которых `/F` совпадает с `INFOBASE_PATH`. После загрузки Vanessa MCP поднимать снова по `ui-testing-tools`.
+2. Словарь — `unica_run` без `op`. Для каждого изменившегося source-set: `op=push`, `args.sourceSet=<main|YAXUNIT>`, сначала `dryRun=true`, затем тот же вызов с `dryRun=false`. Если менялись оба — сначала `main`, затем `YAXUNIT`. Неизменившийся source-set не грузить. `args.full=true` — только после переключения ветки, rebase, merge `origin/develop`, крупного переноса объектов или подозрения на испорченное инкрементальное состояние. `args.force=true` перезаписывает базу и затирает изменения, сделанные в ней: только после явного решения. Отказ `non_fast_forward` или `no_memory` — стоп, не автоматический `force`. В `push` передавать `sourceSet`, не `extension`. Не один `push` «на все расширения».
+3. Долгий вызов становится задачей. Хранить `taskId`. Состояние — `unica_task_get`, ожидание — `unica_task_result` (`waitMs` не больше 7000). `working` не доказывает прогресс и не повод для второго `push`.
+4. Итог source-set — завершённая задача без ошибки и строка «Обновление конфигурации успешно завершено» в журнале платформы, который назвал ответ. Тот же `push` повторно не запускать.
 
-Не вызывать `unica_build_*`. Не обходить `unica_runtime_*` прямым `v8-runner.exe`. Длинный build — только `job.start`, не синхронный `unica_runtime_execute`. Applied `launch` `mcp-va` / thin — fail-closed.
+Не вызывать снятые `unica_build_*` и `unica_runtime_*`. Не обходить `unica_run` прямым `v8-runner.exe`. `upload` на v0.13 недоступен. `launch` для Vanessa не вызывать.
 
-После `/LoadCfg` в Конфигураторе: `/UpdateDBCfg` без `-Extension` для основной конфигурации, затем `/UpdateDBCfg -Extension YAXUNIT` для расширения (не безопасный режим).
+После загрузки основная конфигурация обновляет конфигурацию базы без `-Extension`, расширение — с `-Extension YAXUNIT` (не безопасный режим). Это делает `push`: отдельный `/UpdateDBCfg` не сочинять.
 
 ### Сбои задания
 
-- Exit 3 и `unica-recovery` / «Отказано в доступе» (os error 5) — обход каталога исходников после Конфигуратора (облачный диск). Итог — по журналу из п. 4. `1CD` не удалять, takeown не вызывать.
-- Фаза `lost`, предупреждение `stale worker heartbeat`, `exitCode` пустой; новый `job.start` отвечает «workspace already has active runtime job». `job.cancel` и перезапуск MCP блокировку не снимают. Если pid задания мёртв и нет `v8-runner` / `1cv8` / `1cv8c` этой базы — удалить `.build/unica/jobs/active.lock`, `build/.v8-runner.workspace.lock` и `build/.v8-runner.workspace.lock.json`. Живой Конфигуратор этой базы — ждать. Итог задания судить по журналу (п. 4) или по `stdout.log` YaXUnit; успешный шаг не повторять.
+- Отказ обхода каталога исходников на облачном диске («Отказано в доступе»): итог судить по журналу платформы из ответа задачи. `1CD` не удалять, takeown не вызывать.
+- Задача остаётся `working` дольше ожидаемого окна: читать `unica_task_get`. `unica_task_cancel` — просьба, не подтверждение остановки. Пока раннер или `1cv8` этой базы жив — ждать. Не удалять `.build/unica/jobs/active.lock`: это файл Unica 0.12, v0.13 его не использует. Успешный шаг не повторять. После перезапуска демона `outcome_uncertain` значит, что загрузка могла примениться: смотреть базу и журнал, не запускать второй `push` вслепую.
 
 ## YaXUnit — написание
 
@@ -51,20 +52,17 @@ description: >-
 
 ## YaXUnit — запуск
 
-Только фаза тестировщика `pssl-pr-flow` или явная просьба пользователя. Preview (`dryRun=true`) прогоном не считать. Сначала раздел «Загрузка в ИБ».
+Только фаза тестировщика `pssl-pr-flow` или явная просьба пользователя. `dryRun=true` у `push` прогоном тестов не считать. Сначала раздел «Загрузка в ИБ».
 
-`unica_runtime_job_start` `operation=test` `testRunner=yaxunit` `testScope=all` `fullOutput=true` `dryRun=false`:
+Прогон тестов на поверхности Unica 0.13 не опубликован: в словаре `unica_run` нет операции test. Запуск — параметры `tools/yaxunit.json`, подключение ИБ из `.dev.env` / `tools/vrunner.json`. Не выдумывать ключи платформы. Не `testRunner=va` и не `unica_run` `launch`.
 
-- охват только `testScope=all`. На движке 25.12 `testScope=module` с `CommonModule.ОМ_…` кладёт в фильтр ключ с точкой, `ЮТКоллекции` отвечает «Задано неправильное имя атрибута структуры», дальше зацикливание. Один модуль всё равно гонять как `all`. Модули `ЮТ*` не патчить;
-- `fullOutput=true` — полный вывод раннера (это не `fullRebuild`).
+Охват — все тесты расширения, не фильтр одного модуля. На движке 25.12 фильтр `CommonModule.ОМ_…` кладёт в ключ точку, `ЮТКоллекции` отвечает «Задано неправильное имя атрибута структуры», дальше зацикливание. Модули `ЮТ*` не патчить.
 
-Зелёный прогон — в `stdout.log` задания (`.build/unica/jobs/<jobId>/stdout.log`) есть `Tests completed` и `summary: … failed=0, … errors=0`, а `total` больше нуля. Код выхода 0 без этой строки зелёным не считать. Отчёт `tools/yaxunit.json` (`./build/out/yaxunit/`) — для CI; Unica его не создаёт, его отсутствие локально — не ошибка.
-
-Не `testRunner=va`. Если Unica недоступен и пользователь просил прогон: параметры `tools/yaxunit.json`, подключение ИБ из `.dev.env` / `tools/vrunner.json`. Не выдумывать ключи платформы.
+Зелёный прогон — в журнале этого запуска есть `Tests completed` и `summary: … failed=0, … errors=0`, а `total` больше нуля. Код выхода 0 без этой строки зелёным не считать. Отчёт `./build/out/yaxunit/` — для CI; его отсутствие локально — не ошибка.
 
 ## Vanessa Automation (MCP)
 
-Протокол сессии — user rule `ui-testing-tools` и skill `vanessa-automation`. Старт — общий `Start-VanessaMcp.ps1 -RepoRoot` (корень клона). Живой MCP — `tools/VAParams.json` (`ВыполнитьСценарии` = false), CI — `tools/VBParams.json`, пакетный Unica `test` `va` — `tools/VBParams.local.json` (gitignore). Фичи — через Vanessa MCP, не через Unica `test` `va`. Не использовать Vanessa MCP для фактов конфигурации (это Unica).
+Протокол сессии — user rule `ui-testing-tools` и skill `vanessa-automation`. Старт — общий `Start-VanessaMcp.ps1 -RepoRoot` (корень клона). Живой MCP — `tools/VAParams.json` (`ВыполнитьСценарии` = false), CI — `tools/VBParams.json`. Фичи — через Vanessa MCP, не через Unica. Не использовать Vanessa MCP для фактов конфигурации (это Unica).
 
 ## Vanessa — написание фич (PSSL)
 
@@ -79,5 +77,5 @@ description: >-
 - Выбор после очистки: последняя строка поиска и `текущая строка не помечена на удаление`.
 - Заголовок списка = ListPresentation (`Настройки интеграции`), форма элемента = ObjectPresentation (`Настройка интеграции (создание)`). Не подставлять заголовок списка в окно создания.
 - Перед `ФормаЗаписатьИЗакрыть` заполнить обязательные поля. Пометка удаления / «1С:Предприятие» — `Button0`; вопрос формы (`Да`/`Нет`) — по заголовку кнопки.
-- «Кнопка не найдена» или «недоступный элемент»: сначала `unica_form_info` (элемент Button, родитель, `commandBarLocation`). Кнопка — элемент Button, не запись в командах. Команда без кнопки и панель таблицы с `CommandBarLocation` `None` кликом не лечатся; видимые команды — на командной панели формы. `close_function_panel`, `УстановитьПривилегированныйРежим` и выдача ролей — только когда кнопка в форме уже есть.
+- «Кнопка не найдена» или «недоступный элемент»: сначала `unica_view` адреса формы и ветви `Item` (элемент Button, родитель, видимость). Кнопка — элемент Button, не запись в командах. Команда без кнопки и панель таблицы с `CommandBarLocation` `None` кликом не лечатся; видимые команды — на командной панели формы. Текущий `view` не отдаёт `CommandName`: связь команды с кнопкой проверять по XML формы через `unica_resolve`, если ветви `Item` недостаточно. `close_function_panel`, `УстановитьПривилегированныйРежим` и выдача ролей — только когда кнопка в форме уже есть.
 - После правки: `open_feature_file` → `load_features` → `check_syntax` → `run_scenario` изменённых сценариев. Без зелёного прогона фича не готова. Если сценарий пишет справочники — прогнать фичу **второй раз**.

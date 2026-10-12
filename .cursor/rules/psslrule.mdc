@@ -12,7 +12,7 @@ MCP
 Иерархия (не пересекать контуры):
 
 - **Unica** (`user-unica`): конфигурация XML, поиск, формы/метаданные, diagnostics. Во все вызовы — `cwd` = `WORKSPACE_ROOT` из `.dev.env`. `GetDynamicTools` — один `toolName`.
-- Пока `user-unica` `ready`: чтение и запись конфигурации (`src/cf`, `src/cfe/YAXUnit`) только инструментами Unica (`unica_source_*`, `unica_code_search` / `unica_code_patch`, `form-*` / `meta-*` и т.д.). Не `Grep`/`Read`/`StrReplace`/`Write`/`Shell` по `*.bsl` и XML метаданных «короче». Fallback — только если Unica недоступен или у него нет инструмента на эту операцию.
+- Пока `user-unica` `ready`: чтение и запись конфигурации (`src/cf`, `src/cfe/YAXUnit`) только инструментами Unica (`unica_view`, `unica_search`, `unica_apply`, `form-edit` / `meta-edit` и т.д.). Не `Grep`/`Read`/`StrReplace`/`Write`/`Shell` по `*.bsl` и XML метаданных «короче». Fallback — только если Unica недоступен или у него нет инструмента на эту операцию.
 - **Vanessa** (`user-VanessaAutomation`): протокол MCP — user rule `ui-testing-tools` и skill `vanessa-automation`. Пины репозитория — skill `pssl-library`. Фичи — через Vanessa MCP, не через Unica `test` `va`.
 - **Напарник / LS**: ITS и сниппеты / hover у курсора. Не дублировать тот же факт Unica.
 
