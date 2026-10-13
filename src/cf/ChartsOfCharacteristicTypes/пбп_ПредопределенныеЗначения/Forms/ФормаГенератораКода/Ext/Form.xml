@@ -1,0 +1,416 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Генератор кода предопределенного значения</v8:content>
+		</v8:item>
+	</Title>
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoTitle>false</AutoTitle>
+	<CommandBarLocation>Bottom</CommandBarLocation>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаЭлемент" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Элемент</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<ShowTitle>true</ShowTitle>
+			<ExtendedTooltip name="ГруппаЭлементРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<InputField name="Наименование" id="3">
+					<DataPath>Наименование</DataPath>
+					<AutoMarkIncomplete>true</AutoMarkIncomplete>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="4"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="5"/>
+				</InputField>
+				<InputField name="ИдентификаторНастройки" id="6">
+					<DataPath>ИдентификаторНастройки</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Идентификатор</v8:content>
+						</v8:item>
+					</Title>
+					<AutoMarkIncomplete>true</AutoMarkIncomplete>
+					<ContextMenu name="ИдентификаторНастройкиКонтекстноеМеню" id="7"/>
+					<ExtendedTooltip name="ИдентификаторНастройкиРасширеннаяПодсказка" id="8"/>
+				</InputField>
+				<CheckBoxField name="ЭтоГруппа" id="9">
+					<DataPath>ЭтоГруппа</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа</v8:content>
+						</v8:item>
+					</Title>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ЭтоГруппаКонтекстноеМеню" id="10"/>
+					<ExtendedTooltip name="ЭтоГруппаРасширеннаяПодсказка" id="11"/>
+					<Events>
+						<Event name="OnChange">ЭтоГруппаПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<InputField name="ИдентификаторРодитель" id="12">
+					<DataPath>ИдентификаторРодитель</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Родитель</v8:content>
+						</v8:item>
+					</Title>
+					<DropListButton>true</DropListButton>
+					<ContextMenu name="ИдентификаторРодительКонтекстноеМеню" id="13"/>
+					<ExtendedTooltip name="ИдентификаторРодительРасширеннаяПодсказка" id="14"/>
+					<Events>
+						<Event name="OnChange">ИдентификаторРодительПриИзменении</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаПараметрыЭлемента" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметры элемента</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<ShowTitle>true</ShowTitle>
+			<ExtendedTooltip name="ГруппаПараметрыЭлементаРасширеннаяПодсказка" id="19"/>
+			<ChildItems>
+				<CheckBoxField name="Пароль" id="20">
+					<DataPath>Пароль</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ПарольКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="ПарольРасширеннаяПодсказка" id="22"/>
+				</CheckBoxField>
+				<CheckBoxField name="СписокЗначений" id="23">
+					<DataPath>СписокЗначений</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Список значений</v8:content>
+						</v8:item>
+					</Title>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="СписокЗначенийКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="СписокЗначенийРасширеннаяПодсказка" id="25"/>
+				</CheckBoxField>
+				<CheckBoxField name="Кэшируется" id="26">
+					<DataPath>Кэшируется</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="КэшируетсяКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="КэшируетсяРасширеннаяПодсказка" id="28"/>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаТипЗначения" id="29">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип значения</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<ShowTitle>true</ShowTitle>
+			<ExtendedTooltip name="ГруппаТипЗначенияРасширеннаяПодсказка" id="30"/>
+			<ChildItems>
+				<InputField name="ВидТипа" id="31">
+					<DataPath>ВидТипа</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<DropListButton>true</DropListButton>
+					<ContextMenu name="ВидТипаКонтекстноеМеню" id="32"/>
+					<ExtendedTooltip name="ВидТипаРасширеннаяПодсказка" id="33"/>
+					<Events>
+						<Event name="OnChange">ВидТипаПриИзменении</Event>
+					</Events>
+				</InputField>
+				<UsualGroup name="ГруппаКвалификаторСтроки" id="60">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Строка</v8:content>
+						</v8:item>
+					</Title>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаКвалификаторСтрокиРасширеннаяПодсказка" id="61"/>
+					<ChildItems>
+						<InputField name="ДлинаСтроки" id="62">
+							<DataPath>ДлинаСтроки</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Длина</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДлинаСтрокиКонтекстноеМеню" id="63"/>
+							<ExtendedTooltip name="ДлинаСтрокиРасширеннаяПодсказка" id="64"/>
+						</InputField>
+						<InputField name="ДопустимаяДлина" id="65">
+							<DataPath>ДопустимаяДлина</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Допустимая длина</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДопустимаяДлинаКонтекстноеМеню" id="66"/>
+							<ExtendedTooltip name="ДопустимаяДлинаРасширеннаяПодсказка" id="67"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаКвалификаторЧисла" id="68">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Число</v8:content>
+						</v8:item>
+					</Title>
+					<ShowTitle>false</ShowTitle>
+					<Visible>false</Visible>
+					<ExtendedTooltip name="ГруппаКвалификаторЧислаРасширеннаяПодсказка" id="69"/>
+					<ChildItems>
+						<InputField name="Разрядность" id="70">
+							<DataPath>Разрядность</DataPath>
+							<ContextMenu name="РазрядностьКонтекстноеМеню" id="71"/>
+							<ExtendedTooltip name="РазрядностьРасширеннаяПодсказка" id="72"/>
+						</InputField>
+						<CheckBoxField name="Неотрицательное" id="73">
+							<DataPath>Неотрицательное</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="НеотрицательноеКонтекстноеМеню" id="74"/>
+							<ExtendedTooltip name="НеотрицательноеРасширеннаяПодсказка" id="75"/>
+						</CheckBoxField>
+						<InputField name="РазрядностьДробнойЧасти" id="76">
+							<DataPath>РазрядностьДробнойЧасти</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Дробная часть</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="РазрядностьДробнойЧастиКонтекстноеМеню" id="77"/>
+							<ExtendedTooltip name="РазрядностьДробнойЧастиРасширеннаяПодсказка" id="78"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаКвалификаторДаты" id="79">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата</v8:content>
+						</v8:item>
+					</Title>
+					<ShowTitle>false</ShowTitle>
+					<Visible>false</Visible>
+					<ExtendedTooltip name="ГруппаКвалификаторДатыРасширеннаяПодсказка" id="80"/>
+					<ChildItems>
+						<InputField name="ЧастиДаты" id="81">
+							<DataPath>ЧастиДаты</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Части даты</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ЧастиДатыКонтекстноеМеню" id="82"/>
+							<ExtendedTooltip name="ЧастиДатыРасширеннаяПодсказка" id="83"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<TextDocumentField name="Код" id="55">
+			<DataPath>Код</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<TitleLocation>Top</TitleLocation>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Код для конфигуратора</v8:content>
+				</v8:item>
+			</Title>
+			<Width>70</Width>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<Height>8</Height>
+			<HorizontalStretch>true</HorizontalStretch>
+			<ContextMenu name="КодКонтекстноеМеню" id="56"/>
+			<ExtendedTooltip name="КодРасширеннаяПодсказка" id="57"/>
+		</TextDocumentField>
+		<Button name="Сгенерировать" id="58">
+			<CommandName>Form.Command.Сгенерировать</CommandName>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сгенерировать</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="СгенерироватьРасширеннаяПодсказка" id="59"/>
+		</Button>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Наименование" id="58">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>150</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИдентификаторНастройки" id="59">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>100</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ЭтоГруппа" id="60">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ИдентификаторРодитель" id="61">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>100</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="УровеньИерархии" id="62">
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>5</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Пароль" id="63">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СписокЗначений" id="64">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Кэшируется" id="65">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВидТипа" id="66">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>150</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДлинаСтроки" id="67">
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>5</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДопустимаяДлина" id="68">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>20</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Разрядность" id="69">
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>3</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="РазрядностьДробнойЧасти" id="70">
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>2</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Неотрицательное" id="71">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЧастиДаты" id="72">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>20</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИмяТипа" id="73">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>150</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Код" id="74">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Сгенерировать" id="75">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сгенерировать</v8:content>
+				</v8:item>
+			</Title>
+			<Action>Сгенерировать</Action>
+		</Command>
+	</Commands>
+</Form>

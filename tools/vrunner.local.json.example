@@ -1,0 +1,15 @@
+{
+    "$schema": "https://raw.githubusercontent.com/silverbulleters/vanessa-runner/develop/vanessa-runner-schema.json",
+    "default": {
+        "--ibconnection": "/F./build/ib",
+        "--db-user": "",
+        "--db-pwd": "",
+        "--workspace": ".",
+        "--ordinaryapp": "0"
+    },
+    "vanessa": {
+        "--vanessasettings": "./tools/VBParams.local.json",
+        "--pathvanessa": "./oscript_modules/vanessa-automation-single/vanessa-automation-single.epf",
+        "--additional": "/DisplayAllFunctions /L ru /C runMcp;mcpPort=9876"
+    }
+}

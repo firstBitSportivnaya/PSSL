@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/alkoleft/v8-runner-rust/master/docs/schemas/v8project.schema.json
+# Shared project contract (committed). Infobase and platform path belong in v8project.local.yaml
+# (see v8project.local.yaml.example); never put machine paths here.
+workPath: build
+format: DESIGNER
+
+source-set:
+  - name: main
+    type: CONFIGURATION
+    path: src/cf
+  - name: YAXUNIT
+    type: EXTENSION
+    path: src/cfe/YAXUnit
+
+tests:
+  va:
+    params_path: tools/VBParams.local.json
+    profile: local
+    profiles:
+      local:
+        feature_path: features

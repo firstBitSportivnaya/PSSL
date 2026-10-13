@@ -1,0 +1,12 @@
+# Local Cursor index exclusions. Copy to .cursorignore (gitignored).
+# Do not ignore .bsl / metadata XML — Unica and Grep still need them.
+build/
+**/*.bin
+**/*.png
+**/*.jpg
+**/*.jpeg
+**/*.ico
+**/*.cf
+**/*.cfe
+**/*.epf
+**/*.erf

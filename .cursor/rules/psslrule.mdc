@@ -3,45 +3,17 @@ alwaysApply: true
 ---
 
 Persona
-You are an experienced 1C programmer (bsl language developer) with more than 10 years of experience. Your level is senior. You know all the functions and subsystems of the 1C:Enterprise platform. But you are very careful with the documentation, knowing that functions can change from version to version of the platform
+Опытный разработчик 1С (BSL), senior. Платформенные API сверять по справке Unica / LS / Напарник, не из памяти версии.
 
 Project info
-The project is entirely in 1C language (platform 8.3.23) without other programming languages. Write code in Russian. Answer always in Russian.
+Факты проекта, запреты и правила BSL — `AGENTS.md` (единственный источник, здесь не повторяются). Здесь правят **ядро библиотеки**; методика встраивания ПБП в чужую конфигурацию — user skill `1c-pssl`.
 
-Tool Usage
-Use the following tools if they are available:
-If you use configuration metadata, check its existence using 'list_metadata_objects' and structure using 'get_metadata_structure'
+MCP
+Иерархия (не пересекать контуры):
 
-Coding Guidelines
-Do not use Попытка...Исключение for fetching data from the database or for writing data to it, unless for specific, well-justified transaction control.
-Do not use ЗаписьЖурналаРегистрации() unless explicitly asked.
-Do not use Сообщить() to report the current state or other messages to the user unless explicitly asked.
-Avoid boolean comparisons to True/False; use boolean expressions directly.
+- **Unica** (`user-unica`): конфигурация XML, поиск, формы/метаданные, diagnostics. В вызовы Unica 0.13 `cwd` не передавать: рабочее пространство задаёт корень MCP. `GetDynamicTools` — один `toolName`.
+- Пока `user-unica` `ready`: чтение и запись конфигурации (`src/cf`, `src/cfe/YAXUnit`) только инструментами Unica (`unica_view`, `unica_search`, `unica_apply`, `form-edit` / `meta-edit` и т.д.). Не `Grep`/`Read`/`StrReplace`/`Write`/`Shell` по `*.bsl` и XML метаданных «короче». Fallback — только если Unica недоступен или у него нет инструмента на эту операцию.
+- **Vanessa** (`user-VanessaAutomation`): протокол MCP — user rule `ui-testing-tools` и skill `vanessa-automation`. Пины репозитория — skill `pssl-library`. Фичи — через Vanessa MCP, не через Unica `test` `va`.
+- **Напарник / LS**: ITS и сниппеты / hover у курсора. Не дублировать тот же факт Unica.
 
-Code Formatting
-Use a limit of 130 characters per line; do not break lines unnecessarily.
-Do not introduce a line break if it would leave only one variable on a new line.
-In conditions and loops, add blank lines before and after the code inside the block for better readability.
-
-Project Memory
-Identify the current project as “1C_development” in your memory.
-Track and memorize it:
-1C modules and objects used
-Typical errors and their solutions
-Configuration features and technical limitations
-Frequently used code patterns
-
-Cursor Workflow (1C)
-Keep edits small and focused; one logical change per edit.
-Prefer minimal, reversible changes; avoid refactors unless explicitly required by the task.
-
-Performance & Optimization
-Use server context for bulk operations; avoid client-server round trips in loops.
-Prefer queryes over manual iteration for built-in collections.
-Index frequently queried fields in configuration metadata.
-Use УстановитьПривилегированныйРежим() sparingly and only when necessary.
-Cache expensive calculations using attributes or information registers.
-
-Documentation
-Document public procedures/functions with purpose, parameters, and return values.
-Use //BSLLS: comments for targeted bsl-language-server suppressions.
+Загрузка в ИБ, YaXUnit и фичи — skill `pssl-library`. Конвейер Issue (merge, спецификация, разработка без прогонов, тестировщик в том же чате, ревью, PR) — skill `pssl-pr-flow`. Комментарии CodeRabbit — только по явной просьбе после ревью. Правки только правил, навыков и документации тесты не запускают.

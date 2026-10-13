@@ -1,5 +1,5 @@
 {
-  "platform_version": "8.3.23",
+  "platform_version": "8.3.27",
   "extension": "ПроектнаяБиблиотекаПодсистем",
   "prefix": "пбп_",
   "input_path": "./src/cf",
