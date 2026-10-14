@@ -330,8 +330,8 @@
 			<CommonModule>пбп_ИнтеграцииИсходящие</CommonModule>
 			<CommonModule>пбп_ИнтеграцииСервер</CommonModule>
 			<CommonModule>пбп_ИнтеграцииСлужебный</CommonModule>
-			<CommonModule>пбп_ИнтеграцииDatareon</CommonModule>
-			<CommonModule>пбп_ИнтеграцииDatareonПовтИсп</CommonModule>
+			<CommonModule>пбп_ИнтеграцииШина</CommonModule>
+			<CommonModule>пбп_ИнтеграцииШинаПовтИсп</CommonModule>
 			<CommonModule>пбп_КоннекторHTTP</CommonModule>
 			<CommonModule>пбп_КонстантыОбработкаСобытий</CommonModule>
 			<CommonModule>пбп_МетодыРегламентныхЗаданийСервер</CommonModule>
@@ -406,6 +406,7 @@
 			<DefinedType>пбп_Пользователи</DefinedType>
 			<DefinedType>пбп_ПредопределенныеВсеСсылкиПереопределяемый</DefinedType>
 			<DefinedType>пбп_ТипыОбъектовСоответствийИБ</DefinedType>
+			<DefinedType>пбп_УзелПланаОбменаИнтеграций</DefinedType>
 			<DefinedType>пбп_УчетныеЗаписиЭлектроннойПочты</DefinedType>
 			<DefinedType>пбп_Организации</DefinedType>
 			<CommonCommand>пбп_Константы</CommonCommand>

@@ -78,6 +78,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Constant.пбп_ИспользоватьСоответствияОбъектовИнтегрируемыхСистем</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.пбп_ИспользоватьСоответствияОбъектовИнтегрируемыхСистем</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Role.пбп_ЧтениеКонстантыИспользоватьСоответствияОбъектовИнтегрируемыхСистем</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DefinedType.пбп_УзелПланаОбменаИнтеграций</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects>

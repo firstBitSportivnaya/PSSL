@@ -17,11 +17,8 @@
 			</Synonym>
 			<Comment/>
 			<Type>
-				<v8:Type>xs:string</v8:Type>
-				<v8:StringQualifiers>
-					<v8:Length>10</v8:Length>
-					<v8:AllowedLength>Variable</v8:AllowedLength>
-				</v8:StringQualifiers>
+				<v8:Type>cfg:CatalogRef.пбп_НастройкиИнтеграции</v8:Type>
+				<v8:Type>cfg:CatalogRef.пбп_ИнтеграционныеПотоки</v8:Type>
 			</Type>
 		</Properties>
 	</DefinedType>

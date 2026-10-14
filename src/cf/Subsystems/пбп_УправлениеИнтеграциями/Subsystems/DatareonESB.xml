@@ -26,8 +26,8 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.пбп_РедактированиеНастроекОбменаЧерезШину</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ИнтеграцииВходящие</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ИнтеграцииИсходящие</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ИнтеграцииDatareon</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ИнтеграцииDatareonПовтИсп</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ИнтеграцииШина</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пбп_ИнтеграцииШинаПовтИсп</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
