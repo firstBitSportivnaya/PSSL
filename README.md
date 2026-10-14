@@ -46,7 +46,7 @@
 
 ## Cursor
 
-Локальные пути ИБ и платформы не в Git (см. `.gitignore`). Правила и скиллы — в `.cursor/`. Для индекса скопируйте `.cursorignore.example` в `.cursorignore`. Пины: `.dev.env.example` → `.dev.env`, `v8project.yaml.example` → `v8project.yaml`, `v8project.local.yaml.example` → `v8project.local.yaml`. Локальный Vanessa MCP: `tools/VBParams.local.json.example` → `tools/VBParams.local.json`, `tools/vrunner.local.json.example` → `tools/vrunner.local.json` (не в Git; CI остаётся в `tools/VBParams.json` / `tools/vrunner.json`). Контракт агента: `AGENTS.md`.
+Локальные пути ИБ и платформы не в Git (см. `.gitignore`). Правила и скиллы — в `.cursor/`. Для индекса скопируйте `.cursorignore.example` в `.cursorignore`. Пины: `.dev.env.example` → `.dev.env`, `v8project.local.yaml.example` → `v8project.local.yaml` (общий `v8project.yaml` уже в Git). Локальный Vanessa MCP: `tools/VBParams.local.json.example` → `tools/VBParams.local.json`, `tools/vrunner.local.json.example` → `tools/vrunner.local.json` (не в Git; CI остаётся в `tools/VBParams.json` / `tools/vrunner.json`). Контракт агента: `AGENTS.md`.
 
 ## Информация для контрибьюторов
 

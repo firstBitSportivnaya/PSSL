@@ -3,7 +3,7 @@
 Соглашения репозитория **Проектная библиотека подсистем (ПБП / PSSL)** для юнит-тестов на [YAxUnit](https://bia-technologies.github.io/yaxunit/).
 
 - Дамп расширения: `src/cfe/YAXUnit` (имя в метаданных — `YAXUNIT`, source-set `YAXUNIT`).
-- Версия движка в дампе: **25.12** (`Configuration.xml` → `Version`). Не путать с артефактом `tools-download` yaxunit.
+- Версия движка в выгрузке конфигурации: **25.12** (`Configuration.xml` → `Version`). Не путать с артефактом `tools-download` yaxunit.
 - Канон API — в официальной документации; здесь только правила и примеры этого репозитория.
 
 Документация движка:
@@ -152,7 +152,7 @@
 
 1. После правок BSL: отдельный `build` source-set `main` (если менялось ядро), затем `YAXUNIT`. Не один `build` «на все расширения».
 2. Интерактивно — подсистема YAxUnit в 1С:Предприятие.
-3. Пакетно (Unica): `operation=test`, `testRunner=yaxunit`, `testScope=all` или `module` с именем `ОМ_…` (см. `pssl-library`).  
-   В фильтре YaXUnit часто достаточно имени модуля без префикса `CommonModule.`.
+3. Пакетно: словарь `unica_run` прогона тестов не содержит (Unica 0.13). Параметры — `tools/yaxunit.json`, подключение ИБ из `.dev.env` / `tools/vrunner.json` (см. `pssl-library`). Фильтр одного модуля не использовать.  
+   На движке 25.12 `testScope=module` с `CommonModule.ОМ_…` роняет прогон: точка в имени ломает фильтр.
 
 Закрыть клиент/конфигуратор перед `build` — Designer занимает ИБ эксклюзивно.
