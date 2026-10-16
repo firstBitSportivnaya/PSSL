@@ -1,1 +1,12 @@
+*.bsl text eol=lf
+*.xml text eol=lf
+*.html text eol=lf
+*.txt text eol=lf
+*.svg text eol=lf
+
+*.png -text
+*.bmp -text
+*.bin -text
+**/XDTOPackages/**/Ext/Package.bin text eol=lf
+
 **/пбп_Переадресация*/** -diff
