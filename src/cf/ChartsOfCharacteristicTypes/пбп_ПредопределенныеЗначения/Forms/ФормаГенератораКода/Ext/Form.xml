@@ -24,7 +24,6 @@
 				</v8:item>
 			</Title>
 			<Group>Vertical</Group>
-			<ShowTitle>true</ShowTitle>
 			<ExtendedTooltip name="ГруппаЭлементРасширеннаяПодсказка" id="2"/>
 			<ChildItems>
 				<InputField name="Наименование" id="3">
@@ -86,7 +85,6 @@
 				</v8:item>
 			</Title>
 			<Group>Vertical</Group>
-			<ShowTitle>true</ShowTitle>
 			<ExtendedTooltip name="ГруппаПараметрыЭлементаРасширеннаяПодсказка" id="19"/>
 			<ChildItems>
 				<CheckBoxField name="Пароль" id="20">
@@ -126,7 +124,6 @@
 				</v8:item>
 			</Title>
 			<Group>Vertical</Group>
-			<ShowTitle>true</ShowTitle>
 			<ExtendedTooltip name="ГруппаТипЗначенияРасширеннаяПодсказка" id="30"/>
 			<ChildItems>
 				<InputField name="ВидТипа" id="31">
@@ -174,6 +171,7 @@
 					</ChildItems>
 				</UsualGroup>
 				<UsualGroup name="ГруппаКвалификаторЧисла" id="68">
+					<Visible>false</Visible>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -181,7 +179,6 @@
 						</v8:item>
 					</Title>
 					<ShowTitle>false</ShowTitle>
-					<Visible>false</Visible>
 					<ExtendedTooltip name="ГруппаКвалификаторЧислаРасширеннаяПодсказка" id="69"/>
 					<ChildItems>
 						<InputField name="Разрядность" id="70">
@@ -210,6 +207,7 @@
 					</ChildItems>
 				</UsualGroup>
 				<UsualGroup name="ГруппаКвалификаторДаты" id="79">
+					<Visible>false</Visible>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -217,7 +215,6 @@
 						</v8:item>
 					</Title>
 					<ShowTitle>false</ShowTitle>
-					<Visible>false</Visible>
 					<ExtendedTooltip name="ГруппаКвалификаторДатыРасширеннаяПодсказка" id="80"/>
 					<ChildItems>
 						<InputField name="ЧастиДаты" id="81">
@@ -238,21 +235,21 @@
 		<TextDocumentField name="Код" id="55">
 			<DataPath>Код</DataPath>
 			<ReadOnly>true</ReadOnly>
-			<TitleLocation>Top</TitleLocation>
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
 					<v8:content>Код для конфигуратора</v8:content>
 				</v8:item>
 			</Title>
+			<TitleLocation>Top</TitleLocation>
 			<Width>70</Width>
 			<AutoMaxWidth>false</AutoMaxWidth>
 			<Height>8</Height>
-			<HorizontalStretch>true</HorizontalStretch>
 			<ContextMenu name="КодКонтекстноеМеню" id="56"/>
 			<ExtendedTooltip name="КодРасширеннаяПодсказка" id="57"/>
 		</TextDocumentField>
 		<Button name="Сгенерировать" id="58">
+			<Type>UsualButton</Type>
 			<CommandName>Form.Command.Сгенерировать</CommandName>
 			<Title>
 				<v8:item>
