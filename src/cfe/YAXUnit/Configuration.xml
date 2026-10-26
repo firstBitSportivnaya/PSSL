@@ -104,7 +104,6 @@
 			<CommonModule>ОМ_ВалидаторПакетов</CommonModule>
 			<CommonModule>ОМ_ИнтеграцииСлужебный</CommonModule>
 			<CommonModule>ОМ_ИнтеграцииСервер</CommonModule>
-			<CommonModule>ОМ_ИнтеграцииУниверсальныеФункции</CommonModule>
 			<CommonModule>ОМ_ИнтеграцииШина</CommonModule>
 			<CommonModule>ОМ_ОбщегоНазначенияВызовСервера</CommonModule>
 			<CommonModule>ЮТАлюр</CommonModule>

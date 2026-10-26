@@ -3,11 +3,11 @@
 	<Subsystem uuid="7442dc24-8344-4035-a595-89f95a33f2de">
 		<Properties>
 			<Name>DatareonESB</Name>
-			<Synonym>&#13;
-				<v8:item>&#13;
-					<v8:lang>ru</v8:lang>&#13;
-					<v8:content>Datareon ESB</v8:content>&#13;
-				</v8:item>&#13;
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Datareon ESB</v8:content>
+				</v8:item>
 			</Synonym>
 			<Comment/>
 			<IncludeHelpInContents>true</IncludeHelpInContents>
@@ -15,7 +15,7 @@
 			<UseOneCommand>false</UseOneCommand>
 			<Explanation/>
 			<Picture/>
-			<Content>&#13;
+			<Content>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.пбп_НезагруженныеСообщенияОбмена</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.пбп_ОтмененныеКРегистрацииОбъекты</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.пбп_ЗадержкаПолученияСообщенийОбмена</xr:Item>
