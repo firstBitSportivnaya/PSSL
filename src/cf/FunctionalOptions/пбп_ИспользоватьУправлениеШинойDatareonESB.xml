@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<FunctionalOption uuid="f2bd05eb-3862-4567-b96a-157f54a68e6d">
+		<Properties>
+			<Name>пбп_ИспользоватьУправлениеШинойDatareonESB</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Использовать управление шиной Datareon ESB</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<Location>Constant.пбп_ИспользоватьУправлениеШинойDatareonESB</Location>
+			<PrivilegedGetMode>true</PrivilegedGetMode>
+			<Content>
+				<xr:Object>DataProcessor.пбп_УправлениеНастройкамиОбменаЧерезШину</xr:Object>
+				<xr:Object>InformationRegister.пбп_НезагруженныеСообщенияОбмена</xr:Object>
+				<xr:Object>InformationRegister.пбп_ЗадержкаПолученияСообщенийОбмена</xr:Object>
+				<xr:Object>InformationRegister.пбп_ОграниченияТранспортаСообщенийОбмена</xr:Object>
+				<xr:Object>InformationRegister.пбп_ОтмененныеКРегистрацииОбъекты</xr:Object>
+			</Content>
+		</Properties>
+	</FunctionalOption>
+</MetaDataObject>

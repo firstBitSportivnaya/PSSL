@@ -280,10 +280,15 @@
 			<Role>пбп_ПросмотрИсторииИнтеграции</Role>
 			<Role>пбп_ПросмотрПодсистемыУправлениеИнтеграциями</Role>
 			<Role>пбп_РедактированиеДокументаДемоКаркас</Role>
+			<Role>пбп_РедактированиеЗадержкиПолученияСообщенийОбмена</Role>
 			<Role>пбп_РедактированиеИсторииЗагрузкиФайлов</Role>
 			<Role>пбп_РедактированиеНастроекИнтеграции</Role>
+			<Role>пбп_РедактированиеНастроекОбменаЧерезШину</Role>
 			<Role>пбп_РедактированиеНастроекОтбораОбъектов</Role>
+			<Role>пбп_РедактированиеНезагруженныхСообщенийОбмена</Role>
+			<Role>пбп_РедактированиеОграниченийТранспортаСообщенийОбмена</Role>
 			<Role>пбп_РедактированиеОжиданияАсинхронныхВызовов</Role>
+			<Role>пбп_РедактированиеОтмененныхКРегистрацииОбъектов</Role>
 			<Role>пбп_РедактированиеПланаВидовХарактеристикПредопределенныеЗначения</Role>
 			<Role>пбп_РедактированиеПользовательскихФункций</Role>
 			<Role>пбп_РедактированиеРегистраСведенийСоответствияОбъектовИБ</Role>
@@ -291,12 +296,18 @@
 			<Role>пбп_РедактированиеСостоянийПредопределенныхЭлементов</Role>
 			<Role>пбп_РедактированиеТиповСоответствияОбъектовИБ</Role>
 			<Role>пбп_РедактированиеТокеновИнтегрируемыхСистем</Role>
+			<Role>пбп_ЧтениеЗадержкиПолученияСообщенийОбмена</Role>
 			<Role>пбп_ЧтениеИсторииЗагрузкиФайлов</Role>
 			<Role>пбп_ЧтениеКонстантыИспользоватьПользовательскиеФункции</Role>
 			<Role>пбп_ЧтениеКонстантыИспользоватьСоответствияОбъектовИнтегрируемыхСистем</Role>
+			<Role>пбп_ЧтениеКонстантыИспользоватьУправлениеШинойDatareonESB</Role>
 			<Role>пбп_ЧтениеНастроекИнтеграции</Role>
+			<Role>пбп_ЧтениеНастроекОбменаЧерезШину</Role>
 			<Role>пбп_ЧтениеНастроекОтборовОбъектов</Role>
+			<Role>пбп_ЧтениеНезагруженныхСообщенийОбмена</Role>
+			<Role>пбп_ЧтениеОграниченийТранспортаСообщенийОбмена</Role>
 			<Role>пбп_ЧтениеОжиданияАсинхронныхВызовов</Role>
+			<Role>пбп_ЧтениеОтмененныхКРегистрацииОбъектов</Role>
 			<Role>пбп_ЧтениеПланаВидовХарактеристикПредопределенныеЗначения</Role>
 			<Role>пбп_ЧтениеРегистраСведенийСоответствияОбъектовИБ</Role>
 			<Role>пбп_ЧтениеСоответствияОбъектовИнтегрируемыхСистем</Role>
@@ -324,8 +335,12 @@
 			<CommonModule>пбп_ЗагрузкаФайлаЧерезТабличныйДокументСервер</CommonModule>
 			<CommonModule>пбп_ЗадачиОбработкаСобытий</CommonModule>
 			<CommonModule>пбп_ИнтеграцииFTPSFTP</CommonModule>
+			<CommonModule>пбп_ИнтеграцииВходящие</CommonModule>
+			<CommonModule>пбп_ИнтеграцииИсходящие</CommonModule>
 			<CommonModule>пбп_ИнтеграцииСервер</CommonModule>
 			<CommonModule>пбп_ИнтеграцииСлужебный</CommonModule>
+			<CommonModule>пбп_ИнтеграцииШина</CommonModule>
+			<CommonModule>пбп_ИнтеграцииШинаПовтИсп</CommonModule>
 			<CommonModule>пбп_КоннекторHTTP</CommonModule>
 			<CommonModule>пбп_КонстантыОбработкаСобытий</CommonModule>
 			<CommonModule>пбп_МетодыРегламентныхЗаданийСервер</CommonModule>
@@ -349,6 +364,7 @@
 			<CommonModule>пбп_ПереадресацияКлиентПовтИсп</CommonModule>
 			<CommonModule>пбп_ПереадресацияКлиентСервер</CommonModule>
 			<CommonModule>пбп_ПереадресацияПовтИсп</CommonModule>
+			<CommonModule>пбп_ПереопределениеРегистрацииОбработчиковDatareon</CommonModule>
 			<CommonModule>пбп_ПланыОбработкаСобытий</CommonModule>
 			<CommonModule>пбп_ПодключаемыеКоманды</CommonModule>
 			<CommonModule>пбп_ПодключаемыеКомандыВызовСервера</CommonModule>
@@ -394,15 +410,18 @@
 			<ScheduledJob>пбп_ЗаполнениеПредопределенныхЭлементов</ScheduledJob>
 			<FunctionalOption>пбп_ИспользоватьПользовательскиеФункции</FunctionalOption>
 			<FunctionalOption>пбп_ИспользоватьСоответствияОбъектовИнтегрируемыхСистем</FunctionalOption>
+			<FunctionalOption>пбп_ИспользоватьУправлениеШинойDatareonESB</FunctionalOption>
 			<DefinedType>пбп_ОбъектыИнтегрируемыхСистем</DefinedType>
 			<DefinedType>пбп_Пользователи</DefinedType>
 			<DefinedType>пбп_ПредопределенныеВсеСсылкиПереопределяемый</DefinedType>
 			<DefinedType>пбп_ТипыОбъектовСоответствийИБ</DefinedType>
+			<DefinedType>пбп_УзелПланаОбменаИнтеграций</DefinedType>
 			<DefinedType>пбп_УчетныеЗаписиЭлектроннойПочты</DefinedType>
 			<DefinedType>пбп_Организации</DefinedType>
 			<CommonCommand>пбп_Константы</CommonCommand>
 			<Constant>пбп_ИспользоватьПользовательскиеФункции</Constant>
 			<Constant>пбп_ИспользоватьСоответствияОбъектовИнтегрируемыхСистем</Constant>
+			<Constant>пбп_ИспользоватьУправлениеШинойDatareonESB</Constant>
 			<CommonForm>пбп_ФормаВыбораПоля</CommonForm>
 			<CommonForm>пбп_ФормаПодключенияКБазе1С</CommonForm>
 			<CommonForm>пбп_ФормаРазрешенияКонфликтовПредопределенныхЭлементов</CommonForm>
@@ -428,8 +447,13 @@
 			<Enum>пбп_ТипыАвторизации</Enum>
 			<Enum>пбп_ФорматыИнтеграций</Enum>
 			<DataProcessor>пбп_УниверсальнаяЗагрузкаИзФайлаЧерезТабличныйДокумент</DataProcessor>
+			<DataProcessor>пбп_УправлениеНастройкамиОбменаЧерезШину</DataProcessor>
+			<InformationRegister>пбп_ЗадержкаПолученияСообщенийОбмена</InformationRegister>
 			<InformationRegister>пбп_ИсторияЗагрузкиФайлов</InformationRegister>
+			<InformationRegister>пбп_НезагруженныеСообщенияОбмена</InformationRegister>
+			<InformationRegister>пбп_ОграниченияТранспортаСообщенийОбмена</InformationRegister>
 			<InformationRegister>пбп_ОжиданиеАсинхронныхВызовов</InformationRegister>
+			<InformationRegister>пбп_ОтмененныеКРегистрацииОбъекты</InformationRegister>
 			<InformationRegister>пбп_СоответствиеОбъектовИнтегрируемыхСистем</InformationRegister>
 			<InformationRegister>пбп_СоответствияОбъектовИБ</InformationRegister>
 			<InformationRegister>пбп_СостоянияПредопределенныхЭлементов</InformationRegister>

@@ -8,10 +8,6 @@
 					<v8:lang>ru</v8:lang>
 					<v8:content>Управление интеграциями</v8:content>
 				</v8:item>
-				<v8:item>
-					<v8:lang>en</v8:lang>
-					<v8:content>Integration Management</v8:content>
-				</v8:item>
 			</Synonym>
 			<Comment/>
 			<IncludeHelpInContents>true</IncludeHelpInContents>
@@ -20,7 +16,7 @@
 			<Explanation/>
 			<Picture>
 				<xr:Ref>CommonPicture.пбп_ПодсистемаУправлениеИнтеграциями</xr:Ref>
-				<xr:LoadTransparent>true</xr:LoadTransparent>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
 			</Picture>
 			<Content>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.пбп_СозданОбновлен</xr:Item>
@@ -82,8 +78,11 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Constant.пбп_ИспользоватьСоответствияОбъектовИнтегрируемыхСистем</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.пбп_ИспользоватьСоответствияОбъектовИнтегрируемыхСистем</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Role.пбп_ЧтениеКонстантыИспользоватьСоответствияОбъектовИнтегрируемыхСистем</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DefinedType.пбп_УзелПланаОбменаИнтеграций</xr:Item>
 			</Content>
 		</Properties>
-		<ChildObjects/>
+		<ChildObjects>
+			<Subsystem>DatareonESB</Subsystem>
+		</ChildObjects>
 	</Subsystem>
 </MetaDataObject>
