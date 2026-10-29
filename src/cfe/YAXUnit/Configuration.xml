@@ -107,6 +107,7 @@
 			<CommonModule>ОМ_ИнтеграцииШина</CommonModule>
 			<CommonModule>ОМ_ОбщегоНазначенияВызовСервера</CommonModule>
 			<CommonModule>ОМ_ОбщегоНазначенияСервер</CommonModule>
+			<CommonModule>ОМ_ОтложенноеПроведениеДокументов</CommonModule>
 			<CommonModule>ЮТАлюр</CommonModule>
 			<CommonModule>ЮТАсинхроннаяОбработкаСлужебныйКлиент</CommonModule>
 			<CommonModule>ЮТВнешниеОбработкиСлужебныйСервер</CommonModule>

@@ -57,7 +57,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок</xr:Item>
 			</DefaultRoles>
 			<Vendor>Первый БИТ</Vendor>
-			<Version>1.0.10.7</Version>
+			<Version>1.0.11.0</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>false</UseManagedFormInOrdinaryApplication>
@@ -264,6 +264,7 @@
 			<Subsystem>пбп_МодификацияФорм</Subsystem>
 			<Subsystem>пбп_НастройкиОтбораОбъектов</Subsystem>
 			<Subsystem>пбп_ОбщегоНазначения</Subsystem>
+			<Subsystem>пбп_ОтложенноеПроведениеДокументов</Subsystem>
 			<Subsystem>пбп_ПодключаемыеКоманды</Subsystem>
 			<Subsystem>пбп_ПодпискиНаСобытия</Subsystem>
 			<Subsystem>пбп_ПользовательскиеФункции</Subsystem>
@@ -285,9 +286,11 @@
 			<Role>пбп_РедактированиеНастроекИнтеграции</Role>
 			<Role>пбп_РедактированиеНастроекОбменаЧерезШину</Role>
 			<Role>пбп_РедактированиеНастроекОтбораОбъектов</Role>
+			<Role>пбп_РедактированиеНастроекОтложенногоПроведения</Role>
 			<Role>пбп_РедактированиеНезагруженныхСообщенийОбмена</Role>
 			<Role>пбп_РедактированиеОграниченийТранспортаСообщенийОбмена</Role>
 			<Role>пбп_РедактированиеОжиданияАсинхронныхВызовов</Role>
+			<Role>пбп_РедактированиеОтложенногоПроведенияДокументов</Role>
 			<Role>пбп_РедактированиеОтмененныхКРегистрацииОбъектов</Role>
 			<Role>пбп_РедактированиеПланаВидовХарактеристикПредопределенныеЗначения</Role>
 			<Role>пбп_РедактированиеПользовательскихФункций</Role>
@@ -298,15 +301,18 @@
 			<Role>пбп_РедактированиеТокеновИнтегрируемыхСистем</Role>
 			<Role>пбп_ЧтениеЗадержкиПолученияСообщенийОбмена</Role>
 			<Role>пбп_ЧтениеИсторииЗагрузкиФайлов</Role>
+			<Role>пбп_ЧтениеКонстантыИспользоватьОтложенноеПроведениеДокументов</Role>
 			<Role>пбп_ЧтениеКонстантыИспользоватьПользовательскиеФункции</Role>
 			<Role>пбп_ЧтениеКонстантыИспользоватьСоответствияОбъектовИнтегрируемыхСистем</Role>
 			<Role>пбп_ЧтениеКонстантыИспользоватьУправлениеШинойDatareonESB</Role>
 			<Role>пбп_ЧтениеНастроекИнтеграции</Role>
 			<Role>пбп_ЧтениеНастроекОбменаЧерезШину</Role>
 			<Role>пбп_ЧтениеНастроекОтборовОбъектов</Role>
+			<Role>пбп_ЧтениеНастроекОтложенногоПроведения</Role>
 			<Role>пбп_ЧтениеНезагруженныхСообщенийОбмена</Role>
 			<Role>пбп_ЧтениеОграниченийТранспортаСообщенийОбмена</Role>
 			<Role>пбп_ЧтениеОжиданияАсинхронныхВызовов</Role>
+			<Role>пбп_ЧтениеОтложенногоПроведенияДокументов</Role>
 			<Role>пбп_ЧтениеОтмененныхКРегистрацииОбъектов</Role>
 			<Role>пбп_ЧтениеПланаВидовХарактеристикПредопределенныеЗначения</Role>
 			<Role>пбп_ЧтениеРегистраСведенийСоответствияОбъектовИБ</Role>
@@ -359,6 +365,8 @@
 			<CommonModule>пбп_ОбщегоНазначенияКлиентСервер</CommonModule>
 			<CommonModule>пбп_ОбщегоНазначенияПовтИсп</CommonModule>
 			<CommonModule>пбп_ОбщегоНазначенияСервер</CommonModule>
+			<CommonModule>пбп_ОтложенноеПроведениеДокументов</CommonModule>
+			<CommonModule>пбп_ОтложенноеПроведениеДокументовВызовСервера</CommonModule>
 			<CommonModule>пбп_Переадресация</CommonModule>
 			<CommonModule>пбп_ПереадресацияКлиент</CommonModule>
 			<CommonModule>пбп_ПереадресацияКлиентПовтИсп</CommonModule>
@@ -406,11 +414,14 @@
 			<EventSubscription>пбп_РегистрыСведенийПередЗаписью</EventSubscription>
 			<EventSubscription>пбп_РегистрыСведенийПриЗаписи</EventSubscription>
 			<ScheduledJob>пбп_ВыполнениеПользовательскихФункцийФайловыхОбменов</ScheduledJob>
+			<ScheduledJob>пбп_ОтложенноеПроведениеДокументов</ScheduledJob>
 			<ScheduledJob>пбп_ОчисткаИсторииИнтеграции</ScheduledJob>
 			<ScheduledJob>пбп_ЗаполнениеПредопределенныхЭлементов</ScheduledJob>
 			<FunctionalOption>пбп_ИспользоватьПользовательскиеФункции</FunctionalOption>
 			<FunctionalOption>пбп_ИспользоватьСоответствияОбъектовИнтегрируемыхСистем</FunctionalOption>
 			<FunctionalOption>пбп_ИспользоватьУправлениеШинойDatareonESB</FunctionalOption>
+			<FunctionalOption>пбп_ИспользоватьОтложенноеПроведениеДокументов</FunctionalOption>
+			<DefinedType>пбп_ОбъектОтложенногоПроведения</DefinedType>
 			<DefinedType>пбп_ОбъектыИнтегрируемыхСистем</DefinedType>
 			<DefinedType>пбп_Пользователи</DefinedType>
 			<DefinedType>пбп_ПредопределенныеВсеСсылкиПереопределяемый</DefinedType>
@@ -419,6 +430,7 @@
 			<DefinedType>пбп_УчетныеЗаписиЭлектроннойПочты</DefinedType>
 			<DefinedType>пбп_Организации</DefinedType>
 			<CommonCommand>пбп_Константы</CommonCommand>
+			<Constant>пбп_ИспользоватьОтложенноеПроведениеДокументов</Constant>
 			<Constant>пбп_ИспользоватьПользовательскиеФункции</Constant>
 			<Constant>пбп_ИспользоватьСоответствияОбъектовИнтегрируемыхСистем</Constant>
 			<Constant>пбп_ИспользоватьУправлениеШинойDatareonESB</Constant>
@@ -450,9 +462,11 @@
 			<DataProcessor>пбп_УправлениеНастройкамиОбменаЧерезШину</DataProcessor>
 			<InformationRegister>пбп_ЗадержкаПолученияСообщенийОбмена</InformationRegister>
 			<InformationRegister>пбп_ИсторияЗагрузкиФайлов</InformationRegister>
+			<InformationRegister>пбп_НастройкиОтложенногоПроведения</InformationRegister>
 			<InformationRegister>пбп_НезагруженныеСообщенияОбмена</InformationRegister>
 			<InformationRegister>пбп_ОграниченияТранспортаСообщенийОбмена</InformationRegister>
 			<InformationRegister>пбп_ОжиданиеАсинхронныхВызовов</InformationRegister>
+			<InformationRegister>пбп_ОтложенноеПроведениеДокументов</InformationRegister>
 			<InformationRegister>пбп_ОтмененныеКРегистрацииОбъекты</InformationRegister>
 			<InformationRegister>пбп_СоответствиеОбъектовИнтегрируемыхСистем</InformationRegister>
 			<InformationRegister>пбп_СоответствияОбъектовИБ</InformationRegister>
