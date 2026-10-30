@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<Table name="Список" id="1">
+			<DataPath>Список</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<CommandBarLocation>None</CommandBarLocation>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="СписокКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="СписокКоманднаяПанель" id="3"/>
+			<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="4"/>
+			<SearchStringAddition name="СписокСтрокаПоиска" id="5">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСтрокаПоискаКонтекстноеМеню" id="6"/>
+				<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокСостояниеПросмотра" id="8">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСостояниеПросмотраКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокУправлениеПоиском" id="11">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="Объект" id="14">
+					<DataPath>Список.Объект</DataPath>
+					<ContextMenu name="ОбъектКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="ОбъектРасширеннаяПодсказка" id="16"/>
+				</LabelField>
+				<LabelField name="ДатаДобавления" id="17">
+					<DataPath>Список.ДатаДобавления</DataPath>
+					<ContextMenu name="ДатаДобавленияКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="ДатаДобавленияРасширеннаяПодсказка" id="19"/>
+				</LabelField>
+				<LabelField name="ДатаПоследнейПопытки" id="20">
+					<DataPath>Список.ДатаПоследнейПопытки</DataPath>
+					<ContextMenu name="ДатаПоследнейПопыткиКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="ДатаПоследнейПопыткиРасширеннаяПодсказка" id="22"/>
+				</LabelField>
+				<LabelField name="ДатаСледующейПопытки" id="23">
+					<DataPath>Список.ДатаСледующейПопытки</DataPath>
+					<ContextMenu name="ДатаСледующейПопыткиКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="ДатаСледующейПопыткиРасширеннаяПодсказка" id="25"/>
+				</LabelField>
+				<LabelField name="КоличествоПопыток" id="26">
+					<DataPath>Список.КоличествоПопыток</DataPath>
+					<ContextMenu name="КоличествоПопытокКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="КоличествоПопытокРасширеннаяПодсказка" id="28"/>
+				</LabelField>
+				<CheckBoxField name="Перепроведение" id="29">
+					<DataPath>Список.Перепроведение</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ПерепроведениеКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="ПерепроведениеРасширеннаяПодсказка" id="31"/>
+				</CheckBoxField>
+				<CheckBoxField name="ОбработкаПрекращена" id="32">
+					<DataPath>Список.ОбработкаПрекращена</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ОбработкаПрекращенаКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="ОбработкаПрекращенаРасширеннаяПодсказка" id="34"/>
+				</CheckBoxField>
+				<CheckBoxField name="ВОбработке" id="35">
+					<DataPath>Список.ВОбработке</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ВОбработкеКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="ВОбработкеРасширеннаяПодсказка" id="37"/>
+				</CheckBoxField>
+				<LabelField name="ДатаЗахвата" id="38">
+					<DataPath>Список.ДатаЗахвата</DataPath>
+					<ContextMenu name="ДатаЗахватаКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="ДатаЗахватаРасширеннаяПодсказка" id="40"/>
+				</LabelField>
+				<LabelField name="ТекстОшибки" id="41">
+					<DataPath>Список.ТекстОшибки</DataPath>
+					<ContextMenu name="ТекстОшибкиКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="ТекстОшибкиРасширеннаяПодсказка" id="43"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Список" id="1">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Settings xsi:type="DynamicList">
+				<MainTable>InformationRegister.пбп_ОтложенноеПроведениеДокументов</MainTable>
+			</Settings>
+		</Attribute>
+	</Attributes>
+</Form>
