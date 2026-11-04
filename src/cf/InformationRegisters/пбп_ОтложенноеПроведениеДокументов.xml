@@ -761,7 +761,7 @@
 					<TypeReductionMode>TransformValues</TypeReductionMode>
 				</Properties>
 			</Dimension>
-					<Form>ФормаСписка</Form>
+			<Form>ФормаСписка</Form>
 		</ChildObjects>
 	</InformationRegister>
 </MetaDataObject>

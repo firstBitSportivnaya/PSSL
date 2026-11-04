@@ -3,24 +3,24 @@
 	<Subsystem uuid="2e75d677-6ef3-4e83-b548-19fa627cea00">
 		<Properties>
 			<Name>пбп_ОтложенноеПроведениеДокументов</Name>
-			<Synonym>&#13;
-				<v8:item>&#13;
-					<v8:lang>ru</v8:lang>&#13;
-					<v8:content>Отложенное проведение документов</v8:content>&#13;
-				</v8:item>&#13;
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отложенное проведение документов</v8:content>
+				</v8:item>
 			</Synonym>
 			<Comment>Очередь и регламентное задание отложенного проведения документов.</Comment>
 			<IncludeHelpInContents>true</IncludeHelpInContents>
 			<IncludeInCommandInterface>false</IncludeInCommandInterface>
 			<UseOneCommand>false</UseOneCommand>
-			<Explanation>&#13;
-				<v8:item>&#13;
-					<v8:lang>ru</v8:lang>&#13;
-					<v8:content>Постановка документов в очередь проведения и просмотр очереди.</v8:content>&#13;
-				</v8:item>&#13;
+			<Explanation>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Постановка документов в очередь проведения и просмотр очереди.</v8:content>
+				</v8:item>
 			</Explanation>
 			<Picture/>
-			<Content>&#13;
+			<Content>
 				<xr:Item xsi:type="xr:MDObjectRef">Constant.пбп_ИспользоватьОтложенноеПроведениеДокументов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.пбп_ИспользоватьОтложенноеПроведениеДокументов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.пбп_ОтложенноеПроведениеДокументов</xr:Item>

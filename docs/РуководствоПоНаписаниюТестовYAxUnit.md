@@ -150,7 +150,7 @@
 
 ## Прогон
 
-Загрузка и пакетный прогон — skill `pssl-library`. Кратко: `unica_run`, операция `push`, по каждому изменившемуся source-set (сначала `main`, затем `YAXUNIT`), потом скрипт `Run-Yaxunit.ps1`. Скрипт исходники не отправляет. Команда внутри него — `test yaxunit all --no-push`. Итог — код выхода скрипта и сводка `build\out\yaxunit\*.txt`, не окно PowerShell и не `tools/yaxunit.json`.
+Загрузка и пакетный прогон — skill `pssl-library`. Кратко: `unica_run`, операция `push`, по каждому изменившемуся source-set (сначала `main`, затем `YAXUNIT`), потом скрипт `Run-Yaxunit.ps1`. Команда внутри него — `test yaxunit all`. Итог — код выхода скрипта и сводка `build\out\yaxunit\*.txt`, не окно PowerShell и не `tools/yaxunit.json`.
 
 Интерактивно — подсистема YAxUnit в 1С:Предприятие.
 
