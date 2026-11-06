@@ -884,7 +884,7 @@
 							<xr:ChoiceParameters/>
 						</xr:StandardAttribute>
 					</StandardAttributes>
-					<LineNumberLength>9</LineNumberLength>
+					<LineNumberLength>5</LineNumberLength>
 					<Use>ForItem</Use>
 				</Properties>
 				<ChildObjects>
