@@ -342,7 +342,10 @@
 			<CommonModule>пбп_ВалидаторПакетовПовтИсп</CommonModule>
 			<CommonModule>пбп_ВалидаторПакетовСлужебный</CommonModule>
 			<CommonModule>пбп_Виджеты</CommonModule>
+			<CommonModule>пбп_ВиджетыВызовСервера</CommonModule>
+			<CommonModule>пбп_ВиджетыКлиент</CommonModule>
 			<CommonModule>пбп_ВиджетыКлиентСервер</CommonModule>
+			<CommonModule>пбп_ВиджетыРабочийСтол</CommonModule>
 			<CommonModule>пбп_ВиджетыСлужебный</CommonModule>
 			<CommonModule>пбп_ДокументыОбработкаСобытий</CommonModule>
 			<CommonModule>пбп_ЗагрузкаФайлаЧерезТабличныйДокументВызовСервера</CommonModule>
@@ -449,6 +452,7 @@
 			<CommonForm>пбп_ФормаПодключенияКБазе1С</CommonForm>
 			<CommonForm>пбп_ФормаРазрешенияКонфликтовПредопределенныхЭлементов</CommonForm>
 			<CommonForm>пбп_Константы</CommonForm>
+			<CommonForm>пбп_РабочийСтол</CommonForm>
 			<Catalog>пбп_Виджеты</Catalog>
 			<Catalog>пбп_ИнтеграционныеПотоки</Catalog>
 			<Catalog>пбп_ИнтегрируемыеСистемы</Catalog>
