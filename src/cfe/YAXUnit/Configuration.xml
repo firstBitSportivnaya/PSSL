@@ -111,6 +111,7 @@
 			<CommonModule>ОМ_ВиджетыСлужебный</CommonModule>
 			<CommonModule>ОМ_ВиджетыКлиентСервер</CommonModule>
 			<CommonModule>ОМ_ВиджетыРабочийСтол</CommonModule>
+			<CommonModule>пбп_ВиджетыПереопределяемый</CommonModule>
 			<CommonModule>ЮТАлюр</CommonModule>
 			<CommonModule>ЮТАсинхроннаяОбработкаСлужебныйКлиент</CommonModule>
 			<CommonModule>ЮТВнешниеОбработкиСлужебныйСервер</CommonModule>

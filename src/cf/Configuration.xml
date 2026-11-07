@@ -345,6 +345,7 @@
 			<CommonModule>пбп_ВиджетыВызовСервера</CommonModule>
 			<CommonModule>пбп_ВиджетыКлиент</CommonModule>
 			<CommonModule>пбп_ВиджетыКлиентСервер</CommonModule>
+			<CommonModule>пбп_ВиджетыПереопределяемый</CommonModule>
 			<CommonModule>пбп_ВиджетыРабочийСтол</CommonModule>
 			<CommonModule>пбп_ВиджетыСлужебный</CommonModule>
 			<CommonModule>пбп_ДокументыОбработкаСобытий</CommonModule>
