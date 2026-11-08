@@ -82,7 +82,7 @@
 			</Content>
 		</Properties>
 		<ChildObjects>
-			<Subsystem>DatareonESB</Subsystem>
+			<Subsystem>АсинхронныеИнтеграции</Subsystem>
 		</ChildObjects>
 	</Subsystem>
 </MetaDataObject>

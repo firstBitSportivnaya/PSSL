@@ -1,6 +1,6 @@
-@startuml datareon_esb_subsystem
+@startuml async_subsystem
 
-title ER-Diagram Datareon ESB subsystem
+title ER-Diagram Async subsystem
 
 entity "Справочник: Интеграционные потоки" as eFlows {
     *УникальныйИдентификатор : uuid <<generated>>
