@@ -15,6 +15,17 @@
 		</right>
 	</object>
 	<object>
+		<name>InformationRegister.пбп_КонтрольДоставкиСообщений</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>DataProcessor.пбп_УправлениеНастройкамиОбменаЧерезШину</name>
 		<right>
 			<name>Use</name>
@@ -76,17 +87,6 @@
 	</object>
 	<object>
 		<name>InformationRegister.пбп_ОграниченияТранспортаСообщенийОбмена</name>
-		<right>
-			<name>Read</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>InformationRegister.пбп_КонтрольДоставкиСообщений</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>

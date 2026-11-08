@@ -36,6 +36,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.пбп_РедактированиеОграниченийТранспортаСообщенийОбмена</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Role.пбп_ЧтениеОтмененныхКРегистрацииОбъектов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Role.пбп_РедактированиеОтмененныхКРегистрацииОбъектов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.пбп_КонтрольДоставкиСообщений</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
