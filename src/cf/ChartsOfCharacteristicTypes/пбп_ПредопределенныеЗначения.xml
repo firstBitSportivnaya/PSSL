@@ -46,6 +46,7 @@
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
 				<v8:Type>xs:string</v8:Type>
+				<v8:Type>cfg:CatalogRef.пбп_ПользовательскиеФункции</v8:Type>
 				<v8:Type>xs:dateTime</v8:Type>
 				<v8:Type>xs:decimal</v8:Type>
 				<v8:NumberQualifiers>
@@ -744,6 +745,7 @@
 			<Form>ФормаЭлемента</Form>
 			<Form>ФормаСписка</Form>
 			<Form>ФормаГруппы</Form>
+			<Form>ФормаГенератораКода</Form>
 		</ChildObjects>
 	</ChartOfCharacteristicTypes>
 </MetaDataObject>

@@ -7,9 +7,14 @@ build/
 .build/
 DumpFilesIndex.txt
 
+# Local orchestra (each contributor keeps their own; Cursor, Claude Code, Codex)
+.cursor/skills/pssl-orchestrator/
+.claude/skills/pssl-orchestrator/
+.codex/skills/pssl-orchestrator/
+.agents/skills/pssl-orchestrator/
+
 # Local Cursor / Unica pins (do not commit machine paths)
 .dev.env
-v8project.yaml
 v8project.local.yaml
 unica.toml
 unica.local.toml

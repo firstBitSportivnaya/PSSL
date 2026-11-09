@@ -101,8 +101,13 @@
 			<CommonModule>МокитоПерехват</CommonModule>
 			<CommonModule>МокитоПроверки</CommonModule>
 			<CommonModule>МокитоСлужебный</CommonModule>
+			<CommonModule>ОМ_ВалидаторПакетов</CommonModule>
 			<CommonModule>ОМ_ИнтеграцииСлужебный</CommonModule>
 			<CommonModule>ОМ_ИнтеграцииСервер</CommonModule>
+			<CommonModule>ОМ_ИнтеграцииШина</CommonModule>
+			<CommonModule>ОМ_ОбщегоНазначенияВызовСервера</CommonModule>
+			<CommonModule>ОМ_ОбщегоНазначенияСервер</CommonModule>
+			<CommonModule>ОМ_ОтложенноеПроведениеДокументов</CommonModule>
 			<CommonModule>ЮТАлюр</CommonModule>
 			<CommonModule>ЮТАсинхроннаяОбработкаСлужебныйКлиент</CommonModule>
 			<CommonModule>ЮТВнешниеОбработкиСлужебныйСервер</CommonModule>
@@ -175,7 +180,6 @@
 			<CommonModule>ЮТПредикатыСлужебныйКлиентСервер</CommonModule>
 			<CommonModule>ЮТПреобразованияСлужебный</CommonModule>
 			<CommonModule>ЮТПроверкиСлужебный</CommonModule>
-			<CommonModule>ОМ_ОбщегоНазаначенияСервер</CommonModule>
 			<CommonModule>ОМ_КоннекторHTTP</CommonModule>
 			<CommonModule>ОМ_НастройкиИнтеграции</CommonModule>
 			<CommonModule>ОМ_ПредопределенныеЗначенияСлужебный</CommonModule>
@@ -184,6 +188,7 @@
 			<CommonModule>ОМ_ПостроительСпецификацииOpenAPI</CommonModule>
 			<CommonModule>пбп_ПостроительСпецификацииOpenAPI</CommonModule>
 			<CommonModule>ОМ_ПредопределенныеЗначения</CommonModule>
+			<CommonModule>ОМ_ПредопределенныеЗначенияКлиентСервер</CommonModule>
 			<CommonModule>ОМ_СтроковыеФункцииКлиентСервер</CommonModule>
 			<CommonModule>ЮТРаботаСТекстом</CommonModule>
 			<CommonModule>ЮТРазрешениеЗависимостейСлужебныйВызовСервера</CommonModule>
@@ -217,6 +222,7 @@
 			<CommonModule>ЮТЧитательСлужебный</CommonModule>
 			<CommonModule>ЮТЧитательСлужебныйВызовСервера</CommonModule>
 			<CommonModule>ЮТЧитательСлужебныйКлиент</CommonModule>
+			<CommonModule>ОМ_СхемыЗапросов</CommonModule>
 			<DataProcessor>ЮТHTTPServiceRequest</DataProcessor>
 			<DataProcessor>ЮТHTTPОтвет</DataProcessor>
 			<DataProcessor>ЮТHTTPСервисЗапрос</DataProcessor>

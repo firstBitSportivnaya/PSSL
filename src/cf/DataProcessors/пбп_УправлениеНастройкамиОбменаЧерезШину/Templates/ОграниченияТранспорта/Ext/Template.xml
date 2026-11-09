@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>ЗапросИзРегистра</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПорядокОтправки</dataPath>
+			<field>ПорядокОтправки</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Порядок отправки</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ИнтегрируемаяСистема</dataPath>
+			<field>ИнтегрируемаяСистема</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Интегрируемая система</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ИнтеграционныйПоток</dataPath>
+			<field>ИнтеграционныйПоток</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Интеграционный поток</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТранспортЗапрещен</dataPath>
+			<field>ТранспортЗапрещен</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Транспорт запрещен</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КонтролироватьДоставку</dataPath>
+			<field>КонтролироватьДоставку</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Контролировать доставку</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КонтролироватьПолучение</dataPath>
+			<field>КонтролироватьПолучение</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Контролировать получение</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	пбп_ИнтеграционныеПотоки.Ссылка КАК Ссылка,
+	пбп_ИнтеграционныеПотоки.НастройкаИнтеграции.ИнтегрируемаяСистема КАК ИнтегрируемаяСистема
+ПОМЕСТИТЬ ВсеПотоки
+ИЗ
+	Справочник.пбп_ИнтеграционныеПотоки КАК пбп_ИнтеграционныеПотоки
+ГДЕ
+	НЕ пбп_ИнтеграционныеПотоки.ПометкаУдаления
+	И НЕ пбп_ИнтеграционныеПотоки.ЭтоГруппа
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВсеПотоки.ИнтегрируемаяСистема КАК ИнтегрируемаяСистема,
+	ВсеПотоки.Ссылка КАК ИнтеграционныйПоток,
+	ЕСТЬNULL(пбп_ОграниченияТранспортаСообщенийОбмена.ТранспортЗапрещен, ЛОЖЬ) КАК ТранспортЗапрещен,
+	ЕСТЬNULL(пбп_ОграниченияТранспортаСообщенийОбмена.КонтролироватьДоставку, ЛОЖЬ) КАК КонтролироватьДоставку,
+	ЕСТЬNULL(пбп_ОграниченияТранспортаСообщенийОбмена.ПорядокОтправки, 0) КАК ПорядокОтправки,
+	ЕСТЬNULL(пбп_ОграниченияТранспортаСообщенийОбмена.КонтролироватьПолучение, ЛОЖЬ) КАК КонтролироватьПолучение
+ИЗ
+	ВсеПотоки КАК ВсеПотоки
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.пбп_ОграниченияТранспортаСообщенийОбмена КАК пбп_ОграниченияТранспортаСообщенийОбмена
+		ПО ВсеПотоки.Ссылка = пбп_ОграниченияТранспортаСообщенийОбмена.ИнтеграционныйПоток</query>
+	</dataSet>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Основной</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ИнтеграционныйПоток</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ТранспортЗапрещен</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КонтролироватьДоставку</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПорядокОтправки</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КонтролироватьПолучение</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>ИнтегрируемаяСистема</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>
