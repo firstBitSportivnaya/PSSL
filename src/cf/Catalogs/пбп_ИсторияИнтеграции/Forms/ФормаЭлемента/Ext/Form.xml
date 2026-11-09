@@ -618,6 +618,78 @@
 						</Pages>
 					</ChildItems>
 				</Page>
+				<Page name="ГруппаПараметрыСообщения" id="225">
+					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Параметры сообщения</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Message parameters</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаПараметрыСообщенияРасширеннаяПодсказка" id="226"/>
+					<ChildItems>
+						<Table name="ПараметрыСообщения" id="227">
+							<Representation>List</Representation>
+							<ReadOnly>true</ReadOnly>
+							<DataPath>Объект.ПараметрыСообщения</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ПараметрыСообщенияКонтекстноеМеню" id="228"/>
+							<AutoCommandBar name="ПараметрыСообщенияКоманднаяПанель" id="229">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ПараметрыСообщенияРасширеннаяПодсказка" id="230"/>
+							<SearchStringAddition name="ПараметрыСообщенияСтрокаПоиска" id="231">
+								<AdditionSource>
+									<Item>ПараметрыСообщения</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПараметрыСообщенияСтрокаПоискаКонтекстноеМеню" id="232"/>
+								<ExtendedTooltip name="ПараметрыСообщенияСтрокаПоискаРасширеннаяПодсказка" id="233"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ПараметрыСообщенияСостояниеПросмотра" id="234">
+								<AdditionSource>
+									<Item>ПараметрыСообщения</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПараметрыСообщенияСостояниеПросмотраКонтекстноеМеню" id="235"/>
+								<ExtendedTooltip name="ПараметрыСообщенияСостояниеПросмотраРасширеннаяПодсказка" id="236"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ПараметрыСообщенияУправлениеПоиском" id="237">
+								<AdditionSource>
+									<Item>ПараметрыСообщения</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ПараметрыСообщенияУправлениеПоискомКонтекстноеМеню" id="238"/>
+								<ExtendedTooltip name="ПараметрыСообщенияУправлениеПоискомРасширеннаяПодсказка" id="239"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="ПараметрыСообщенияИмя" id="240">
+									<DataPath>Объект.ПараметрыСообщения.Имя</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПараметрыСообщенияИмяКонтекстноеМеню" id="241"/>
+									<ExtendedTooltip name="ПараметрыСообщенияИмяРасширеннаяПодсказка" id="242"/>
+								</InputField>
+								<InputField name="ПараметрыСообщенияЗначение" id="243">
+									<DataPath>Объект.ПараметрыСообщения.Значение</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПараметрыСообщенияЗначениеКонтекстноеМеню" id="244"/>
+									<ExtendedTooltip name="ПараметрыСообщенияЗначениеРасширеннаяПодсказка" id="245"/>
+								</InputField>
+								<CheckBoxField name="ПараметрыСообщенияИсходящий" id="246">
+									<DataPath>Объект.ПараметрыСообщения.Исходящий</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ПараметрыСообщенияИсходящийКонтекстноеМеню" id="247"/>
+									<ExtendedTooltip name="ПараметрыСообщенияИсходящийРасширеннаяПодсказка" id="248"/>
+								</CheckBoxField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
 			</ChildItems>
 		</Pages>
 		<InputField name="Пользователь" id="107">
