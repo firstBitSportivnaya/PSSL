@@ -300,16 +300,16 @@
 			</Resource>
 			<Dimension uuid="a1ef621e-7d13-409b-be82-d67c1577404e">
 				<Properties>
-					<Name>Пользователь</Name>
+					<Name>ИдентификаторПользователя</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Пользователь</v8:content>
+							<v8:content>Идентификатор пользователя</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:TypeSet>cfg:DefinedType.пбп_Пользователи</v8:TypeSet>
+						<v8:Type>v8:UUID</v8:Type>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
