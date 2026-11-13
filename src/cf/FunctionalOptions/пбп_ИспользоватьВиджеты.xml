@@ -12,12 +12,7 @@
 			<Comment/>
 			<Location>Constant.пбп_ИспользоватьВиджеты</Location>
 			<PrivilegedGetMode>true</PrivilegedGetMode>
-			<Content>
-				<xr:Object>Catalog.пбп_Виджеты</xr:Object>
-				<xr:Object>Catalog.пбп_ПоказателиВиджетов</xr:Object>
-				<xr:Object>Catalog.пбп_РабочиеСтолы</xr:Object>
-				<xr:Object>InformationRegister.пбп_ЗначенияПоказателейВиджетов</xr:Object>
-			</Content>
+			<Content/>
 		</Properties>
 	</FunctionalOption>
 </MetaDataObject>
