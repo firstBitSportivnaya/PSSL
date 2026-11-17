@@ -79,13 +79,12 @@
 				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.пбп_ИспользоватьСоответствияОбъектовИнтегрируемыхСистем</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Role.пбп_ЧтениеКонстантыИспользоватьСоответствияОбъектовИнтегрируемыхСистем</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DefinedType.пбп_УзелПланаОбменаИнтеграций</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.пбп_КонтрольДоставкиСообщений</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Role.пбп_ЧтениеКонтроляДоставкиСообщений</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Role.пбп_РедактированиеКонтроляДоставкиСообщений</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects>
-			<Subsystem>DatareonESB</Subsystem>
+			<Subsystem>АсинхронныеИнтеграции</Subsystem>
 		</ChildObjects>
 	</Subsystem>
 </MetaDataObject>
