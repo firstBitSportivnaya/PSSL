@@ -5,5 +5,5 @@
 	<independentRightsOfChildObjects>false</independentRightsOfChildObjects>
 <object>
 	<name>InformationRegister.пбп_ЗначенияПоказателейВиджетов</name>
-<right><name>Read</name><value>true</value></right><right><name>View</name><value>true</value></right></object>
+<right><name>Read</name><value>true</value></right></object>
 </Rights>
