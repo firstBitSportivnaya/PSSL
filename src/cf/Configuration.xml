@@ -57,7 +57,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок</xr:Item>
 			</DefaultRoles>
 			<Vendor>Первый БИТ</Vendor>
-			<Version>1.0.11.0</Version>
+			<Version>1.0.12.0</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>false</UseManagedFormInOrdinaryApplication>
@@ -259,6 +259,7 @@
 		<ChildObjects>
 			<Language>Русский</Language>
 			<Language>English</Language>
+			<Subsystem>пбп_Виджеты</Subsystem>
 			<Subsystem>пбп_ЗагрузкаИзТабличногоДокумента</Subsystem>
 			<Subsystem>пбп_КомандныйИнтерфейсУправлениеНастройками</Subsystem>
 			<Subsystem>пбп_МодификацияФорм</Subsystem>
@@ -280,6 +281,7 @@
 			<Role>ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок</Role>
 			<Role>пбп_ПросмотрИсторииИнтеграции</Role>
 			<Role>пбп_ПросмотрПодсистемыУправлениеИнтеграциями</Role>
+			<Role>пбп_РедактированиеВиджетов</Role>
 			<Role>пбп_РедактированиеДокументаДемоКаркас</Role>
 			<Role>пбп_РедактированиеЗадержкиПолученияСообщенийОбмена</Role>
 			<Role>пбп_РедактированиеИсторииЗагрузкиФайлов</Role>
@@ -300,8 +302,11 @@
 			<Role>пбп_РедактированиеСостоянийПредопределенныхЭлементов</Role>
 			<Role>пбп_РедактированиеТиповСоответствияОбъектовИБ</Role>
 			<Role>пбп_РедактированиеТокеновИнтегрируемыхСистем</Role>
+			<Role>пбп_ЧтениеВиджетов</Role>
 			<Role>пбп_ЧтениеЗадержкиПолученияСообщенийОбмена</Role>
+			<Role>пбп_ЧтениеЗначенийПоказателейВиджетов</Role>
 			<Role>пбп_ЧтениеИсторииЗагрузкиФайлов</Role>
+			<Role>пбп_ЧтениеКонстантыИспользоватьВиджеты</Role>
 			<Role>пбп_ЧтениеКонстантыИспользоватьОтложенноеПроведениеДокументов</Role>
 			<Role>пбп_ЧтениеКонстантыИспользоватьПользовательскиеФункции</Role>
 			<Role>пбп_ЧтениеКонстантыИспользоватьСоответствияОбъектовИнтегрируемыхСистем</Role>
@@ -337,6 +342,13 @@
 			<CommonModule>пбп_ВалидаторПакетов</CommonModule>
 			<CommonModule>пбп_ВалидаторПакетовПовтИсп</CommonModule>
 			<CommonModule>пбп_ВалидаторПакетовСлужебный</CommonModule>
+			<CommonModule>пбп_Виджеты</CommonModule>
+			<CommonModule>пбп_ВиджетыВызовСервера</CommonModule>
+			<CommonModule>пбп_ВиджетыКлиент</CommonModule>
+			<CommonModule>пбп_ВиджетыКлиентСервер</CommonModule>
+			<CommonModule>пбп_ВиджетыПереопределяемый</CommonModule>
+			<CommonModule>пбп_ВиджетыРабочийСтол</CommonModule>
+			<CommonModule>пбп_ВиджетыСлужебный</CommonModule>
 			<CommonModule>пбп_ДокументыОбработкаСобытий</CommonModule>
 			<CommonModule>пбп_ЗагрузкаФайлаЧерезТабличныйДокументВызовСервера</CommonModule>
 			<CommonModule>пбп_ЗагрузкаФайлаЧерезТабличныйДокументКлиент</CommonModule>
@@ -423,6 +435,7 @@
 			<FunctionalOption>пбп_ИспользоватьСоответствияОбъектовИнтегрируемыхСистем</FunctionalOption>
 			<FunctionalOption>пбп_ИспользоватьУправлениеАсинхроннымиИнтеграциями</FunctionalOption>
 			<FunctionalOption>пбп_ИспользоватьОтложенноеПроведениеДокументов</FunctionalOption>
+			<FunctionalOption>пбп_ИспользоватьВиджеты</FunctionalOption>
 			<DefinedType>пбп_ОбъектОтложенногоПроведения</DefinedType>
 			<DefinedType>пбп_ОбъектыИнтегрируемыхСистем</DefinedType>
 			<DefinedType>пбп_Пользователи</DefinedType>
@@ -432,6 +445,7 @@
 			<DefinedType>пбп_УчетныеЗаписиЭлектроннойПочты</DefinedType>
 			<DefinedType>пбп_Организации</DefinedType>
 			<CommonCommand>пбп_Константы</CommonCommand>
+			<Constant>пбп_ИспользоватьВиджеты</Constant>
 			<Constant>пбп_ИспользоватьОтложенноеПроведениеДокументов</Constant>
 			<Constant>пбп_ИспользоватьПользовательскиеФункции</Constant>
 			<Constant>пбп_ИспользоватьСоответствияОбъектовИнтегрируемыхСистем</Constant>
@@ -440,19 +454,27 @@
 			<CommonForm>пбп_ФормаПодключенияКБазе1С</CommonForm>
 			<CommonForm>пбп_ФормаРазрешенияКонфликтовПредопределенныхЭлементов</CommonForm>
 			<CommonForm>пбп_Константы</CommonForm>
+			<CommonForm>пбп_РабочийСтол</CommonForm>
+			<Catalog>пбп_Виджеты</Catalog>
 			<Catalog>пбп_ИнтеграционныеПотоки</Catalog>
 			<Catalog>пбп_ИнтегрируемыеСистемы</Catalog>
 			<Catalog>пбп_ИсторияИнтеграции</Catalog>
 			<Catalog>пбп_НастройкиИнтеграции</Catalog>
 			<Catalog>пбп_НастройкиОтбораОбъектов</Catalog>
+			<Catalog>пбп_ПоказателиВиджетов</Catalog>
 			<Catalog>пбп_ПользовательскиеФункции</Catalog>
+			<Catalog>пбп_РабочиеСтолы</Catalog>
 			<Catalog>пбп_ТипСоответствияОбъектовИБ</Catalog>
 			<Catalog>пбп_ТипыИнтеграций</Catalog>
 			<Document>ДемоРаботаСФормами</Document>
+			<Enum>пбп_ВидыВиджетов</Enum>
+			<Enum>пбп_ВидыИсточниковПоказателейВиджетов</Enum>
 			<Enum>пбп_ВидыОшибокПредопределенныхЭлементов</Enum>
+			<Enum>пбп_ДействияВиджетов</Enum>
 			<Enum>пбп_КонтекстыВыполненияПользовательскихФункций</Enum>
 			<Enum>пбп_МетодыЗапросаREST</Enum>
 			<Enum>пбп_НаправленияИнтеграционныхПотоков</Enum>
+			<Enum>пбп_РазмерыВиджетов</Enum>
 			<Enum>пбп_СозданОбновлен</Enum>
 			<Enum>пбп_СтатусыАсинхронныхВызовов</Enum>
 			<Enum>пбп_СтатусыИнтеграции</Enum>
@@ -460,9 +482,11 @@
 			<Enum>пбп_ТипыJSON</Enum>
 			<Enum>пбп_ТипыАвторизации</Enum>
 			<Enum>пбп_ФорматыИнтеграций</Enum>
+			<Enum>пбп_ЦветаВиджетов</Enum>
 			<DataProcessor>пбп_УниверсальнаяЗагрузкаИзФайлаЧерезТабличныйДокумент</DataProcessor>
 			<DataProcessor>пбп_УправлениеНастройкамиОбменаЧерезШину</DataProcessor>
 			<InformationRegister>пбп_ЗадержкаПолученияСообщенийОбмена</InformationRegister>
+			<InformationRegister>пбп_ЗначенияПоказателейВиджетов</InformationRegister>
 			<InformationRegister>пбп_ИсторияЗагрузкиФайлов</InformationRegister>
 			<InformationRegister>пбп_КонтрольДоставкиСообщений</InformationRegister>
 			<InformationRegister>пбп_НастройкиОтложенногоПроведения</InformationRegister>
