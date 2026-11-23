@@ -9,7 +9,7 @@
 					<v8:content>Использовать виджеты</v8:content>
 				</v8:item>
 			</Synonym>
-			<Comment/>
+			<Comment>Флаг без состава: использование виджетов определяется константой (пбп_Виджеты.ВиджетыИспользуются), объекты интерфейса не скрываются</Comment>
 			<Location>Constant.пбп_ИспользоватьВиджеты</Location>
 			<PrivilegedGetMode>true</PrivilegedGetMode>
 			<Content/>
