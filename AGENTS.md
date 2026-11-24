@@ -33,7 +33,7 @@
 
 ## Как работать
 
-**Локальный Cursor с user MCP** (Unica, BSL LS, Напарник, Vanessa). Правило `.cursor/rules/psslrule.mdc`, skill'ы `.cursor/skills/pssl-library` (загрузка в ИБ, YaXUnit, фичи) и `.cursor/skills/pssl-pr-flow` (конвейер Issue → PR в `develop`), правило фич Jenkins `.cursor/rules/vanessa-jenkins.mdc`. Пока Unica доступен, BSL и XML правятся только его инструментами.
+**Локальный Cursor с user MCP** (Unica 0.15, BSL LS, Напарник, Vanessa). На вызовы Unica передаётся `workspace` — корень клона; `cwd` не передаётся. Правило `.cursor/rules/psslrule.mdc`, skill'ы `.cursor/skills/pssl-library` (загрузка в ИБ, YaXUnit, фичи) и `.cursor/skills/pssl-pr-flow` (конвейер Issue → PR в `develop`), правило фич Jenkins `.cursor/rules/vanessa-jenkins.mdc`. Пока Unica доступен, BSL и XML правятся только его инструментами.
 
 **Агент без Unica и без платформы 1С** (облако, Bugbot, CodeRabbit, сторонние агенты):
 

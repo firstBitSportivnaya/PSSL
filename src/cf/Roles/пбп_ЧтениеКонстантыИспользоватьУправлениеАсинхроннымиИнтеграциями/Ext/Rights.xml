@@ -4,7 +4,7 @@
 	<setForAttributesByDefault>true</setForAttributesByDefault>
 	<independentRightsOfChildObjects>false</independentRightsOfChildObjects>
 	<object>
-		<name>Constant.пбп_ИспользоватьУправлениеШинойDatareonESB</name>
+		<name>Constant.пбп_ИспользоватьУправлениеАсинхроннымиИнтеграциями</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>
