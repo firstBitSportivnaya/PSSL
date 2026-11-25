@@ -7,6 +7,7 @@
 	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
 		<Event name="OnReadAtServer">ПриЧтенииНаСервере</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
@@ -507,12 +508,12 @@
 								<ChildItems>
 									<Button name="СписокКонтекстноеМенюОтобратьСообщения" id="151">
 										<Type>CommandBarButton</Type>
-										<CommandName>16:409b9a53-7f7e-4178-86c1-33176c7c7a7a</CommandName>
+										<CommandName>Form.Command.ОтобратьСообщения</CommandName>
 										<ExtendedTooltip name="СписокКонтекстноеМенюОтобратьСообщенияРасширеннаяПодсказка" id="152"/>
 									</Button>
 									<Button name="СписокКонтекстноеМенюОчиститьВсеСообщения" id="153">
 										<Type>CommandBarButton</Type>
-										<CommandName>12:409b9a53-7f7e-4178-86c1-33176c7c7a7a</CommandName>
+										<CommandName>Form.Command.ОчиститьВсеСообщения</CommandName>
 										<ExtendedTooltip name="СписокКонтекстноеМенюОчиститьВсеСообщенияРасширеннаяПодсказка" id="154"/>
 									</Button>
 								</ChildItems>
@@ -547,8 +548,6 @@
 							</SearchControlAddition>
 							<Events>
 								<Event name="Selection">СписокВыбор</Event>
-								<Event name="OnActivateRow">СписокПриАктивизацииСтроки</Event>
-								<Event name="OnStartEdit">СписокПриНачалеРедактирования</Event>
 							</Events>
 							<ChildItems>
 								<InputField name="СписокСостояние" id="161">
@@ -1456,21 +1455,6 @@
 			</Picture>
 			<Action>ОбновитьСтатусыКаналов</Action>
 		</Command>
-		<Command name="ОбработатьТекущее" id="7">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Обработать текущее</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Обработать текущее</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Action>ОбработатьТекущее</Action>
-		</Command>
 		<Command name="ОстановитьОбработку" id="8">
 			<Title>
 				<v8:item>
@@ -1529,6 +1513,21 @@
 			</Picture>
 			<Action>ОтобратьСообщения</Action>
 			<Representation>Picture</Representation>
+		</Command>
+		<Command name="ОчиститьВсеСообщения" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить все сообщения</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить все сообщения канала</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОчиститьВсеСообщения</Action>
 		</Command>
 	</Commands>
 </Form>
