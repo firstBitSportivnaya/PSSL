@@ -29,6 +29,11 @@
 			<ContextMenu name="ИдентификаторСистемыКонтекстноеМеню" id="8"/>
 			<ExtendedTooltip name="ИдентификаторСистемыРасширеннаяПодсказка" id="9"/>
 		</InputField>
+		<InputField name="ИнтеграционныйПоток" id="15">
+			<DataPath>Запись.ИнтеграционныйПоток</DataPath>
+			<ContextMenu name="ИнтеграционныйПотокКонтекстноеМеню" id="16"/>
+			<ExtendedTooltip name="ИнтеграционныйПотокРасширеннаяПодсказка" id="17"/>
+		</InputField>
 		<InputField name="ДополнительныйИдентификатор" id="10">
 			<DataPath>Запись.ДополнительныйИдентификатор</DataPath>
 			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>

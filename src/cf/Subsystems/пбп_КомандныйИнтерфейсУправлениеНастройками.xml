@@ -29,6 +29,7 @@
 			<Subsystem>ПользовательскиеФункции</Subsystem>
 			<Subsystem>СоответствиеОбъектовИБ</Subsystem>
 			<Subsystem>НастройкиОтбораОбъектов</Subsystem>
+			<Subsystem>ОтложенноеПроведениеДокументов</Subsystem>
 		</ChildObjects>
 	</Subsystem>
 </MetaDataObject>
