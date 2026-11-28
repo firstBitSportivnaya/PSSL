@@ -225,6 +225,13 @@
 												<Event name="OnChange">ПортВИнтеграционномПотокеПриИзменении</Event>
 											</Events>
 										</CheckBoxField>
+										<CheckBoxField name="ИспользоватьВстроенноеПрокси" id="220">
+											<DataPath>Объект.ИспользоватьВстроенноеПрокси</DataPath>
+											<TitleLocation>Right</TitleLocation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ИспользоватьВстроенноеПроксиКонтекстноеМеню" id="221"/>
+											<ExtendedTooltip name="ИспользоватьВстроенноеПроксиРасширеннаяПодсказка" id="222"/>
+										</CheckBoxField>
 										<InputField name="СтрокаПодключенияМногострочная" id="69">
 											<DataPath>Объект.СтрокаПодключения</DataPath>
 											<Title>
